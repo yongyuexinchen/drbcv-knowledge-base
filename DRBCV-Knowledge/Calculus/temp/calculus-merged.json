@@ -1,0 +1,4485 @@
+{
+  "meta": {
+    "total_scanned": 215,
+    "new": 209,
+    "existing": 6,
+    "relationships": 135
+  },
+  "new_concepts": {
+    "取整函数（向下取整）": {
+      "name": "取整函数（向下取整）",
+      "type": "discriminant",
+      "definition": "对于任意实数 $X$，$\\lfloor X \\rfloor$ 表示不超过 $X$ 的最大整数。",
+      "examples": [
+        "$\\lfloor 1.2 \\rfloor = 1$",
+        "$\\lfloor \\pi \\rfloor = 3$",
+        "$\\lfloor 6 \\rfloor = 6$",
+        "$\\lfloor -0.32 \\rfloor = -1$"
+      ],
+      "counter_examples": [],
+      "notes": "取整函数在大学数学中通常特指向下取整（floor），而非向上取整或四舍五入。负数取整时要向左看，不是简单地取整数部分。",
+      "related_to": [
+        "floor-function-inequality",
+        "integer-part-decomposition",
+        "fractional-part-function",
+        "epsilon-n-definition",
+        "sequence-limit-proof"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "取整加法性质：$[X + n] = [X] + n$": {
+      "name": "取整加法性质：$[X + n] = [X] + n$",
+      "type": "procedure",
+      "definition": "任意实数 $X$ 与任意整数 $n$，有 $\\lfloor X + n \\rfloor = \\lfloor X \\rfloor + n$。即取整符号内的整数可直接提出。",
+      "examples": [
+        "$\\lfloor 1.2 + 3 \\rfloor = \\lfloor 4.2 \\rfloor = 4 = \\lfloor 1.2 \\rfloor + 3 = 1 + 3 = 4$",
+        "$\\lfloor \\frac{1}{\\varepsilon} + 1 \\rfloor = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$"
+      ],
+      "counter_examples": [],
+      "notes": "非常常用的性质，用于数列极限证明中简化取整表达式。",
+      "related_to": [
+        "floor-function",
+        "integer-part-decomposition"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "整数部分与小数部分分解": {
+      "name": "整数部分与小数部分分解",
+      "type": "discriminant",
+      "definition": "任意实数 $X$ 可拆分为整数部分与小数部分之和：$X = [X] + \\{X\\}$，其中 $[X]$ 为整数部分（不超过 $X$ 的最大整数），$\\{X\\}$ 为小数部分。",
+      "examples": [
+        "$1.6 = 1 + 0.6$",
+        "$-1.6 = -2 + 0.4$"
+      ],
+      "counter_examples": [],
+      "notes": "小数部分 $\\{X\\}$ 的取值范围为 $0 \\leq \\{X\\} < 1$。负数的小数部分按取整定义计算，$\\{-1.6\\} = 0.4$ 而非 $0.6$。",
+      "related_to": [
+        "floor-function",
+        "fractional-part-function"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "取整函数基本不等式": {
+      "name": "取整函数基本不等式",
+      "type": "procedure",
+      "definition": "对于任意实数 $X$，有 $X - 1 < \\lfloor X \\rfloor \\leq X$（以取整为中心）；等价地，$\\lfloor X \\rfloor \\leq X < \\lfloor X \\rfloor + 1$（以 $X$ 为中心）。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "取整不等式的作用类似于绝对值去绝对值符号——在做题时用于去掉取整符号。核心记忆法：先写 $[X] \\leq X$（直观易懂），再左边加 $X - 1$ 且严格小于。",
+      "related_to": [
+        "floor-function",
+        "integer-part-decomposition",
+        "epsilon-n-definition",
+        "sequence-limit-proof"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "取整函数图像（阶梯函数）": {
+      "name": "取整函数图像（阶梯函数）",
+      "type": "discriminant",
+      "definition": "取整函数 $Y = [X]$ 的图像为阶梯形。在每个区间 $[n, n+1)$（$n \\in \\mathbb{Z}$）上函数值为常数 $n$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "每个区间为左闭右开形式。当 $X \\in [n, n+1)$ 时，$[X] = n$。",
+      "related_to": [
+        "floor-function"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "取整函数的四个基本性质": {
+      "name": "取整函数的四个基本性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：单调不减（非递减）；\n（2）奇偶性：非奇非偶；\n（3）有界性：无界；\n（4）周期性：无周期。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "单调不减意味着随 $X$ 增大 $Y$ 要么不变要么增大，不会减小。$f(0.5)=0$ 但 $f(-0.5)=-1$，不是 $0$ 的相反数，因此不是奇函数。",
+      "related_to": [
+        "floor-function"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "小数部分函数 $\\{X\\}$": {
+      "name": "小数部分函数 $\\{X\\}$",
+      "type": "discriminant",
+      "definition": "$Y = X - [X] = \\{X\\}$，即 $X$ 的小数部分。输入一个 $X$，输出唯一的小数部分。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "性质：（1）定义域上无单调性，但在每个区间 $[n, n+1)$ 上单调增加；（2）非奇非偶；（3）有界（下界 0，上界 1）；（4）以 1 为周期。",
+      "related_to": [
+        "floor-function",
+        "integer-part-decomposition"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "$\\varepsilon$-$N$ 定义（数列极限的前置逻辑）": {
+      "name": "$\\varepsilon$-$N$ 定义（数列极限的前置逻辑）",
+      "type": "discriminant",
+      "definition": "设 $n, N \\in \\mathbb{Z}^+$，若当 $n > N$ 时恒有 $n > \\frac{1}{\\varepsilon}$（$\\varepsilon > 0$），则 $N$ 需满足 $N \\geq \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$（以保证 $N$ 为正整数且满足条件）。",
+      "examples": [
+        "$N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$",
+        "$N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 2$ 也成立",
+        "$N = \\lfloor \\sqrt{\\frac{1}{\\varepsilon}} \\rfloor + 1$ 对 $n^2 > \\frac{1}{\\varepsilon}$ 问题"
+      ],
+      "counter_examples": [
+        "$N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor$ 当 $\\varepsilon > 1$ 时，$\\lfloor \\frac{1}{\\varepsilon} \\rfloor = 0$ 不满足 $N$ 为正整数"
+      ],
+      "notes": "这是数列极限证明的核心前置逻辑。关键套路：对于「$n > N$ 时必有 $n > M$（$M$ 为某个正数）」型问题，取 $N = \\lfloor M \\rfloor + 1$ 即可。$N$ 不一定唯一，加 2、加 3 也都成立；加 1 是相对最精确的写法。",
+      "related_to": [
+        "floor-function",
+        "floor-function-inequality",
+        "floor-function-addition",
+        "sequence-limit-proof"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "用定义证明数列极限的取整方法": {
+      "name": "用定义证明数列极限的取整方法",
+      "type": "procedure",
+      "definition": "已知 $n, N \\in \\mathbb{Z}^+$，要求当 $n > N$ 时 $n > \\frac{1}{\\varepsilon}$，取 $N = \\left\\lfloor \\frac{1}{\\varepsilon} \\right\\rfloor + 1$ 即可保证。推广：若需 $n > M$（$M$ 为任意正数），取 $N = \\lfloor M \\rfloor + 1$。",
+      "examples": [
+        "求证 $\\frac{1}{n^2} \\to 0$，解 $n^2 > \\frac{1}{\\varepsilon} \\Rightarrow n > \\sqrt{\\frac{1}{\\varepsilon}}$，取 $N = \\lfloor \\sqrt{\\frac{1}{\\varepsilon}} \\rfloor + 1$"
+      ],
+      "counter_examples": [],
+      "notes": "核心逻辑：$N = \\lfloor M \\rfloor + 1$ 确保了 $N > M$（因为 $\\lfloor M \\rfloor \\leq M < \\lfloor M \\rfloor + 1$），从而 $n > N \\Rightarrow n > M$。若题目允许 $N$ 为非负整数，则 $N = \\lfloor M \\rfloor$ 也可行（但 $N$ 可能为 0）。",
+      "related_to": [
+        "floor-function",
+        "epsilon-n-definition",
+        "floor-function-addition",
+        "floor-function-inequality"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反函数定义": {
+      "name": "反函数定义",
+      "type": "discriminant",
+      "definition": "对于函数 $Y = f(X)$，若值域中每个 $Y$ 都有唯一的 $X$ 与之对应，则 $X$ 成为关于 $Y$ 的函数，记为 $X = f^{-1}(Y)$，称为 $f$ 的反函数。",
+      "examples": [
+        "$Y = X^3$ 与 $Y = \\sqrt[3]{X}$ 互为反函数",
+        "$Y = a^x$ 与 $Y = \\log_a X$ 互为反函数"
+      ],
+      "counter_examples": [
+        "$Y = X^2$ 在 $\\mathbb{R}$ 上没有反函数（$Y=1$ 对应 $X=1$ 和 $X=-1$）"
+      ],
+      "notes": "习惯上仍以 $X$ 为自变量、$Y$ 为因变量表示反函数。$X = f^{-1}(Y)$ 与 $Y = f^{-1}(X)$ 字母不同但本质相同。不是所有函数都有反函数。",
+      "related_to": [
+        "inverse-function-property",
+        "inverse-function-graph",
+        "arcsin",
+        "arccos",
+        "arctan",
+        "arccot"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反函数复合性质：$f^{-1}(f(X)) = X$": {
+      "name": "反函数复合性质：$f^{-1}(f(X)) = X$",
+      "type": "procedure",
+      "definition": "若 $X$ 在 $f$ 有反函数的定义域上，则 $f^{-1}(f(X)) = X$ 且 $f(f^{-1}(Y)) = Y$。",
+      "examples": [
+        "$\\arcsin(\\sin(\\frac{\\pi}{6})) = \\frac{\\pi}{6}$",
+        "$\\sin(\\arcsin(0.5)) = 0.5$",
+        "$\\arccos(\\cos(0)) = 0$"
+      ],
+      "counter_examples": [
+        "$\\arcsin(\\sin(\\frac{5\\pi}{6})) \\neq \\frac{5\\pi}{6}$，因为 $\\frac{5\\pi}{6}$ 不在 $\\arcsin$ 的主值区间 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ 内",
+        "$\\arccos(\\cos(\\frac{11\\pi}{6})) \\neq \\frac{11\\pi}{6}$，因为 $\\frac{11\\pi}{6}$ 不在 $\\arccos$ 的主值区间 $[0, \\pi]$ 内"
+      ],
+      "notes": "这是反三角函数中最关键的易错点——必须在主值区间内才能直接抵消。否则需要用诱导公式把角度搬进主值区间再处理。",
+      "related_to": [
+        "inverse-function-definition",
+        "arcsin",
+        "arccos",
+        "arctan"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反函数图像对称性": {
+      "name": "反函数图像对称性",
+      "type": "discriminant",
+      "definition": "原函数 $Y = f(X)$ 与其反函数 $Y = f^{-1}(X)$（以 $X$ 为自变量表示时）的图像关于直线 $Y = X$ 对称。",
+      "examples": [
+        "$Y = X^3$ 与 $Y = \\sqrt[3]{X}$ 关于 $Y = X$ 对称"
+      ],
+      "counter_examples": [],
+      "notes": "注意：$X = f^{-1}(Y)$ 与 $Y = f(X)$ 在同一坐标系中图像完全重合；只有当反函数也写成 $Y = f^{-1}(X)$ 的形式时，两图像才关于 $Y = X$ 对称。",
+      "related_to": [
+        "inverse-function-definition",
+        "arcsin",
+        "arccos",
+        "arctan"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反正弦函数 $\\arcsin X$": {
+      "name": "反正弦函数 $\\arcsin X$",
+      "type": "discriminant",
+      "definition": "$Y = \\arcsin X$ 是 $Y = \\sin X$ 在 $X \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$（主值区间）上的反函数。输入正弦值 $X \\in [-1, 1]$，输出对应弧度 $Y \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$。",
+      "examples": [
+        "$\\arcsin 1 = \\frac{\\pi}{2}$",
+        "$\\arcsin 0 = 0$",
+        "$\\arcsin \\frac{\\sqrt{3}}{2} = \\frac{\\pi}{3}$",
+        "$\\arcsin(-\\frac{1}{2}) = -\\frac{\\pi}{6}$"
+      ],
+      "counter_examples": [],
+      "notes": "「$\\arcsin$」中「arc」是弧（弧度）的词根，表示输出的结果是一个弧度（角度）。$\\arcsin X$ 的值域严格限制在 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$，这是数学上的统一规定。",
+      "related_to": [
+        "inverse-function-definition",
+        "inverse-function-property",
+        "arcsin-properties",
+        "principal-value-interval",
+        "inverse-function-graph"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反正弦函数的四大性质": {
+      "name": "反正弦函数的四大性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：严格单调增加；\n（2）奇偶性：奇函数，$\\arcsin(-X) = -\\arcsin X$；\n（3）有界性：有界，上下界为 $\\frac{\\pi}{2}$ 和 $-\\frac{\\pi}{2}$；\n（4）周期性：无周期性。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "特别注意：$\\sin X$ 有周期性，但其反函数 $\\arcsin X$ 没有周期性。",
+      "related_to": [
+        "arcsin"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反正弦求值方法（逆向思维）": {
+      "name": "反正弦求值方法（逆向思维）",
+      "type": "procedure",
+      "definition": "求 $\\arcsin X$ 的值时，问「哪个角的正弦值是 $X$，且该角在 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ 上？」利用单位圆和特殊角的三角函数值进行逆向思考。",
+      "examples": [
+        "$\\arcsin \\frac{\\sqrt{3}}{2}$：$\\sin \\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}$ 且 $\\frac{\\pi}{3} \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$，结果为 $\\frac{\\pi}{3}$",
+        "$\\arcsin(-\\frac{1}{2})$：利用奇偶性 $= -\\arcsin \\frac{1}{2} = -\\frac{\\pi}{6}$"
+      ],
+      "counter_examples": [],
+      "notes": "不需要背诵反三角函数值表，用逆向思维和熟知的特殊三角函数值即可。",
+      "related_to": [
+        "arcsin",
+        "principal-value-interval"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反正弦的定义域约束": {
+      "name": "反正弦的定义域约束",
+      "type": "discriminant",
+      "definition": "$\\arcsin X$ 的定义域为 $X \\in [-1, 1]$。超出此范围的表达式无意义。",
+      "examples": [
+        "$\\arcsin \\sqrt{2}$ 无意义（$\\sqrt{2} > 1$）",
+        "$\\arcsin(-\\frac{3}{\\pi})$ 无意义（$-\\frac{3}{\\pi} < -1$）",
+        "$\\sin(\\arcsin(2))$ 无意义",
+        "$\\arcsin(\\sin 2)$ 有意义（$\\sin 2 \\in [-1, 1]$）"
+      ],
+      "counter_examples": [],
+      "notes": "三角函数可以取任意实数，但反三角函数的输入（三角函数值）必须在对应值域范围内。",
+      "related_to": [
+        "arcsin"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "主值区间（Principal Value Interval）": {
+      "name": "主值区间（Principal Value Interval）",
+      "type": "discriminant",
+      "definition": "为了使三角函数在其整个定义域上有反函数，人为限定一个单调区间，称为主值区间。只有在主值区间上，三角函数与反三角函数才满足 $f^{-1}(f(X)) = X$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "各三角函数的主值区间：\n- $\\sin X$ 主值区间：$[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$\n- $\\cos X$ 主值区间：$[0, \\pi]$\n- $\\tan X$ 主值区间：$(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$\n- $\\cot X$ 主值区间：$(0, \\pi)$\n口诀：「反正（arc）取中间，反余（arcc）取半边」。",
+      "related_to": [
+        "arcsin",
+        "arccos",
+        "arctan",
+        "arccot",
+        "inverse-function-property"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "非主值区间下求反函数的操作流程（搬进主值区间法）": {
+      "name": "非主值区间下求反函数的操作流程（搬进主值区间法）",
+      "type": "procedure",
+      "definition": "当 $X$ 不在主值区间时，通过 $k\\pi \\pm X$ 的形式将角度搬进主值区间，利用诱导公式重新表达三角函数，然后反解。\n\n步骤：\n1. 用 $k\\pi \\pm X$ 把角度搬进相应主值区间\n2. 套入原三角函数，用诱导公式化简\n3. 此时角度已在主值区间，可用反三角函数反解\n4. 整理得到关于 $X$ 的表达式",
+      "examples": [
+        "求 $Y = \\sin X$（$X \\in [\\frac{\\pi}{2}, \\frac{3\\pi}{2}]$）的反函数：\n1. 令 $\\pi - X \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$\n2. $\\sin X = \\sin(\\pi - X) = Y$\n3. $\\pi - X = \\arcsin Y$\n4. $X = \\pi - \\arcsin Y$",
+        "求 $Y = \\sin X$（$X \\in [2\\pi, \\frac{5\\pi}{2}]$）的反函数：\n1. 令 $X - 2\\pi \\in [0, \\frac{\\pi}{2}] \\subset [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$\n2. $\\sin X = \\sin(X - 2\\pi) = Y$\n3. $X - 2\\pi = \\arcsin Y$\n4. $X = \\arcsin Y + 2\\pi$"
+      ],
+      "counter_examples": [],
+      "notes": "核心思想：死守主值区间。使用 $k\\pi$ 而非 $\\frac{k\\pi}{2}$ 是为了「偶不变」——函数名称不变，避免变成其他三角函数增加复杂度。",
+      "related_to": [
+        "principal-value-interval",
+        "arcsin",
+        "arccos",
+        "arctan",
+        "inverse-function-property"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反余弦函数 $\\arccos X$": {
+      "name": "反余弦函数 $\\arccos X$",
+      "type": "discriminant",
+      "definition": "$Y = \\arccos X$ 是 $Y = \\cos X$ 在 $X \\in [0, \\pi]$（主值区间）上的反函数。输入余弦值 $X \\in [-1, 1]$，输出对应弧度 $Y \\in [0, \\pi]$。",
+      "examples": [
+        "$\\arccos 1 = 0$",
+        "$\\arccos(-1) = \\pi$",
+        "$\\arccos 0 = \\frac{\\pi}{2}$"
+      ],
+      "counter_examples": [],
+      "notes": "$\\arccos$ 的主值区间为 $[0, \\pi]$，与 $\\arcsin$ 的 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ 不同。",
+      "related_to": [
+        "inverse-function-definition",
+        "principal-value-interval",
+        "arccos-properties",
+        "arccos-identities"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反余弦函数的四大性质": {
+      "name": "反余弦函数的四大性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：严格单调减少；\n（2）奇偶性：非奇非偶；\n（3）有界性：有界，上下界为 $\\pi$ 和 $0$；\n（4）周期性：无周期性。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "注意：$\\cos X$ 是偶函数，但 $\\arccos X$ 不是偶函数！例如 $\\arccos 1 = 0$，$\\arccos(-1) = \\pi \\neq 0$。",
+      "related_to": [
+        "arccos"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反余弦的重要恒等式": {
+      "name": "反余弦的重要恒等式",
+      "type": "procedure",
+      "definition": "（1）互补关系：$\\arccos(-X) = \\pi - \\arccos X$（$X \\in [-1, 1]$）\n（2）互余关系：$\\arcsin X + \\arccos X = \\frac{\\pi}{2}$（$X \\in [-1, 1]$）\n（3）$\\cos(\\arccos X) = X$，$\\arccos(\\cos X) = X$ 当 $X \\in [0, \\pi]$",
+      "examples": [
+        "$\\arccos(-\\frac{1}{2}) = \\pi - \\arccos\\frac{1}{2} = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$",
+        "$\\arcsin\\frac{1}{2} + \\arccos\\frac{1}{2} = \\frac{\\pi}{6} + \\frac{\\pi}{3} = \\frac{\\pi}{2}$"
+      ],
+      "counter_examples": [],
+      "notes": "互补关系和互余关系在后续求极限问题中非常实用。互余关系的几何解释：在直角三角形中，$\\arcsin X$ 和 $\\arccos X$ 分别是两个锐角，和为 $\\frac{\\pi}{2}$。",
+      "related_to": [
+        "arccos",
+        "arcsin",
+        "inverse-function-property"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "非主值区间 $\\arccos(\\cos \\theta)$ 的化简方法": {
+      "name": "非主值区间 $\\arccos(\\cos \\theta)$ 的化简方法",
+      "type": "procedure",
+      "definition": "当 $\\theta$ 不在 $[0, \\pi]$ 时，用 $k\\pi$ 将 $\\theta$ 搬进 $[0, \\pi]$：通过 $\\cos(\\theta \\pm 2k\\pi)$ 或 $\\cos(2k\\pi - \\theta)$ 等变换，将角度化到 $[0, \\pi]$ 上。",
+      "examples": [
+        "$\\arccos(\\cos\\frac{11\\pi}{6})$：$\\frac{11\\pi}{6} \\notin [0, \\pi]$，$\\cos\\frac{11\\pi}{6} = \\cos(2\\pi - \\frac{11\\pi}{6}) = \\cos\\frac{\\pi}{6}$，$\\frac{\\pi}{6} \\in [0, \\pi]$，结果为 $\\frac{\\pi}{6}$"
+      ],
+      "counter_examples": [
+        "$\\arccos(\\cos\\frac{11\\pi}{6}) \\neq \\frac{11\\pi}{6}$"
+      ],
+      "notes": "与 $\\arcsin(\\sin X)$ 的处理逻辑完全一致——必须先将内部角度搬进主值区间。",
+      "related_to": [
+        "arccos",
+        "principal-value-interval",
+        "inverse-function-property",
+        "offset-to-principal-value"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反正切函数 $\\arctan X$": {
+      "name": "反正切函数 $\\arctan X$",
+      "type": "discriminant",
+      "definition": "$Y = \\arctan X$ 是 $Y = \\tan X$ 在 $X \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$（主值区间）上的反函数。输入正切值 $X \\in \\mathbb{R}$，输出对应弧度 $Y \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$。",
+      "examples": [
+        "$\\arctan 1 = \\frac{\\pi}{4}$",
+        "$\\arctan(-\\sqrt{3}) = -\\frac{\\pi}{3}$"
+      ],
+      "counter_examples": [],
+      "notes": "定义域为全体实数，输出值域在 $(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ 内（开区间，端点取不到）。在后续极限、求导、积分中非常常用。",
+      "related_to": [
+        "inverse-function-definition",
+        "principal-value-interval",
+        "arctan-properties",
+        "arctan-limits"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反正切函数的四大性质": {
+      "name": "反正切函数的四大性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：严格单调增加；\n（2）奇偶性：奇函数，$\\arctan(-X) = -\\arctan X$；\n（3）有界性：有界，上界 $\\frac{\\pi}{2}$，下界 $-\\frac{\\pi}{2}$；\n（4）周期性：无周期性。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "$\\arctan X$ 是一个非常重要的有界函数，需牢记其上界 $\\frac{\\pi}{2}$ 和下界 $-\\frac{\\pi}{2}$。",
+      "related_to": [
+        "arctan"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反正切的极限值": {
+      "name": "反正切的极限值",
+      "type": "procedure",
+      "definition": "$\\lim\\limits_{X \\to +\\infty} \\arctan X = \\frac{\\pi}{2}$，$\\lim\\limits_{X \\to -\\infty} \\arctan X = -\\frac{\\pi}{2}$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "这两个极限值在高数中经常用到，需熟记。",
+      "related_to": [
+        "arctan",
+        "arctan-properties"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "$\\arctan(\\tan X)$ 的化简与分段表达式": {
+      "name": "$\\arctan(\\tan X)$ 的化简与分段表达式",
+      "type": "procedure",
+      "definition": "当 $X \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ 时，$\\arctan(\\tan X) = X$。\n一般情形：令 $T = X - k\\pi$ 使 $T \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$，则 $\\arctan(\\tan X) = X - k\\pi$（$X \\in (k\\pi - \\frac{\\pi}{2}, k\\pi + \\frac{\\pi}{2})$，$k \\in \\mathbb{Z}$）。",
+      "examples": [
+        "当 $X \\in (-\\frac{\\pi}{2}+\\pi, \\frac{\\pi}{2}+\\pi)$ 即 $(\\frac{\\pi}{2}, \\frac{3\\pi}{2})$ 时，$\\arctan(\\tan X) = X - \\pi$"
+      ],
+      "counter_examples": [],
+      "notes": "最终化简结果为周期函数，以 $\\pi$ 为周期。图像为斜率为 1 但被截断为分段线性的锯齿形。",
+      "related_to": [
+        "arctan",
+        "principal-value-interval",
+        "offset-to-principal-value"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反余切函数 $\\operatorname{arccot} X$": {
+      "name": "反余切函数 $\\operatorname{arccot} X$",
+      "type": "discriminant",
+      "definition": "$Y = \\operatorname{arccot} X$ 是 $Y = \\cot X$ 在 $X \\in (0, \\pi)$（主值区间）上的反函数。输入余切值 $X \\in \\mathbb{R}$，输出对应弧度 $Y \\in (0, \\pi)$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "反余切的出场率远低于反正切。主值区间为 $(0, \\pi)$（开区间）。",
+      "related_to": [
+        "inverse-function-definition",
+        "principal-value-interval",
+        "arccot-identities"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反余切函数的四大性质": {
+      "name": "反余切函数的四大性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：严格单调减少；\n（2）奇偶性：非奇非偶；\n（3）有界性：有界，上下界为 $\\pi$ 和 $0$；\n（4）周期性：无周期性。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "",
+      "related_to": [
+        "arccot"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反余切的重要恒等式": {
+      "name": "反余切的重要恒等式",
+      "type": "procedure",
+      "definition": "（1）互补关系：$\\operatorname{arccot}(-X) = \\pi - \\operatorname{arccot} X$（与 $\\arccos$ 同理）\n（2）互余关系：$\\arctan X + \\operatorname{arccot} X = \\frac{\\pi}{2}$（$X \\in \\mathbb{R}$）",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "互余关系在直角三角形中有几何解释：$\\arctan X$ 和 $\\operatorname{arccot} X$ 分别是两个锐角。",
+      "related_to": [
+        "arccot",
+        "arctan",
+        "arccos-identities"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "反三角函数总结对照": {
+      "name": "反三角函数总结对照",
+      "type": "discriminant",
+      "definition": "反三角函数主值区间对照：\n| 函数 | 主值区间 |\n|------|----------|\n| $\\arcsin X$ | $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ |\n| $\\arccos X$ | $[0, \\pi]$ |\n| $\\arctan X$ | $(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ |\n| $\\operatorname{arccot} X$ | $(0, \\pi)$ |",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "记忆口诀：「反正（arc）取中间，反余（arcc）取半边」。即 $\\arcsin$ 和 $\\arctan$ 的主值区间关于原点对称（取中间），$\\arccos$ 和 $\\operatorname{arccot}$ 的主值区间在正半轴（取半边）。反正割和反余割几乎不涉及。",
+      "related_to": [
+        "arcsin",
+        "arccos",
+        "arctan",
+        "arccot",
+        "principal-value-interval"
+      ],
+      "sources": [
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+        "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+      ]
+    },
+    "数列": {
+      "name": "数列",
+      "type": "definition",
+      "definition": "在大学阶段，只要说数列都是有无穷多项的实数序列，其中 $x_n$ 的表达式称为通项或者一般项。",
+      "examples": [
+        "等比数列 $\\frac{1}{2^n}$",
+        "从1到N递增的数列",
+        "震荡数列 $1, -1, 1, -1, \\ldots$"
+      ],
+      "counter_examples": [],
+      "notes": "N默认只取正整数，N趋于无穷大即N趋于正无穷大，这是一种约定俗成。",
+      "related_to": [
+        "数列极限",
+        "通项"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "数列极限": {
+      "name": "数列极限",
+      "type": "definition",
+      "definition": "当N无限增大时，数列$x_n$无限接近于某个值A，则称A为数列的极限，记作 $\\lim\\limits_{n \\to \\infty} x_n = A$。",
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\frac{1}{2^n} = 0$",
+        "$\\lim\\limits_{n \\to \\infty} \\frac{1}{n} = 0$",
+        "$\\lim\\limits_{n \\to \\infty} \\frac{n+(-1)^n}{n} = 1$"
+      ],
+      "counter_examples": [
+        "$x_n = n$ 当N趋于无穷大时，极限不存在（趋于正无穷）",
+        "$x_n = (-1)^n$ 在-1和1之间震荡，极限不存在"
+      ],
+      "notes": "判断数列极限通常通过观察XN的变化趋势。极限存在时称数列收敛于A，极限不存在时称数列发散。",
+      "related_to": [
+        "数列",
+        "ε-N语言",
+        "收敛",
+        "发散"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "ε-N语言（伊普西隆-大恩语言）": {
+      "name": "ε-N语言（伊普西隆-大恩语言）",
+      "type": "definition",
+      "definition": "由现代分析学之父维尔斯特拉斯提出。$\\lim\\limits_{n \\to \\infty} x_n = A$ 的定义：对于任意给定的正数 $\\varepsilon > 0$，总存在正整数 $N$，使得当 $n > N$ 时，恒有 $|x_n - A| < \\varepsilon$。",
+      "examples": [
+        "证明 $\\lim\\limits_{n \\to \\infty} \\frac{1}{n} = 0$：取 $N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$，当 $n > N$ 时，$|\\frac{1}{n} - 0| = \\frac{1}{n} < \\varepsilon$"
+      ],
+      "counter_examples": [],
+      "notes": "核心动作：1) 表达距离 $|x_n - A|$ 能要多小有多小；2) 总存在一个分界点N，使得N之后的所有项满足条件。大N的取法与ε有关，ε越小N越大。",
+      "related_to": [
+        "数列极限",
+        "数列极限证明"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "数列极限的证明（万能模板）": {
+      "name": "数列极限的证明（万能模板）",
+      "type": "method",
+      "definition": "证明数列极限的标准步骤：1) 任取 $\\varepsilon > 0$；2) 令 $|x_n - A| < \\varepsilon$，从中反解出 $n > \\text{某个表达式}$；3) 取 $N = \\lfloor \\text{表达式} \\rfloor + 1$；4) 当 $n > N$ 时，恒有 $|x_n - A| < \\varepsilon$，得证。",
+      "examples": [
+        "证明 $\\lim\\limits_{n \\to \\infty} \\frac{n+(-1)^n}{n} = 1$：$|\\frac{n+(-1)^n}{n} - 1| = \\frac{1}{n} < \\varepsilon$，需 $n > \\frac{1}{\\varepsilon}$，取 $N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$"
+      ],
+      "counter_examples": [],
+      "notes": "若反解不方便，可先放大不等式再解。只要满足放大的式子小于ε，原式必然小于ε。大N通常取\"猪头取整加1\"，其中\"猪头\"是反解出的表达式。",
+      "related_to": [
+        "ε-N语言",
+        "数列极限",
+        "取整函数"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "取整函数": {
+      "name": "取整函数",
+      "type": "definition",
+      "definition": "取整函数（高斯取整）$\\lfloor x \\rfloor$ 表示不超过x的最大整数。重要性质：$\\lfloor x \\rfloor \\le x < \\lfloor x \\rfloor + 1$。",
+      "examples": [
+        "$\\lfloor 1.5 \\rfloor = 1$",
+        "$\\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1 > \\frac{1}{\\varepsilon}$"
+      ],
+      "counter_examples": [],
+      "notes": "当ε>1时，$\\lfloor \\frac{1}{\\varepsilon} \\rfloor$ 可能为0，加1可确保N是正整数。",
+      "related_to": [
+        "ε-N语言",
+        "数列极限的证明"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "收敛": {
+      "name": "收敛",
+      "type": "definition",
+      "definition": "若存在A使得 $\\lim\\limits_{n \\to \\infty} x_n = A$，则称数列$x_n$收敛于A，或称数列收敛。",
+      "examples": [
+        "$\\frac{1}{n}$ 收敛于0"
+      ],
+      "counter_examples": [
+        "$(-1)^n$ 不收敛（发散）"
+      ],
+      "notes": "收敛是数列极限存在的等价说法。",
+      "related_to": [
+        "数列极限",
+        "发散"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "发散": {
+      "name": "发散",
+      "type": "definition",
+      "definition": "若数列$x_n$不存在极限（包括趋于无穷或震荡），则称数列发散。",
+      "examples": [
+        "$x_n = n$ 发散到正无穷",
+        "$x_n = (-1)^n$ 震荡发散"
+      ],
+      "counter_examples": [],
+      "notes": "发散包括两种情况：极限为无穷大，或极限不存在（如震荡）。",
+      "related_to": [
+        "数列极限",
+        "收敛"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "夹逼定理（夹逼准则）": {
+      "name": "夹逼定理（夹逼准则）",
+      "type": "theorem",
+      "definition": "极限的两大存在准则之一。条件：(1) 从某一项开始，$y_n \\le x_n \\le z_n$（等号可有可无）；(2) $\\lim\\limits_{n \\to \\infty} y_n = \\lim\\limits_{n \\to \\infty} z_n = A$。结论：$\\lim\\limits_{n \\to \\infty} x_n = A$ 存在且等于A。",
+      "examples": [
+        "求 $\\lim\\limits_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{i}{n^2+n+i}$：通过放缩夹逼，极限为 $\\frac{1}{2}$",
+        "求 $\\lim\\limits_{n \\to \\infty} \\sqrt[n]{1+2^n+5^n} = 5$"
+      ],
+      "counter_examples": [
+        "$x_n = n$ 介于 $y_n = n-\\frac{1}{n}$ 和 $z_n = n+\\frac{1}{n}$ 之间，且 $y_n-z_n \\to 0$，但 $x_n$ 极限不存在（因为 $y_n,z_n$ 极限都不存在）"
+      ],
+      "notes": "也叫三明治定理。关键：两个条件缺一不可——不仅YN和ZN要无限接近，且它们的极限都必须存在且相等。反例说明$y_n-z_n \\to 0$ 不能推出 $y_n,z_n$ 极限存在。",
+      "related_to": [
+        "数列极限",
+        "单调有界准则",
+        "放缩法",
+        "N项和数列极限",
+        "N次根号下极限"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "单调有界准则": {
+      "name": "单调有界准则",
+      "type": "theorem",
+      "definition": "极限的两大存在准则之一。若数列单调递增且有上界，或单调递减且有下界，则数列极限存在。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "与夹逼定理并列的极限存在准则。本文未展开详述。",
+      "related_to": [
+        "夹逼定理",
+        "数列极限存在准则"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "数列放缩原则 - 全军出击": {
+      "name": "数列放缩原则 - 全军出击",
+      "type": "method",
+      "definition": "遇到若干项求和或若干个正数连乘积，将所有项同时放大或缩小：求和时每项都放大到最大值，则整体 ≤ N倍最大值；每项都缩小到最小值，则整体 ≥ N倍最小值。连乘积中每个正数放大到最大值，则整体 ≤ 最大值的N次方。",
+      "examples": [
+        "$n! = 1 \\times 2 \\times \\cdots \\times n \\le n^n$",
+        "$\\sqrt[n]{A+B+C} \\le \\sqrt[n]{3C}$（C为最大值）",
+        "$\\sqrt[n]{A+B+C} \\ge \\sqrt[n]{3A}$（A为最小值）"
+      ],
+      "counter_examples": [],
+      "notes": "放缩结果不唯一，是最基本的放缩思路。",
+      "related_to": [
+        "夹逼定理",
+        "N项和数列极限",
+        "放缩法"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "数列放缩原则 - 略去局部": {
+      "name": "数列放缩原则 - 略去局部",
+      "type": "method",
+      "definition": "通过删去或改变某些项来放缩：求和时略去正项则缩小，略去负项则放大；连乘积中略去小于1的因子则放大，略去大于1的因子则缩小。",
+      "examples": [
+        "$\\frac{1}{n^2+1} \\le \\frac{1}{n^2}$（删去+1放大）",
+        "$\\frac{2n-1}{2n} \\cdot \\frac{2n-3}{2n-2} \\cdots$ 略去小于1的因子放大",
+        "$\\frac{1}{2} \\cdot \\frac{3}{4} \\cdots \\frac{2n-1}{2n}$ 略去全部小于1的因子放大"
+      ],
+      "counter_examples": [],
+      "notes": "略去局部比全军出击更省事，常用于连乘积的放缩。",
+      "related_to": [
+        "夹逼定理",
+        "放缩法"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "N项和数列求极限（夹逼法）": {
+      "name": "N项和数列求极限（夹逼法）",
+      "type": "method",
+      "definition": "当分母无法统一通分时，通过放缩将分母统一，再用夹逼定理求极限。关键：放缩的变量如果是分母中的低次项（\"弟弟\"），不影响极限结果。",
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{i}{n^2+n+i} = \\frac{1}{2}$",
+        "$\\lim\\limits_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{1}{\\sqrt{n^2+i}} = 1$"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{1}{n+i}$ 用夹逼法放缩会失效（左边 $\\frac{1}{2}$，右边1，夹不住），更适合用定积分定义"
+      ],
+      "notes": "典型特征：无穷多项求和，分母随i变化无法直接通分。需注意放缩不能过松或过紧，确保两端极限相等。",
+      "related_to": [
+        "夹逼定理",
+        "放缩法",
+        "抓大头"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "N次根号下极限": {
+      "name": "N次根号下极限",
+      "type": "method",
+      "definition": "正数开N次方根当N趋无穷大时极限为1；N的多项式开N次方根极限也为1。具体结论：$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{a} = 1$（a>0），$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{n^k} = 1$（k为有限正整数）。",
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{n} = 1$",
+        "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{n^2+2n} = 1$"
+      ],
+      "counter_examples": [],
+      "notes": "证明思路：$\\sqrt[n]{n} = n^{1/n} = e^{\\frac{\\ln n}{n}}$，而 $\\frac{\\ln n}{n} \\to 0$。本质是 $\\ln n$ 在 $n$ 面前忽略不计，可用洛必达法则严格证明。",
+      "related_to": [
+        "夹逼定理",
+        "斯特林公式",
+        "幂指型函数"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "有限多项正数N次方开N次方根极限": {
+      "name": "有限多项正数N次方开N次方根极限",
+      "type": "theorem",
+      "definition": "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{a_1^n + a_2^n + \\cdots + a_m^n} = \\max\\{a_1, a_2, \\ldots, a_m\\}$，其中 $a_i > 0$。",
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{1 + 2^n + 5^n} = 5$",
+        "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{A^{-n} + B^{-n}} = \\max\\{A^{-1}, B^{-1}\\}$"
+      ],
+      "counter_examples": [],
+      "notes": "可用夹逼定理证明：删去其他项只保留最大值项来缩小，放大为m倍最大值N次方，两边极限都是最大值。本质是\"抓大头\"。",
+      "related_to": [
+        "夹逼定理",
+        "N次根号下极限",
+        "抓大头"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "抓大头": {
+      "name": "抓大头",
+      "type": "method",
+      "definition": "求 $\\frac{\\infty}{\\infty}$ 型极限时，分子分母只保留最高次项，低次项可忽略不计。标准做法：分子分母同除以最高次项。",
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\frac{\\frac{1}{2}n^2+n}{n^2+n+1} = \\frac{1}{2}$（分子分母同除以 $n^2$）",
+        "$\\lim\\limits_{n \\to \\infty} \\frac{n}{\\sqrt{n^2+n}} = 1$"
+      ],
+      "counter_examples": [],
+      "notes": "本质是分子分母同除以最高次项后，低次项除以最高次项极限为0。",
+      "related_to": [
+        "无穷大比无穷大",
+        "极限四则运算法则"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "斯特林公式": {
+      "name": "斯特林公式",
+      "type": "theorem",
+      "definition": "$n! \\sim \\sqrt{2\\pi n} \\left( \\frac{n}{e} \\right)^n$ 或近似 $\\sqrt[n]{n!} \\sim \\frac{n}{e}$。",
+      "examples": [
+        "$\\sqrt[n]{n!} \\approx \\frac{n}{e}$ 当 n 很大时"
+      ],
+      "counter_examples": [],
+      "notes": "在数列极限中较少使用，学到无穷级数时很实用。可直接用于放缩。",
+      "related_to": [
+        "N次根号下极限",
+        "阶乘"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "极限的四则运算法则": {
+      "name": "极限的四则运算法则",
+      "type": "theorem",
+      "definition": "若 $\\lim f(x)=A$，$\\lim g(x)=B$，则：$\\lim (kf+lg)=kA+lB$；$\\lim (fg)=AB$；$\\lim (f/g)=A/B$（$B\\neq 0$）。和差积商的极限等于极限的和差积商。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 1} \\frac{x-3}{x^2-9} = \\frac{\\lim (x-3)}{\\lim (x^2-9)} = \\frac{-2}{-8} = \\frac{1}{4}$"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x \\to 3} \\frac{x-3}{x^2-9}$ 不能直接代入（分母极限为0，不符合商的法则条件）"
+      ],
+      "notes": "使用前提：每个函数的极限都存在。商的法则额外要求分母极限不为零。",
+      "related_to": [
+        "未定式",
+        "拆极限"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "连续函数": {
+      "name": "连续函数",
+      "type": "definition",
+      "definition": "函数 $f(x)$ 在 $x_0$ 处连续当且仅当 $\\lim\\limits_{x \\to x_0} f(x) = f(x_0)$，即极限值等于函数值。",
+      "examples": [
+        "$f(x)=x-3$ 在 $x=1$ 处连续，故 $\\lim\\limits_{x \\to 1} (x-3) = 1-3 = -2$"
+      ],
+      "counter_examples": [
+        "$f(x)=\\frac{x-3}{x^2-9}$ 在 $x=3$ 处无定义，不连续，不能直接代入"
+      ],
+      "notes": "连续函数求极限可简化为求函数值。",
+      "related_to": [
+        "初等函数",
+        "极限代入法"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "初等函数在有定义点连续": {
+      "name": "初等函数在有定义点连续",
+      "type": "theorem",
+      "definition": "初等函数（由基本初等函数：反对幂指三 + 常数，经过有限次四则运算和复合构成的函数）在其定义区间内处处连续。",
+      "examples": [
+        "$x-3$ 是初等函数，在 $x=1$ 处有定义，故可代入求极限"
+      ],
+      "counter_examples": [
+        "$\\frac{x-3}{x^2-9}$ 在 $x=3$ 处无定义，不保证连续，不能直接代入"
+      ],
+      "notes": "这一性质是求极限时\"直接代入\"的理论依据。",
+      "related_to": [
+        "连续函数",
+        "极限代入法"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "未定式（7种）": {
+      "name": "未定式（7种）",
+      "type": "definition",
+      "definition": "七种不能直接确定极限结果的形式，必须通过恒等变形化简后才能求解：$\\frac{0}{0}$型、$\\frac{\\infty}{\\infty}$型、$0\\cdot\\infty$型、$\\infty-\\infty$型、$1^\\infty$型、$\\infty^0$型、$0^0$型。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{\\sin x}{x}$（$\\frac{0}{0}$型）",
+        "$\\lim\\limits_{x \\to \\infty} \\left(1+\\frac{1}{x}\\right)^x$（$1^\\infty$型）"
+      ],
+      "counter_examples": [],
+      "notes": "判断极限类型是第一步。非未定式可直接代入求值。$\\frac{0}{0}$型中分子分母是趋于0的无穷小量，不是真0。",
+      "related_to": [
+        "等价无穷小",
+        "洛必达法则",
+        "两个重要极限",
+        "幂指型函数"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "无穷小量": {
+      "name": "无穷小量",
+      "type": "definition",
+      "definition": "极限为0的变量称为无穷小量。如当 $x \\to 0$ 时，$\\sin x$、$x$、$1-\\cos x$ 等都是无穷小量。",
+      "examples": [
+        "$x \\to 0$ 时，$x$、$\\sin x$、$\\ln(1+x)$ 都是无穷小量"
+      ],
+      "counter_examples": [],
+      "notes": "无穷小乘有界函数仍是无穷小。",
+      "related_to": [
+        "等价无穷小",
+        "未定式"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "等价无穷小": {
+      "name": "等价无穷小",
+      "type": "definition",
+      "definition": "若 $\\lim \\frac{\\alpha}{\\beta} = 1$，则称 $\\alpha$ 与 $\\beta$ 是等价无穷小，记作 $\\alpha \\sim \\beta$。表示两者趋于0的速度基本相同。",
+      "examples": [
+        "$x \\to 0$ 时 $\\sin x \\sim x$"
+      ],
+      "counter_examples": [],
+      "notes": "注意是比值极限为1时才等价。等价无穷小可以在整个函数的乘除因子中进行代换。",
+      "related_to": [
+        "无穷小量",
+        "等价无穷小代换",
+        "泰勒公式"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "等价无穷小代换": {
+      "name": "等价无穷小代换",
+      "type": "method",
+      "definition": "在求极限时，将乘除因子用其等价无穷小替换，将复杂函数统一化为 $x^k$ 形式，从而简化计算。代换规则：必须是整个函数的乘除因子才能代换，加减项中不可直接代换。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{x-\\sin x}{\\tan x \\cdot (1-\\cos x)} = \\lim\\limits_{x \\to 0} \\frac{\\frac{1}{6}x^3}{x \\cdot \\frac{1}{2}x^2} = \\frac{1}{3}$"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x \\to 0} \\left(\\frac{1}{\\sin^2 x} - \\frac{1}{x^2}\\right)$ 中单独代换 $\\sin x \\sim x$ 会得到错误结果0（正确答案为 $\\frac{1}{3}$）"
+      ],
+      "notes": "加减项可通过拆极限变成乘除因子后再代换。X可广义化为任意趋于0的函数（$e^{\\square}-1 \\sim \\square$）。",
+      "related_to": [
+        "等价无穷小",
+        "未定式",
+        "拆极限"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "常用等价无穷小公式（四组）": {
+      "name": "常用等价无穷小公式（四组）",
+      "type": "method",
+      "definition": "当 $x \\to 0$ 时的常用等价公式：\n第一组（等价于x）：$\\sin x \\sim x$，$\\tan x \\sim x$，$\\arcsin x \\sim x$，$\\arctan x \\sim x$，$e^x-1 \\sim x$，$\\ln(1+x) \\sim x$\n第二组：$a^x-1 \\sim x\\ln a$，$(1+x)^\\alpha-1 \\sim \\alpha x$（$\\alpha \\in \\mathbb{R}\\setminus\\{0\\}$）\n第三组：$1-\\cos x \\sim \\frac{1}{2}x^2$，$x-\\ln(1+x) \\sim \\frac{1}{2}x^2$\n第四组：$x-\\sin x \\sim \\frac{1}{6}x^3$，$\\arcsin x - x \\sim \\frac{1}{6}x^3$，$x-\\tan x \\sim -\\frac{1}{3}x^3$，$\\arctan x - x \\sim -\\frac{1}{3}x^3$",
+      "examples": [
+        "$\\sqrt{1+x}-1 = (1+x)^{1/2}-1 \\sim \\frac{1}{2}x$",
+        "$1-\\cos x \\sim \\frac{1}{2}x^2$",
+        "$e^{x^3}-1 \\sim x^3$（广义化）"
+      ],
+      "counter_examples": [],
+      "notes": "所有x可替换为任意趋于0的表达式（如 $1-\\cos(x^2) \\sim \\frac{1}{2}x^4$）。第三、四组较为进阶但常用。$\\cos x - 1 \\sim -\\frac{1}{2}x^2$。$\\ln(1+x)$ 当 $x \\to 1$ 时可换元：$\\ln(1+u-1) \\sim u-1$。",
+      "related_to": [
+        "等价无穷小",
+        "泰勒公式",
+        "等价无穷小代换"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "拆极限原则": {
+      "name": "拆极限原则",
+      "type": "method",
+      "definition": "若拆开后两个极限都存在，则可拆（存在+存在=存在）。若拆开后两个极限都不存在，不可拆（可能破坏原极限）。核心技巧：看到极限存在的部分就可以先拆出来。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\left(\\frac{\\sin x}{x} + x \\sin\\frac{1}{x}\\right)$ 可以拆（第一项极限1存在，第二项极限0存在）"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{x-\\sin x}{x^3}$ 拆成 $\\frac{x}{x^3} - \\frac{\\sin x}{x^3}$ 会破坏极限（两项都不存在）"
+      ],
+      "notes": "终极原则：任何情况下看到存在就拆出。若拆出后剩余部分极限存在则得结果，不存在则答不存在——拆的动作本身没错。",
+      "related_to": [
+        "极限四则运算法则",
+        "等价无穷小代换"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "提前求极限（非零因子代入）": {
+      "name": "提前求极限（非零因子代入）",
+      "type": "method",
+      "definition": "若某个乘除因子的极限存在且非零（不为0），则可先求出该极限值代入，简化后续计算。理论依据：$\\lim (f \\cdot g) = (\\lim f) \\cdot (\\lim g)$ 且 $\\lim f \\neq 0$。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{x}{\\sin x} \\cdot \\cos x = 1 \\cdot \\lim\\limits_{x \\to 0} \\frac{x}{\\sin x} = 1$"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{\\ln(1+x)}{x}$ 不能把 $\\ln(1+x)$ 先代入0（极限为0的因子不能提前代入，需看阶数）"
+      ],
+      "notes": "必须是整个函数的乘除因子。极限为零的因子不能提前代入（会丢失阶数信息）。",
+      "related_to": [
+        "极限四则运算法则",
+        "等价无穷小代换"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "指数差处理技巧（提出后者）": {
+      "name": "指数差处理技巧（提出后者）",
+      "type": "method",
+      "definition": "遇到 $e^{f(x)} - e^{g(x)}$ 形式，提出后者 $e^{g(x)}$：$e^{f(x)} - e^{g(x)} = e^{g(x)}(e^{f(x)-g(x)}-1)$。当 $f-g \\to 0$ 时，可用 $e^{f-g} - 1 \\sim f-g$。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{e^{x^2} - e^{2-2\\cos x}}{x^4}$ 提出 $e^{2-2\\cos x}$ 后用等价代换"
+      ],
+      "counter_examples": [],
+      "notes": "口诀：\"提出后者\"。若 $f,g$ 都趋于0，则 $e^{g} \\to 1$ 可进一步简化为 $e^f - e^g \\sim f-g$（小题可用）。",
+      "related_to": [
+        "等价无穷小",
+        "洛必达法则"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "幂指型函数": {
+      "name": "幂指型函数",
+      "type": "definition",
+      "definition": "形如 $u(x)^{v(x)}$ 的函数，底数和指数都含有变量。$u(x)$ 称为底函数（$>0$），$v(x)$ 称为指函数。",
+      "examples": [
+        "$(1+x)^{1/x}$",
+        "$\\left(\\frac{1+x}{1-x}\\right)^{1/x}$",
+        "$x^{\\sin x}$"
+      ],
+      "counter_examples": [],
+      "notes": "三种常见未定式：$1^\\infty$、$\\infty^0$、$0^0$。除此之外的形式可直接代入求值。",
+      "related_to": [
+        "$1^\\infty$未定式",
+        "两个重要极限",
+        "吟唱法"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "幂指型极限 - 吟唱法": {
+      "name": "幂指型极限 - 吟唱法",
+      "type": "method",
+      "definition": "处理 $1^\\infty$ 未定式的通用方法：原式 $= e^{\\lim [v(x) \\cdot (u(x)-1)]}$。推导：$u^v = e^{v\\ln u}$，当 $u \\to 1$ 时 $\\ln u \\sim u-1$，故原式 $= e^{\\lim v(x)(u(x)-1)}$。\n口诀：\"E的极限符号往里走，指函数抄一遍，再乘底减1\"。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\left(\\frac{\\ln(1+x)}{x}\\right)^{\\frac{1}{e^x-1}} = e^{-\\frac{1}{2}}$",
+        "$\\lim\\limits_{x \\to 0} \\left(\\frac{1+x}{1-x}\\right)^{1/x} = e^2$"
+      ],
+      "counter_examples": [],
+      "notes": "相比凑重要极限法更简洁，书写时全程带着E写（避免漏掉E）。对 $\\infty^0$ 和 $0^0$ 型则用 $e^{\\lim v \\ln u}$（不能简化为 $u-1$）。",
+      "related_to": [
+        "$1^\\infty$未定式",
+        "幂指型函数",
+        "两个重要极限"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "换元法求极限": {
+      "name": "换元法求极限",
+      "type": "method",
+      "definition": "当极限变量不趋于0时，通过换元令新变量趋于0，以使用等价无穷小等工具。如令 $t = x - x_0$ 将 $x \\to x_0$ 化为 $t \\to 0$。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 1} \\frac{x\\ln x - x + 1}{(x-1)\\ln x}$ 令 $t = x-1$，化为 $\\lim\\limits_{t \\to 0} \\frac{(1+t)\\ln(1+t)-t}{t\\ln(1+t)}$"
+      ],
+      "counter_examples": [],
+      "notes": "重要技巧：$\\ln x$ 当 $x \\to 1$ 时，令 $t = x-1$，则 $\\ln(1+t) \\sim t$。",
+      "related_to": [
+        "等价无穷小",
+        "$\\ln(1+x)$的推广"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "约去零因子法": {
+      "name": "约去零因子法",
+      "type": "method",
+      "definition": "对 $\\frac{0}{0}$ 型极限，若分子分母有公因子（零因子），可通过因式分解约去后代入求值。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 3} \\frac{x-3}{x^2-9} = \\lim\\limits_{x \\to 3} \\frac{x-3}{(x-3)(x+3)} = \\lim\\limits_{x \\to 3} \\frac{1}{x+3} = \\frac{1}{6}$"
+      ],
+      "counter_examples": [],
+      "notes": "$x \\to 3$ 意味着无限接近但取不到3，所以 $x-3$ 可约分（不为0）。",
+      "related_to": [
+        "未定式",
+        "极限代入法"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "通分法": {
+      "name": "通分法",
+      "type": "method",
+      "definition": "对 $\\infty - \\infty$ 型或某些复杂极限，通过通分化为 $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$ 型再求解。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\left(\\frac{1}{\\sin^2 x} - \\frac{1}{x^2}\\right)$ 通分后化为 $\\frac{0}{0}$ 型"
+      ],
+      "counter_examples": [],
+      "notes": "通分时可将 $\\tan x$ 切化弦（$\\tan x = \\frac{\\sin x}{\\cos x}$）简化计算。",
+      "related_to": [
+        "未定式",
+        "等价无穷小",
+        "洛必达法则"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "定积分定义求极限": {
+      "name": "定积分定义求极限",
+      "type": "method",
+      "definition": "将 $\\frac{1}{n}\\sum_{i=1}^{n} f(\\frac{i}{n})$ 形式的极限转化为定积分 $\\int_0^1 f(x) dx$ 求解。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "本文提及此方法是处理某些夹逼法失效的N项和极限的替代方案（如 $\\sum_{i=1}^{n} \\frac{1}{n+i}$）。",
+      "related_to": [
+        "N项和数列极限",
+        "夹逼定理"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "夹逼定理的ε-N证明": {
+      "name": "夹逼定理的ε-N证明",
+      "type": "proof",
+      "definition": "用ε-N语言证明夹逼定理：由 $y_n \\to A$ 知 $\\exists N_1$ 使 $|y_n-A|<\\varepsilon$，由 $z_n \\to A$ 知 $\\exists N_2$ 使 $|z_n-A|<\\varepsilon$，取 $N_0 = \\max\\{N_1, N_2, N_x\\}$，则当 $n>N_0$ 时 $A-\\varepsilon < y_n \\le x_n \\le z_n < A+\\varepsilon$，即 $|x_n-A|<\\varepsilon$，故 $x_n \\to A$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "三个分界点取最大值：YN的分界点N1，ZN的分界点N2，以及XN介于YN和ZN之间的起始点Nx。",
+      "related_to": [
+        "夹逼定理",
+        "ε-N语言"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "导数定义（瞬时变化率）": {
+      "name": "导数定义（瞬时变化率）",
+      "type": "定义",
+      "definition": "函数 $y=f(x)$ 在点 $x_0$ 处的导数定义为函数改变量与自变量改变量之比的极限：\n$$f'(x_0) = \\lim_{\\Delta x \\to 0} \\frac{\\Delta y}{\\Delta x} = \\lim_{\\Delta x \\to 0} \\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}$$\n等价形式（二号公式）：\n$$f'(x_0) = \\lim_{x \\to x_0} \\frac{f(x)-f(x_0)}{x-x_0}$$\n导数本质是函数在该点的瞬时变化率（因变量随自变量变化的快慢）。",
+      "examples": [
+        "例：$f(x)=x^2$ 在 $x=1$ 处的导数 $f'(1)=\\lim_{x\\to1}\\frac{x^2-1}{x-1}=2$",
+        "例：$f(x)=x(x+1)(x+2)\\cdots(x+n)$ 在 $x=0$ 处的导数 $f'(0)=n!$",
+        "例：$f(x)=x^2\\sin\\frac{1}{x}$（$x\\neq0$）且 $f(0)=0$，在 $x=0$ 处导数 $f'(0)=0$"
+      ],
+      "counter_examples": [],
+      "notes": "导数定义的两种形式：一号公式用 $\\Delta x$ 增量形式（适合抽象函数），二号公式用 $x\\to x_0$ 形式（适合具体函数）。构造定义的分子必须是\"一动减一定\"（动点函数值减去定点函数值）。",
+      "related_to": [
+        "平均变化率",
+        "左导数",
+        "右导数",
+        "可导",
+        "连续",
+        "切线",
+        "微分"
+      ],
+      "sources": []
+    },
+    "平均变化率": {
+      "name": "平均变化率",
+      "type": "概念",
+      "definition": "函数在区间 $[x_0, x_0+\\Delta x]$ 上的平均变化率为 $\\frac{\\Delta y}{\\Delta x} = \\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}$，几何上表示过两点 $(x_0,f(x_0))$ 和 $(x_0+\\Delta x,f(x_0+\\Delta x))$ 的割线斜率。",
+      "examples": [
+        "变速直线运动中，$\\frac{\\Delta s}{\\Delta t}$ 表示 $\\Delta t$ 时间内的平均速度"
+      ],
+      "counter_examples": [],
+      "notes": "平均变化率是近似值，取极限后得到瞬时变化率（导数）。",
+      "related_to": [
+        "导数定义",
+        "割线",
+        "切线"
+      ],
+      "sources": []
+    },
+    "左导数与右导数（单侧导数）": {
+      "name": "左导数与右导数（单侧导数）",
+      "type": "定义",
+      "definition": "左导数：$f'_-(x_0) = \\lim_{\\Delta x \\to 0^-} \\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x} = \\lim_{x \\to x_0^-} \\frac{f(x)-f(x_0)}{x-x_0}$\n右导数：$f'_+(x_0) = \\lim_{\\Delta x \\to 0^+} \\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x} = \\lim_{x \\to x_0^+} \\frac{f(x)-f(x_0)}{x-x_0}$",
+      "examples": [
+        "$f(x)=|x|$ 在 $x=0$ 处：$f'_-(0)=-1$，$f'_+(0)=1$"
+      ],
+      "counter_examples": [],
+      "notes": "左导数的几何意义是左切线的斜率（从左侧逼近），右导数的几何意义是右切线的斜率（从右侧逼近）。",
+      "related_to": [
+        "导数定义",
+        "可导",
+        "分段函数求导"
+      ],
+      "sources": []
+    },
+    "可导与不可导": {
+      "name": "可导与不可导",
+      "type": "定义",
+      "definition": "若极限 $\\lim_{\\Delta x \\to 0} \\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}$ 存在（为有限值），则称 $f(x)$ 在 $x_0$ 处可导；否则称不可导。\n函数在一点可导的充要条件是：左右导数都存在且相等。",
+      "examples": [
+        "$f(x)=x^2$ 在 $x=0$ 处可导",
+        "$f(x)=|x|$ 在 $x=0$ 处不可导（左右导数存在但不相等）",
+        "$f(x)=\\sqrt[3]{x}$ 在 $x=0$ 处不可导（导数为无穷大）",
+        "$f(x)=x\\sin\\frac{1}{x}$（$x\\neq0$）且 $f(0)=0$ 在 $x=0$ 处不可导（震荡型）"
+      ],
+      "counter_examples": [],
+      "notes": "不可导的四种情况：① 函数在该点断开（不连续）；② 角点（左右导数存在但不相等）；③ 尖点（左右导数分别为 $\\pm\\infty$）；④ 垂直切线（导数为无穷大）。无穷大被视为极限不存在，故不可导。",
+      "related_to": [
+        "左导数",
+        "右导数",
+        "连续",
+        "切线"
+      ],
+      "sources": []
+    },
+    "不可导的四种情况": {
+      "name": "不可导的四种情况",
+      "type": "方法",
+      "definition": "函数在一点处不可导的四种情形：\n1. **间断点**：函数在该点不连续（可导必连续，逆否命题成立）\n2. **角点**：左右导数都存在但为有限值且不相等（如 $f(x)=|x|$ 在 $x=0$）\n3. **尖点**：一侧导数为 $+\\infty$，另一侧导数为 $-\\infty$（左右导数绝对值都趋于无穷大）\n4. **垂直切线**：导数为无穷大（函数光滑但有垂直于 $x$ 轴的切线，如 $f(x)=\\sqrt[3]{x}$ 在 $x=0$）",
+      "examples": [
+        "角点：$f(x)=|x|$ 在 $x=0$ 处（左-1，右+1）",
+        "尖点：$f(x)=\\sqrt[3]{x}$（原函数立方根函数？实际是 $f(x)=x^{2/3}$ 类函数在 $x=0$ 处）",
+        "垂直切线：$f(x)=\\sqrt[3]{x}$ 在 $x=0$ 处（$f'(x)\\to+\\infty$）",
+        "间断点：任意在 $x_0$ 处不连续的函数"
+      ],
+      "counter_examples": [],
+      "notes": "注意：垂直切线情况下函数可以是光滑的（有切线），但导数无穷大仍被视为不可导。",
+      "related_to": [
+        "可导",
+        "左导数",
+        "右导数",
+        "切线",
+        "连续"
+      ],
+      "sources": []
+    },
+    "可导与连续的关系": {
+      "name": "可导与连续的关系",
+      "type": "定理",
+      "definition": "**定理**：若函数 $f(x)$ 在 $x_0$ 处可导，则 $f(x)$ 在 $x_0$ 处一定连续。反之不成立：连续不一定可导。\n$$\n\\text{可导} \\Rightarrow \\text{连续}，\\quad \\text{连续} \\nRightarrow \\text{可导}\n$$\n\n**证明**：可导 $\\Rightarrow$ $\\lim_{\\Delta x\\to0}\\frac{\\Delta y}{\\Delta x}=f'(x_0)$ 存在，则 $\\Delta y = \\frac{\\Delta y}{\\Delta x}\\cdot\\Delta x \\to f'(x_0)\\cdot 0 = 0$，故 $\\lim_{\\Delta x\\to0}\\Delta y = 0$，即连续。",
+      "examples": [
+        "$f(x)=|x|$ 在 $x=0$ 处连续但不可导",
+        "$f(x)=x^2$ 在 $x=0$ 处可导且连续"
+      ],
+      "counter_examples": [
+        "连续不可导的例子：$f(x)=|x|$ 在 $x=0$（角点）",
+        "连续不可导的例子：$f(x)=\\sqrt[3]{x}$ 在 $x=0$（垂直切线）",
+        "连续不可导的例子：$f(x)=x\\sin\\frac{1}{x}$ 在 $x=0$（震荡型）"
+      ],
+      "notes": "从几何上理解：可导意味着曲线在该点光滑（有切线），连续只意味着曲线连在一起但不一定光滑。一点处可导只能推出该点连续，不能推出该点邻域内连续或可导。",
+      "related_to": [
+        "导数定义",
+        "连续",
+        "可导"
+      ],
+      "sources": []
+    },
+    "一点可导与邻域的关系": {
+      "name": "一点可导与邻域的关系",
+      "type": "性质",
+      "definition": "函数在一点 $x_0$ 处可导：\n1. ✅ 能推出 $f$ 在 $x_0$ 处连续\n2. ❌ 不能推出 $f$ 在 $x_0$ 的邻域内处处可导\n3. ❌ 不能推出 $f$ 在 $x_0$ 的邻域内处处连续\n4. ✅ 能推出 $f$ 在 $x_0$ 的邻域内有定义（因为导数定义本身要求极限过程中函数在邻域有定义）\n\n**反例**：$f(x)=x^2 D(x)$，其中 $D(x)$ 是狄利克雷函数（有理数取1，无理数取0），该函数仅在 $x=0$ 处可导，处处不连续。",
+      "examples": [],
+      "counter_examples": [
+        "$f(x)=x^2 D(x)$ 在 $x=0$ 处可导，但在 $x\\neq0$ 的任意点都不连续、不可导"
+      ],
+      "notes": "高阶导数的存在能推出更低一阶导数在邻域内有定义。如二阶导存在 $\\Rightarrow$ 一阶导在邻域内存在。",
+      "related_to": [
+        "可导",
+        "连续",
+        "狄利克雷函数"
+      ],
+      "sources": []
+    },
+    "导数的几何意义": {
+      "name": "导数的几何意义",
+      "type": "性质",
+      "definition": "函数 $y=f(x)$ 在 $x_0$ 处的导数 $f'(x_0)$ 在几何上表示曲线 $y=f(x)$ 在点 $(x_0, f(x_0))$ 处的切线斜率。\n\n切线方程：$y - f(x_0) = f'(x_0)(x - x_0)$\n法线方程：$y - f(x_0) = -\\frac{1}{f'(x_0)}(x - x_0)$（$f'(x_0)\\neq0$）",
+      "examples": [
+        "曲线 $y=\\frac{1}{x}$ 在点 $(2,\\frac{1}{2})$ 处的切线：$y-\\frac{1}{2}=-\\frac{1}{4}(x-2)$",
+        "曲线 $y=\\frac{1}{x}$ 在点 $(2,\\frac{1}{2})$ 处的法线：$y-\\frac{1}{2}=4(x-2)$"
+      ],
+      "counter_examples": [
+        "$f(x)=\\sqrt[3]{x}$ 在 $x=0$ 处有切线（$y$ 轴）但导数不存在（无穷大），说明有切线不一定可导"
+      ],
+      "notes": "切线定义为割线的极限位置。切线的另一定义：在局部与曲线最接近的那条直线。可微/可导等价于在该点有切线。",
+      "related_to": [
+        "导数定义",
+        "切线",
+        "法线",
+        "割线"
+      ],
+      "sources": []
+    },
+    "利用导数定义求极限（第一性原理）": {
+      "name": "利用导数定义求极限（第一性原理）",
+      "type": "方法",
+      "definition": "给定极限表达式，判断其是否为某点导数的标准形式。三个判定原则：\n1. **上下一致**：分子分母中的增量部分必须一模一样\n2. **定点出现**：分子中必须出现定点的函数值 $f(x_0)$（即一动减一定）\n3. **双侧极限**：增量趋近于0时，必须能从正、负两个方向趋近（否则只是单侧导数）\n\n满足三原则即可识别为 $f'(x_0)$，然后通过\"多退少补\"（乘除系数）进行恒等变形。",
+      "examples": [
+        "已知 $f'(3)=2$，求 $\\lim_{h\\to0}\\frac{f(3-h)-f(3)}{2h}$：原式 $=\\frac{1}{2}\\lim_{h\\to0}\\frac{f(3-h)-f(3)}{-h}\\cdot(-1)=\\frac{1}{2}f'(3)\\cdot(-1)=-1$",
+        "$\\lim_{x\\to1}\\frac{f(x^2)-f(1)}{x-1} = \\lim_{x\\to1}\\frac{f(x^2)-f(1)}{x^2-1}\\cdot(x+1) = f'(1)\\cdot2$"
+      ],
+      "counter_examples": [
+        "$\\lim_{h\\to0}\\frac{f(x_0+h)-f(x_0-h)}{2h}$ 存在不能推出 $f'(x_0)$ 存在（分子两个动点，可构造反例）",
+        "$\\lim_{h\\to0^+}\\frac{f(x_0+h^2)-f(x_0)}{h^2}$ 存在只能推出右导数存在"
+      ],
+      "notes": "这是重要的解题思想，与洛必达法则的区别：已知一点处导数值求极限时，必须用定义法（走定义）才能得满分，用洛必达法则逻辑不严谨（因为只知一点可导，不知邻域可导）。",
+      "related_to": [
+        "导数定义",
+        "洛必达法则"
+      ],
+      "sources": []
+    },
+    "导函数": {
+      "name": "导函数",
+      "type": "定义",
+      "definition": "如果函数 $f(x)$ 在区间 $I$ 上每一点都可导，则区间 $I$ 上的每一点 $x$ 都有一个导数值与之对应，由此构成一个新的函数，称为 $f(x)$ 在区间 $I$ 上的导函数，记作 $f'(x)$ 或 $\\frac{dy}{dx}$。\n\n开区间可导：区间内每一点导数存在。\n闭区间可导：开区间内每点可导，左端点右导数存在，右端点左导数存在。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "导函数由原函数每一点的导数值构成，是对函数求导的运算结果。",
+      "related_to": [
+        "导数定义",
+        "高阶导数"
+      ],
+      "sources": []
+    },
+    "基本初等函数导数公式": {
+      "name": "基本初等函数导数公式",
+      "type": "公式",
+      "definition": "1. $(C)' = 0$（常数）\n2. $(x^\\alpha)' = \\alpha x^{\\alpha-1}$（幂函数）\n3. $(a^x)' = a^x\\ln a$，$(e^x)' = e^x$（指数函数）\n4. $(\\log_a x)' = \\frac{1}{x\\ln a}$，$(\\ln|x|)' = \\frac{1}{x}$（对数函数）\n5. $(\\sin x)' = \\cos x$\n6. $(\\cos x)' = -\\sin x$\n7. $(\\tan x)' = \\sec^2 x = \\frac{1}{\\cos^2 x}$\n8. $(\\cot x)' = -\\csc^2 x = -\\frac{1}{\\sin^2 x}$\n9. $(\\sec x)' = \\sec x \\tan x$\n10. $(\\csc x)' = -\\csc x \\cot x$\n11. $(\\arcsin x)' = \\frac{1}{\\sqrt{1-x^2}}$\n12. $(\\arccos x)' = -\\frac{1}{\\sqrt{1-x^2}}$\n13. $(\\arctan x)' = \\frac{1}{1+x^2}$\n14. $(\\text{arccot } x)' = -\\frac{1}{1+x^2}$",
+      "examples": [
+        "$(x^3)' = 3x^2$，$(\\frac{1}{x})' = -\\frac{1}{x^2}$，$(\\sqrt{x})' = \\frac{1}{2\\sqrt{x}}$"
+      ],
+      "counter_examples": [],
+      "notes": "这是求导运算的\"九九乘法表\"，必须熟练掌握。所有基本初等函数导数可用定义推导，但实际解题时直接使用公式。",
+      "related_to": [
+        "导数定义",
+        "求导法则",
+        "反函数求导",
+        "复合函数求导"
+      ],
+      "sources": []
+    },
+    "求导法则——和差积商": {
+      "name": "求导法则——和差积商",
+      "type": "定理",
+      "definition": "设 $u(x), v(x)$ 可导，则：\n1. **和差**：$(u \\pm v)' = u' \\pm v'$\n2. **乘积**：$(uv)' = u'v + uv'$\n3. **商**：$\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$（$v \\neq 0$）\n4. **常数倍**：$(Cu)' = Cu'$",
+      "examples": [
+        "$(2^x\\ln x)' = 2^x\\ln2\\cdot\\ln x + 2^x\\cdot\\frac{1}{x}$",
+        "$(\\tan x)' = \\left(\\frac{\\sin x}{\\cos x}\\right)' = \\frac{\\cos x\\cdot\\cos x - \\sin x\\cdot(-\\sin x)}{\\cos^2 x} = \\frac{1}{\\cos^2 x} = \\sec^2 x$"
+      ],
+      "counter_examples": [],
+      "notes": "乘积求导口诀：\"前导后不导 + 前不导后导\"。商求导口诀：\"子导母不导 - 子不导母导，除以母平方\"。",
+      "related_to": [
+        "导数定义",
+        "基本初等函数导数",
+        "复合函数求导",
+        "高阶导数"
+      ],
+      "sources": []
+    },
+    "反函数求导法则": {
+      "name": "反函数求导法则",
+      "type": "定理",
+      "definition": "若函数 $x = \\varphi(y)$ 在区间 $I_y$ 上严格单调且连续，在 $y$ 处可导且 $\\varphi'(y) \\neq 0$，则其反函数 $y = f(x)$ 在对应点 $x$ 处可导，且\n$$f'(x) = \\frac{1}{\\varphi'(y)} \\quad \\text{或} \\quad \\frac{dy}{dx} = \\frac{1}{\\frac{dx}{dy}}$$\n即反函数的导数等于原函数导数的倒数。",
+      "examples": [
+        "$y=\\arcsin x$ 的反函数为 $x=\\sin y$，$\\frac{dy}{dx} = \\frac{1}{\\cos y} = \\frac{1}{\\sqrt{1-\\sin^2 y}} = \\frac{1}{\\sqrt{1-x^2}}$"
+      ],
+      "counter_examples": [],
+      "notes": "几何理解：原函数和反函数表示同一条曲线，切线斜率分别对应与 $x$ 轴夹角的正切和与 $y$ 轴夹角的正切，二者互为倒数。",
+      "related_to": [
+        "基本初等函数导数",
+        "指数函数",
+        "对数函数",
+        "三角函数",
+        "反三角函数"
+      ],
+      "sources": []
+    },
+    "复合函数求导法则（链式法则/链导法）": {
+      "name": "复合函数求导法则（链式法则/链导法）",
+      "type": "定理",
+      "definition": "若 $u = g(x)$ 在 $x$ 处可导，$y = f(u)$ 在对应点 $u$ 处可导，则复合函数 $y = f(g(x))$ 在 $x$ 处可导，且\n$$\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx} \\quad \\text{或} \\quad f'(g(x)) = f'(u) \\cdot g'(x)$$\n多层复合的推广：$\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dv}\\cdot\\frac{dv}{dx}$（从外到内逐层求导）。",
+      "examples": [
+        "$y = \\sin(x^2)$：$y' = \\cos(x^2)\\cdot 2x$",
+        "$y = 2\\cos^2\\frac{1}{x}$：$y' = 4\\cos\\frac{1}{x}\\cdot(-\\sin\\frac{1}{x})\\cdot(-\\frac{1}{x^2}) = \\frac{2}{x^2}\\sin\\frac{2}{x}$"
+      ],
+      "counter_examples": [],
+      "notes": "复合函数求导方向与计算函数值方向相反：计算从内到外，求导从外到内。关键点：不能掉尾巴——每次都必须对 $x$ 求导到最后一步。",
+      "related_to": [
+        "基本初等函数导数",
+        "求导法则",
+        "隐函数求导",
+        "参数方程求导"
+      ],
+      "sources": []
+    },
+    "高阶导数的定义": {
+      "name": "高阶导数的定义",
+      "type": "定义",
+      "definition": "如果函数 $y=f(x)$ 的一阶导函数 $f'(x)$ 仍然可导，则其导数称为 $f(x)$ 的二阶导数，记作 $f''(x)$ 或 $\\frac{d^2y}{dx^2}$。\n一般地，$n$ 阶导数是 $n-1$ 阶导函数的导数：\n$$f^{(n)}(x) = \\left[f^{(n-1)}(x)\\right]'$$\n对于一点 $x_0$ 处的 $n$ 阶导数：\n$$f^{(n)}(x_0) = \\lim_{x\\to x_0}\\frac{f^{(n-1)}(x)-f^{(n-1)}(x_0)}{x-x_0}$$",
+      "examples": [
+        "位移 $s(t)$ 的一阶导数是速度 $v(t)$，二阶导数是加速度 $a(t)$"
+      ],
+      "counter_examples": [],
+      "notes": "高阶导数记号：$y''$, $y'''$, $y^{(4)}$, $y^{(5)}$, ..., $y^{(n)}$（四阶以上用圆括号数字以避免与幂次混淆）。",
+      "related_to": [
+        "一阶导数",
+        "导函数"
+      ],
+      "sources": []
+    },
+    "莱布尼茨公式（乘积的高阶导数）": {
+      "name": "莱布尼茨公式（乘积的高阶导数）",
+      "type": "公式",
+      "definition": "设 $u(x)$ 和 $v(x)$ 均有 $n$ 阶导数，则乘积 $uv$ 的 $n$ 阶导数为：\n$$(uv)^{(n)} = \\sum_{k=0}^{n} C_n^k u^{(n-k)} v^{(k)}$$\n其中 $C_n^k = \\frac{n!}{k!(n-k)!}$ 为二项式系数，$u^{(0)} = u$，$v^{(0)} = v$。\n公式形式上类似于二项式展开 $(a+b)^n = \\sum C_n^k a^{n-k}b^k$，将指数换成导数阶数。",
+      "examples": [
+        "求 $f(x)=x^2 e^x$ 的100阶导数：$f^{(100)}(x)=x^2 e^x + 200x e^x + 9900 e^x$"
+      ],
+      "counter_examples": [],
+      "notes": "常用高阶导数公式需记忆：① $(\\sin x)^{(n)} = \\sin(x+\\frac{n\\pi}{2})$；② $(\\cos x)^{(n)} = \\cos(x+\\frac{n\\pi}{2})$；③ $(e^x)^{(n)} = e^x$。",
+      "related_to": [
+        "高阶导数",
+        "乘积求导法则",
+        "二项式定理"
+      ],
+      "sources": []
+    },
+    "高阶导数求法——归纳法": {
+      "name": "高阶导数求法——归纳法",
+      "type": "方法",
+      "definition": "求一阶、二阶导数，观察规律，归纳出 $n$ 阶导数的一般表达式。\n关键在于人为地有意识地寻找规律，如将导数写成便于观察规律的形式（如将 $\\cos x$ 写成 $\\sin(x+\\frac{\\pi}{2})$，将 $\\frac{1}{1+x}$ 写成 $(1+x)^{-1}$）。",
+      "examples": [
+        "$(\\sin x)^{(n)} = \\sin(x + \\frac{n\\pi}{2})$",
+        "$(\\frac{1}{1+x})^{(n)} = \\frac{(-1)^n n!}{(1+x)^{n+1}}$，或 $(\\ln(1+x))^{(n)} = \\frac{(-1)^{n-1}(n-1)!}{(1+x)^n}$",
+        "$f(x)=\\frac{1}{x^2-1}$ 的有理函数，先分解为 $\\frac{1}{2}\\left(\\frac{1}{x-1}-\\frac{1}{x+1}\\right)$，再分别求 $n$ 阶导数"
+      ],
+      "counter_examples": [],
+      "notes": "两种求高阶导数方法：① 求一阶二阶归纳一般规律（无公式可用时用）；② 直接利用公式（莱布尼茨公式等）。对于有理函数，常用方法是分母分解因式后拆项，再用归纳法。",
+      "related_to": [
+        "高阶导数",
+        "莱布尼茨公式"
+      ],
+      "sources": []
+    },
+    "隐函数": {
+      "name": "隐函数",
+      "type": "概念",
+      "definition": "如果变量 $x$ 和 $y$ 之间的函数关系由一个二元方程 $F(x,y)=0$ 确定，且不能（或不易）显化为 $y=f(x)$ 的形式，则称 $y$ 为由该方程所确定的隐函数。\n相对地，能用 $y=f(x)$ 直接表示的函数称为显函数。",
+      "examples": [
+        "$x+y^3+1=0$ 可显化为 $y=-\\sqrt[3]{x+1}$",
+        "$y - x - \\varepsilon\\sin y = 0$（$0<\\varepsilon<1$）可确定隐函数但不能显化"
+      ],
+      "counter_examples": [],
+      "notes": "隐函数存在定理：在一定条件下（如方程满足连续性、单调性等），二元方程可唯一确定 $y$ 为 $x$ 的函数。",
+      "related_to": [
+        "隐函数求导",
+        "显函数",
+        "对数求导法"
+      ],
+      "sources": []
+    },
+    "隐函数求导法": {
+      "name": "隐函数求导法",
+      "type": "方法",
+      "definition": "对方程 $F(x, y) = 0$ 两边同时对 $x$ 求导，求导时将 $y$ 视为 $x$ 的函数（即 $y=y(x)$），然后从所得方程中解出 $y'$。\n\n**一般步骤**：\n1. 方程两边对 $x$ 求导（记住 $y$ 是 $x$ 的函数，遇到 $y$ 的函数项需用链式法则，乘以 $y'$）\n2. 解出 $y'$ 的表达式\n3. 若需求二阶导数，则对一阶导数的表达式（或原方程两边再对 $x$ 求一次导）继续求导，代入已知点值计算",
+      "examples": [
+        "$y^5 + 2y - x = 0$，两边对 $x$ 求导：$5y^4 y' + 2y' - 1 = 0$，解得 $y' = \\frac{1}{5y^4+2}$",
+        "$y = 1 + xe^y$ 在 $x=0$ 处求 $y''(0)$：先由原方程得 $y(0)=1$；一阶导 $y' = e^y + x e^y y'$ 代入得 $y'(0)=e$；再求二阶导代入得 $y''(0)=2e^2$"
+      ],
+      "counter_examples": [],
+      "notes": "隐函数求导的关键是：记住 $y$ 是 $x$ 的函数，对 $y$ 的复合函数求导后必须乘以 $y'$。",
+      "related_to": [
+        "隐函数",
+        "复合函数求导",
+        "对数求导法"
+      ],
+      "sources": []
+    },
+    "对数求导法": {
+      "name": "对数求导法",
+      "type": "方法",
+      "definition": "先在函数等式两边取自然对数，再利用隐函数求导法两边对 $x$ 求导，最后求出 $y'$。\n\n**适用情形**：\n1. **幂指函数**：底数和指数都含变量，形如 $y = u(x)^{v(x)}$\n2. **连乘连除开方**：形如 $y = \\frac{\\prod f_i(x)}{\\prod g_j(x)}$ 或多个因子的乘积、商、根式",
+      "examples": [
+        "幂指函数 $y=(1+x^2)^{\\sin x}$：$\\ln y = \\sin x \\ln(1+x^2)$，两边求导得 $\\frac{y'}{y} = \\cos x\\ln(1+x^2) + \\sin x\\cdot\\frac{2x}{1+x^2}$",
+        "连乘连除：$y=\\sqrt[3]{\\frac{x(x^2+1)}{(x^2-1)^2}}$，取对数后把乘除变加减再求导"
+      ],
+      "counter_examples": [],
+      "notes": "取对数时若不能确定 $y$ 正负，需加绝对值：$\\ln|y|$。但 $\\ln|x|$ 的导数仍然是 $\\frac{1}{x}$，所以不必担心绝对值。对数求导法本质是隐函数求导法的应用。",
+      "related_to": [
+        "隐函数求导",
+        "幂指函数",
+        "复合函数求导"
+      ],
+      "sources": []
+    },
+    "幂指函数": {
+      "name": "幂指函数",
+      "type": "概念",
+      "definition": "形如 $y = u(x)^{v(x)}$ 的函数，其底数和指数都含有自变量 $x$，既不是幂函数（指数应为常数），也不是指数函数（底数应为常数）。",
+      "examples": [
+        "$y = x^x$，$y = (1+x^2)^{\\sin x}$，$y = (\\sin x)^{\\ln(1+x^2)}$"
+      ],
+      "counter_examples": [],
+      "notes": "幂指函数求导有两种方法：① 对数求导法（两边取对数再求导）；② 改写为指数形式：$u^v = e^{v\\ln u}$，再用复合函数求导法。",
+      "related_to": [
+        "对数求导法",
+        "隐函数求导",
+        "复合函数求导"
+      ],
+      "sources": []
+    },
+    "参数方程确定的函数的导数": {
+      "name": "参数方程确定的函数的导数",
+      "type": "方法",
+      "definition": "若曲线由参数方程 $\\begin{cases} x = \\varphi(t) \\\\ y = \\psi(t) \\end{cases}$ 确定，且 $\\varphi'(t) \\neq 0$，则 $y$ 作为 $x$ 的函数可导，且\n\n**一阶导数**：\n$$\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{\\psi'(t)}{\\varphi'(t)}$$\n\n**二阶导数**：\n$$\\frac{d^2y}{dx^2} = \\frac{d}{dt}\\left(\\frac{dy}{dx}\\right) \\cdot \\frac{dt}{dx} = \\frac{d}{dt}\\left(\\frac{\\psi'(t)}{\\varphi'(t)}\\right) \\cdot \\frac{1}{\\varphi'(t)}$$\n$$= \\frac{\\psi''(t)\\varphi'(t) - \\psi'(t)\\varphi''(t)}{[\\varphi'(t)]^3}$$\n（或直接用推导思想：对一阶导数的结果再次对 $x$ 求导，注意对 $x$ 求导时中间变量是 $t$，需再乘 $\\frac{dt}{dx} = \\frac{1}{\\varphi'(t)}$）",
+      "examples": [
+        "摆线（旋轮线）$\\begin{cases} x = a(t - \\sin t) \\\\ y = a(1 - \\cos t) \\end{cases}$，$\\frac{dy}{dx} = \\frac{a\\sin t}{a(1-\\cos t)} = \\frac{\\sin t}{1-\\cos t}$",
+        "$\\begin{cases} x = \\arctan t \\\\ y = \\ln(1+t^2) \\end{cases}$，$\\frac{dy}{dx}=2t$，$\\frac{d^2y}{dx^2}=2(1+t^2)$"
+      ],
+      "counter_examples": [],
+      "notes": "求二阶导数时最容易犯的错误：直接对公式结果对 $t$ 求导后忘了乘 $\\frac{dt}{dx}$。记住分子分母都是 $t$ 的函数，对 $x$ 求导需过渡 $t$：$\\frac{d}{dx} = \\frac{d}{dt}\\cdot\\frac{dt}{dx}$。",
+      "related_to": [
+        "复合函数求导",
+        "反函数求导",
+        "隐函数求导"
+      ],
+      "sources": []
+    },
+    "相关变化率": {
+      "name": "相关变化率",
+      "type": "方法",
+      "definition": "若两个相关变量 $x$ 和 $y$ 都随时间 $t$ 变化，且满足某种关系 $F(x,y)=0$，已知其中一个变量对时间的变化率，求另一个变量对时间的变化率的问题，称为相关变化率问题。\n\n**一般方法**：\n1. 建立两个相关量之间的关系式\n2. 等式两边对时间 $t$ 求导（隐函数求导法的应用）\n3. 代入已知变化率和已知量值，解出所求变化率",
+      "examples": [
+        "倒置圆锥形容器（底面半径5cm，高5cm），以每秒3cm³的速度加水，求 $t=1$ 秒时水面上升速率。\n解：$V=\\frac{\\pi}{3}h^3$，$\\frac{dV}{dt}=3$，$\\frac{dV}{dt}=\\pi h^2\\frac{dh}{dt}$，代入 $t=1$ 时 $V=3$ 得 $h^3=\\frac{9}{\\pi}$，从而 $\\frac{dh}{dt}=\\sqrt[3]{\\frac{3}{\\pi^2}}$"
+      ],
+      "counter_examples": [],
+      "notes": "相关变化率问题数三不要求，数一数二要求。",
+      "related_to": [
+        "隐函数求导",
+        "复合函数求导",
+        "导数定义"
+      ],
+      "sources": []
+    },
+    "微分的概念": {
+      "name": "微分的概念",
+      "type": "定义",
+      "definition": "设函数 $y=f(x)$ 在点 $x_0$ 的某邻域内有定义，若函数的改变量 $\\Delta y = f(x_0+\\Delta x)-f(x_0)$ 可表示为\n$$\\Delta y = A\\Delta x + o(\\Delta x) \\quad (\\Delta x \\to 0)$$\n其中 $A$ 是与 $\\Delta x$ 无关的常数，则称 $f$ 在 $x_0$ 处**可微**，并称 $A\\Delta x$ 为 $f$ 在 $x_0$ 处的**微分**，记作\n$$\\mathrm{d}y|_{x=x_0} = A\\Delta x$$\n通常 $\\Delta x$ 记作 $\\mathrm{d}x$，故 $\\mathrm{d}y = A\\mathrm{d}x$。",
+      "examples": [
+        "$f(x)=x^2$ 在 $x=x_0$ 处：$\\Delta y = 2x_0\\Delta x + (\\Delta x)^2$，其中 $2x_0\\Delta x$ 是微分，$(\\Delta x)^2=o(\\Delta x)$"
+      ],
+      "counter_examples": [],
+      "notes": "微分是函数改变量的**线性主部**——既是 $\\Delta x$ 的线性函数，又是 $\\Delta y$ 的主要部分（$A\\neq0$ 时与 $\\Delta x$ 同阶无穷小）。",
+      "related_to": [
+        "可微与可导的关系",
+        "微分的几何意义",
+        "线性主部"
+      ],
+      "sources": []
+    },
+    "可微与可导的关系": {
+      "name": "可微与可导的关系",
+      "type": "定理",
+      "definition": "函数 $f(x)$ 在 $x_0$ 处可微的**充要条件**是 $f(x)$ 在 $x_0$ 处可导，并且 $\\mathrm{d}y|_{x=x_0} = f'(x_0)\\mathrm{d}x$。\n\n**证明概要**：\n- （可微 $\\Rightarrow$ 可导）由 $\\Delta y = A\\Delta x + o(\\Delta x)$ 得 $\\frac{\\Delta y}{\\Delta x} \\to A = f'(x_0)$\n- （可导 $\\Rightarrow$ 可微）由 $\\lim_{\\Delta x\\to0}\\frac{\\Delta y}{\\Delta x} = f'(x_0)$ 得 $\\frac{\\Delta y}{\\Delta x} = f'(x_0)+\\alpha$（$\\alpha\\to0$），即 $\\Delta y = f'(x_0)\\Delta x + \\alpha\\Delta x$，$\\alpha\\Delta x = o(\\Delta x)$",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "该定理有两大意义：① 将可微性的判定归结为可导性的判定；② 将微分的计算归结为导数的计算。但导数与微分是两个不同的概念：导数是变化率（比值极限），微分是函数改变量的线性主部（一个无穷小量）。",
+      "related_to": [
+        "微分",
+        "导数定义",
+        "导数与微分的关系"
+      ],
+      "sources": []
+    },
+    "微分的几何意义": {
+      "name": "微分的几何意义",
+      "type": "性质",
+      "definition": "微分 $\\mathrm{d}y = f'(x_0)\\mathrm{d}x$ 在几何上表示曲线 $y=f(x)$ 在点 $(x_0,f(x_0))$ 处的切线上纵坐标的改变量（切线增量）。\n\n$\\Delta y$（函数改变量）是曲线上纵坐标的改变量，$\\mathrm{d}y$（微分）是切线上纵坐标的改变量。\n当 $\\Delta x$ 很小时，$\\Delta y \\approx \\mathrm{d}y$，即用切线上的改变量近似曲线上的改变量（\"以直代曲\"）。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "微积分的核心思想：在微小局部用均匀变化（切线/直线）代替非均匀变化（曲线），得到近似值，再通过取极限精确化。",
+      "related_to": [
+        "微分",
+        "切线",
+        "以直代曲"
+      ],
+      "sources": []
+    },
+    "微分的运算法则": {
+      "name": "微分的运算法则",
+      "type": "定理",
+      "definition": "设 $u, v$ 可微，则：\n1. **和差**：$\\mathrm{d}(u \\pm v) = \\mathrm{d}u \\pm \\mathrm{d}v$\n2. **乘积**：$\\mathrm{d}(uv) = v\\mathrm{d}u + u\\mathrm{d}v$\n3. **商**：$\\mathrm{d}\\left(\\frac{u}{v}\\right) = \\frac{v\\mathrm{d}u - u\\mathrm{d}v}{v^2}$\n4. **基本初等函数微分公式**：由 $\\mathrm{d}f(x) = f'(x)\\mathrm{d}x$ 可写出所有基本初等函数的微分公式（只需在导数公式后乘 $\\mathrm{d}x$）。",
+      "examples": [
+        "$\\mathrm{d}(x^\\alpha) = \\alpha x^{\\alpha-1}\\mathrm{d}x$，$\\mathrm{d}(\\sin x) = \\cos x\\mathrm{d}x$，$\\mathrm{d}(e^x) = e^x\\mathrm{d}x$"
+      ],
+      "counter_examples": [],
+      "notes": "微分公式与导数公式一一对应，只需在每个公式后乘以 $\\mathrm{d}x$。",
+      "related_to": [
+        "微分",
+        "求导法则",
+        "基本初等函数导数"
+      ],
+      "sources": []
+    },
+    "微分形式不变性": {
+      "name": "微分形式不变性",
+      "type": "性质",
+      "definition": "无论 $u$ 是自变量还是中间变量，函数 $y=f(u)$ 的微分形式始终为 $\\mathrm{d}y = f'(u)\\mathrm{d}u$。\n\n即：若 $y=f(u)$，$u=g(x)$，则\n$$\\mathrm{d}y = f'(u)\\mathrm{d}u = f'(g(x))\\cdot g'(x)\\mathrm{d}x = y'_x\\mathrm{d}x$$\n两种写法等价，这就是微分形式的不变性。",
+      "examples": [
+        "求 $y=\\ln(1+x^2)$ 的微分：直接法 $\\mathrm{d}y = \\frac{2x}{1+x^2}\\mathrm{d}x$；形式不变性法 $\\mathrm{d}y = \\frac{1}{1+x^2}\\mathrm{d}(1+x^2) = \\frac{2x}{1+x^2}\\mathrm{d}x$"
+      ],
+      "counter_examples": [],
+      "notes": "微分形式不变性为求微分提供了另一种途径：可以逐层微分而不必显式写出复合函数分解。这是微分的独特优势之一。",
+      "related_to": [
+        "微分",
+        "复合函数求导",
+        "链式法则"
+      ],
+      "sources": []
+    },
+    "n阶连续可导": {
+      "name": "n阶连续可导",
+      "type": "定义",
+      "definition": "若 $f(x)$ 的 $n$ 阶导函数在区间上连续，则称 $f$ 在该区间上 $n$ 阶连续可导。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "n阶连续可导比n阶可导条件更强，要求n阶导函数本身也连续。",
+      "related_to": [
+        "高阶导数",
+        "导函数",
+        "连续"
+      ],
+      "sources": []
+    },
+    "费马引理 (Fermat's Lemma)": {
+      "name": "费马引理 (Fermat's Lemma)",
+      "type": "定理 (Lemma)",
+      "definition": "如果函数 $f(x)$ 在 $x_0$ 处取得极值（极大值或极小值），且在该点可导，则 $f'(x_0) = 0$。",
+      "examples": [
+        "若 $f(x) = x^2$ 在 $x=0$ 处取得极小值，则 $f'(0)=0$",
+        "若 $f(x) = \\sin x$ 在 $x=\\frac{\\pi}{2}$ 处取得极大值，则 $f'(\\frac{\\pi}{2})=0$"
+      ],
+      "counter_examples": [
+        "$f(x) = |x|$ 在 $x=0$ 处取得极小值，但 $f'(0)$ 不存在，不满足费马引理条件",
+        "$f(x) = x^3$ 在 $x=0$ 处 $f'(0)=0$，但 $x=0$ 不是极值点（反例说明费马引理条件是必要而非充分）"
+      ],
+      "notes": "费马引理是导数与极值之间关系的桥梁，也是罗尔定理证明的核心工具。证明过程使用了导数的定义和极限的保号性：通过分别考察左导数和右导数的符号，推出导数只能为0。核心思想：若一点处可导且取得极值，则左右导数符号相反，只能折中为0。",
+      "related_to": [
+        "rolle_theorem",
+        "extreme_value",
+        "stationary_point",
+        "necessary_condition"
+      ],
+      "sources": []
+    },
+    "罗尔定理 (Rolle's Theorem)": {
+      "name": "罗尔定理 (Rolle's Theorem)",
+      "type": "定理 (Theorem)",
+      "definition": "如果函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，在开区间 $(a,b)$ 内可导，且 $f(a) = f(b)$，则至少存在一点 $\\xi \\in (a,b)$，使得 $f'(\\xi) = 0$。",
+      "examples": [
+        "$f(x)=x^2-1$ 在 $[-1,1]$ 上，$f(-1)=f(1)=0$，存在 $\\xi=0$ 使 $f'(0)=0$"
+      ],
+      "counter_examples": [
+        "$f(x)=|x|$ 在 $[-1,1]$ 上连续但 $x=0$ 不可导，不满足开区间可导条件",
+        "$f(x)=x$ 在 $[0,1]$ 上，$f(0)\\neq f(1)$，不满足端点值相等条件"
+      ],
+      "notes": "罗尔定理是拉格朗日中值定理的特例，也是构造辅助函数证明中值相关问题的最常用工具。证明思路：由闭区间上连续函数必有最值，因 $f(a)=f(b)$，最大值或最小值至少有一个在开区间内部取得，该点即为极值点，由费马引理得导数为0。",
+      "related_to": [
+        "fermat_lemma",
+        "lagrange_mvt",
+        "extreme_value",
+        "maximum_minimum_theorem"
+      ],
+      "sources": []
+    },
+    "拉格朗日中值定理 (Lagrange's Mean Value Theorem)": {
+      "name": "拉格朗日中值定理 (Lagrange's Mean Value Theorem)",
+      "type": "定理 (Theorem)",
+      "definition": "如果函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，在开区间 $(a,b)$ 内可导，则至少存在一点 $\\xi \\in (a,b)$，使得 $f(b) - f(a) = f'(\\xi)(b-a)$。",
+      "examples": [
+        "证明 $\\sin x - \\sin y$ 的绝对值不超过 $|x-y|$",
+        "证明 $\\frac{x}{1+x} < \\ln(1+x) < x$ 当 $x>0$",
+        "证明 $\\arctan x + \\arctan \\frac{1}{x} = \\frac{\\pi}{2}$ 在 $(0,\\infty)$ 上恒成立"
+      ],
+      "counter_examples": [
+        "$f(x)=|x|$ 在 $[-1,1]$ 上，$f(1)-f(-1)=0$ 但不存在 $\\xi$ 使 $f'(\\xi)=0$（因 $x=0$ 不可导）"
+      ],
+      "notes": "拉格朗日中值定理建立了函数增量与导数之间的关系，是微分学的核心定理。几何意义：曲线上至少存在一点，该点的切线平行于连接两端点的弦。它是罗尔定理的推广（当 $f(a)=f(b)$ 时即为罗尔定理），也是柯西中值定理的特例。证明思路：构造辅助函数 $F(x)=f(x)-\\frac{f(b)-f(a)}{b-a}(x-a)$，用罗尔定理。",
+      "related_to": [
+        "rolle_theorem",
+        "cauchy_mvt",
+        "finite_increment_formula",
+        "function_monotonicity"
+      ],
+      "sources": []
+    },
+    "柯西中值定理 (Cauchy's Mean Value Theorem)": {
+      "name": "柯西中值定理 (Cauchy's Mean Value Theorem)",
+      "type": "定理 (Theorem)",
+      "definition": "如果函数 $f(x)$ 和 $g(x)$ 在闭区间 $[a,b]$ 上连续，在开区间 $(a,b)$ 内可导，且 $g'(x) \\neq 0$ 对一切 $x \\in (a,b)$，则至少存在一点 $\\xi \\in (a,b)$，使得 $\\frac{f(b)-f(a)}{g(b)-g(a)} = \\frac{f'(\\xi)}{g'(\\xi)}$。",
+      "examples": [
+        "当 $g(x)=x$ 时，柯西中值定理退化为拉格朗日中值定理",
+        "用于证明洛必达法则"
+      ],
+      "counter_examples": [
+        "若 $g(x)=x^2$ 在 $[-1,1]$，$g'(0)=0$，不满足分母导数不为0的条件"
+      ],
+      "notes": "柯西中值定理是微分中值定理中最一般的形式，拉格朗日中值定理是其特例（取 $g(x)=x$）。证明思路：构造辅助函数 $\\varphi(x)=f(x)-f(a)-\\frac{f(b)-f(a)}{g(b)-g(a)}[g(x)-g(a)]$，用罗尔定理。条件 $g'(x)\\neq0$ 保证了 $g(b)\\neq g(a)$（由反证法及罗尔定理可证）。",
+      "related_to": [
+        "lagrange_mvt",
+        "lhopital_rule",
+        "parametric_equation"
+      ],
+      "sources": []
+    },
+    "洛必达法则 (L'Hôpital's Rule)": {
+      "name": "洛必达法则 (L'Hôpital's Rule)",
+      "type": "法则 (Rule / Method)",
+      "definition": "对于 $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$ 型不定式极限，若 $\\lim\\limits_{x \\to x_0} \\frac{f'(x)}{g'(x)}$ 存在（或为无穷大），则 $\\lim\\limits_{x \\to x_0} \\frac{f(x)}{g(x)} = \\lim\\limits_{x \\to x_0} \\frac{f'(x)}{g'(x)}$。",
+      "examples": [
+        "$\\lim\\limits_{x\\to 0}\\frac{x-\\sin x}{x^3} = \\frac{1}{6}$",
+        "$\\lim\\limits_{x\\to 0}\\frac{\\tan x - x}{x^3} = \\frac{1}{3}$"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x\\to \\infty}\\frac{x-\\sin x}{x+\\sin x}$ 用洛必达后极限不存在（非无穷），但原极限存在为1",
+        "$\\lim\\limits_{x\\to 0}\\frac{x^2\\sin\\frac{1}{x}}{x}$ 用洛必达后极限不存在，但原极限存在为0"
+      ],
+      "notes": "洛必达法则由柯西中值定理证明。注意事项：(1) 必须验证是否为 $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$ 型；(2) 分子分母分别求导后极限必须存在或为无穷大；(3) 可多次使用；(4) 常与等价无穷小代换结合使用以化简。洛必达法则可间接处理的未定式类型：$0\\cdot\\infty$, $\\infty-\\infty$, $1^\\infty$, $0^0$, $\\infty^0$。",
+      "related_to": [
+        "cauchy_mvt",
+        "indeterminate_form",
+        "equivalent_infinitesimal"
+      ],
+      "sources": []
+    },
+    "泰勒公式 (Taylor's Formula)": {
+      "name": "泰勒公式 (Taylor's Formula)",
+      "type": "定理 / 公式 (Theorem / Formula)",
+      "definition": "将函数在某点附近展开为多项式与余项之和。若 $f(x)$ 在 $x_0$ 处 $n$ 阶可导，则 $f(x) = \\sum\\limits_{k=0}^{n} \\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k + R_n(x)$。",
+      "examples": [
+        "$e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots + \\frac{x^n}{n!} + R_n(x)$",
+        "$\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\cdots + R_n(x)$",
+        "$\\ln(1+x) = x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\cdots + R_n(x)$"
+      ],
+      "counter_examples": [],
+      "notes": "泰勒公式是用多项式逼近一般函数的重要工具，建立了函数与高阶导数之间的联系。可分为带有皮亚诺余项的泰勒公式（局部形态，用于极限、极值等）和带有拉格朗日余项的泰勒公式（整体形态，用于不等式、最值等）。拉格朗日中值定理是带拉格朗日余项泰勒公式在 $n=0$ 时的特例。",
+      "related_to": [
+        "peano_remainder",
+        "lagrange_remainder",
+        "maclaurin_formula",
+        "polynomial_approximation"
+      ],
+      "sources": []
+    },
+    "皮亚诺余项 (Peano Remainder)": {
+      "name": "皮亚诺余项 (Peano Remainder)",
+      "type": "概念 (Concept)",
+      "definition": "泰勒公式中，余项 $R_n(x) = o((x-x_0)^n)$ 表示 $x\\to x_0$ 时余项是 $(x-x_0)^n$ 的高阶无穷小。",
+      "examples": [
+        "$e^x = 1 + x + \\frac{x^2}{2!} + o(x^2)$ 当 $x\\to 0$"
+      ],
+      "counter_examples": [],
+      "notes": "皮亚诺余项仅给出了余项的定性描述（高阶无穷小），不能进行定量误差估计，因此只能在展开点的邻域内使用（局部泰勒公式）。条件：$f(x)$ 在 $x_0$ 处 $n$ 阶可导即可。",
+      "related_to": [
+        "taylor_formula",
+        "higher_order_infinitesimal",
+        "local_taylor"
+      ],
+      "sources": []
+    },
+    "拉格朗日余项 (Lagrange Remainder)": {
+      "name": "拉格朗日余项 (Lagrange Remainder)",
+      "type": "概念 (Concept)",
+      "definition": "泰勒公式中，余项 $R_n(x) = \\frac{f^{(n+1)}(\\xi)}{(n+1)!}(x-x_0)^{n+1}$，其中 $\\xi$ 介于 $x$ 与 $x_0$ 之间。",
+      "examples": [
+        "$e^x = 1 + x + \\frac{x^2}{2!} + \\cdots + \\frac{x^n}{n!} + \\frac{e^{\\xi}}{(n+1)!}x^{n+1}$",
+        "$\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\cdots + \\frac{\\sin^{(n+1)}(\\xi)}{(n+1)!}x^{n+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "拉格朗日余项给出了误差的具体表达式，可以定量分析误差大小。当 $f^{(n+1)}(x)$ 有界时，可在较大范围内用多项式逼近函数（整体泰勒公式）。条件：$f(x)$ 在包含 $x$ 的区间内 $n+1$ 阶可导。拉格朗日中值定理是当 $n=0$ 时的特例。",
+      "related_to": [
+        "taylor_formula",
+        "global_taylor",
+        "lagrange_mvt"
+      ],
+      "sources": []
+    },
+    "麦克劳林公式 (Maclaurin Formula)": {
+      "name": "麦克劳林公式 (Maclaurin Formula)",
+      "type": "公式 (Formula)",
+      "definition": "当泰勒公式中的 $x_0=0$ 时，称为麦克劳林公式：$f(x) = \\sum\\limits_{k=0}^{n} \\frac{f^{(k)}(0)}{k!}x^k + R_n(x)$。",
+      "examples": [
+        "$\\frac{1}{1-x} = 1 + x + x^2 + \\cdots + x^n + o(x^n)$",
+        "$(1+x)^\\alpha = 1 + \\alpha x + \\frac{\\alpha(\\alpha-1)}{2!}x^2 + \\cdots + R_n(x)$"
+      ],
+      "counter_examples": [],
+      "notes": "麦克劳林公式是泰勒公式在 $x_0=0$ 处的特例，也是最常用的泰勒展开形式。常见的麦克劳林展开式（$x\\to 0$）：$e^x$, $\\sin x$, $\\cos x$, $\\ln(1+x)$, $(1+x)^\\alpha$, $\\frac{1}{1-x}$, $\\arctan x$ 等，需熟练掌握。",
+      "related_to": [
+        "taylor_formula",
+        "common_expansions"
+      ],
+      "sources": []
+    },
+    "常用泰勒展开（麦克劳林公式） (Common Maclaurin Expansions)": {
+      "name": "常用泰勒展开（麦克劳林公式） (Common Maclaurin Expansions)",
+      "type": "公式集 (Formula Collection)",
+      "definition": "基本初等函数在 $x=0$ 附近的泰勒展开式。",
+      "examples": [
+        "用泰勒展开求极限 $\\lim\\limits_{x\\to 0}\\frac{\\cos x - e^{-\\frac{x^2}{2}}}{x^4}$",
+        "用泰勒展开求 $f(x)=x^2\\ln(1+x)$ 在 $x=0$ 处的 $n$ 阶导数"
+      ],
+      "counter_examples": [],
+      "notes": "这些展开式需熟练掌握。在求极限时遵循两个原则：(1) 上下同阶原则——分母是 $x^k$ 则分子展到 $x^k$ 项；(2) 幂次抵消原则——两个展开式做差时，展到不抵消的最低次项。",
+      "related_to": [
+        "maclaurin_formula",
+        "taylor_formula",
+        "limit_calculation",
+        "higher_order_derivative"
+      ],
+      "sources": []
+    },
+    "函数的单调性 (Monotonicity of Functions)": {
+      "name": "函数的单调性 (Monotonicity of Functions)",
+      "type": "概念 / 定理 (Concept / Theorem)",
+      "definition": "设 $f(x)$ 在 $[a,b]$ 连续，在 $(a,b)$ 可导。若在 $(a,b)$ 内 $f'(x) \\geq 0$（且等号只在有限个点成立），则 $f(x)$ 在 $[a,b]$ 上单调递增；若 $f'(x) \\leq 0$（且等号只在有限个点成立），则 $f(x)$ 单调递减。",
+      "examples": [
+        "$f(x)=e^x - x - 1$，由 $f'(x)=e^x-1$ 可得 $(-\\infty,0)$ 递减，$(0,\\infty)$ 递增",
+        "证明 $x > \\sin x$ 当 $x>0$：令 $F(x)=x-\\sin x$，$F'(x)=1-\\cos x \\geq 0$"
+      ],
+      "counter_examples": [
+        "$f(x)=x^3$，$f'(0)=0$ 但函数整体单调递增（等号只在单点成立，不影响）"
+      ],
+      "notes": "用导数判定单调性是证明不等式最常用的方法之一。证明基于拉格朗日中值定理：对任意 $x_1<x_2$，$f(x_2)-f(x_1)=f'(\\xi)(x_2-x_1)$。当 $f'(x)\\geq0$ 时，导数为0的点只能出现在有限个点上，否则可能破坏单调性。",
+      "related_to": [
+        "lagrange_mvt",
+        "inequality_proof",
+        "extreme_value"
+      ],
+      "sources": []
+    },
+    "极值 (Extreme Value / Local Extremum)": {
+      "name": "极值 (Extreme Value / Local Extremum)",
+      "type": "概念 (Concept)",
+      "definition": "若存在 $\\delta>0$，使得对任意 $x \\in (x_0-\\delta, x_0+\\delta)$ 有 $f(x) \\leq f(x_0)$（或 $f(x) \\geq f(x_0)$），则称 $f(x_0)$ 为极大值（或极小值），$x_0$ 为极大值点（或极小值点）。",
+      "examples": [
+        "$f(x)=x^2$ 在 $x=0$ 处取得极小值 $0$",
+        "$f(x)=\\sin x$ 在 $x=\\frac{\\pi}{2}$ 处取得极大值 $1$"
+      ],
+      "counter_examples": [
+        "$f(x)=x^3$ 在 $x=0$ 处 $f'(0)=0$ 但不是极值点",
+        "$f(x)= \\begin{cases} x^2\\sin\\frac{1}{x}, & x\\neq 0 \\\\ 0, & x=0 \\end{cases}$ 在 $x=0$ 处 $f'(0)=0$ 但任意邻域内振荡，不是极值"
+      ],
+      "notes": "极值是局部概念，只与邻域内函数值比较。可能取得极值的点只有两种：驻点（$f'(x)=0$）和导数不存在的点。判定方法：(1) 第一充分条件——看两侧一阶导数是否变号；(2) 第二充分条件——$f'(x_0)=0$ 且 $f''(x_0)<0$ 则为极大值，$f''(x_0)>0$ 则为极小值。",
+      "related_to": [
+        "fermat_lemma",
+        "stationary_point",
+        "first_derivative_test",
+        "second_derivative_test",
+        "maximum_minimum"
+      ],
+      "sources": []
+    },
+    "驻点 (Stationary Point / Critical Point)": {
+      "name": "驻点 (Stationary Point / Critical Point)",
+      "type": "概念 (Concept)",
+      "definition": "使 $f'(x)=0$ 的点称为函数的驻点。",
+      "examples": [
+        "$f(x)=x^2$ 的驻点为 $x=0$（也是极小值点）",
+        "$f(x)=x^3$ 的驻点为 $x=0$（但不是极值点）"
+      ],
+      "counter_examples": [
+        "$f(x)=|x|$ 在 $x=0$ 处取得极小值，但导数不存在，不是驻点"
+      ],
+      "notes": "可导函数的极值点必为驻点，但驻点不一定是极值点（如 $x^3$）。驻点与极值点的关系：可导条件下，极值点 $\\subset$ 驻点。",
+      "related_to": [
+        "extreme_value",
+        "fermat_lemma"
+      ],
+      "sources": []
+    },
+    "极值的第一充分条件 (First Derivative Test for Extremum)": {
+      "name": "极值的第一充分条件 (First Derivative Test for Extremum)",
+      "type": "判定准则 (Criterion)",
+      "definition": "设 $f(x)$ 在 $x_0$ 的某邻域内可导（$x_0$ 处可导或连续即可）。若在 $x_0$ 左侧 $f'(x)>0$，右侧 $f'(x)<0$，则 $x_0$ 为极大值点；若左侧 $f'(x)<0$，右侧 $f'(x)>0$，则为极小值点；若两侧不变号，则不是极值点。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "第一充分条件适用于驻点和导数不存在的点两种情形，适用范围更广。缺点是需要判断两侧导数的符号，有时计算较繁琐。",
+      "related_to": [
+        "extreme_value",
+        "second_derivative_test"
+      ],
+      "sources": []
+    },
+    "极值的第二充分条件 (Second Derivative Test for Extremum)": {
+      "name": "极值的第二充分条件 (Second Derivative Test for Extremum)",
+      "type": "判定准则 (Criterion)",
+      "definition": "设 $f(x)$ 在 $x_0$ 处二阶可导，且 $f'(x_0)=0$。若 $f''(x_0)<0$，则 $x_0$ 为极大值点；若 $f''(x_0)>0$，则 $x_0$ 为极小值点；若 $f''(x_0)=0$，无法判定。",
+      "examples": [
+        "$f(x)=x^2$，$f'(0)=0$，$f''(0)=2>0$，故 $x=0$ 为极小值点"
+      ],
+      "counter_examples": [
+        "$f(x)=x^4$，$f'(0)=0$，$f''(0)=0$，但 $x=0$ 是极小值点（此时第二充分条件失效）",
+        "$f(x)=-x^4$，$f'(0)=0$，$f''(0)=0$，但 $x=0$ 是极大值点"
+      ],
+      "notes": "第二充分条件使用方便（只需计算该点二阶导数），但局限性较大：要求二阶导数存在且不为0，且不能判断导数不存在的点。证明利用二阶导数的定义和极限保号性。",
+      "related_to": [
+        "extreme_value",
+        "first_derivative_test",
+        "taylor_formula"
+      ],
+      "sources": []
+    },
+    "最值 (Global Maximum / Minimum)": {
+      "name": "最值 (Global Maximum / Minimum)",
+      "type": "概念 (Concept)",
+      "definition": "函数在定义区间上的最大函数值称为最大值，最小函数值称为最小值。闭区间上连续函数必有最大值和最小值。",
+      "examples": [
+        "求 $f(x)=2x^3-3x^2$ 在 $[-1,2]$ 上的最值",
+        "球体内接直圆锥体积最大问题"
+      ],
+      "counter_examples": [
+        "$f(x)=x$ 在 $(0,1)$ 上既无最大值也无最小值（开区间）",
+        "$f(x)=\\frac{1}{x}$ 在 $(0,1]$ 上无最大值"
+      ],
+      "notes": "求闭区间上连续函数最值的三步法：(1) 找出开区间内所有可能极值点（驻点+不可导点）；(2) 计算这些点及端点的函数值；(3) 比较得出最值。最值与极值的区别：最值是全局概念，极值是局部概念。区间内部的最值一定是极值。",
+      "related_to": [
+        "extreme_value",
+        "extreme_value_theorem"
+      ],
+      "sources": []
+    },
+    "曲线的凹凸性 (Concavity and Convexity of Curves)": {
+      "name": "曲线的凹凸性 (Concavity and Convexity of Curves)",
+      "type": "概念 / 定理 (Concept / Theorem)",
+      "definition": "设 $f(x)$ 在区间 $I$ 上连续。若对任意 $x_1,x_2 \\in I$ 有 $f(\\frac{x_1+x_2}{2}) < \\frac{f(x_1)+f(x_2)}{2}$，则称曲线为凹的（向下凸）；若不等号反向，则称曲线为凸的（向上凸）。判定定理：若 $f''(x)>0$ 则曲线凹，$f''(x)<0$ 则曲线凸。",
+      "examples": [
+        "$y=x^3$，$y''=6x$，$x<0$ 时凸，$x>0$ 时凹",
+        "$y=e^{-x^2}$（正态分布曲线），拐点在 $x=\\pm\\frac{1}{\\sqrt{2}}$"
+      ],
+      "counter_examples": [
+        "$y=x^4$，$y''(0)=0$ 但曲线在 $x=0$ 两侧均为凹（不是拐点）"
+      ],
+      "notes": "凹凸性的定义在不同教材中可能有差异（凹/凸与上凸/下凸对应关系不同）。本输出采用武忠祥体系：$f''(x)>0$ 为凹（曲线向下凸），$f''(x)<0$ 为凸（曲线向上凸）。证明用拉格朗日中值定理和二阶导数符号。",
+      "related_to": [
+        "inflection_point",
+        "second_derivative",
+        "function_graph"
+      ],
+      "sources": []
+    },
+    "拐点 (Inflection Point)": {
+      "name": "拐点 (Inflection Point)",
+      "type": "概念 (Concept)",
+      "definition": "连续曲线上凹凸性发生变化的点称为拐点。",
+      "examples": [
+        "$y=x^3$，$x=0$ 是拐点（由凸变凹）",
+        "$y=e^{-x^2}$，$x=\\pm\\frac{1}{\\sqrt{2}}$ 是拐点"
+      ],
+      "counter_examples": [
+        "$y=x^4$，$x=0$ 处 $y''=0$ 但两侧凹凸性未变化，不是拐点"
+      ],
+      "notes": "可能为拐点的点：二阶导数为0的点或二阶导数不存在的点。是否为拐点须判定两侧二阶导数是否变号。拐点是曲线上的点 $(x_0, f(x_0))$，而非单纯的 $x=x_0$。",
+      "related_to": [
+        "concavity_convexity",
+        "second_derivative"
+      ],
+      "sources": []
+    },
+    "渐近线 (Asymptote)": {
+      "name": "渐近线 (Asymptote)",
+      "type": "概念 (Concept)",
+      "definition": "若曲线上的动点沿曲线趋于无穷远时，该点到某直线的距离趋于0，则称该直线为曲线的渐近线。分为水平渐近线、垂直渐近线（铅垂渐近线）和斜渐近线。",
+      "examples": [
+        "$y = \\frac{x-1}{e^x-1}$ 有水平渐近线 $y=0$（$x\\to-\\infty$），垂直渐近线 $x=0$，斜渐近线 $y=x-1$（$x\\to+\\infty$）",
+        "$y = x + \\frac{4}{x^2}$ 有垂直渐近线 $x=0$，斜渐近线 $y=x$"
+      ],
+      "counter_examples": [],
+      "notes": "渐近线的判定：(1) 水平渐近线：$\\lim\\limits_{x\\to\\infty}f(x)=A$ 则 $y=A$；(2) 垂直渐近线：$\\lim\\limits_{x\\to x_0}f(x)=\\infty$ 则 $x=x_0$；(3) 斜渐近线 $y=kx+b$：$k=\\lim\\limits_{x\\to\\infty}\\frac{f(x)}{x}$，$b=\\lim\\limits_{x\\to\\infty}(f(x)-kx)$。需注意 $x\\to+\\infty$ 和 $x\\to-\\infty$ 可能不同。",
+      "related_to": [
+        "function_graph",
+        "limit"
+      ],
+      "sources": []
+    },
+    "辅助函数法 (Auxiliary Function Method)": {
+      "name": "辅助函数法 (Auxiliary Function Method)",
+      "type": "方法 (Method)",
+      "definition": "为应用中值定理，构造一个新的函数 $F(x)$，使其满足罗尔定理条件，且其导数与待证结论相关。",
+      "examples": [
+        "证拉格朗日定理时构造 $F(x)=f(x)-\\frac{f(b)-f(a)}{b-a}(x-a)$",
+        "证柯西定理时构造 $\\varphi(x)=f(x)-f(a)-\\frac{f(b)-f(a)}{g(b)-g(a)}[g(x)-g(a)]$"
+      ],
+      "counter_examples": [],
+      "notes": "构造辅助函数是微分中值定理证明题的核心技巧。常见模式：(1) 乘积求导法则——左边为 $u'v+uv'$ 形式时，大 $F=uv$；(2) 商的求导法则；(3) 指数因子——含 $f'+\\alpha f$ 时乘以 $e^{\\alpha x}$。关键在于观察结论形式，将其视为某函数的导数。",
+      "related_to": [
+        "rolle_theorem",
+        "lagrange_mvt",
+        "cauchy_mvt"
+      ],
+      "sources": []
+    },
+    "有限增量公式 (Finite Increment Formula)": {
+      "name": "有限增量公式 (Finite Increment Formula)",
+      "type": "公式 (Formula)",
+      "definition": "由拉格朗日中值定理改写得到：$f(x_0+\\Delta x) - f(x_0) = f'(x_0+\\theta\\Delta x)\\Delta x$，其中 $\\theta \\in (0,1)$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "有限增量公式是拉格朗日中值定理的另一种形式，与微分 $dy=f'(x_0)\\Delta x$ 相比：微分是近似等式（$\\Delta y \\approx dy$），有限增量公式是精确等式，但中间点 $\\xi = x_0+\\theta\\Delta x$ 不确定。",
+      "related_to": [
+        "lagrange_mvt",
+        "differential"
+      ],
+      "sources": []
+    },
+    "不定式 / 未定式 (Indeterminate Forms)": {
+      "name": "不定式 / 未定式 (Indeterminate Forms)",
+      "type": "概念 (Concept)",
+      "definition": "极限运算中无法直接应用极限运算法则的七种形式：$\\frac{0}{0}$、$\\frac{\\infty}{\\infty}$、$0\\cdot\\infty$、$\\infty-\\infty$、$1^\\infty$、$0^0$、$\\infty^0$。",
+      "examples": [
+        "$\\frac{0}{0}$ 型：$\\lim\\limits_{x\\to 0}\\frac{\\sin x}{x}$",
+        "$1^\\infty$ 型：$\\lim\\limits_{x\\to 0}(1+x)^{\\frac{1}{x}}$"
+      ],
+      "counter_examples": [],
+      "notes": "洛必达法则可直接处理 $\\frac{0}{0}$ 和 $\\frac{\\infty}{\\infty}$ 型。其他五种类型可通过变形转化为前两种：$0\\cdot\\infty$ 可化为 $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$；$\\infty-\\infty$ 通过通分化为 $\\frac{0}{0}$；$1^\\infty, 0^0, \\infty^0$ 通过取指数 $e^{g\\ln f}$ 化为 $0\\cdot\\infty$ 型。",
+      "related_to": [
+        "lhopital_rule",
+        "limit_calculation",
+        "equivalent_infinitesimal"
+      ],
+      "sources": []
+    },
+    "等价无穷小代换 (Equivalent Infinitesimal Substitution)": {
+      "name": "等价无穷小代换 (Equivalent Infinitesimal Substitution)",
+      "type": "方法 (Method)",
+      "definition": "当 $x\\to 0$ 时，常用等价无穷小关系：$\\sin x \\sim x$，$\\tan x \\sim x$，$\\arcsin x \\sim x$，$\\arctan x \\sim x$，$\\ln(1+x) \\sim x$，$e^x-1 \\sim x$，$1-\\cos x \\sim \\frac{1}{2}x^2$，$(1+x)^\\alpha-1 \\sim \\alpha x$ 等。",
+      "examples": [
+        "$\\lim\\limits_{x\\to 0}\\frac{x-\\sin x}{x^3} = \\frac{1}{6}$（也可先用洛必达）",
+        "$\\lim\\limits_{x\\to 0}\\frac{\\tan x - x}{x^3} = \\frac{1}{3}$"
+      ],
+      "counter_examples": [
+        "加减法中不能随意使用等价无穷小代换（除非满足特定条件）"
+      ],
+      "notes": "等价无穷小代换是化简极限计算的重要手段，常与洛必达法则结合使用。使用原则：乘除因子可代换，加减项需谨慎（一般不能在加减中直接代换）。",
+      "related_to": [
+        "lhopital_rule",
+        "limit_calculation",
+        "indeterminate_form"
+      ],
+      "sources": []
+    },
+    "零点定理 (Zero Point Theorem / Intermediate Value Theorem)": {
+      "name": "零点定理 (Zero Point Theorem / Intermediate Value Theorem)",
+      "type": "定理 (Theorem)",
+      "definition": "若 $f(x)$ 在闭区间 $[a,b]$ 上连续，且 $f(a)\\cdot f(b) < 0$，则至少存在一点 $\\xi \\in (a,b)$，使得 $f(\\xi)=0$。",
+      "examples": [
+        "证明方程 $f(x)+x-1=0$ 在 $(0,1)$ 内有根"
+      ],
+      "counter_examples": [],
+      "notes": "零点定理是闭区间上连续函数介值定理的特例，常用于证明方程根的存在性。在微分中值定理的证明题中，常作为铺垫（第一问）与罗尔定理（第二问）配合使用。",
+      "related_to": [
+        "function_continuity",
+        "intermediate_value_property"
+      ],
+      "sources": []
+    },
+    "双中值问题 (Double Mean Value Problem)": {
+      "name": "双中值问题 (Double Mean Value Problem)",
+      "type": "题型 (Problem Type)",
+      "definition": "需要证明存在两个不同的中间点 $\\xi$ 和 $\\eta$（$\\xi \\neq \\eta$），使得某个含两个中值的等式成立的问题。",
+      "examples": [
+        "已知 $f(0)=0,\\; f(1)=1$，证明存在 $\\xi,\\eta\\in(0,1),\\;\\xi\\neq\\eta$ 使得 $f'(\\xi)f'(\\eta)=1$"
+      ],
+      "counter_examples": [],
+      "notes": "双中值问题的标准解法：将区间分割为两个子区间，分别在每个子区间上用一次中值定理。分割点通常选已知函数值的特殊点（如第一问求出的点、中点等）。两中值地位平等时常用两次拉格朗日；地位不平等时可能用一次柯西一次拉格朗日。",
+      "related_to": [
+        "lagrange_mvt",
+        "cauchy_mvt"
+      ],
+      "sources": []
+    },
+    "局部泰勒公式与整体泰勒公式 (Local vs Global Taylor Formula)": {
+      "name": "局部泰勒公式与整体泰勒公式 (Local vs Global Taylor Formula)",
+      "type": "概念对比 (Concept Comparison)",
+      "definition": "带有皮亚诺余项的泰勒公式（局部）用于研究函数在一点附近的局部形态（极限、极值）；带有拉格朗日余项的泰勒公式（整体）用于研究函数在整个区间上的整体形态（最值、不等式）。",
+      "examples": [
+        "求极限用皮亚诺余项泰勒公式",
+        "证明不等式用拉格朗日余项泰勒公式"
+      ],
+      "counter_examples": [],
+      "notes": "选择原则：研究局部形态（极限、极值）用皮亚诺余项；研究整体形态（不等式、最值估计）用拉格朗日余项。拉格朗日中值定理是带拉格朗日余项泰勒公式在 $n=0$ 时的特例。",
+      "related_to": [
+        "peano_remainder",
+        "lagrange_remainder",
+        "taylor_formula"
+      ],
+      "sources": []
+    },
+    "函数图形的描绘 (Function Graph Plotting)": {
+      "name": "函数图形的描绘 (Function Graph Plotting)",
+      "type": "方法 (Method)",
+      "definition": "利用导数等工具系统描绘函数图像的步骤：确定定义域、奇偶性、周期性 → 求一阶导数找单调区间和极值点 → 求二阶导数找凹凸区间和拐点 → 求渐近线 → 列表描点画图。",
+      "examples": [
+        "描绘 $y = \\frac{x^3+4}{x^2}$ 的图像：定义域 $x\\neq0$，递增区间 $(-\\infty,0)$ 和 $(2,\\infty)$，递减区间 $(0,2)$，极小值在 $x=2$，垂直渐近线 $x=0$，斜渐近线 $y=x$"
+      ],
+      "counter_examples": [],
+      "notes": "函数作图是单调性、极值、凹凸性、拐点、渐近线等概念的综合应用，是第三章内容的总结性运用。",
+      "related_to": [
+        "function_monotonicity",
+        "concavity_convexity",
+        "inflection_point",
+        "extreme_value",
+        "asymptote"
+      ],
+      "sources": []
+    },
+    "泰勒公式求极限 (Limit Calculation Using Taylor Formula)": {
+      "name": "泰勒公式求极限 (Limit Calculation Using Taylor Formula)",
+      "type": "方法 (Method)",
+      "definition": "利用皮亚诺余项的泰勒展开，将函数替换为多项式，将极限转化为多项式极限来求解。原则：上下同阶原则（分母为 $x^k$，分子展到 $x^k$ 项）和幂次抵消原则（和差形式展到不抵消的最低次项）。",
+      "examples": [
+        "$\\lim\\limits_{x\\to 0}\\frac{\\cos x - e^{-\\frac{x^2}{2}}}{x^4} = -\\frac{1}{12}$",
+        "$\\lim\\limits_{x\\to 0}\\frac{\\ln(1+x)\\ln(1-x)-\\ln(1-x^2)}{x^4} = -\\frac{5}{12}$"
+      ],
+      "counter_examples": [],
+      "notes": "泰勒公式求极限安全万能，不易出错，但有时不是最简洁的方法。需熟练掌握常用函数的麦克劳林展开式，注意展开到足够阶数。",
+      "related_to": [
+        "taylor_formula",
+        "peano_remainder",
+        "common_expansions",
+        "limit_calculation"
+      ],
+      "sources": []
+    },
+    "泰勒公式求高阶导数 (Higher-Order Derivatives via Taylor Formula)": {
+      "name": "泰勒公式求高阶导数 (Higher-Order Derivatives via Taylor Formula)",
+      "type": "方法 (Method)",
+      "definition": "利用泰勒展开的唯一性：若 $f(x) = \\sum a_k (x-x_0)^k + o((x-x_0)^n)$，则 $a_k = \\frac{f^{(k)}(x_0)}{k!}$，从而可从展开式中提取高阶导数值。",
+      "examples": [
+        "求 $f(x)=x^2\\ln(1+x)$ 在 $x=0$ 处的 $n$ 阶导数：通过 $\\ln(1+x)$ 的展开式乘 $x^2$ 后提取 $x^n$ 的系数"
+      ],
+      "counter_examples": [],
+      "notes": "此方法只能求某一点处的各阶导数值，不能得到导函数的表达式。泰勒公式的唯一性是基于多项式逼近的唯一性。",
+      "related_to": [
+        "taylor_formula",
+        "maclaurin_formula",
+        "higher_order_derivative"
+      ],
+      "sources": []
+    },
+    "泰勒公式证明不等式 (Inequality Proof Using Taylor Formula)": {
+      "name": "泰勒公式证明不等式 (Inequality Proof Using Taylor Formula)",
+      "type": "方法 (Method)",
+      "definition": "利用带拉格朗日余项的泰勒公式，通过余项的符号或放缩来证明不等式。关键在于：选择展开点 $x_0$（导数信息丰富的点）和展开阶数（由已知最高阶导数决定）。",
+      "examples": [
+        "已知 $f''(x)>0$，$\\lim\\limits_{x\\to 0}\\frac{f(x)}{x}=1$，证明 $f(x)>x$ 对 $x\\neq 0$ 成立"
+      ],
+      "counter_examples": [],
+      "notes": "泰勒证明不等式的核心：展开点 $x_0$ 通常选择函数值和各阶导数值信息最丰富的点；被展开点 $x$ 通常选择区间端点或任意点。余项形式决定了不等号方向。",
+      "related_to": [
+        "taylor_formula",
+        "lagrange_remainder",
+        "inequality_proof"
+      ],
+      "sources": []
+    },
+    "四大中值定理 (Four Major Mean Value Theorems)": {
+      "name": "四大中值定理 (Four Major Mean Value Theorems)",
+      "type": "体系 (Framework)",
+      "definition": "微分学中值定理的核心体系：罗尔定理、拉格朗日中值定理、柯西中值定理、泰勒中值定理（带拉格朗日余项的泰勒公式）。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "关系图谱：罗尔定理 $\\xleftarrow{\\text{特例}}$ 拉格朗日中值定理 $\\xleftarrow{\\text{特例}}$ 柯西中值定理；拉格朗日中值定理是泰勒中值定理（$n=0$）的特例。证明方向相反：用罗尔定理证明拉格朗日，用拉格朗日证明柯西。这些定理的核心意义：建立了函数值与导数值之间的联系（局部与整体的桥梁），为用导数研究函数奠定了理论基础。",
+      "related_to": [
+        "rolle_theorem",
+        "lagrange_mvt",
+        "cauchy_mvt",
+        "taylor_formula"
+      ],
+      "sources": []
+    },
+    "证明不等式的三种方法 (Three Methods for Proving Inequalities)": {
+      "name": "证明不等式的三种方法 (Three Methods for Proving Inequalities)",
+      "type": "方法论 (Methodology)",
+      "definition": "微分学中证明不等式的三种常用方法：(1) 利用拉格朗日中值定理放缩；(2) 利用单调性（导数符号）；(3) 利用最值（求闭区间上函数最值）。",
+      "examples": [
+        "(1) 证 $\\frac{x}{1+x} < \\ln(1+x) < x$（拉格朗日）；(2) 证 $x>\\sin x$（单调性）；(3) 证 $x^p+(1-x)^p \\in [2^{1-p}, 1]$（最值）"
+      ],
+      "counter_examples": [],
+      "notes": "这三种方法是微分学证明不等式的核心工具，需根据题目特征灵活选择。当不等式出现同一函数在两点的函数值差时优先考虑拉格朗日；当可构造函数求导时优先考虑单调性；当区间有限且函数连续时可以考虑最值法。",
+      "related_to": [
+        "lagrange_mvt",
+        "function_monotonicity",
+        "maximum_minimum"
+      ],
+      "sources": []
+    },
+    "最值应用题 (Applied Optimization Problems)": {
+      "name": "最值应用题 (Applied Optimization Problems)",
+      "type": "题型 (Problem Type)",
+      "definition": "利用导数求实际应用问题中的最大值或最小值。步骤：(1) 建立目标函数（选择合适变量）；(2) 求导数找驻点；(3) 判定极值并确定最值。",
+      "examples": [
+        "半径为 $R$ 的球中内接直圆锥体积最大的问题"
+      ],
+      "counter_examples": [],
+      "notes": "关键步骤是建立目标函数，变量选择直接影响计算复杂度。应尽量选择使函数形式简单的变量，避免过于复杂的求导运算。",
+      "related_to": [
+        "maximum_minimum",
+        "extreme_value",
+        "derivative_application"
+      ],
+      "sources": []
+    },
+    "泰勒展开的唯一性 (Uniqueness of Taylor Expansion)": {
+      "name": "泰勒展开的唯一性 (Uniqueness of Taylor Expansion)",
+      "type": "性质 (Property)",
+      "definition": "若 $f(x)$ 在 $x_0$ 处能展开为 $f(x) = a_0 + a_1(x-x_0) + \\cdots + a_n(x-x_0)^n + o((x-x_0)^n)$，则系数 $a_k = \\frac{f^{(k)}(x_0)}{k!}$ 由 $f$ 唯一确定。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "唯一性是泰勒公式求高阶导数的理论基础。任何方式得到的多项式展开，只要形式正确，其系数与泰勒系数相同。",
+      "related_to": [
+        "taylor_formula",
+        "higher_order_derivative"
+      ],
+      "sources": []
+    },
+    "不定积分 (Indefinite Integral)": {
+      "name": "不定积分 (Indefinite Integral)",
+      "type": "definition",
+      "definition": "不定积分是微分的逆运算。对于函数 $f(x)$，其全体原函数 $F(x)+C$ 称为 $f(x)$ 的不定积分，记为 $\\\\int f(x)\\\\,dx = F(x) + C$。其中 $\\\\int$ 为积分号，$f(x)$ 为被积函数，$x$ 为积分变量，$dx$ 为微分符号，$C$ 为任意常数。",
+      "examples": [
+        "$\\\\int 2x\\\\,dx = x^2 + C$",
+        "$\\\\int e^x\\\\,dx = e^x + C$"
+      ],
+      "counter_examples": [],
+      "notes": "不定积分从英文 anti-derivative 理解更清晰：anti（反）+ derivative（导数）= 反导数/反求导。不定积分和微分才是真正的运算-逆运算对子。",
+      "related_to": [
+        "原函数",
+        "微分",
+        "积分变量",
+        "被积函数",
+        "任意常数C"
+      ],
+      "sources": []
+    },
+    "原函数 (Antiderivative / Primitive Function)": {
+      "name": "原函数 (Antiderivative / Primitive Function)",
+      "type": "definition",
+      "definition": "设函数 $f(x)$ 定义在某区间 $I$ 上，若存在可导函数 $F(x)$，使得在该区间内每一点都有 $F'(x) = f(x)$，则称 $F(x)$ 是 $f(x)$ 在该区间上的一个原函数。",
+      "examples": [
+        "$F(x)=x^2$ 是 $f(x)=2x$ 的一个原函数",
+        "$F(x)=\\\\sin x$ 是 $f(x)=\\\\cos x$ 的一个原函数"
+      ],
+      "counter_examples": [],
+      "notes": "若 $F(x)$ 和 $G(x)$ 都是 $f(x)$ 的原函数，则 $G(x)-F(x)=C$（常数）。即同一个函数的任意两个原函数之间只相差一个常数。",
+      "related_to": [
+        "不定积分",
+        "导数"
+      ],
+      "sources": []
+    },
+    "任意常数C (Arbitrary Constant C)": {
+      "name": "任意常数C (Arbitrary Constant C)",
+      "type": "definition",
+      "definition": "在不定积分结果 $\\\\int f(x)\\\\,dx = F(x) + C$ 中，$C$ 表示任意常数，代表全体原函数之间的差别。因为常数函数的导数为零，所以原函数加上任意常数仍然是原函数。",
+      "examples": [
+        "$\\\\int 2x\\\\,dx = x^2 + C$",
+        "$\\\\int \\\\cos x\\\\,dx = \\\\sin x + C$"
+      ],
+      "counter_examples": [],
+      "notes": "不加 $C$ 的不定积分结果是不完整的（几乎漏掉所有解），在考试中通常会被扣分。加 $C$ 的时机：一旦所有积分符号都去掉就应该加 $C$。",
+      "related_to": [
+        "不定积分",
+        "原函数"
+      ],
+      "sources": []
+    },
+    "原函数存在定理 (Existence Theorem of Antiderivatives)": {
+      "name": "原函数存在定理 (Existence Theorem of Antiderivatives)",
+      "type": "theorem",
+      "definition": "如果函数 $f(x)$ 在区间 $I$ 上处处连续，则 $f(x)$ 在 $I$ 上一定存在原函数。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "初等函数在其定义区间上处处连续，因此初等函数在其有定义的区间上一定有原函数。但有些初等函数的原函数不能用初等函数表示（称为\"积不出\"）。",
+      "related_to": [
+        "原函数",
+        "连续函数",
+        "初等函数"
+      ],
+      "sources": []
+    },
+    "积分变量 (Integration Variable)": {
+      "name": "积分变量 (Integration Variable)",
+      "type": "definition",
+      "definition": "在积分 $\\\\int f(x)\\\\,dx$ 中，记号 $dx$ 中的 $x$ 称为积分变量，表示对哪个变量做积分。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "积分变量类似于求和指标，在定积分中确定积分方向，在不定积分中确定对哪个变量求原函数。",
+      "related_to": [
+        "不定积分",
+        "被积函数"
+      ],
+      "sources": []
+    },
+    "被积函数 (Integrand)": {
+      "name": "被积函数 (Integrand)",
+      "type": "definition",
+      "definition": "在积分 $\\\\int f(x)\\\\,dx$ 中，位于积分号 $\\\\int$ 与微分符号 $dx$ 之间的函数 $f(x)$ 称为被积函数。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "",
+      "related_to": [
+        "不定积分",
+        "积分变量"
+      ],
+      "sources": []
+    },
+    "微分符号dx的积分意义 (Differential Notation in Integration)": {
+      "name": "微分符号dx的积分意义 (Differential Notation in Integration)",
+      "type": "definition",
+      "definition": "在不定积分中，$\\\\int f(x)\\\\,dx$ 可解释为已知一个函数的微分为 $f(x)\\\\,dx$，求该函数（即求原函数）。$\\\\int$ 和 $d$ 互为逆运算：$\\\\int dF(x) = F(x) + C$，$d\\\\int f(x)\\\\,dx = f(x)\\\\,dx$。",
+      "examples": [
+        "$\\\\int d(\\\\sin x) = \\\\sin x + C$",
+        "$d\\\\int x^2\\\\,dx = x^2\\\\,dx$"
+      ],
+      "counter_examples": [],
+      "notes": "不定积分符号最初规定为微分的逆运算而非求导的逆运算，这个理解能更好地衔接定积分。$\\\\int$ 与 $d$ 具有\"抵消\"关系。",
+      "related_to": [
+        "不定积分",
+        "微分",
+        "凑微分法"
+      ],
+      "sources": []
+    },
+    "不定积分的线性性 (Linearity of Indefinite Integral)": {
+      "name": "不定积分的线性性 (Linearity of Indefinite Integral)",
+      "type": "theorem",
+      "definition": "若 $f(x)$ 和 $g(x)$ 的原函数都存在，则对于任意常数 $k,l$，有：$\\\\int [k f(x) + l g(x)]\\\\,dx = k\\\\int f(x)\\\\,dx + l\\\\int g(x)\\\\,dx$。",
+      "examples": [
+        "$\\\\int (2x + 3\\\\cos x)\\\\,dx = x^2 + 3\\\\sin x + C$"
+      ],
+      "counter_examples": [],
+      "notes": "这是不定积分最基本的运算性质，可以将复杂积分拆成若干简单积分之和。系数可以提到积分号外面。",
+      "related_to": [
+        "不定积分"
+      ],
+      "sources": []
+    },
+    "基本积分公式 (Basic Integration Formulas)": {
+      "name": "基本积分公式 (Basic Integration Formulas)",
+      "type": "method",
+      "definition": "将求导公式逆向得到的一系列基本不定积分公式，是计算不定积分的基础工具集。",
+      "examples": [
+        "$\\\\int x^\\\\alpha\\\\,dx = \\\\frac{x^{\\\\alpha+1}}{\\\\alpha+1} + C \\\\ (\\\\alpha \\\\ne -1)$",
+        "$\\\\int \\\\frac{1}{x}\\\\,dx = \\\\ln|x| + C$",
+        "$\\\\int e^x\\\\,dx = e^x + C$",
+        "$\\\\int a^x\\\\,dx = \\\\frac{a^x}{\\\\ln a} + C$",
+        "$\\\\int \\\\cos x\\\\,dx = \\\\sin x + C$",
+        "$\\\\int \\\\sin x\\\\,dx = -\\\\cos x + C$",
+        "$\\\\int \\\\sec^2 x\\\\,dx = \\\\tan x + C$",
+        "$\\\\int \\\\csc^2 x\\\\,dx = -\\\\cot x + C$",
+        "$\\\\int \\\\frac{1}{\\\\sqrt{1-x^2}}\\\\,dx = \\\\arcsin x + C$",
+        "$\\\\int \\\\frac{1}{1+x^2}\\\\,dx = \\\\arctan x + C$",
+        "$\\\\int \\\\sec x\\\\tan x\\\\,dx = \\\\sec x + C$",
+        "$\\\\int \\\\csc x\\\\cot x\\\\,dx = -\\\\csc x + C$",
+        "$\\\\int \\\\sec x\\\\,dx = \\\\ln|\\\\sec x + \\\\tan x| + C$",
+        "$\\\\int \\\\csc x\\\\,dx = \\\\ln|\\\\csc x - \\\\cot x| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "积分公式分为\"滚瓜烂熟组\"（基本初等函数公式，需牢记）和\"考前背一背组\"（高频但可推导的公式）。常用拓展公式包括：$\\\\int \\\\frac{1}{a^2+x^2}\\\\,dx = \\\\frac{1}{a}\\\\arctan\\\\frac{x}{a}+C$，$\\\\int \\\\frac{1}{\\\\sqrt{a^2-x^2}}\\\\,dx = \\\\arcsin\\\\frac{x}{a}+C$ 等。",
+      "related_to": [
+        "不定积分",
+        "幂函数积分",
+        "三角函数积分",
+        "指数函数积分"
+      ],
+      "sources": []
+    },
+    "幂函数积分公式 (Power Function Integration)": {
+      "name": "幂函数积分公式 (Power Function Integration)",
+      "type": "method",
+      "definition": "$\\\\int x^\\\\alpha\\\\,dx = \\\\frac{x^{\\\\alpha+1}}{\\\\alpha+1} + C \\\\ (\\\\alpha \\\\ne -1)$。操作口诀：次数加1，前面取倒数。当 $\\\\alpha = -1$ 时，$\\\\int \\\\frac{1}{x}\\\\,dx = \\\\ln|x| + C$。",
+      "examples": [
+        "$\\\\int x^{\\\\frac{5}{2}}\\\\,dx = \\\\frac{2}{7}x^{\\\\frac{7}{2}} + C$",
+        "$\\\\int \\\\frac{1}{x^4}\\\\,dx = \\\\int x^{-4}\\\\,dx = -\\\\frac{1}{3}x^{-3} + C$"
+      ],
+      "counter_examples": [
+        "$\\\\int x^{-1}\\\\,dx = \\\\ln|x| + C$ （不是幂函数公式，是对数函数）"
+      ],
+      "notes": "当 $\\\\alpha=-1$ 时是例外情况，积分结果为对数函数而非幂函数。$\\\\frac{1}{x}$ 的积分需要加绝对值：$\\\\ln|x|$，因为 $x$ 可能取负值。",
+      "related_to": [
+        "基本积分公式"
+      ],
+      "sources": []
+    },
+    "$\\\\frac{1}{x}$ 的积分 (Integral of 1/x)": {
+      "name": "$\\\\frac{1}{x}$ 的积分 (Integral of 1/x)",
+      "type": "method",
+      "definition": "$\\\\int \\\\frac{1}{x}\\\\,dx = \\\\ln|x| + C$。当 $x>0$ 时，$\\\\ln x$ 的原函数成立；当 $x<0$ 时，$\\\\ln(-x)$ 求导也等于 $\\\\frac{1}{x}$。合并为 $\\\\ln|x|$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "绝对值符号不可省略，因为 $\\\\frac{1}{x}$ 在 $x<0$ 时也有定义，原函数应为 $\\\\ln(-x)$。",
+      "related_to": [
+        "基本积分公式",
+        "幂函数积分公式"
+      ],
+      "sources": []
+    },
+    "分项积分法 (Term-by-Term Integration)": {
+      "name": "分项积分法 (Term-by-Term Integration)",
+      "type": "method",
+      "definition": "将复杂的被积函数通过恒等变形（如代数恒等变形、加一项减一项、有理函数裂项、三角恒等变换等）拆分为多个简单积分之和，再利用线性性逐项积分。",
+      "examples": [
+        "$\\\\int \\\\frac{x^4+1}{x^2+1}\\\\,dx = \\\\int (x^2 - 1 + \\\\frac{2}{x^2+1})\\\\,dx = \\\\frac{x^3}{3} - x + 2\\\\arctan x + C$",
+        "$\\\\int \\\\tan^2 x\\\\,dx = \\\\int (\\\\sec^2 x - 1)\\\\,dx = \\\\tan x - x + C$"
+      ],
+      "counter_examples": [],
+      "notes": "分项是不定积分中最重要的基本思想之一。常通过照分母抄、加一项减一项实现分项。",
+      "related_to": [
+        "不定积分的线性性",
+        "有理函数积分",
+        "三角函数积分"
+      ],
+      "sources": []
+    },
+    "第一类换元积分法（凑微分法）(First Substitution Rule / Integration by Differential)": {
+      "name": "第一类换元积分法（凑微分法）(First Substitution Rule / Integration by Differential)",
+      "type": "method",
+      "definition": "若 $\\\\int f(u)\\\\,du = F(u) + C$，且 $u = \\\\varphi(x)$ 可导，则 $\\\\int f(\\\\varphi(x))\\\\varphi'(x)\\\\,dx = \\\\int f(\\\\varphi(x))\\\\,d\\\\varphi(x) = F(\\\\varphi(x)) + C$。核心操作：将被积函数中一部分看作 $\\\\varphi'(x)\\\\,dx = d\\\\varphi(x)$，凑成关于 $\\\\varphi(x)$ 的微分形式。",
+      "examples": [
+        "$\\\\int \\\\cos(2x+3)\\\\,dx = \\\\frac{1}{2}\\\\int \\\\cos(2x+3)\\\\,d(2x+3) = \\\\frac{1}{2}\\\\sin(2x+3) + C$",
+        "$\\\\int \\\\frac{\\\\ln^2 x}{x}\\\\,dx = \\\\int \\\\ln^2 x\\\\,d(\\\\ln x) = \\\\frac{1}{3}\\\\ln^3 x + C$",
+        "$\\\\int \\\\tan x\\\\,dx = \\\\int \\\\frac{\\\\sin x}{\\\\cos x}\\\\,dx = -\\\\int \\\\frac{1}{\\\\cos x}\\\\,d(\\\\cos x) = -\\\\ln|\\\\cos x| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "第一类换元法是复合函数求导的逆运算。凑微分时，要求被积函数的一部分是另一部分内层的导数（相差常数倍也可）。变量无需显式换掉，熟练后直接凑微分即可。",
+      "related_to": [
+        "不定积分",
+        "复合函数求导",
+        "微分",
+        "第二类换元积分法"
+      ],
+      "sources": []
+    },
+    "常用凑微分公式 (Common Differential Compositions)": {
+      "name": "常用凑微分公式 (Common Differential Compositions)",
+      "type": "method",
+      "definition": "常见凑微分模式：$\\\\frac{1}{x}\\\\,dx = d\\\\ln x$，$e^x\\\\,dx = de^x$，$\\\\sin x\\\\,dx = -d\\\\cos x$，$\\\\cos x\\\\,dx = d\\\\sin x$，$\\\\sec^2 x\\\\,dx = d\\\\tan x$，$\\\\frac{1}{\\\\sqrt{x}}\\\\,dx = 2d\\\\sqrt{x}$，$\\\\frac{1}{1+x^2}\\\\,dx = d\\\\arctan x$，$\\\\frac{1}{\\\\sqrt{1-x^2}}\\\\,dx = d\\\\arcsin x$。常数 $c$ 可自由进出微分号：$d(c\\\\varphi(x)) = c\\\\,d\\\\varphi(x)$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "凑微分时需要注意系数匹配：$d(ax+b) = a\\\\,dx$，所以 $dx = \\\\frac{1}{a}d(ax+b)$。常数加减不影响微分：$d(x+c) = dx$。",
+      "related_to": [
+        "第一类换元积分法",
+        "微分"
+      ],
+      "sources": []
+    },
+    "第二类换元积分法 (Second Substitution Rule)": {
+      "name": "第二类换元积分法 (Second Substitution Rule)",
+      "type": "method",
+      "definition": "设 $x = \\\\varphi(t)$ 单调可导，且 $\\\\varphi'(t) \\\\ne 0$，则 $\\\\int f(x)\\\\,dx \\\\xrightarrow{x=\\\\varphi(t)} \\\\int f(\\\\varphi(t))\\\\varphi'(t)\\\\,dt$。积分完成后，需用反函数 $t = \\\\varphi^{-1}(x)$ 将变量代回。",
+      "examples": [
+        "$\\\\int \\\\frac{1}{1+\\\\sqrt{x}}\\\\,dx \\\\xrightarrow{t=\\\\sqrt{x}} \\\\int \\\\frac{2t}{1+t}\\\\,dt$",
+        "$\\\\int \\\\sqrt{a^2-x^2}\\\\,dx \\\\xrightarrow{x=a\\\\sin t} \\\\int a^2\\\\cos^2 t\\\\,dt$"
+      ],
+      "counter_examples": [],
+      "notes": "第二类换元法比第一类更直接——把被积函数中\"不顺眼\"的部分整体换掉。换元函数必须单调以保证可反解。$\\\\varphi'(t) \\\\ne 0$ 保证单调性。",
+      "related_to": [
+        "不定积分",
+        "第一类换元积分法",
+        "三角代换",
+        "根式代换",
+        "倒代换",
+        "万能代换"
+      ],
+      "sources": []
+    },
+    "三角代换 (Trigonometric Substitution)": {
+      "name": "三角代换 (Trigonometric Substitution)",
+      "type": "method",
+      "definition": "含 $\\\\sqrt{a^2 - x^2}$：令 $x = a\\\\sin t$，$t \\\\in [-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}]$。含 $\\\\sqrt{x^2 + a^2}$：令 $x = a\\\\tan t$，$t \\\\in (-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2})$。含 $\\\\sqrt{x^2 - a^2}$：令 $x = a\\\\sec t$，$t \\\\in [0, \\\\pi],\\\\ t\\\\ne \\\\frac{\\\\pi}{2}$。通过恒等变换去掉根号。",
+      "examples": [
+        "$\\\\int \\\\sqrt{a^2-x^2}\\\\,dx = \\\\frac{a^2}{2}\\\\arcsin\\\\frac{x}{a} + \\\\frac{x}{2}\\\\sqrt{a^2-x^2} + C$",
+        "$\\\\int \\\\frac{dx}{\\\\sqrt{x^2+a^2}} = \\\\ln|x + \\\\sqrt{x^2+a^2}| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "三角代换的核心思想：利用 $\\\\sin^2t+\\\\cos^2t=1$ 或 $\\\\tan^2t+1=\\\\sec^2t$ 将根号下两项合并为一项从而开方。前两种代换在默认主值区间下可以不加绝对值。",
+      "related_to": [
+        "第二类换元积分法",
+        "辅助三角形"
+      ],
+      "sources": []
+    },
+    "辅助三角形 (Reference Triangle)": {
+      "name": "辅助三角形 (Reference Triangle)",
+      "type": "method",
+      "definition": "在三角代换完成后，通过构建直角三角形将三角函数关系还原为 $x$ 的函数关系。根据换元关系（如 $\\\\sin t = \\\\frac{x}{a}$）在直角三角形中标记边长，从而直接读出 $\\\\cos t$、$\\\\tan t$ 等关于 $x$ 的表达式。",
+      "examples": [
+        "若 $x = a\\\\sin t$，则 $\\\\sin t = \\\\frac{x}{a}$，构造直角三角形：对边 $x$，斜边 $a$，邻边 $\\\\sqrt{a^2-x^2}$，故 $\\\\cos t = \\\\frac{\\\\sqrt{a^2-x^2}}{a}$"
+      ],
+      "counter_examples": [],
+      "notes": "辅助三角形可以避免显式反解 $t$，直接将三角函数的 $t$ 表达式写成 $x$ 函数。适用于所有三角代换。",
+      "related_to": [
+        "三角代换"
+      ],
+      "sources": []
+    },
+    "根式代换 (Radical Substitution)": {
+      "name": "根式代换 (Radical Substitution)",
+      "type": "method",
+      "definition": "令 $t = \\\\sqrt[n]{ax+b}$（或类似的根式形式），将无理式换成 $t$ 的有理式进行积分的方法。",
+      "examples": [
+        "$\\\\int \\\\frac{1}{1+\\\\sqrt{x}}\\\\,dx \\\\xrightarrow{t=\\\\sqrt{x}} \\\\int \\\\frac{2t}{1+t}\\\\,dt$"
+      ],
+      "counter_examples": [],
+      "notes": "根式代换是第二类换元法中最直接的形式——把\"不顺眼\"的根式整体换掉。",
+      "related_to": [
+        "第二类换元积分法"
+      ],
+      "sources": []
+    },
+    "倒代换 (Reciprocal Substitution)": {
+      "name": "倒代换 (Reciprocal Substitution)",
+      "type": "method",
+      "definition": "令 $x = \\\\frac{1}{t}$ 的换元方法，常用于被积函数分母次数高于分子次数的有理函数积分。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "倒代换可以降低分母次数，常用于处理分母次数远高于分子的有理分式。",
+      "related_to": [
+        "第二类换元积分法",
+        "有理函数积分"
+      ],
+      "sources": []
+    },
+    "分部积分法 (Integration by Parts)": {
+      "name": "分部积分法 (Integration by Parts)",
+      "type": "method",
+      "definition": "由乘积求导法则 $[u(x)v(x)]' = u'(x)v(x) + u(x)v'(x)$ 移项并积分得到：$\\\\int u\\\\,dv = uv - \\\\int v\\\\,du$。其中 $du = u'(x)\\\\,dx$，$dv = v'(x)\\\\,dx$。",
+      "examples": [
+        "$\\\\int xe^x\\\\,dx = xe^x - \\\\int e^x\\\\,dx = xe^x - e^x + C$",
+        "$\\\\int x\\\\ln x\\\\,dx = \\\\frac{1}{2}x^2\\\\ln x - \\\\frac{1}{4}x^2 + C$",
+        "$\\\\int \\\\arctan x\\\\,dx = x\\\\arctan x - \\\\frac{1}{2}\\\\ln(1+x^2) + C$"
+      ],
+      "counter_examples": [],
+      "notes": "分部积分法的核心思想：将不易直接积分的 $\\\\int u\\\\,dv$ 转化为较易积分的 $\\\\int v\\\\,du$。关键在 $u$ 和 $dv$ 的选取。",
+      "related_to": [
+        "乘积求导法则",
+        "不定积分"
+      ],
+      "sources": []
+    },
+    "分部积分中u和dv的选取原则（反对幂指三）(LIATE Rule for Integration by Parts)": {
+      "name": "分部积分中u和dv的选取原则（反对幂指三）(LIATE Rule for Integration by Parts)",
+      "type": "method",
+      "definition": "当被积函数为两类不同函数相乘时，选取 $u$ 的优先级（从难积分到易积分）：反三角函数(A) > 对数函数(L) > 幂函数(P) > 指数函数(E) > 三角函数(T)。幂函数×指数函数/三角函数：指数/三角函数凑入 $dv$；幂函数×对数函数/反三角函数：幂函数凑入 $dv$；指数函数×三角函数：可任意选择，通常需两次分部后还原。",
+      "examples": [
+        "$\\\\int x e^x\\\\,dx$：取 $u=x, dv=e^x\\\\,dx$",
+        "$\\\\int x\\\\ln x\\\\,dx$：取 $u=\\\\ln x, dv=x\\\\,dx$",
+        "$\\\\int e^x\\\\sin x\\\\,dx$：取 $u=\\\\sin x, dv=e^x\\\\,dx$，两次分部后移项"
+      ],
+      "counter_examples": [],
+      "notes": "口诀\"反对幂指三\"是选取 $u$ 的优先级顺序。幂函数相对中立，既可做 $u$ 也可做 $dv$；反三角函数和对数函数求导后变简单，故取为 $u$；指数和三角函数积分不改变复杂度，故凑入 $dv$。",
+      "related_to": [
+        "分部积分法"
+      ],
+      "sources": []
+    },
+    "分部积分循环法（还原法）(Integration by Parts with Cyclic Reduction)": {
+      "name": "分部积分循环法（还原法）(Integration by Parts with Cyclic Reduction)",
+      "type": "method",
+      "definition": "当分部积分一次后，右侧出现与左侧相同形式的积分（系数不同），可通过移项求解。步骤：分部积分两次，得到含原积分的方程，移项求解，除以系数得结果。",
+      "examples": [
+        "设 $I = \\\\int e^x\\\\sin x\\\\,dx$，则 $I = e^x\\\\sin x - e^x\\\\cos x - I$，故 $I = \\\\frac{1}{2}e^x(\\\\sin x - \\\\cos x) + C$",
+        "$\\\\int \\\\sec^3 x\\\\,dx = \\\\frac{1}{2}\\\\sec x\\\\tan x + \\\\frac{1}{2}\\\\ln|\\\\sec x + \\\\tan x| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "循环法也称\"分部积分还原\"。注意移项后系数要算准确，不能漏掉 $+C$。",
+      "related_to": [
+        "分部积分法"
+      ],
+      "sources": []
+    },
+    "有理函数 (Rational Function)": {
+      "name": "有理函数 (Rational Function)",
+      "type": "definition",
+      "definition": "形如 $R(x) = \\\\frac{P_n(x)}{Q_m(x)}$ 的函数，其中 $P_n(x)$ 和 $Q_m(x)$ 都是多项式，称为有理函数（有理分式）。",
+      "examples": [
+        "$\\\\frac{x^4+2x^2+4}{x^2+1}$",
+        "$\\\\frac{x^5+x^4-8}{x^3-x}$",
+        "$\\\\frac{x-3}{(x-1)^2(x+1)}$"
+      ],
+      "counter_examples": [],
+      "notes": "有理函数积分是唯一被彻底攻克的积分类型——有一整套系统化方法确保100%可以积分。研究的对象是分母可以因式分解为一次因式和二次因式乘积的有理函数。",
+      "related_to": [
+        "有理函数积分",
+        "真分式",
+        "假分式"
+      ],
+      "sources": []
+    },
+    "真分式与假分式 (Proper vs Improper Rational Functions)": {
+      "name": "真分式与假分式 (Proper vs Improper Rational Functions)",
+      "type": "definition",
+      "definition": "真分式：分子最高次幂严格小于分母最高次幂的有理分式。假分式：分子最高次幂大于等于分母最高次幂的有理分式。假分式可通过多项式除法化为一个多项式与一个真分式的和。",
+      "examples": [
+        "真分式：$\\\\frac{x-3}{(x-1)^2(x+1)}$（分子1次 < 分母3次）",
+        "假分式：$\\\\frac{x^4+2x^2+4}{x^2+1}$ 化为 $x^2+1+\\\\frac{3}{x^2+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "有理函数积分四步法第一步：假分式化为多项式 + 真分式。",
+      "related_to": [
+        "有理函数",
+        "多项式除法"
+      ],
+      "sources": []
+    },
+    "多项式除法 (Polynomial Long Division)": {
+      "name": "多项式除法 (Polynomial Long Division)",
+      "type": "method",
+      "definition": "将假分式的分子多项式除以分母多项式，得到商（多项式）和余数（真分式），类似于整数除法列竖式的操作。即 $\\\\frac{P_n(x)}{Q_m(x)} = \\\\text{多项式} + \\\\frac{R(x)}{Q_m(x)}$，其中 $\\\\deg(R) < \\\\deg(Q)$。",
+      "examples": [
+        "$\\\\frac{x^4+2x^2+4}{x^2+1}$：商 $x^2+1$，余 $3$，故 $= x^2+1 + \\\\frac{3}{x^2+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "多项式除法操作：盯住最高次项，逐次商除，类似数字除法竖式。",
+      "related_to": [
+        "真分式与假分式",
+        "有理函数积分"
+      ],
+      "sources": []
+    },
+    "最简有理分式 (Partial Fractions)": {
+      "name": "最简有理分式 (Partial Fractions)",
+      "type": "definition",
+      "definition": "分母为质因式（不可再分解的一次式或二次式）的幂次，分子次数低于分母的简单有理分式。形如 $\\\\frac{A}{(x-a)^k}$（分母为一次式幂），或 $\\\\frac{Bx+C}{(x^2+px+q)^k}$（分母为二次质因式幂，$p^2-4q<0$）。",
+      "examples": [
+        "$\\\\frac{A}{x-1}$",
+        "$\\\\frac{B}{(x-1)^2}$",
+        "$\\\\frac{Cx+D}{x^2+x+1}$",
+        "$\\\\frac{Ex+F}{(x^2+x+1)^2}$"
+      ],
+      "counter_examples": [],
+      "notes": "任何有理真分式都可以唯一地分解为最简有理分式之和。这是有理函数积分的核心。",
+      "related_to": [
+        "有理函数积分",
+        "部分分式分解"
+      ],
+      "sources": []
+    },
+    "部分分式分解（裂项）(Partial Fraction Decomposition)": {
+      "name": "部分分式分解（裂项）(Partial Fraction Decomposition)",
+      "type": "method",
+      "definition": "将有理真分式按分母的质因式分解结果，拆分为若干个最简有理分式之和。规则：每个 $x-a$ 的 $k$ 次方产生 $k$ 项：$\\\\frac{A_1}{x-a} + \\\\frac{A_2}{(x-a)^2} + \\\\cdots + \\\\frac{A_k}{(x-a)^k}$。每个二次质因式 $x^2+px+q$ 的 $l$ 次方产生 $l$ 项：$\\\\frac{B_1x+C_1}{x^2+px+q} + \\\\frac{B_2x+C_2}{(x^2+px+q)^2} + \\\\cdots + \\\\frac{B_lx+C_l}{(x^2+px+q)^l}$。",
+      "examples": [
+        "$\\\\frac{x-3}{(x-1)^2(x+1)} = \\\\frac{A}{x-1} + \\\\frac{B}{(x-1)^2} + \\\\frac{D}{x+1}$",
+        "$\\\\frac{3x+6}{(x-1)^2(x^2+x+1)} = \\\\frac{A}{x-1} + \\\\frac{B}{(x-1)^2} + \\\\frac{Cx+D}{x^2+x+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "这是有理函数积分最关键的一步。注意二次质因式的判别式必须小于0，且分子为一次式 $Bx+C$。",
+      "related_to": [
+        "最简有理分式",
+        "有理函数积分",
+        "待定系数法",
+        "留数法"
+      ],
+      "sources": []
+    },
+    "待定系数法之左右比对方程组 (Coefficient Comparison Method)": {
+      "name": "待定系数法之左右比对方程组 (Coefficient Comparison Method)",
+      "type": "method",
+      "definition": "将部分分式分解右端通分后，与左端分子比较各次幂的系数，列出线性方程组求解待定系数。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "最朴实的方法，优点是通用无争议，缺点是通分展开计算量较大。",
+      "related_to": [
+        "部分分式分解",
+        "有理函数积分"
+      ],
+      "sources": []
+    },
+    "待定系数法之代入特值 (Substitution of Special Values)": {
+      "name": "待定系数法之代入特值 (Substitution of Special Values)",
+      "type": "method",
+      "definition": "在部分分式分解的通分等式中，代入使某些分母因子为零的 $x$ 值（或其他简单数值），直接解出待定系数。原理：多项式恒等则任意自变量取值均相等。",
+      "examples": [
+        "对 $\\\\frac{x-3}{(x-1)^2(x+1)} = \\\\frac{A}{x-1} + \\\\frac{B}{(x-1)^2} + \\\\frac{D}{x+1}$ 通分后，代入 $x=-1$ 得 $D=-1$，代入 $x=0$ 得另一方程..."
+      ],
+      "counter_examples": [],
+      "notes": "优先代入使分母因子为零的值（此时多数项消失），可快速求解对应系数。本质上是极限过程，但操作时直接代入即可。",
+      "related_to": [
+        "部分分式分解",
+        "有理函数积分"
+      ],
+      "sources": []
+    },
+    "留数法（求部分分式系数）(Residue Method for Partial Fractions)": {
+      "name": "留数法（求部分分式系数）(Residue Method for Partial Fractions)",
+      "type": "method",
+      "definition": "对于形如 $\\\\frac{A_k}{(x-a)^k}$ 的最高次项系数，在等式两边乘以 $(x-a)^k$，再令 $x \\\\to a$ 求极限（操作上直接代入 $x=a$），即可得到 $A_k$ 的值。口诀：\"求谁删谁代谁\"。",
+      "examples": [
+        "对于 $\\\\frac{x-3}{(x-1)^2(x+1)}$，求 $B$（$(x-1)^2$ 的系数）：两边乘以 $(x-1)^2$，代入 $x=1$，得 $B = \\\\frac{1-3}{1+1} = -1$"
+      ],
+      "counter_examples": [],
+      "notes": "留数法源于复变函数中的留数概念，只适用于求最简分式中最高次项的系数。对于低次项系数，可结合极限法（两端乘以 $x$ 后取 $x\\\\to\\\\infty$）或代入具体值求解。",
+      "related_to": [
+        "部分分式分解",
+        "有理函数积分"
+      ],
+      "sources": []
+    },
+    "二次质因式积分之组合法 (Combination Method for Quadratic Factors)": {
+      "name": "二次质因式积分之组合法 (Combination Method for Quadratic Factors)",
+      "type": "method",
+      "definition": "对于 $\\\\int \\\\frac{Bx+C}{x^2+px+q}\\\\,dx$，将分子凑成分母的导数加常数：$Bx+C = \\\\frac{B}{2}(2x+p) + (C - \\\\frac{Bp}{2})$。第一项凑微分得 $\\\\frac{B}{2}\\\\ln|x^2+px+q|$，第二项配方后套 $\\\\arctan$ 公式。",
+      "examples": [
+        "$\\\\int \\\\frac{x-2}{x^2-x+1}\\\\,dx = \\\\frac{1}{2}\\\\int \\\\frac{2x-1}{x^2-x+1}\\\\,dx - \\\\frac{3}{2}\\\\int \\\\frac{dx}{x^2-x+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "组合法是处理二次质因式分母的固定套路，分两步：第一部分凑微分得到对数，第二部分配方后套反正切公式。",
+      "related_to": [
+        "最简有理分式",
+        "有理函数积分",
+        "凑微分法",
+        "配方法"
+      ],
+      "sources": []
+    },
+    "有理函数积分四步法 (Four-Step Method for Rational Function Integration)": {
+      "name": "有理函数积分四步法 (Four-Step Method for Rational Function Integration)",
+      "type": "method",
+      "definition": "1. 假分式化多项式+真分式（多项式除法）。2. 分母因式分解确定质因式。3. 真分式化最简有理分式之和（留数法/特值法/方程组求系数）。4. 逐项积分（幂函数/对数/反正切/组合法）。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "确保100%可以积分出初等函数的系统性方法，是微积分中少数被彻底攻克的问题类型。",
+      "related_to": [
+        "有理函数积分",
+        "部分分式分解",
+        "多项式除法"
+      ],
+      "sources": []
+    },
+    "三角函数有理式 (Trigonometric Rational Function)": {
+      "name": "三角函数有理式 (Trigonometric Rational Function)",
+      "type": "definition",
+      "definition": "由 $\\\\sin x$、$\\\\cos x$ 及常数经过有限次加减乘除四则运算所构成的函数，即 $R(\\\\sin x, \\\\cos x)$ 形式，其中 $R$ 是有理函数。",
+      "examples": [
+        "$\\\\frac{\\\\sin^2 x \\\\cos x}{\\\\cos x - \\\\sin x}$",
+        "$\\\\frac{1}{3\\\\sin^2 x + 4\\\\cos^2 x}$",
+        "$\\\\frac{\\\\sin^3 x}{\\\\cos^4 x}$"
+      ],
+      "counter_examples": [],
+      "notes": "所有三角函数有理式都可用万能代换化为有理函数积分，从而确保可积。",
+      "related_to": [
+        "万能代换",
+        "三角函数积分"
+      ],
+      "sources": []
+    },
+    "万能代换（半角代换）(Universal / Weierstrass Substitution)": {
+      "name": "万能代换（半角代换）(Universal / Weierstrass Substitution)",
+      "type": "method",
+      "definition": "令 $u = \\\\tan\\\\frac{x}{2}$，则 $\\\\sin x = \\\\frac{2u}{1+u^2}$，$\\\\cos x = \\\\frac{1-u^2}{1+u^2}$，$dx = \\\\frac{2}{1+u^2}\\\\,du$。将任何 $R(\\\\sin x, \\\\cos x)$ 的积分转化为有理函数的积分。",
+      "examples": [
+        "$\\\\int \\\\frac{dx}{1+\\\\sin x+\\\\cos x} \\\\xrightarrow{u=\\\\tan\\\\frac{x}{2}} \\\\int \\\\frac{du}{u+1} = \\\\ln|u+1| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "万能代换特别适用于 $\\\\sin x$ 和 $\\\\cos x$ 只有一次的情形。虽然不一定是最简方法，但保证可积。三个公式中分母都是 $1+u^2$。",
+      "related_to": [
+        "三角函数有理式",
+        "第二类换元积分法",
+        "有理函数积分"
+      ],
+      "sources": []
+    },
+    "$\\\\sin^m x \\\\cos^n x$ 型积分的分类处理 (Powers of Sine and Cosine Strategy)": {
+      "name": "$\\\\sin^m x \\\\cos^n x$ 型积分的分类处理 (Powers of Sine and Cosine Strategy)",
+      "type": "method",
+      "definition": "对于 $\\\\int \\\\sin^m x \\\\cos^n x\\\\,dx$：1. $m$ 奇：凑 $d\\\\cos x$。2. $n$ 奇：凑 $d\\\\sin x$。3. $m,n$ 均偶：凑 $d\\\\tan x$（分子分母同除以 $\\\\cos^{m+n}x$）。",
+      "examples": [
+        "$\\\\int \\\\cos^3 x\\\\,dx = \\\\int \\\\cos^2 x\\\\,d\\\\sin x = \\\\sin x - \\\\frac{1}{3}\\\\sin^3 x + C$",
+        "$\\\\int \\\\frac{dx}{3\\\\sin^2 x+4\\\\cos^2 x} \\\\xrightarrow{\\\\div\\\\cos^2 x} \\\\int \\\\frac{d\\\\tan x}{3\\\\tan^2 x+4}$"
+      ],
+      "counter_examples": [],
+      "notes": "此分类法给出了三角函数幂次积分的明确方向，避免\"碰运气\"。凑微分时注意 $\\\\sin x\\\\,dx = -d\\\\cos x$ 的符号。",
+      "related_to": [
+        "三角函数积分",
+        "凑微分法"
+      ],
+      "sources": []
+    },
+    "三角函数积分中构造导数化有理式 (Rationalizing Trigonometric Integrals)": {
+      "name": "三角函数积分中构造导数化有理式 (Rationalizing Trigonometric Integrals)",
+      "type": "method",
+      "definition": "通过分子分母同乘/除某个三角函数，构造出导数形式（如 $\\\\sec^2 x$ 是 $\\\\tan x$ 的导数），将积分转化为关于 $\\\\tan x$ 或 $\\\\sec x$ 的有理式积分。",
+      "examples": [
+        "$\\\\int \\\\frac{dx}{3\\\\sin^2 x+4\\\\cos^2 x} \\\\xrightarrow{\\\\div\\\\cos^2 x} \\\\int \\\\frac{\\\\sec^2 x}{3\\\\tan^2 x+4}\\\\,dx$"
+      ],
+      "counter_examples": [],
+      "notes": "核心思路：将 $\\\\sec^2 x$ 分离出来作为 $d\\\\tan x$ 的微分因子，其余部分全部写成 $\\\\tan x$ 的函数。",
+      "related_to": [
+        "三角函数积分",
+        "凑微分法",
+        "有理函数积分"
+      ],
+      "sources": []
+    },
+    "$\\\\frac{1}{a^2+x^2}$ 型积分公式": {
+      "name": "$\\\\frac{1}{a^2+x^2}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\frac{1}{a^2+x^2}\\\\,dx = \\\\frac{1}{a}\\\\arctan\\\\frac{x}{a} + C$。",
+      "examples": [
+        "$\\\\int \\\\frac{dx}{3+4x^2} = \\\\frac{1}{2\\\\sqrt{3}}\\\\arctan\\\\frac{2x}{\\\\sqrt{3}} + C$"
+      ],
+      "counter_examples": [],
+      "notes": "由 $\\\\int \\\\frac{1}{1+x^2}\\\\,dx = \\\\arctan x + C$ 结合第一类换元推广得到。",
+      "related_to": [
+        "基本积分公式",
+        "第一类换元积分法"
+      ],
+      "sources": []
+    },
+    "$\\\\frac{1}{\\\\sqrt{a^2-x^2}}$ 型积分公式": {
+      "name": "$\\\\frac{1}{\\\\sqrt{a^2-x^2}}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\frac{1}{\\\\sqrt{a^2-x^2}}\\\\,dx = \\\\arcsin\\\\frac{x}{a} + C$，其中 $a > 0$。",
+      "examples": [
+        "$\\\\int \\\\frac{dx}{\\\\sqrt{3-x^2}} = \\\\arcsin\\\\frac{x}{\\\\sqrt{3}} + C$"
+      ],
+      "counter_examples": [],
+      "notes": "注意 $a$ 是平方根号内的常数。",
+      "related_to": [
+        "基本积分公式",
+        "第一类换元积分法",
+        "三角代换"
+      ],
+      "sources": []
+    },
+    "$\\\\frac{1}{x^2-a^2}$ 型积分公式": {
+      "name": "$\\\\frac{1}{x^2-a^2}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\frac{1}{x^2-a^2}\\\\,dx = \\\\frac{1}{2a}\\\\ln\\\\left|\\\\frac{x-a}{x+a}\\\\right| + C$。$\\\\int \\\\frac{1}{a^2-x^2}\\\\,dx = \\\\frac{1}{2a}\\\\ln\\\\left|\\\\frac{a+x}{a-x}\\\\right| + C$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "通过因式分解 $x^2-a^2 = (x-a)(x+a)$ 后进行部分分式得到。两个公式本质互为相反数。",
+      "related_to": [
+        "基本积分公式",
+        "部分分式分解"
+      ],
+      "sources": []
+    },
+    "$\\\\frac{1}{\\\\sqrt{x^2 \\\\pm a^2}}$ 型积分公式": {
+      "name": "$\\\\frac{1}{\\\\sqrt{x^2 \\\\pm a^2}}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\frac{1}{\\\\sqrt{x^2 + a^2}}\\\\,dx = \\\\ln|x + \\\\sqrt{x^2+a^2}| + C$；$\\\\int \\\\frac{1}{\\\\sqrt{x^2 - a^2}}\\\\,dx = \\\\ln|x + \\\\sqrt{x^2-a^2}| + C$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "通过三角代换（$x=a\\\\tan t$ 或 $x=a\\\\sec t$）推导得到，结果是对数形式。",
+      "related_to": [
+        "三角代换",
+        "第二类换元积分法"
+      ],
+      "sources": []
+    },
+    "$\\\\sqrt{a^2-x^2}$ 型积分公式": {
+      "name": "$\\\\sqrt{a^2-x^2}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\sqrt{a^2-x^2}\\\\,dx = \\\\frac{a^2}{2}\\\\arcsin\\\\frac{x}{a} + \\\\frac{x}{2}\\\\sqrt{a^2-x^2} + C$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "通过 $x=a\\\\sin t$ 三角代换并借助辅助三角形推导。",
+      "related_to": [
+        "三角代换",
+        "辅助三角形"
+      ],
+      "sources": []
+    },
+    "$\\\\int \\\\sec x\\\\,dx$ 和 $\\\\int \\\\csc x\\\\,dx$ 公式": {
+      "name": "$\\\\int \\\\sec x\\\\,dx$ 和 $\\\\int \\\\csc x\\\\,dx$ 公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\sec x\\\\,dx = \\\\ln|\\\\sec x + \\\\tan x| + C$；$\\\\int \\\\csc x\\\\,dx = \\\\ln|\\\\csc x - \\\\cot x| + C$（或 $-\\\\ln|\\\\csc x + \\\\cot x| + C$）。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "推导方法：分子分母同乘 $\\\\sec x + \\\\tan x$（对 $\\\\csc x$ 则同乘 $\\\\csc x + \\\\cot x$）。",
+      "related_to": [
+        "基本积分公式",
+        "凑微分法"
+      ],
+      "sources": []
+    },
+    "$\\\\int \\\\tan x\\\\,dx$ 和 $\\\\int \\\\cot x\\\\,dx$ 公式": {
+      "name": "$\\\\int \\\\tan x\\\\,dx$ 和 $\\\\int \\\\cot x\\\\,dx$ 公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\tan x\\\\,dx = -\\\\ln|\\\\cos x| + C = \\\\ln|\\\\sec x| + C$；$\\\\int \\\\cot x\\\\,dx = \\\\ln|\\\\sin x| + C$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "推导：$\\\\tan x = \\\\frac{\\\\sin x}{\\\\cos x}$，将 $\\\\sin x\\\\,dx$ 凑为 $-d\\\\cos x$。",
+      "related_to": [
+        "基本积分公式",
+        "凑微分法"
+      ],
+      "sources": []
+    },
+    "配方法处理二次三项式 (Completing the Square)": {
+      "name": "配方法处理二次三项式 (Completing the Square)",
+      "type": "method",
+      "definition": "将二次三项式 $ax^2+bx+c$ 通过配方法化为 $a[(x+\\\\frac{b}{2a})^2 + \\\\frac{4ac-b^2}{4a^2}]$ 的形式，从而套用标准积分公式。",
+      "examples": [
+        "$\\\\int \\\\frac{dx}{\\\\sqrt{x^2+x+1}} = \\\\int \\\\frac{dx}{\\\\sqrt{(x+\\\\frac{1}{2})^2+\\\\frac{3}{4}}}$",
+        "$\\\\int \\\\frac{dx}{x^2-x-1} = \\\\int \\\\frac{dx}{(x-\\\\frac{1}{2})^2-\\\\frac{5}{4}}$"
+      ],
+      "counter_examples": [],
+      "notes": "配方法是处理分母含二次三项式的积分的标准步骤。之后通过凑微分令 $u = x + \\\\frac{b}{2a}$ 即可套公式。",
+      "related_to": [
+        "有理函数积分",
+        "三角函数积分",
+        "第一类换元积分法"
+      ],
+      "sources": []
+    },
+    "积不出积分 (Nonelementary Integrals)": {
+      "name": "积不出积分 (Nonelementary Integrals)",
+      "type": "definition",
+      "definition": "某些初等函数的原函数不能用初等函数（有限次四则运算和复合的反常幂指三函数）表示，这类积分称为\"积不出\"或\"非初等积分\"。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "原函数存在定理保证连续函数必有原函数，但原函数不一定能用初等函数表示。典型例子：$\\\\int e^{-x^2}\\\\,dx$、$\\\\int \\\\frac{\\\\sin x}{x}\\\\,dx$、$\\\\int \\\\sin(x^2)\\\\,dx$。",
+      "related_to": [
+        "原函数存在定理",
+        "初等函数"
+      ],
+      "sources": []
+    },
+    "定积分的定义 (黎曼积分定义)": {
+      "name": "定积分的定义 (黎曼积分定义)",
+      "type": "definition",
+      "definition": "设函数 $f(x)$ 在闭区间 $[a, b]$ 上有界。在 $[a, b]$ 中插入 $n-1$ 个分点 $a = x_0 < x_1 < x_2 < \\cdots < x_n = b$，将区间分成 $n$ 个子区间 $[x_{i-1}, x_i]$，记 $\\Delta x_i = x_i - x_{i-1}$。在每个子区间上任取一点 $\\xi_i \\in [x_{i-1}, x_i]$，作乘积 $f(\\xi_i) \\Delta x_i$ 并求和 $\\sum_{i=1}^n f(\\xi_i) \\Delta x_i$（称为黎曼和）。令 $\\lambda = \\max\\{ \\Delta x_i \\}$，若极限 $\\lim_{\\lambda \\to 0} \\sum_{i=1}^n f(\\xi_i) \\Delta x_i$ 存在且与分割方式和 $\\xi_i$ 的取法无关，则称该极限为 $f(x)$ 在 $[a, b]$ 上的定积分，记为 $\\int_a^b f(x) \\, dx$。",
+      "examples": [
+        "$\\int_0^1 x^2 \\, dx = \\frac{1}{3}$（用定义计算，N等分+右端点取点）"
+      ],
+      "counter_examples": [],
+      "notes": "定积分定义可拆解为四个步骤：分割→近似→求和→取极限。实际计算中很少直接用定义，而是用牛顿-莱布尼茨公式。",
+      "related_to": [
+        "riemann-sum",
+        "integrability",
+        "newton-leibniz-formula"
+      ],
+      "sources": []
+    },
+    "黎曼和 (Riemann Sum)": {
+      "name": "黎曼和 (Riemann Sum)",
+      "type": "concept",
+      "definition": "定积分定义中的和式 $\\sum_{i=1}^n f(\\xi_i) \\Delta x_i$ 称为黎曼和。若每个子区间取最小值，则得到黎曼下和（下合）；若每个子区间取最大值，则得到黎曼上和（上合）。下合 ≤ 任意黎曼和 ≤ 上合。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "下合与上合是夹逼定积分是否存在的重要工具：若下合极限=上合极限，则定积分存在。",
+      "related_to": [
+        "definite-integral-definition",
+        "darboux-sum"
+      ],
+      "sources": []
+    },
+    "可积性 (Integrability)": {
+      "name": "可积性 (Integrability)",
+      "type": "theorem",
+      "definition": "函数 $f(x)$ 在 $[a, b]$ 上可积是指 $\\int_a^b f(x) \\, dx$ 存在。两类充分条件：(1) 闭区间上连续函数必可积；(2) 闭区间上有界且只有有限个间断点的函数必可积。可积的必要条件是函数有界。",
+      "examples": [
+        "$f(x)=x^2$ 在 $[0,1]$ 上可积（连续）",
+        "$f(x)=\\frac{1}{x}$ 在 $(0,1]$ 上不可积（无界）"
+      ],
+      "counter_examples": [
+        "狄利克雷函数 $D(x)=\\begin{cases}1 & x \\in \\mathbb{Q} \\\\ 0 & x \\notin \\mathbb{Q}\\end{cases}$ 在 $[0,1]$ 上有界但不可积"
+      ],
+      "notes": "可积的充分条件比连续宽松：有界+有限个间断点即可。有界不一定可积，反例是狄利克雷函数。",
+      "related_to": [
+        "definite-integral-definition",
+        "dirichlet-function"
+      ],
+      "sources": []
+    },
+    "狄利克雷函数 (Dirichlet Function)": {
+      "name": "狄利克雷函数 (Dirichlet Function)",
+      "type": "example",
+      "definition": "$D(x) = \\begin{cases} 1, & x \\in \\mathbb{Q} \\\\ 0, & x \\notin \\mathbb{Q} \\end{cases}$。在任意闭区间上有界但不可积，因为黎曼上合=1，黎曼下合=0，上下极限不相等。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "证明不可积：在每小区间取有理数时黎曼和→1，取无理数时黎曼和→0，极限不唯一，故定积分不存在。",
+      "related_to": [
+        "integrability",
+        "riemann-sum"
+      ],
+      "sources": []
+    },
+    "定积分符号与基本规定": {
+      "name": "定积分符号与基本规定",
+      "type": "definition",
+      "definition": "$\\int_a^b f(x) \\, dx$：$f$ 为被积函数，$x$ 为积分变量，$a$ 为积分下限，$b$ 为积分上限，$[a, b]$ 为积分区间。定积分的值只与被积函数和积分区间有关，与积分变量的字母无关。\\n\\n两个基本规定：\\n(1) $\\int_a^a f(x) \\, dx = 0$\\n(2) $\\int_a^b f(x) \\, dx = -\\int_b^a f(x) \\, dx$（上下限互换，取相反数）",
+      "examples": [
+        "$\\int_0^1 x^2 \\, dx = \\int_0^1 t^2 \\, dt$（与变量字母无关）"
+      ],
+      "counter_examples": [],
+      "notes": "积分符号∫是Sum中S的拉长，表示对无穷小量累加求和。定积分的结果是一个具体的数值，而不定积分是一个函数族。",
+      "related_to": [
+        "definite-integral-definition"
+      ],
+      "sources": []
+    },
+    "定积分的几何意义": {
+      "name": "定积分的几何意义",
+      "type": "definition",
+      "definition": "定积分 $\\int_a^b f(x) \\, dx$ 在几何上表示曲线 $y=f(x)$、直线 $x=a$、$x=b$ 和 $x$ 轴所围成的各部分中，$x$ 轴上方面积之和减去 $x$ 轴下方面积之和（即面积的代数和）。",
+      "examples": [
+        "$\\int_0^{2\\pi} \\sin x \\, dx = 0$（上下面积抵消）",
+        "$\\int_a^b 1 \\, dx = b - a$（区间长度）",
+        "$\\int_{-1}^1 \\sqrt{1-x^2} \\, dx = \\frac{\\pi}{2}$（半圆面积）"
+      ],
+      "counter_examples": [],
+      "notes": "物理意义：在 v-t 图中，定积分表示位移——正速度产生正位移，负速度产生反方向位移。",
+      "related_to": [
+        "element-method"
+      ],
+      "sources": []
+    },
+    "元素法/微元法 (Element Method)": {
+      "name": "元素法/微元法 (Element Method)",
+      "type": "method",
+      "definition": "将所求总量 $Q$ 看作分布在区间 $[a, b]$ 上，取微小段 $[x, x+dx]$，在该段上近似认为函数值不变，则该段的量值微元为 $dQ = f(x) \\, dx$，总能量为 $Q = \\int_a^b f(x) \\, dx$。",
+      "examples": [
+        "质量不均匀细杆 $OM$ 长 $1$，距 $O$ 点 $x$ 处密度 $\\rho = 2x$，总质量 $= \\int_0^1 2x \\, dx = 1$"
+      ],
+      "counter_examples": [],
+      "notes": "元素法是用积分解决实际问题的核心方法，核心思想：分割→近似（取微元）→求和（积分）。",
+      "related_to": [
+        "definite-integral-geometric-meaning"
+      ],
+      "sources": []
+    },
+    "定积分的线性性质（对函数的线性性）": {
+      "name": "定积分的线性性质（对函数的线性性）",
+      "type": "property",
+      "definition": "设 $f, g$ 在 $[a,b]$ 上可积，则：\\n(1) $\\int_a^b k f(x) \\, dx = k \\int_a^b f(x) \\, dx$（数乘）\\n(2) $\\int_a^b [f(x) \\pm g(x)] \\, dx = \\int_a^b f(x) \\, dx \\pm \\int_a^b g(x) \\, dx$（加减）\\n即被积函数可拆分，积分区间不变。",
+      "examples": [
+        "$\\int_1^3 [2f(x)+g(x)] \\, dx = 2\\int_1^3 f(x) \\, dx + \\int_1^3 g(x) \\, dx$"
+      ],
+      "counter_examples": [],
+      "notes": "拆的是被积函数，区间的可加性拆的是积分区间，两者不同。",
+      "related_to": [
+        "additivity-of-interval"
+      ],
+      "sources": []
+    },
+    "定积分对区间的可加性": {
+      "name": "定积分对区间的可加性",
+      "type": "property",
+      "definition": "$\\int_a^b f(x) \\, dx = \\int_a^c f(x) \\, dx + \\int_c^b f(x) \\, dx$，其中 $c$ 为任意常数（不必在 $a,b$ 之间）。",
+      "examples": [
+        "$\\int_0^2 f(x) \\, dx - \\int_0^1 f(x) \\, dx = \\int_1^2 f(x) \\, dx$"
+      ],
+      "counter_examples": [],
+      "notes": "拆的是积分区间，被积函数不变。$c$ 可以在区间外，只要上下限接上即可。",
+      "related_to": [
+        "linearity-of-integral"
+      ],
+      "sources": []
+    },
+    "定积分的保号性": {
+      "name": "定积分的保号性",
+      "type": "property",
+      "definition": "若 $a < b$，且 $f(x) \\ge 0$ 在 $[a,b]$ 上恒成立，则 $\\int_a^b f(x) \\, dx \\ge 0$。进一步，若 $f$ 连续且不恒为零，则 $\\int_a^b f(x) \\, dx > 0$。",
+      "examples": [],
+      "counter_examples": [
+        "不连续的反例：$f(x)$ 仅在 $x_0$ 处大于0，其余均为0，此时定积分为0"
+      ],
+      "notes": "连续条件非常重要——若不连续，非负且不恒为零仍可能积分为0。",
+      "related_to": [
+        "order-preserving",
+        "absolute-integrability"
+      ],
+      "sources": []
+    },
+    "定积分的保序性": {
+      "name": "定积分的保序性",
+      "type": "property",
+      "definition": "若 $a < b$，且 $f(x) \\le g(x)$ 在 $[a,b]$ 上恒成立，则 $\\int_a^b f(x) \\, dx \\le \\int_a^b g(x) \\, dx$。",
+      "examples": [
+        "比较 $\\int_1^2 \\ln x \\, dx$ 与 $\\int_1^2 (\\ln x)^2 \\, dx$：因 $x\\in(1,2)$ 时 $0 \\le \\ln x < 1$，故 $\\ln x > (\\ln x)^2$，前者更大"
+      ],
+      "counter_examples": [],
+      "notes": "被积函数的大小比较可转化为定积分的大小比较，是常考题型。",
+      "related_to": [
+        "positivity-preserving"
+      ],
+      "sources": []
+    },
+    "绝对可积性 (积分的绝对值不等式)": {
+      "name": "绝对可积性 (积分的绝对值不等式)",
+      "type": "property",
+      "definition": "$\\left| \\int_a^b f(x) \\, dx \\right| \\le \\int_a^b |f(x)| \\, dx$。几何意义：左边是正负面积抵消后的结果取绝对值，右边是全部取正后的面积之和。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "常被用于证明题中的放缩。证法：由 $-|f(x)| \\le f(x) \\le |f(x)|$ 两边积分再取绝对值即可。",
+      "related_to": [
+        "positivity-preserving"
+      ],
+      "sources": []
+    },
+    "估值不等式": {
+      "name": "估值不等式",
+      "type": "property",
+      "definition": "若 $a < b$，设 $m = \\min_{x \\in [a,b]} f(x)$，$M = \\max_{x \\in [a,b]} f(x)$，则 $$m(b-a) \\le \\int_a^b f(x) \\, dx \\le M(b-a)$$",
+      "examples": [
+        "估计 $\\int_{\\pi/4}^{5\\pi/4} (1+\\sin^2 x) \\, dx$：$1 \\le 1+\\sin^2 x \\le 2$，区间长 $\\pi$，故 $\\pi \\le I \\le 2\\pi$"
+      ],
+      "counter_examples": [],
+      "notes": "将估积分问题转化为求被积函数最值问题，是常考题型。",
+      "related_to": [
+        "mean-value-theorem-for-integrals"
+      ],
+      "sources": []
+    },
+    "定积分中值定理": {
+      "name": "定积分中值定理",
+      "type": "theorem",
+      "definition": "若 $f(x)$ 在 $[a,b]$ 上连续，则至少存在一点 $\\xi \\in [a,b]$（或开区间 $(a,b)$），使得 $$\\int_a^b f(x) \\, dx = f(\\xi) (b-a)$$ 等价地，$f(\\xi) = \\frac{1}{b-a} \\int_a^b f(x) \\, dx$，即 $f(\\xi)$ 等于 $f$ 在 $[a,b]$ 上的平均值。",
+      "examples": [
+        "已知 $f$ 在 $[0,2]$ 连续，$f(0)=-1$，$\\int_0^2 f(x) \\, dx = 1$，则存在 $\\xi \\in (0,2]$ 使 $f(\\xi)=1$（积分中值定理）"
+      ],
+      "counter_examples": [],
+      "notes": "证明方法：估值不等式+介值定理。另一种证明：用牛顿-莱布尼茨公式转成 $F(b)-F(a)=F'(\\xi)(b-a)$（拉格朗日中值定理），此时 $\\xi$ 为开区间。",
+      "related_to": [
+        "estimation-inequality",
+        "variable-limit-integral",
+        "lagrange-mean-value-theorem"
+      ],
+      "sources": []
+    },
+    "牛顿-莱布尼茨公式 (微积分基本公式)": {
+      "name": "牛顿-莱布尼茨公式 (微积分基本公式)",
+      "type": "theorem",
+      "definition": "若 $f(x)$ 在 $[a,b]$ 上连续，$F(x)$ 是 $f(x)$ 的一个原函数（即 $F'(x)=f(x)$），则 $$\\int_a^b f(x) \\, dx = F(b) - F(a)$$",
+      "examples": [
+        "$\\int_0^\\pi \\sin x \\, dx = [-\\cos x]_0^\\pi = (-\\cos\\pi) - (-\\cos 0) = 2$",
+        "$\\int_0^1 \\frac{x}{\\sqrt{1+x^2}} \\, dx = [\\sqrt{1+x^2}]_0^1 = \\sqrt{2} - 1$"
+      ],
+      "counter_examples": [],
+      "notes": "将定积分计算归结为找原函数，是微积分中最重要的公式。沟通了微分学与积分学，以及积分中值定理与微分中值定理。",
+      "related_to": [
+        "definite-integral-definition",
+        "variable-limit-integral",
+        "indefinite-integral"
+      ],
+      "sources": []
+    },
+    "变上限积分函数 (积分上限函数)": {
+      "name": "变上限积分函数 (积分上限函数)",
+      "type": "definition",
+      "definition": "设 $f(x)$ 在 $[a,b]$ 上连续，定义 $$\\Phi(x) = \\int_a^x f(t) \\, dt, \\quad x \\in [a,b]$$ 称为变上限积分函数（积分上限函数）。几何上表示从 $a$ 到 $x$ 的曲边梯形面积。",
+      "examples": [
+        "$\\Phi(x) = \\int_0^x e^{-t^2} \\, dt$"
+      ],
+      "counter_examples": [],
+      "notes": "$𝛌(x)$ 是以 $x$ 为自变量的新函数，不是定积分（定积分是数）。",
+      "related_to": [
+        "variable-limit-integral-derivative",
+        "newton-leibniz-formula"
+      ],
+      "sources": []
+    },
+    "变上限积分求导定理": {
+      "name": "变上限积分求导定理",
+      "type": "theorem",
+      "definition": "若 $f$ 在 $[a,b]$ 上连续，则变上限积分函数 $\\Phi(x)=\\int_a^x f(t)\\,dt$ 在 $[a,b]$ 上可导，且 $$\\Phi'(x) = \\frac{d}{dx}\\int_a^x f(t)\\,dt = f(x)$$ 即变上限积分是被积函数的一个原函数。",
+      "examples": [
+        "$\\frac{d}{dx}\\int_0^x \\frac{\\sin t}{t} \\, dt = \\frac{\\sin x}{x}$"
+      ],
+      "counter_examples": [],
+      "notes": "证明了连续函数一定有原函数（变上限积分即为一个原函数）。证明用定义+积分中值定理+连续性。",
+      "related_to": [
+        "variable-limit-integral",
+        "newton-leibniz-formula",
+        "composite-variable-limit"
+      ],
+      "sources": []
+    },
+    "复合变限积分求导（一般公式）": {
+      "name": "复合变限积分求导（一般公式）",
+      "type": "theorem",
+      "definition": "若 $f$ 连续，$\\alpha(x), \\beta(x)$ 可导，则 $$\\frac{d}{dx}\\int_{\\alpha(x)}^{\\beta(x)} f(t) \\, dt = f(\\beta(x))\\beta'(x) - f(\\alpha(x))\\alpha'(x)$$",
+      "examples": [
+        "$\\frac{d}{dx}\\int_0^{x^2} e^{-t^2} \\, dt = e^{-x^4} \\cdot 2x$",
+        "$\\frac{d}{dx}\\int_{\\sin x}^{x^2} e^{-t^2} \\, dt = e^{-x^4}\\cdot 2x - e^{-\\sin^2 x} \\cdot \\cos x$"
+      ],
+      "counter_examples": [],
+      "notes": "复合函数求导法则的应用：先对上限求导乘上限导数，再减去对下限求导乘下限导数（下限求导时加负号）。",
+      "related_to": [
+        "variable-limit-integral-derivative"
+      ],
+      "sources": []
+    },
+    "定积分与不定积分的关系": {
+      "name": "定积分与不定积分的关系",
+      "type": "concept",
+      "definition": "不定积分求的是原函数的全体（函数族），结果含任意常数 $C$；定积分算出来是一个具体的数值。定积分计算（通过牛顿-莱布尼茨公式）依赖不定积分求原函数的能力。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "不定积分是定积分计算的基础（找原函数），但定积分有专属的技巧（对称性、区间再现等）。",
+      "related_to": [
+        "newton-leibniz-formula",
+        "indefinite-integral"
+      ],
+      "sources": []
+    },
+    "不定积分": {
+      "name": "不定积分",
+      "type": "concept",
+      "definition": "若 $F'(x)=f(x)$，则 $f(x)$ 的不定积分为 $\\int f(x)\\,dx = F(x) + C$，其中 $C$ 为任意常数。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "定积分的计算以不定积分（求原函数）为基础。",
+      "related_to": [
+        "newton-leibniz-formula",
+        "indefinite-integral-vs-definite"
+      ],
+      "sources": []
+    },
+    "定积分的换元法": {
+      "name": "定积分的换元法",
+      "type": "method",
+      "definition": "设 $x = \\varphi(t)$，$\\varphi'(t)$ 在 $[\\alpha, \\beta]$ 上连续，则 $$\\int_a^b f(x) \\, dx = \\int_\\alpha^\\beta f(\\varphi(t)) \\, \\varphi'(t) \\, dt$$ 其中 $a = \\varphi(\\alpha)$, $b = \\varphi(\\beta)$。\\n\\n关键：换元必须换积分限！新上限对应原上限，新下限对应原下限。若不换字母（凑微分），则不换积分限。",
+      "examples": [
+        "$\\int_0^{\\pi/2} \\cos^5 x \\sin x \\, dx$ 令 $t=\\cos x$，$x:0\\to\\pi/2$ 对应 $t:1\\to0$",
+        "$\\int_0^a \\sqrt{a^2-x^2} \\, dx$ 令 $x=a\\sin t$"
+      ],
+      "counter_examples": [],
+      "notes": "定积分换元不区分第一类/第二类换元。大准则：换字母就换积分限，不换字母（只凑微分）就不换积分限。",
+      "related_to": [
+        "integration-by-parts",
+        "trigonometric-substitution"
+      ],
+      "sources": []
+    },
+    "定积分的分部积分法": {
+      "name": "定积分的分部积分法",
+      "type": "method",
+      "definition": "$$\\int_a^b u(x) \\, dv(x) = [u(x)v(x)]_a^b - \\int_a^b v(x) \\, du(x)$$ 与不定积分的分部积分法相同，只需每一步带上积分上下限。",
+      "examples": [
+        "$\\int_1^e x \\ln x \\, dx = \\left[\\frac{x^2}{2}\\ln x\\right]_1^e - \\int_1^e \\frac{x^2}{2} \\cdot \\frac{1}{x} \\, dx$"
+      ],
+      "counter_examples": [],
+      "notes": "也可先求不定积分（原函数），再代入上下限。反对幂指三的排序规则同样适用。",
+      "related_to": [
+        "definite-integral-by-substitution"
+      ],
+      "sources": []
+    },
+    "对称区间定积分——偶倍奇零": {
+      "name": "对称区间定积分——偶倍奇零",
+      "type": "theorem",
+      "definition": "若 $f(x)$ 在 $[-a, a]$ 上可积，则：\\n(1) 若 $f$ 为奇函数（$f(-x) = -f(x)$），则 $\\int_{-a}^a f(x) \\, dx = 0$\\n(2) 若 $f$ 为偶函数（$f(-x) = f(x)$），则 $\\int_{-a}^a f(x) \\, dx = 2\\int_0^a f(x) \\, dx$",
+      "examples": [
+        "$\\int_{-1}^1 x e^{-x^2} \\, dx = 0$（奇函数）",
+        "$\\int_{-1}^1 (x^2)^{3/2} \\, dx = 2\\int_0^1 x^3 \\, dx = \\frac{1}{2}$（注意 $\\sqrt{x^2}=|x|$）"
+      ],
+      "counter_examples": [
+        "误判：$(x^2)^{3/2} = |x|^3$ 是偶函数，不是奇函数。$\\sqrt{x^2}=|x|$ 而非 $x$。"
+      ],
+      "notes": "偶倍奇零非常好用，但要注意算术平方根、偶次方根开出来是绝对值。遇到 $\\sqrt{x^2}$、$(x^2)^{1/2}$ 要小心。",
+      "related_to": [
+        "symmetry-general-formula"
+      ],
+      "sources": []
+    },
+    "对称区间定积分一般公式": {
+      "name": "对称区间定积分一般公式",
+      "type": "theorem",
+      "definition": "对任意函数 $f(x)$（无需奇偶性），在对称区间 $[-a, a]$ 上有：$$\\int_{-a}^a f(x) \\, dx = \\int_0^a [f(x) + f(-x)] \\, dx$$",
+      "examples": [
+        "$\\int_{-\\pi/2}^{\\pi/2} \\frac{\\sin^2 x}{1+e^x} \\, dx = \\int_0^{\\pi/2} \\left(\\frac{\\sin^2 x}{1+e^x} + \\frac{\\sin^2 x}{1+e^{-x}}\\right) dx = \\int_0^{\\pi/2} \\sin^2 x \\, dx = \\frac{\\pi}{4}$"
+      ],
+      "counter_examples": [],
+      "notes": "适用于被积函数非奇非偶但 $f(x)+f(-x)$ 可简化的情形，特别是分母含指数函数时。证明思路：拆区间+换元。",
+      "related_to": [
+        "symmetry-integral-odd-even"
+      ],
+      "sources": []
+    },
+    "华里士公式 (点火公式 / Wallis Formula)": {
+      "name": "华里士公式 (点火公式 / Wallis Formula)",
+      "type": "theorem",
+      "definition": "对 $n$ 为正整数，有：$$\\int_0^{\\pi/2} \\sin^n x \\, dx = \\int_0^{\\pi/2} \\cos^n x \\, dx = \\begin{cases} \\dfrac{n-1}{n} \\cdot \\dfrac{n-3}{n-2} \\cdots \\dfrac{1}{2} \\cdot \\dfrac{\\pi}{2} & n \\text{为偶数} \\\\ \\dfrac{n-1}{n} \\cdot \\dfrac{n-3}{n-2} \\cdots \\dfrac{2}{3} & n \\text{为奇数} \\end{cases}$$ 可用双阶乘记法：$\\int_0^{\\pi/2} \\sin^n x \\, dx = \\frac{(n-1)!!}{n!!} \\cdot \\frac{\\pi}{2}$（$n$ 偶）或 $= \\frac{(n-1)!!}{n!!}$（$n$ 奇）。",
+      "examples": [
+        "$\\int_0^{\\pi/2} \\sin^4 x \\, dx = \\frac{3}{4} \\cdot \\frac{1}{2} \\cdot \\frac{\\pi}{2} = \\frac{3\\pi}{16}$",
+        "$\\int_0^{\\pi/2} \\cos^5 x \\, dx = \\frac{4}{5} \\cdot \\frac{2}{3} = \\frac{8}{15}$"
+      ],
+      "counter_examples": [],
+      "notes": "又称\"点火公式\"——偶数次从 $n$ 倒数到 2 \"点火成功\"乘 $\\frac{\\pi}{2}$；奇数次倒数到 3 \"点火失败\"不乘 $\\frac{\\pi}{2}$。是 $[0,\\pi/2]$ 上三角函数积分的最佳工具。",
+      "related_to": [
+        "trigonometric-integral-transforms"
+      ],
+      "sources": []
+    },
+    "三角函数积分变换公式": {
+      "name": "三角函数积分变换公式",
+      "type": "method",
+      "definition": "五个重要公式：\\n(1) $\\int_0^{\\pi/2} f(\\sin x) \\, dx = \\int_0^{\\pi/2} f(\\cos x) \\, dx$（区间再现）\\n(2) $\\int_0^{\\pi} f(\\sin x) \\, dx = 2\\int_0^{\\pi/2} f(\\sin x) \\, dx$\\n(3) $\\int_0^{\\pi} x f(\\sin x) \\, dx = \\pi \\int_0^{\\pi/2} f(\\sin x) \\, dx = \\frac{\\pi}{2} \\int_0^{\\pi} f(\\sin x) \\, dx$\\n(4) $\\int_0^{2\\pi} \\sin^n x \\, dx = \\begin{cases} 0 & n \\text{为奇} \\\\ 4\\int_0^{\\pi/2} \\sin^n x \\, dx & n \\text{为偶} \\end{cases}$\\n(5) $\\int_0^{2\\pi} \\cos^n x \\, dx$ 同理。",
+      "examples": [
+        "$\\int_0^{\\pi} x \\sin^4 x \\, dx = \\pi \\int_0^{\\pi/2} \\sin^4 x \\, dx = \\pi \\cdot \\frac{3\\pi}{16} = \\frac{3\\pi^2}{16}$"
+      ],
+      "counter_examples": [],
+      "notes": "公式(3)的证明：区间再现 $x \\to \\pi-x$ 得 $I = \\int_0^\\pi (\\pi-x)f(\\sin x)dx$，与原式相加得 $2I = \\pi\\int_0^\\pi f(\\sin x)dx$。",
+      "related_to": [
+        "wallis-formula",
+        "interval-reproduction-formula"
+      ],
+      "sources": []
+    },
+    "周期函数的定积分": {
+      "name": "周期函数的定积分",
+      "type": "theorem",
+      "definition": "设 $f$ 以 $T$ 为周期连续，则：\\n(1) $\\int_a^{a+T} f(x) \\, dx = \\int_0^T f(x) \\, dx$（任意一个周期上的积分相等）\\n(2) $\\int_a^{a+nT} f(x) \\, dx = n \\int_0^T f(x) \\, dx$（$n$ 个周期上的积分等于 $n$ 倍一个周期上的积分）",
+      "examples": [
+        "$\\int_0^{n\\pi} \\sqrt{1+\\sin 2x} \\, dx = \\int_0^{n\\pi} |\\sin x + \\cos x| \\, dx = \\sqrt{2}n \\int_0^\\pi |\\sin x| \\, dx = 2\\sqrt{2}n$"
+      ],
+      "counter_examples": [],
+      "notes": "可用图像直观理解：每个周期曲线形状相同，面积代数和也相同。选择最简单的周期区间（如 $[0,T]$ 或对称区间）计算。",
+      "related_to": [],
+      "sources": []
+    },
+    "分段函数的定积分": {
+      "name": "分段函数的定积分",
+      "type": "method",
+      "definition": "对于分段函数（含绝对值函数），在分段点处将积分区间拆开，分别积分再相加。",
+      "examples": [
+        "$\\int_{1/e}^e |\\ln x| \\, dx = \\int_{1/e}^1 (-\\ln x) \\, dx + \\int_1^e \\ln x \\, dx = 2 - \\frac{2}{e}$"
+      ],
+      "counter_examples": [],
+      "notes": "绝对值、取整函数、max/min 函数等本质上都是分段函数。",
+      "related_to": [
+        "additivity-of-interval"
+      ],
+      "sources": []
+    },
+    "变限积分求极限（洛必达法则）": {
+      "name": "变限积分求极限（洛必达法则）",
+      "type": "method",
+      "definition": "含变限积分的 $0/0$ 型或 $\\infty/\\infty$ 型极限，先用等价无穷小化简分母，再使用洛必达法则（分子用变限积分求导公式）。",
+      "examples": [
+        "$\\lim_{x\\to 0} \\frac{\\int_0^{\\sin^2 x} \\ln(1+t) \\, dt}{x^4/3} = \\frac{3}{2}$（先用等价代换 $\\sqrt[3]{1+x}-1 \\sim x/3$，再用洛必达）"
+      ],
+      "counter_examples": [],
+      "notes": "注意分母先用等价无穷小化简可大幅简化求导过程。分子求导时需使用复合变限积分求导公式。",
+      "related_to": [
+        "variable-limit-integral-derivative",
+        "composite-variable-limit"
+      ],
+      "sources": []
+    },
+    "反常积分 (广义积分)": {
+      "name": "反常积分 (广义积分)",
+      "type": "concept",
+      "definition": "反常积分包括两类：(1) 无穷限积分（积分区间无限长）；(2) 无界函数积分（被积函数在区间内某点无界）。两者都需在正常定积分基础上取极限定义。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "本文件主要覆盖正常定积分，反常积分为概念提及，未详细展开。",
+      "related_to": [
+        "definite-integral-definition"
+      ],
+      "sources": []
+    },
+    "用定积分定义求 N 项和数列极限": {
+      "name": "用定积分定义求 N 项和数列极限",
+      "type": "method",
+      "definition": "N 项和数列极限 $\\lim_{n\\to\\infty} \\sum_{i=1}^n \\frac{1}{n} f(\\frac{i}{n}) = \\int_0^1 f(x) \\, dx$。若 $f$ 内变量为 $a+\\frac{i}{n}$，则积分区间为 $[a, a+1]$。\\n\\n步骤：(1) 用求和符号整合；(2) 提出 $\\frac{1}{n}$，将剩余部分凑成 $f(\\frac{i}{n})$ 形式；(3) $\\frac{1}{n} \\to dx$，$\\frac{i}{n} \\to x$，求和取极限 $\\to$ 积分 $\\int_0^1 f(x)\\,dx$。",
+      "examples": [
+        "$\\lim_{n\\to\\infty} \\frac{1}{n^2}\\sum_{i=1}^n \\sqrt{n^2 - i^2} = \\lim_{n\\to\\infty} \\frac{1}{n}\\sum_{i=1}^n \\sqrt{1 - (\\frac{i}{n})^2} = \\int_0^1 \\sqrt{1-x^2} \\, dx = \\frac{\\pi}{4}$"
+      ],
+      "counter_examples": [],
+      "notes": "若求和项中 $i$ 的变化次数比 $n$ 低一次，往往考虑夹逼准则而非定积分定义。",
+      "related_to": [
+        "definite-integral-definition"
+      ],
+      "sources": []
+    },
+    "函数在闭区间上的平均值": {
+      "name": "函数在闭区间上的平均值",
+      "type": "definition",
+      "definition": "函数 $f$ 在 $[a,b]$ 上的平均值为 $\\frac{1}{b-a}\\int_a^b f(x) \\, dx$。定积分中值定理表明，连续函数$f$至少存在一点使得函数值等于平均值。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "物理意义：v-t 图中位移/时间 = 平均速度。",
+      "related_to": [
+        "mean-value-theorem-for-integrals"
+      ],
+      "sources": []
+    },
+    "黎曼上合与下合 (达布上和/下和)": {
+      "name": "黎曼上合与下合 (达布上和/下和)",
+      "type": "concept",
+      "definition": "对给定分割，在每个子区间上取函数最大值作矩形，求和得黎曼上合（上合）；取函数最小值作矩形，求和得黎曼下合（下合）。任意黎曼和介于下合和上合之间。若下合极限=上合极限，则定积分存在。",
+      "examples": [],
+      "counter_examples": [
+        "狄利克雷函数：任意分割下，上合=1，下合=0，极限不相等，故不可积"
+      ],
+      "notes": "达布上和/下和为可积性判定提供了理论工具。",
+      "related_to": [
+        "riemann-sum",
+        "integrability"
+      ],
+      "sources": []
+    },
+    "介值定理": {
+      "name": "介值定理",
+      "type": "theorem",
+      "definition": "若 $f$ 在 $[a,b]$ 上连续，$m=\\min f$，$M=\\max f$，则对任意 $\\mu \\in [m, M]$，存在 $\\xi \\in [a,b]$ 使 $f(\\xi)=\\mu$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "定积分中值定理的证明用到介值定理推论。",
+      "related_to": [
+        "mean-value-theorem-for-integrals"
+      ],
+      "sources": []
+    },
+    "零点定理": {
+      "name": "零点定理",
+      "type": "theorem",
+      "definition": "若 $f$ 在 $[a,b]$ 上连续且 $f(a)\\cdot f(b) < 0$，则存在 $\\xi \\in (a,b)$ 使 $f(\\xi)=0$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "与积分中值定理结合使用可证函数零点的存在性。",
+      "related_to": [
+        "mean-value-theorem-for-integrals"
+      ],
+      "sources": []
+    },
+    "三角换元法": {
+      "name": "三角换元法",
+      "type": "method",
+      "definition": "定积分中处理 $\\sqrt{a^2 - x^2}$、$\\sqrt{a^2 + x^2}$、$\\sqrt{x^2 - a^2}$ 等形式的经典换元：\\n(1) $\\sqrt{a^2 - x^2}$：令 $x = a\\sin t$ 或 $x = a\\cos t$，$t \\in [-\\pi/2, \\pi/2]$\\n(2) $\\sqrt{a^2 + x^2}$：令 $x = a\\tan t$\\n(3) $\\sqrt{x^2 - a^2}$：令 $x = a\\sec t$",
+      "examples": [
+        "$\\int_0^1 x^2 \\sqrt{1-x^2} \\, dx$ 令 $x=\\sin t$"
+      ],
+      "counter_examples": [],
+      "notes": "需注意换元后 $t$ 的取值范围，保证反函数单值且三角函数非负（以简化去根号后的符号判断）。",
+      "related_to": [
+        "definite-integral-by-substitution"
+      ],
+      "sources": []
+    },
+    "定积分证明题常用方法": {
+      "name": "定积分证明题常用方法",
+      "type": "method",
+      "definition": "两个关键方法：\\n(1) 拆区间：当等式右边出现新的积分限时，在对应点处拆开原积分。\\n(2) 换元：当积分限不是想要的形式时，通过换元凑出目标积分限。\\n常见模式：对称区间公式、区间再现公式的证明均使用拆区间+换元。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "证明题通用思路：出现新积分限→拆区间→换元调积分限→合并化简。",
+      "related_to": [
+        "interval-reproduction-formula",
+        "symmetry-general-formula"
+      ],
+      "sources": []
+    }
+  },
+  "existing_concepts": {
+    "洛必达法则": {
+      "name": "洛必达法则",
+      "type": "theorem",
+      "definition": "若 $\\lim \\frac{f(x)}{g(x)}$ 为 $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$ 型未定式，且在去心邻域内 $f'(x)$、$g'(x)$ 存在且 $g'(x) \\neq 0$，则 $\\lim \\frac{f(x)}{g(x)} = \\lim \\frac{f'(x)}{g'(x)}$，前提是后者极限存在或为无穷大。",
+      "examples": [
+        "$\\lim\\limits_{x \\to 3} \\frac{x-3}{x^2-9} = \\lim\\limits_{x \\to 3} \\frac{1}{2x} = \\frac{1}{6}$"
+      ],
+      "counter_examples": [],
+      "notes": "三个条件缺一不可：1) $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$型；2) 分子分母可导且分母导数不为0；3) 导数之比的极限存在或为无穷大。洛必达是\"垫后\"方法，等价代换通常更高效。",
+      "related_to": [
+        "未定式",
+        "微分中值定理",
+        "等价无穷小"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "两个重要极限": {
+      "name": "两个重要极限",
+      "type": "theorem",
+      "definition": "第一重要极限：$\\lim\\limits_{x \\to 0} \\frac{\\sin x}{x} = 1$。第二重要极限：$\\lim\\limits_{x \\to \\infty} \\left(1+\\frac{1}{x}\\right)^x = e$ 或 $\\lim\\limits_{x \\to 0} (1+x)^{1/x} = e$。",
+      "examples": [
+        "$\\lim\\limits_{x \\to \\infty} \\left(1+\\frac{2}{x^3}\\right)^{\\frac{x^3}{2}} = e$"
+      ],
+      "counter_examples": [],
+      "notes": "本质特征：底数极限为1，指数极限为无穷大（即 $1^\\infty$型），且底数的\"1+某物\"与指数互为倒数。",
+      "related_to": [
+        "$1^\\infty$未定式",
+        "幂指型函数"
+      ],
+      "sources": [
+        "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+        "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+        "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+      ]
+    },
+    "区间再现公式": {
+      "name": "区间再现公式",
+      "type": "theorem",
+      "definition": "对连续函数 $f$，有：$$\\int_a^b f(x) \\, dx = \\int_a^b f(a+b-x) \\, dx$$ 即积分线不动，将 $f$ 中所有 $x$ 替换为 $a+b-x$。",
+      "examples": [
+        "$\\int_0^{\\pi/2} \\frac{\\sin^n x}{\\sin^n x + \\cos^n x} \\, dx = \\frac{\\pi}{4}$",
+        "$\\int_0^{\\pi/4} \\ln(1+\\tan x) \\, dx = \\frac{\\pi}{8}\\ln 2$",
+        "$\\int_0^x \\sqrt{x-t} \\, e^t \\, dt = e^x \\int_0^x \\sqrt{t} \\, e^{-t} \\, dt$（含参变限积分）"
+      ],
+      "counter_examples": [],
+      "notes": "核心思想：换元 $x = a+b-t$ 后积分线互换，与负号抵消，只改变被积函数。\\n几何意义：$f(a+b-x)$ 的图像关于 $x=\\frac{a+b}{2}$ 对称。\\n特别适合三角函数在 $[0,\\pi/2]$ 区间上的积分。",
+      "related_to": [
+        "definite-integral-by-substitution"
+      ],
+      "sources": []
+    },
+    "定积分的几何应用": {
+      "name": "定积分的几何应用",
+      "type": "concept",
+      "definition": "定积分的几何应用包括：求平面图形面积（直角坐标/极坐标）、求旋转体体积、求曲线弧长、求旋转体侧面积等。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "本文件主要是概念和计算技巧，几何应用的实际公式和题目需结合具体应用篇。",
+      "related_to": [
+        "element-method"
+      ],
+      "sources": []
+    },
+    "定积分的物理应用": {
+      "name": "定积分的物理应用",
+      "type": "concept",
+      "definition": "定积分的物理应用包括：变速直线运动的路程/位移、变力做功、液体压力、质心/形心等。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "文中以 v-t 图求路程为物理背景引入定积分概念。",
+      "related_to": [
+        "element-method"
+      ],
+      "sources": []
+    },
+    "拉格朗日中值定理": {
+      "name": "拉格朗日中值定理",
+      "type": "theorem",
+      "definition": "若 $F$ 在 $[a,b]$ 上连续、$(a,b)$ 内可导，则存在 $\\xi \\in (a,b)$ 使得 $F(b)-F(a) = F'(\\xi)(b-a)$。",
+      "examples": [],
+      "counter_examples": [],
+      "notes": "用于定积分中值定理的另一证明：$\\int_a^b f\\,dx = F(b)-F(a) = F'(\\xi)(b-a) = f(\\xi)(b-a)$。",
+      "related_to": [
+        "mean-value-theorem-for-integrals",
+        "newton-leibniz-formula"
+      ],
+      "sources": []
+    }
+  },
+  "relationships": [
+    {
+      "from": "floor-function",
+      "to": "integer-part-decomposition",
+      "type": "composition",
+      "note": "取整函数 $[X]$ 即为整数部分分解中的整数部分"
+    },
+    {
+      "from": "integer-part-decomposition",
+      "to": "fractional-part-function",
+      "type": "composition",
+      "note": "小数部分函数 $\\{X\\} = X - [X]$ 是整数部分分解的另一半"
+    },
+    {
+      "from": "integer-part-decomposition",
+      "to": "floor-function-inequality",
+      "type": "derivation",
+      "note": "由 $0 \\leq \\{X\\} < 1$ 移项可得全部取整不等式"
+    },
+    {
+      "from": "floor-function-inequality",
+      "to": "epsilon-n-definition",
+      "type": "application",
+      "note": "取整不等式是 $\\varepsilon$-$N$ 定义中 $N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$ 的理论依据"
+    },
+    {
+      "from": "floor-function-addition",
+      "to": "epsilon-n-definition",
+      "type": "application",
+      "note": "$[\\frac{1}{\\varepsilon} + 1] = [\\frac{1}{\\varepsilon}] + 1$ 用于化简 $N$ 的表达式"
+    },
+    {
+      "from": "floor-function",
+      "to": "floor-function-graph",
+      "type": "representation",
+      "note": "阶梯函数图像是取整函数的几何表示"
+    },
+    {
+      "from": "floor-function",
+      "to": "epsilon-n-definition",
+      "type": "application",
+      "note": "取整函数是 $\\varepsilon$-$N$ 定义中构造 $N$ 的关键工具"
+    },
+    {
+      "from": "epsilon-n-definition",
+      "to": "sequence-limit-proof",
+      "type": "generalization",
+      "note": "$\\varepsilon$-$N$ 定义的前置逻辑推广为通用的数列极限证明方法"
+    },
+    {
+      "from": "inverse-function-definition",
+      "to": "arcsin",
+      "type": "specialization",
+      "note": "反正弦是反函数定义在三角函数上的具体应用"
+    },
+    {
+      "from": "inverse-function-definition",
+      "to": "arccos",
+      "type": "specialization",
+      "note": "反余弦是反函数定义在三角函数上的具体应用"
+    },
+    {
+      "from": "inverse-function-definition",
+      "to": "arctan",
+      "type": "specialization",
+      "note": "反正切是反函数定义在三角函数上的具体应用"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "arcsin",
+      "type": "constraint",
+      "note": "$\\arcsin$ 的值域 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ 是其主值区间"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "arccos",
+      "type": "constraint",
+      "note": "$\\arccos$ 的值域 $[0, \\pi]$ 是其主值区间"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "arctan",
+      "type": "constraint",
+      "note": "$\\arctan$ 的值域 $(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ 是其主值区间"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "inverse-function-property",
+      "type": "condition",
+      "note": "$f^{-1}(f(X)) = X$ 成立的前提是 $X$ 在主值区间内"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "offset-to-principal-value",
+      "type": "motivation",
+      "note": "因为反解须在主值区间内进行，所以需要将角度搬进主值区间"
+    },
+    {
+      "from": "offset-to-principal-value",
+      "to": "non-principal-arccos-evaluation",
+      "type": "specialization",
+      "note": "搬进主值区间法在 $\\arccos(\\cos\\theta)$ 类型题中的具体应用"
+    },
+    {
+      "from": "offset-to-principal-value",
+      "to": "arctan-tan-simplification",
+      "type": "specialization",
+      "note": "搬进主值区间法在 $\\arctan(\\tan X)$ 化简中的具体应用"
+    },
+    {
+      "from": "inverse-function-graph",
+      "to": "inverse-function-definition",
+      "type": "representation",
+      "note": "关于 $Y = X$ 对称是反函数关系的几何特征"
+    },
+    {
+      "from": "arcsin",
+      "to": "arcsin-properties",
+      "type": "description",
+      "note": "四大性质是对 $\\arcsin$ 函数行为的完整描述"
+    },
+    {
+      "from": "arccos",
+      "to": "arccos-properties",
+      "type": "description",
+      "note": "四大性质是对 $\\arccos$ 函数行为的完整描述"
+    },
+    {
+      "from": "arctan",
+      "to": "arctan-properties",
+      "type": "description",
+      "note": "四大性质是对 $\\arctan$ 函数行为的完整描述"
+    },
+    {
+      "from": "arcsin",
+      "to": "arcsin-evaluation",
+      "type": "method",
+      "note": "逆向思维法用于求 $\\arcsin$ 的具体值"
+    },
+    {
+      "from": "arcsin-definition-domain",
+      "to": "arcsin",
+      "type": "constraint",
+      "note": "输入 $X$ 必须在 $[-1, 1]$ 内表达式才有意义"
+    },
+    {
+      "from": "arccos",
+      "to": "arccos-identities",
+      "type": "derivation",
+      "note": "互补关系和互余关系是 $\\arccos$ 的重要恒等式"
+    },
+    {
+      "from": "arctan",
+      "to": "arctan-limits",
+      "type": "property",
+      "note": "反正切在正负无穷远处的极限值"
+    },
+    {
+      "from": "arccot",
+      "to": "arccot-properties",
+      "type": "description",
+      "note": "四大性质是对 $\\operatorname{arccot}$ 函数行为的完整描述"
+    },
+    {
+      "from": "arccot",
+      "to": "arccot-identities",
+      "type": "derivation",
+      "note": "互补关系和互余关系是 $\\operatorname{arccot}$ 的重要恒等式"
+    },
+    {
+      "from": "arctan",
+      "to": "arccot-identities",
+      "type": "relation",
+      "note": "$\\arctan X + \\operatorname{arccot} X = \\frac{\\pi}{2}$"
+    },
+    {
+      "from": "arcsin",
+      "to": "arccos-identities",
+      "type": "relation",
+      "note": "$\\arcsin X + \\arccos X = \\frac{\\pi}{2}$"
+    },
+    {
+      "from": "arccos-identities",
+      "to": "arccot-identities",
+      "type": "analogy",
+      "note": "$\\arccos$ 的互补/互余关系与 $\\operatorname{arccot}$ 完全同理"
+    },
+    {
+      "from": "inverse-trig-summary",
+      "to": "arcsin",
+      "type": "summary",
+      "note": "对照表汇总所有反三角函数的主值区间"
+    },
+    {
+      "from": "inverse-trig-summary",
+      "to": "arccos",
+      "type": "summary",
+      "note": "对照表汇总所有反三角函数的主值区间"
+    },
+    {
+      "from": "inverse-trig-summary",
+      "to": "arctan",
+      "type": "summary",
+      "note": "对照表汇总所有反三角函数的主值区间"
+    },
+    {
+      "from": "inverse-trig-summary",
+      "to": "arccot",
+      "type": "summary",
+      "note": "对照表汇总所有反三角函数的主值区间"
+    },
+    {
+      "from": "数列极限",
+      "to": "ε-N语言（伊普西隆-大恩语言）",
+      "type": "defined_by",
+      "note": "ε-N语言是数列极限的严格数学定义"
+    },
+    {
+      "from": "数列极限",
+      "to": "收敛",
+      "type": "equivalent",
+      "note": "极限存在即数列收敛"
+    },
+    {
+      "from": "数列极限",
+      "to": "发散",
+      "type": "opposite",
+      "note": "极限不存在即数列发散"
+    },
+    {
+      "from": "ε-N语言（伊普西隆-大恩语言）",
+      "to": "数列极限的证明（万能模板）",
+      "type": "method_for",
+      "note": "ε-N语言是证明数列极限的标准工具"
+    },
+    {
+      "from": "数列极限的证明（万能模板）",
+      "to": "取整函数",
+      "type": "uses",
+      "note": "大N通常通过取整函数构造"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "单调有界准则",
+      "type": "parallel",
+      "note": "两者是极限的两大存在准则"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "数列放缩原则 - 全军出击",
+      "type": "uses",
+      "note": "放缩是应用夹逼定理的核心技术"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "数列放缩原则 - 略去局部",
+      "type": "uses",
+      "note": "略去局部是另一种放缩策略"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "N项和数列求极限（夹逼法）",
+      "type": "method_for",
+      "note": "夹逼定理是求N项和极限的核心方法"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "N次根号下极限",
+      "type": "method_for",
+      "note": "夹逼定理是N次根号下极限的重要工具"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "有限多项正数N次方开N次方根极限",
+      "type": "proves",
+      "note": "可用夹逼定理证明该极限结论"
+    },
+    {
+      "from": "抓大头",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "抓大头是处理∞/∞型极限的常用方法"
+    },
+    {
+      "from": "N项和数列求极限（夹逼法）",
+      "to": "抓大头",
+      "type": "uses",
+      "note": "判断放缩后两端极限是否相等时用抓大头"
+    },
+    {
+      "from": "有限多项正数N次方开N次方根极限",
+      "to": "抓大头",
+      "type": "related_to",
+      "note": "本质上是抓大头思想在N次根号下的体现"
+    },
+    {
+      "from": "斯特林公式",
+      "to": "N次根号下极限",
+      "type": "related_to",
+      "note": "斯特林公式给出了n!的近似表达式，用于阶乘的N次根号下极限"
+    },
+    {
+      "from": "未定式（7种）",
+      "to": "极限的四则运算法则",
+      "type": "exception_of",
+      "note": "未定式是不能直接使用四则运算法则的情形"
+    },
+    {
+      "from": "无穷小量",
+      "to": "等价无穷小",
+      "type": "basis_of",
+      "note": "等价无穷小是比较无穷小量趋于0的速度"
+    },
+    {
+      "from": "等价无穷小",
+      "to": "等价无穷小代换",
+      "type": "tool_for",
+      "note": "等价无穷小是代换操作的基础"
+    },
+    {
+      "from": "等价无穷小代换",
+      "to": "拆极限原则",
+      "type": "complements",
+      "note": "拆极限可将加减项变为独立的乘除因子，使代换可行"
+    },
+    {
+      "from": "等价无穷小代换",
+      "to": "常用等价无穷小公式（四组）",
+      "type": "derived_from",
+      "note": "等价无穷小本质上是泰勒公式的一阶近似，常用公式即为一阶结果"
+    },
+    {
+      "from": "洛必达法则",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "洛必达法则是处理0/0和∞/∞型未定式的通用方法"
+    },
+    {
+      "from": "洛必达法则",
+      "to": "极限的四则运算法则",
+      "type": "related_to",
+      "note": "洛必达法则可用微分中值定理证明，与四则运算法则共同构成极限计算工具"
+    },
+    {
+      "from": "指数差处理技巧（提出后者）",
+      "to": "等价无穷小",
+      "type": "uses",
+      "note": "提出后者后利用 e^Δ-1 ∼ Δ"
+    },
+    {
+      "from": "两个重要极限",
+      "to": "幂指型极限 - 吟唱法",
+      "type": "alternative_to",
+      "note": "凑重要极限是处理1^∞型的方法之一，与吟唱法等效"
+    },
+    {
+      "from": "幂指型函数",
+      "to": "幂指型极限 - 吟唱法",
+      "type": "method_for",
+      "note": "吟唱法是处理幂指型1^∞未定式的方法"
+    },
+    {
+      "from": "幂指型极限 - 吟唱法",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "吟唱法专用于1^∞型未定式"
+    },
+    {
+      "from": "幂指型极限 - 吟唱法",
+      "to": "幂指型函数",
+      "type": "applies_to",
+      "note": "吟唱法适用于所有幂指型极限，但1^∞可简化为乘底减1"
+    },
+    {
+      "from": "换元法求极限",
+      "to": "等价无穷小",
+      "type": "enables",
+      "note": "换元使变量趋于0，从而可用等价无穷小"
+    },
+    {
+      "from": "约去零因子法",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "约去零因子是处理0/0型的基本方法"
+    },
+    {
+      "from": "通分法",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "通分将∞-∞型转化为0/0或∞/∞型"
+    },
+    {
+      "from": "连续函数",
+      "to": "初等函数在有定义点连续",
+      "type": "basis_of",
+      "note": "初等函数的连续性建立在连续函数定义之上"
+    },
+    {
+      "from": "初等函数在有定义点连续",
+      "to": "极限的四则运算法则",
+      "type": "justifies",
+      "note": "为直接代入求极限提供理论依据（初等函数在其定义区间连续）"
+    },
+    {
+      "from": "定积分定义求极限",
+      "to": "N项和数列求极限（夹逼法）",
+      "type": "alternative_to",
+      "note": "定积分定义是夹逼法之外的另一种N项和极限方法"
+    },
+    {
+      "from": "夹逼定理的ε-N证明",
+      "to": "夹逼定理（夹逼准则）",
+      "type": "proves",
+      "note": "用ε-N语言严格证明夹逼定理的正确性"
+    },
+    {
+      "from": "数列放缩原则 - 全军出击",
+      "to": "数列放缩原则 - 略去局部",
+      "type": "complements",
+      "note": "两种放缩原则互补，可灵活组合使用"
+    },
+    {
+      "from": "拆极限原则",
+      "to": "极限的四则运算法则",
+      "type": "application_of",
+      "note": "拆极限的理论依据是加法运算法则"
+    },
+    {
+      "from": "提前求极限（非零因子代入）",
+      "to": "极限的四则运算法则",
+      "type": "application_of",
+      "note": "理论依据是乘法的极限运算法则"
+    },
+    {
+      "from": "等价无穷小代换",
+      "to": "洛必达法则",
+      "type": "alternative_to",
+      "note": "等价代换通常比洛必达更高效，洛必达作为垫后方法"
+    },
+    {
+      "from": "fermat_lemma",
+      "to": "rolle_theorem",
+      "type": "用于证明 (Used in Proof)",
+      "description": "罗尔定理的证明依赖于费马引理：先证区间内存在极值点，再用费马引理得到导数为0"
+    },
+    {
+      "from": "rolle_theorem",
+      "to": "lagrange_mvt",
+      "type": "用于证明 (Used in Proof)",
+      "description": "拉格朗日中值定理通过构造辅助函数 $F(x)=f(x)-\\frac{f(b)-f(a)}{b-a}(x-a)$，用罗尔定理证明"
+    },
+    {
+      "from": "lagrange_mvt",
+      "to": "cauchy_mvt",
+      "type": "特例 (Special Case)",
+      "description": "柯西中值定理中取 $g(x)=x$ 即为拉格朗日中值定理，故拉格朗日是柯西的特例"
+    },
+    {
+      "from": "lagrange_mvt",
+      "to": "taylor_formula",
+      "type": "特例 (Special Case)",
+      "description": "带拉格朗日余项的泰勒公式中取 $n=0$ 即为拉格朗日中值定理"
+    },
+    {
+      "from": "cauchy_mvt",
+      "to": "lhopital_rule",
+      "type": "用于证明 (Used in Proof)",
+      "description": "洛必达法则的证明依赖柯西中值定理"
+    },
+    {
+      "from": "lagrange_mvt",
+      "to": "function_monotonicity",
+      "type": "用于证明 (Used in Proof)",
+      "description": "单调性判定定理用拉格朗日中值定理证明：$f(x_2)-f(x_1)=f'(\\xi)(x_2-x_1)$"
+    },
+    {
+      "from": "fermat_lemma",
+      "to": "extreme_value",
+      "type": "必要条件 (Necessary Condition)",
+      "description": "费马引理说明可导函数取得极值的必要条件是导数为0"
+    },
+    {
+      "from": "extreme_value",
+      "to": "stationary_point",
+      "type": "包含关系 (Inclusion)",
+      "description": "可导函数的极值点必为驻点，但驻点不一定是极值点"
+    },
+    {
+      "from": "extreme_value",
+      "to": "maximum_minimum",
+      "type": "局部与全局 (Local vs Global)",
+      "description": "区间内部的最值一定是极值，但极值不一定是最值"
+    },
+    {
+      "from": "concavity_convexity",
+      "to": "inflection_point",
+      "type": "定义关系 (Definition)",
+      "description": "拐点是曲线上凹凸性发生变化的点"
+    },
+    {
+      "from": "second_derivative_test",
+      "to": "concavity_convexity",
+      "type": "判定方法 (Criterion)",
+      "description": "二阶导数的正负判定凹凸性：$f''(x)>0$ 凹，$f''(x)<0$ 凸"
+    },
+    {
+      "from": "peano_remainder",
+      "to": "lagrange_remainder",
+      "type": "对比关系 (Comparison)",
+      "description": "皮亚诺余项仅定性描述（高阶无穷小），适用于局部形态；拉格朗日余项可定量分析，适用于整体形态"
+    },
+    {
+      "from": "taylor_formula",
+      "to": "common_expansions",
+      "type": "具体化 (Specialization)",
+      "description": "常用泰勒展开（麦克劳林公式）是泰勒公式在 $x_0=0$ 处应用于基本初等函数的结果"
+    },
+    {
+      "from": "common_expansions",
+      "to": "taylor_limit_application",
+      "type": "应用 (Application)",
+      "description": "常用泰勒展开是泰勒公式求极限的基础工具"
+    },
+    {
+      "from": "common_expansions",
+      "to": "taylor_higher_order_derivative",
+      "type": "应用 (Application)",
+      "description": "利用已知展开式和唯一性可求函数在一点处的高阶导数值"
+    },
+    {
+      "from": "lagrange_remainder",
+      "to": "taylor_inequality_application",
+      "type": "应用 (Application)",
+      "description": "拉格朗日余项的具体表达式可用于证明不等式"
+    },
+    {
+      "from": "lhopital_rule",
+      "to": "indeterminate_form",
+      "type": "应用 (Application)",
+      "description": "洛必达法则可直接求 $\\frac{0}{0}$ 和 $\\frac{\\infty}{\\infty}$ 型不定式极限，间接求其他五种类型"
+    },
+    {
+      "from": "equivalent_infinitesimal",
+      "to": "lhopital_rule",
+      "type": "配合使用 (Combined Use)",
+      "description": "等价无穷小代换常与洛必达法则结合，先化简再求导，简化计算"
+    },
+    {
+      "from": "zero_point_theorem",
+      "to": "rolle_theorem",
+      "type": "配合使用 (Combined Use)",
+      "description": "双中值问题的第一问常用零点定理，第二问用罗尔定理或拉格朗日定理"
+    },
+    {
+      "from": "rolle_theorem",
+      "to": "auxiliary_function",
+      "type": "核心方法 (Core Method)",
+      "description": "辅助函数法是构造满足罗尔定理条件的函数来证明中值相关问题的一般方法"
+    },
+    {
+      "from": "asymptote",
+      "to": "function_graph_depiction",
+      "type": "组成部分 (Component)",
+      "description": "渐近线是函数图形描绘的重要步骤之一"
+    },
+    {
+      "from": "lagrange_mvt",
+      "to": "finite_increment_formula",
+      "type": "等价形式 (Equivalent Form)",
+      "description": "有限增量公式是拉格朗日中值定理的另一种写法"
+    },
+    {
+      "from": "不定积分",
+      "to": "微分",
+      "type": "逆运算",
+      "description": "$\\\\int$ 和 $d$ 是互逆的运算对子：$\\\\int dF = F+C$，$d\\\\int f\\\\,dx = f\\\\,dx$"
+    },
+    {
+      "from": "不定积分",
+      "to": "导数",
+      "type": "逆运算",
+      "description": "不定积分是求导的逆运算（反导数）：$\\\\frac{d}{dx}\\\\int f(x)\\\\,dx = f(x)$"
+    },
+    {
+      "from": "原函数",
+      "to": "不定积分",
+      "type": "组成部分",
+      "description": "不定积分是所有原函数的集合 $\\\\int f(x)\\\\,dx = F(x)+C$"
+    },
+    {
+      "from": "第一类换元积分法",
+      "to": "复合函数求导",
+      "type": "逆运算",
+      "description": "第一类换元法是 $[F(\\\\varphi(x))]' = f(\\\\varphi(x))\\\\varphi'(x)$ 的逆过程"
+    },
+    {
+      "from": "第二类换元积分法",
+      "to": "第一类换元积分法",
+      "type": "并列方法",
+      "description": "两者都是换元积分法的分支。第一类不换变量只凑微分，第二类显式换掉变量"
+    },
+    {
+      "from": "分部积分法",
+      "to": "乘积求导法则",
+      "type": "逆运算",
+      "description": "分部积分法是 $(uv)' = u'v + uv'$ 移项积分得到"
+    },
+    {
+      "from": "万能代换",
+      "to": "第二类换元积分法",
+      "type": "子方法",
+      "description": "万能代换是第二类换元法在三角函数有理式中的具体应用"
+    },
+    {
+      "from": "三角代换",
+      "to": "第二类换元积分法",
+      "type": "子方法",
+      "description": "三角代换是第二类换元法的核心应用，针对含根式的被积函数"
+    },
+    {
+      "from": "有理函数积分四步法",
+      "to": "部分分式分解",
+      "type": "包含",
+      "description": "部分分式分解是四步法的第三步（核心步骤）"
+    },
+    {
+      "from": "部分分式分解",
+      "to": "最简有理分式",
+      "type": "输出结果",
+      "description": "部分分式分解将有理真分式拆分为最简有理分式之和"
+    },
+    {
+      "from": "分部积分法",
+      "to": "凑微分法",
+      "type": "依赖",
+      "description": "分部积分中需要先用凑微分法将 $dv$ 凑出"
+    },
+    {
+      "from": "二次质因式积分之组合法",
+      "to": "凑微分法",
+      "type": "依赖",
+      "description": "组合法第一步将分子凑成分母的导数，使用凑微分法积分"
+    },
+    {
+      "from": "二次质因式积分之组合法",
+      "to": "配方法",
+      "type": "依赖",
+      "description": "组合法第二步需要配方法将分母化为标准形式"
+    },
+    {
+      "from": "$\\\\sin^m x \\\\cos^n x$ 型积分的分类处理",
+      "to": "凑微分法",
+      "type": "依赖",
+      "description": "奇次幂情形下提取一个因子凑微分"
+    },
+    {
+      "from": "definite-integral-definition",
+      "to": "riemann-sum",
+      "type": "composes"
+    },
+    {
+      "from": "definite-integral-definition",
+      "to": "integrability",
+      "type": "depends_on"
+    },
+    {
+      "from": "definite-integral-definition",
+      "to": "newton-leibniz-formula",
+      "type": "alternative_method"
+    },
+    {
+      "from": "riemann-sum",
+      "to": "darboux-sum",
+      "type": "related_to"
+    },
+    {
+      "from": "darboux-sum",
+      "to": "dirichlet-function",
+      "type": "used_to_prove"
+    },
+    {
+      "from": "integrability",
+      "to": "dirichlet-function",
+      "type": "counter_example"
+    },
+    {
+      "from": "newton-leibniz-formula",
+      "to": "indefinite-integral",
+      "type": "depends_on"
+    },
+    {
+      "from": "variable-limit-integral-derivative",
+      "to": "newton-leibniz-formula",
+      "type": "used_to_prove"
+    },
+    {
+      "from": "variable-limit-integral",
+      "to": "variable-limit-integral-derivative",
+      "type": "generalizes"
+    },
+    {
+      "from": "variable-limit-integral-derivative",
+      "to": "composite-variable-limit",
+      "type": "generalizes"
+    },
+    {
+      "from": "mean-value-theorem-for-integrals",
+      "to": "variable-limit-integral-derivative",
+      "type": "used_in_proof"
+    },
+    {
+      "from": "mean-value-theorem-for-integrals",
+      "to": "lagrange-mean-value-theorem",
+      "type": "alternative_proof"
+    },
+    {
+      "from": "mean-value-theorem-for-integrals",
+      "to": "intermediate-value-theorem",
+      "type": "alternative_proof"
+    },
+    {
+      "from": "estimation-inequality",
+      "to": "mean-value-theorem-for-integrals",
+      "type": "used_to_prove"
+    },
+    {
+      "from": "symmetry-integral-odd-even",
+      "to": "symmetry-general-formula",
+      "type": "specialization"
+    },
+    {
+      "from": "interval-reproduction-formula",
+      "to": "definite-integral-by-substitution",
+      "type": "is_a"
+    },
+    {
+      "from": "interval-reproduction-formula",
+      "to": "trigonometric-integral-transforms",
+      "type": "used_to_prove"
+    },
+    {
+      "from": "wallis-formula",
+      "to": "trigonometric-integral-transforms",
+      "type": "used_with"
+    },
+    {
+      "from": "piecewise-function-integral",
+      "to": "additivity-of-interval",
+      "type": "applies"
+    },
+    {
+      "from": "variable-limit-integral-limit",
+      "to": "composite-variable-limit",
+      "type": "depends_on"
+    },
+    {
+      "from": "n-term-sum-limit",
+      "to": "definite-integral-definition",
+      "type": "applies"
+    },
+    {
+      "from": "definite-integral-average-value",
+      "to": "mean-value-theorem-for-integrals",
+      "type": "related_to"
+    },
+    {
+      "from": "element-method",
+      "to": "geometric-application",
+      "type": "used_in"
+    },
+    {
+      "from": "element-method",
+      "to": "physical-application",
+      "type": "used_in"
+    },
+    {
+      "from": "symmetry-general-formula",
+      "to": "definite-integral-proof-techniques",
+      "type": "example_of"
+    },
+    {
+      "from": "interval-reproduction-formula",
+      "to": "definite-integral-proof-techniques",
+      "type": "example_of"
+    }
+  ]
+}

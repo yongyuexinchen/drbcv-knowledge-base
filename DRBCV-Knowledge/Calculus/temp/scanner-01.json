@@ -1,0 +1,995 @@
+{
+  "meta": {
+    "task": "极限主题概念提取",
+    "sources": [
+      "数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md",
+      "用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md",
+      "期末救急速讲 _ 求极限题型与方法一课通_原文.md"
+    ],
+    "extracted_at": "2026-07-17",
+    "concept_count": 39,
+    "relationship_count": 45
+  },
+  "concepts": [
+    {
+      "name": "数列",
+      "type": "definition",
+      "definition": "在大学阶段，只要说数列都是有无穷多项的实数序列，其中 $x_n$ 的表达式称为通项或者一般项。",
+      "related_to": [
+        "数列极限",
+        "通项"
+      ],
+      "examples": [
+        "等比数列 $\\frac{1}{2^n}$",
+        "从1到N递增的数列",
+        "震荡数列 $1, -1, 1, -1, \\ldots$"
+      ],
+      "counter_examples": [
+        "有限数列 {1, 2, 3} 不是大学阶段讨论的数列——大学阶段默认数列有无穷多项",
+        "有穷序列 a₁, a₂, …, aₙ（有限项）不是数列极限的研究对象"
+      ],
+      "notes": "N默认只取正整数，N趋于无穷大即N趋于正无穷大，这是一种约定俗成。"
+    },
+    {
+      "name": "数列极限",
+      "type": "definition",
+      "definition": "当N无限增大时，数列$x_n$无限接近于某个值A，则称A为数列的极限，记作 $\\lim\\limits_{n \\to \\infty} x_n = A$。",
+      "related_to": [
+        "数列",
+        "ε-N语言",
+        "收敛",
+        "发散"
+      ],
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\frac{1}{2^n} = 0$",
+        "$\\lim\\limits_{n \\to \\infty} \\frac{1}{n} = 0$",
+        "$\\lim\\limits_{n \\to \\infty} \\frac{n+(-1)^n}{n} = 1$"
+      ],
+      "counter_examples": [
+        "$x_n = n$ 当N趋于无穷大时，极限不存在（趋于正无穷）",
+        "$x_n = (-1)^n$ 在-1和1之间震荡，极限不存在"
+      ],
+      "notes": "判断数列极限通常通过观察XN的变化趋势。极限存在时称数列收敛于A，极限不存在时称数列发散。"
+    },
+    {
+      "name": "ε-N语言（伊普西隆-大恩语言）",
+      "type": "definition",
+      "definition": "由现代分析学之父维尔斯特拉斯提出。$\\lim\\limits_{n \\to \\infty} x_n = A$ 的定义：对于任意给定的正数 $\\varepsilon > 0$，总存在正整数 $N$，使得当 $n > N$ 时，恒有 $|x_n - A| < \\varepsilon$。",
+      "related_to": [
+        "数列极限",
+        "数列极限证明"
+      ],
+      "examples": [
+        "证明 lim_{n→∞} 1/n = 0：取 N = ⌊1/ε⌋ + 1，当 n > N 时，|1/n - 0| = 1/n < ε",
+        "证明 lim_{n→∞} q^n = 0 (|q|<1)：令 |q|^n < ε，解得 n > ln ε / ln |q|，取 N = ⌊ln ε / ln |q|⌋ + 1"
+      ],
+      "counter_examples": [
+        "对发散数列 x_n = (-1)^n，无法用ε-N语言定义极限（因为找不到A满足对所有ε>0存在N使得|(-1)^n-A|<ε）"
+      ],
+      "notes": "核心动作：1) 表达距离 $|x_n - A|$ 能要多小有多小；2) 总存在一个分界点N，使得N之后的所有项满足条件。大N的取法与ε有关，ε越小N越大。"
+    },
+    {
+      "name": "数列极限的证明（万能模板）",
+      "type": "method",
+      "definition": "证明数列极限的标准步骤：1) 任取 $\\varepsilon > 0$；2) 令 $|x_n - A| < \\varepsilon$，从中反解出 $n > \\text{某个表达式}$；3) 取 $N = \\lfloor \\text{表达式} \\rfloor + 1$；4) 当 $n > N$ 时，恒有 $|x_n - A| < \\varepsilon$，得证。",
+      "related_to": [
+        "ε-N语言",
+        "数列极限",
+        "取整函数"
+      ],
+      "examples": [
+        "证明 lim_{n→∞} (n+(-1)^n)/n = 1：|(n+(-1)^n)/n - 1| = 1/n < ε，需 n > 1/ε，取 N = ⌊1/ε⌋ + 1",
+        "证明 lim_{n→∞} 1/(n+1)² = 0：|1/(n+1)² - 0| ≤ 1/n² < ε，需 n > 1/√ε，取 N = ⌊1/√ε⌋ + 1"
+      ],
+      "counter_examples": [
+        "不能用于证明发散数列的极限——如证明 lim_{n→∞} (-1)^n 不存在，该模板无法适用（反解不出n>某表达式）"
+      ],
+      "notes": "若反解不方便，可先放大不等式再解。只要满足放大的式子小于ε，原式必然小于ε。大N通常取\"猪头取整加1\"，其中\"猪头\"是反解出的表达式。"
+    },
+    {
+      "name": "取整函数",
+      "type": "definition",
+      "definition": "取整函数（高斯取整）$\\lfloor x \\rfloor$ 表示不超过x的最大整数。重要性质：$\\lfloor x \\rfloor \\le x < \\lfloor x \\rfloor + 1$。",
+      "related_to": [
+        "ε-N语言",
+        "数列极限的证明"
+      ],
+      "examples": [
+        "$\\lfloor 1.5 \\rfloor = 1$",
+        "$\\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1 > \\frac{1}{\\varepsilon}$"
+      ],
+      "counter_examples": [
+        "⌊-1.5⌋ = -2（注意：取整是向下取整，负数的取整不是截断小数部分）",
+        "ceil(x) = ⌈x⌉ 是向上取整，与取整函数 ⌊x⌋ 不同，易混淆"
+      ],
+      "notes": "当ε>1时，$\\lfloor \\frac{1}{\\varepsilon} \\rfloor$ 可能为0，加1可确保N是正整数。"
+    },
+    {
+      "name": "收敛",
+      "type": "definition",
+      "definition": "若存在A使得 $\\lim\\limits_{n \\to \\infty} x_n = A$，则称数列$x_n$收敛于A，或称数列收敛。",
+      "related_to": [
+        "数列极限",
+        "发散"
+      ],
+      "examples": [
+        "1/n 收敛于0",
+        "lim_{n→∞} (2n+1)/(n+1) = 2，数列收敛于2",
+        "lim_{n→∞} q^n = 0（|q|<1时）"
+      ],
+      "counter_examples": [
+        "$(-1)^n$ 不收敛（发散）"
+      ],
+      "notes": "收敛是数列极限存在的等价说法。"
+    },
+    {
+      "name": "发散",
+      "type": "definition",
+      "definition": "若数列$x_n$不存在极限（包括趋于无穷或震荡），则称数列发散。",
+      "related_to": [
+        "数列极限",
+        "收敛"
+      ],
+      "examples": [
+        "$x_n = n$ 发散到正无穷",
+        "$x_n = (-1)^n$ 震荡发散"
+      ],
+      "counter_examples": [
+        "x_n = sin n：在[-1,1]间震荡无规律，极限不存在，数列发散",
+        "x_n = n·(-1)^n：绝对值趋于无穷但符号交替，极限不存在，数列发散"
+      ],
+      "notes": "发散包括两种情况：极限为无穷大，或极限不存在（如震荡）。"
+    },
+    {
+      "name": "夹逼定理（夹逼准则）",
+      "type": "theorem",
+      "definition": "极限的两大存在准则之一。条件：(1) 从某一项开始，$y_n \\le x_n \\le z_n$（等号可有可无）；(2) $\\lim\\limits_{n \\to \\infty} y_n = \\lim\\limits_{n \\to \\infty} z_n = A$。结论：$\\lim\\limits_{n \\to \\infty} x_n = A$ 存在且等于A。",
+      "related_to": [
+        "数列极限",
+        "单调有界准则",
+        "放缩法",
+        "N项和数列极限",
+        "N次根号下极限"
+      ],
+      "examples": [
+        "求 $\\lim\\limits_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{i}{n^2+n+i}$：通过放缩夹逼，极限为 $\\frac{1}{2}$",
+        "求 $\\lim\\limits_{n \\to \\infty} \\sqrt[n]{1+2^n+5^n} = 5$"
+      ],
+      "counter_examples": [
+        "$x_n = n$ 介于 $y_n = n-\\frac{1}{n}$ 和 $z_n = n+\\frac{1}{n}$ 之间，且 $y_n-z_n \\to 0$，但 $x_n$ 极限不存在（因为 $y_n,z_n$ 极限都不存在）"
+      ],
+      "notes": "也叫三明治定理。关键：两个条件缺一不可——不仅YN和ZN要无限接近，且它们的极限都必须存在且相等。反例说明$y_n-z_n \\to 0$ 不能推出 $y_n,z_n$ 极限存在。"
+    },
+    {
+      "name": "单调有界准则",
+      "type": "theorem",
+      "definition": "极限的两大存在准则之一。若数列单调递增且有上界，或单调递减且有下界，则数列极限存在。",
+      "related_to": [
+        "夹逼定理",
+        "数列极限存在准则"
+      ],
+      "examples": [
+        "x_n = (1+1/n)^n 单调递增且有上界e，故极限存在（即自然常数e的定义）",
+        "x_n = n/(n+1) 单调递增且有上界1，极限为1"
+      ],
+      "counter_examples": [
+        "单调无界数列：x_n = n 单调递增但无上界，极限不存在（趋于正无穷）",
+        "有界非单调数列：x_n = (-1)^n 有界（在[-1,1]）但不单调，不能用该准则判断收敛"
+      ],
+      "notes": "与夹逼定理并列的极限存在准则。本文未展开详述。"
+    },
+    {
+      "name": "数列放缩原则 - 全军出击",
+      "type": "method",
+      "definition": "遇到若干项求和或若干个正数连乘积，将所有项同时放大或缩小：求和时每项都放大到最大值，则整体 ≤ N倍最大值；每项都缩小到最小值，则整体 ≥ N倍最小值。连乘积中每个正数放大到最大值，则整体 ≤ 最大值的N次方。",
+      "related_to": [
+        "夹逼定理",
+        "N项和数列极限",
+        "放缩法"
+      ],
+      "examples": [
+        "$n! = 1 \\times 2 \\times \\cdots \\times n \\le n^n$",
+        "$\\sqrt[n]{A+B+C} \\le \\sqrt[n]{3C}$（C为最大值）",
+        "$\\sqrt[n]{A+B+C} \\ge \\sqrt[n]{3A}$（A为最小值）"
+      ],
+      "counter_examples": [
+        "全军出击用于求极限可能过松——如对 ∑_{i=1}^n 1/(n+i)，全军出击得 n/(2n) ≤ S ≤ n/(n+1)，两端极限分别为1/2和1，夹不住"
+      ],
+      "notes": "放缩结果不唯一，是最基本的放缩思路。"
+    },
+    {
+      "name": "数列放缩原则 - 略去局部",
+      "type": "method",
+      "definition": "通过删去或改变某些项来放缩：求和时略去正项则缩小，略去负项则放大；连乘积中略去小于1的因子则放大，略去大于1的因子则缩小。",
+      "related_to": [
+        "夹逼定理",
+        "放缩法"
+      ],
+      "examples": [
+        "$\\frac{1}{n^2+1} \\le \\frac{1}{n^2}$（删去+1放大）",
+        "$\\frac{2n-1}{2n} \\cdot \\frac{2n-3}{2n-2} \\cdots$ 略去小于1的因子放大",
+        "$\\frac{1}{2} \\cdot \\frac{3}{4} \\cdots \\frac{2n-1}{2n}$ 略去全部小于1的因子放大"
+      ],
+      "counter_examples": [
+        "略去正向求和项时只能缩小不能放大——如 ∑ 1/i² 略去某些项只能得到下界，无法同时获得上界"
+      ],
+      "notes": "略去局部比全军出击更省事，常用于连乘积的放缩。"
+    },
+    {
+      "name": "N项和数列求极限（夹逼法）",
+      "type": "method",
+      "definition": "当分母无法统一通分时，通过放缩将分母统一，再用夹逼定理求极限。关键：放缩的变量如果是分母中的低次项（\"弟弟\"），不影响极限结果。",
+      "related_to": [
+        "夹逼定理",
+        "放缩法",
+        "抓大头"
+      ],
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{i}{n^2+n+i} = \\frac{1}{2}$",
+        "$\\lim\\limits_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{1}{\\sqrt{n^2+i}} = 1$"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{1}{n+i}$ 用夹逼法放缩会失效（左边 $\\frac{1}{2}$，右边1，夹不住），更适合用定积分定义"
+      ],
+      "notes": "典型特征：无穷多项求和，分母随i变化无法直接通分。需注意放缩不能过松或过紧，确保两端极限相等。"
+    },
+    {
+      "name": "N次根号下极限",
+      "type": "method",
+      "definition": "正数开N次方根当N趋无穷大时极限为1；N的多项式开N次方根极限也为1。具体结论：$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{a} = 1$（a>0），$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{n^k} = 1$（k为有限正整数）。",
+      "related_to": [
+        "夹逼定理",
+        "斯特林公式",
+        "幂指型函数"
+      ],
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{n} = 1$",
+        "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{n^2+2n} = 1$"
+      ],
+      "counter_examples": [
+        "lim_{n→∞} ⁿ√(2^n) = 2 ≠ 1——注意区分 ⁿ√(a^n) = a 与 ⁿ√a = 1（a>0）的区别",
+        "lim_{n→∞} ⁿ√(n!) = ∞（斯特林公式给出 ~n/e），不是1——阶乘的N次根号是例外"
+      ],
+      "notes": "证明思路：$\\sqrt[n]{n} = n^{1/n} = e^{\\frac{\\ln n}{n}}$，而 $\\frac{\\ln n}{n} \\to 0$。本质是 $\\ln n$ 在 $n$ 面前忽略不计，可用洛必达法则严格证明。"
+    },
+    {
+      "name": "有限多项正数N次方开N次方根极限",
+      "type": "theorem",
+      "definition": "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{a_1^n + a_2^n + \\cdots + a_m^n} = \\max\\{a_1, a_2, \\ldots, a_m\\}$，其中 $a_i > 0$。",
+      "related_to": [
+        "夹逼定理",
+        "N次根号下极限",
+        "抓大头"
+      ],
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{1 + 2^n + 5^n} = 5$",
+        "$\\lim\\limits_{n \\to \\infty} \\sqrt[n]{A^{-n} + B^{-n}} = \\max\\{A^{-1}, B^{-1}\\}$"
+      ],
+      "counter_examples": [
+        "lim_{n→∞} ⁿ√(1^n + 1^n) = 1（所有项相等时结论仍为最大值=1），不是2",
+        "若包含非正数项（如 (-1)^n×2^n），该结论不适用，需另作处理"
+      ],
+      "notes": "可用夹逼定理证明：删去其他项只保留最大值项来缩小，放大为m倍最大值N次方，两边极限都是最大值。本质是\"抓大头\"。"
+    },
+    {
+      "name": "抓大头",
+      "type": "method",
+      "definition": "求 $\\frac{\\infty}{\\infty}$ 型极限时，分子分母只保留最高次项，低次项可忽略不计。标准做法：分子分母同除以最高次项。",
+      "related_to": [
+        "无穷大比无穷大",
+        "极限四则运算法则"
+      ],
+      "examples": [
+        "$\\lim\\limits_{n \\to \\infty} \\frac{\\frac{1}{2}n^2+n}{n^2+n+1} = \\frac{1}{2}$（分子分母同除以 $n^2$）",
+        "$\\lim\\limits_{n \\to \\infty} \\frac{n}{\\sqrt{n^2+n}} = 1$"
+      ],
+      "counter_examples": [
+        "lim_{n→∞} (n² + n) / (n + 1)——分子分母同除以n（而非n²），因为分母最高次是n而非n²，结果趋于∞而非1",
+        "lim_{n→∞} √(n²+n) / n——抓大头得 √(n²)/n = 1，实际上是 lim √(1+1/n) = 1，结果对但过程需注意根号内抓大头"
+      ],
+      "notes": "本质是分子分母同除以最高次项后，低次项除以最高次项极限为0。"
+    },
+    {
+      "name": "斯特林公式",
+      "type": "theorem",
+      "definition": "$n! \\sim \\sqrt{2\\pi n} \\left( \\frac{n}{e} \\right)^n$ 或近似 $\\sqrt[n]{n!} \\sim \\frac{n}{e}$。",
+      "related_to": [
+        "N次根号下极限",
+        "阶乘"
+      ],
+      "examples": [
+        "n! ~ √(2πn)·(n/e)^n",
+        "ⁿ√(n!) ~ n/e（用于夹逼定理放缩阶乘的N次根号）"
+      ],
+      "counter_examples": [
+        "斯特林公式是渐近公式，n较小时（如n=5）误差较大，不能直接用于精确计算"
+      ],
+      "notes": "在数列极限中较少使用，学到无穷级数时很实用。可直接用于放缩。"
+    },
+    {
+      "name": "极限的四则运算法则",
+      "type": "theorem",
+      "definition": "若 $\\lim f(x)=A$，$\\lim g(x)=B$，则：$\\lim (kf+lg)=kA+lB$；$\\lim (fg)=AB$；$\\lim (f/g)=A/B$（$B\\neq 0$）。和差积商的极限等于极限的和差积商。",
+      "related_to": [
+        "未定式",
+        "拆极限"
+      ],
+      "examples": [
+        "lim_{x→1} (x-3)/(x²-9) = lim(x-3)/lim(x²-9) = -2/(-8) = 1/4",
+        "lim_{x→0} (sin x + x²) = lim sin x + lim x² = 0 + 0 = 0"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x \\to 3} \\frac{x-3}{x^2-9}$ 不能直接代入（分母极限为0，不符合商的法则条件）"
+      ],
+      "notes": "使用前提：每个函数的极限都存在。商的法则额外要求分母极限不为零。"
+    },
+    {
+      "name": "连续函数",
+      "type": "definition",
+      "definition": "函数 $f(x)$ 在 $x_0$ 处连续当且仅当 $\\lim\\limits_{x \\to x_0} f(x) = f(x_0)$，即极限值等于函数值。",
+      "related_to": [
+        "初等函数",
+        "极限代入法"
+      ],
+      "examples": [
+        "f(x)=x-3 在 x=1 处连续，故 lim_{x→1} (x-3) = 1-3 = -2",
+        "f(x)=sin x 在任意点连续，故 lim_{x→π/2} sin x = sin(π/2) = 1"
+      ],
+      "counter_examples": [
+        "$f(x)=\\frac{x-3}{x^2-9}$ 在 $x=3$ 处无定义，不连续，不能直接代入"
+      ],
+      "notes": "连续函数求极限可简化为求函数值。"
+    },
+    {
+      "name": "初等函数在有定义点连续",
+      "type": "theorem",
+      "definition": "初等函数（由基本初等函数：反对幂指三 + 常数，经过有限次四则运算和复合构成的函数）在其定义区间内处处连续。",
+      "related_to": [
+        "连续函数",
+        "极限代入法"
+      ],
+      "examples": [
+        "x-3 是初等函数在x=1有定义，故 lim_{x→1}(x-3) = 1-3 = -2",
+        "e^x 是初等函数在任意点有定义，故 lim_{x→0} e^x = e^0 = 1"
+      ],
+      "counter_examples": [
+        "$\\frac{x-3}{x^2-9}$ 在 $x=3$ 处无定义，不保证连续，不能直接代入"
+      ],
+      "notes": "这一性质是求极限时\"直接代入\"的理论依据。"
+    },
+    {
+      "name": "未定式（7种）",
+      "type": "definition",
+      "definition": "七种不能直接确定极限结果的形式，必须通过恒等变形化简后才能求解：$\\frac{0}{0}$型、$\\frac{\\infty}{\\infty}$型、$0\\cdot\\infty$型、$\\infty-\\infty$型、$1^\\infty$型、$\\infty^0$型、$0^0$型。",
+      "related_to": [
+        "等价无穷小",
+        "洛必达法则",
+        "两个重要极限",
+        "幂指型函数"
+      ],
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{\\sin x}{x}$（$\\frac{0}{0}$型）",
+        "$\\lim\\limits_{x \\to \\infty} \\left(1+\\frac{1}{x}\\right)^x$（$1^\\infty$型）"
+      ],
+      "counter_examples": [
+        "lim_{x→0} x/x² = lim 1/x = ∞，虽然也是0/0型但极限为无穷大——未定式的结果可以是一切",
+        "lim_{x→0} (1-cos x)/x² = 1/2（0/0型结果可能为非零有限值）"
+      ],
+      "notes": "判断极限类型是第一步。非未定式可直接代入求值。$\\frac{0}{0}$型中分子分母是趋于0的无穷小量，不是真0。"
+    },
+    {
+      "name": "无穷小量",
+      "type": "definition",
+      "definition": "极限为0的变量称为无穷小量。如当 $x \\to 0$ 时，$\\sin x$、$x$、$1-\\cos x$ 等都是无穷小量。",
+      "related_to": [
+        "等价无穷小",
+        "未定式"
+      ],
+      "examples": [
+        "x→0时，x、sin x、tan x 都是无穷小量",
+        "x→∞时，1/x、1/x² 都是无穷小量"
+      ],
+      "counter_examples": [
+        "lim_{x→0} 1/x 不是无穷小量（趋于无穷大）",
+        "常数函数 f(x)=0.0001 虽很小但不是无穷小量——极限不为0"
+      ],
+      "notes": "无穷小乘有界函数仍是无穷小。"
+    },
+    {
+      "name": "等价无穷小",
+      "type": "definition",
+      "definition": "若 $\\lim \\frac{\\alpha}{\\beta} = 1$，则称 $\\alpha$ 与 $\\beta$ 是等价无穷小，记作 $\\alpha \\sim \\beta$。表示两者趋于0的速度基本相同。",
+      "related_to": [
+        "无穷小量",
+        "等价无穷小代换",
+        "泰勒公式"
+      ],
+      "examples": [
+        "x→0时 sin x ~ x",
+        "x→0时 tan x ~ x"
+      ],
+      "counter_examples": [
+        "x→0时 sin x 与 x² 不等价——lim sin x/x² = lim x/x² = ∞，比值不为1",
+        "x→1时 sin x 与 x 不等价——只在x→0时成立"
+      ],
+      "notes": "注意是比值极限为1时才等价。等价无穷小可以在整个函数的乘除因子中进行代换。"
+    },
+    {
+      "name": "等价无穷小代换",
+      "type": "method",
+      "definition": "在求极限时，将乘除因子用其等价无穷小替换，将复杂函数统一化为 $x^k$ 形式，从而简化计算。代换规则：必须是整个函数的乘除因子才能代换，加减项中不可直接代换。",
+      "related_to": [
+        "等价无穷小",
+        "未定式",
+        "拆极限"
+      ],
+      "examples": [
+        "lim_{x→0} (x-sin x)/(tan x·(1-cos x)) = lim (x³/6)/(x·x²/2) = 1/3",
+        "lim_{x→0} sin(2x)/tan(3x) = lim 2x/3x = 2/3"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x \\to 0} \\left(\\frac{1}{\\sin^2 x} - \\frac{1}{x^2}\\right)$ 中单独代换 $\\sin x \\sim x$ 会得到错误结果0（正确答案为 $\\frac{1}{3}$）"
+      ],
+      "notes": "加减项可通过拆极限变成乘除因子后再代换。X可广义化为任意趋于0的函数（$e^{\\square}-1 \\sim \\square$）。"
+    },
+    {
+      "name": "常用等价无穷小公式（四组）",
+      "type": "method",
+      "definition": "当 $x \\to 0$ 时的常用等价公式：\n第一组（等价于x）：$\\sin x \\sim x$，$\\tan x \\sim x$，$\\arcsin x \\sim x$，$\\arctan x \\sim x$，$e^x-1 \\sim x$，$\\ln(1+x) \\sim x$\n第二组：$a^x-1 \\sim x\\ln a$，$(1+x)^\\alpha-1 \\sim \\alpha x$（$\\alpha \\in \\mathbb{R}\\setminus\\{0\\}$）\n第三组：$1-\\cos x \\sim \\frac{1}{2}x^2$，$x-\\ln(1+x) \\sim \\frac{1}{2}x^2$\n第四组：$x-\\sin x \\sim \\frac{1}{6}x^3$，$\\arcsin x - x \\sim \\frac{1}{6}x^3$，$x-\\tan x \\sim -\\frac{1}{3}x^3$，$\\arctan x - x \\sim -\\frac{1}{3}x^3$",
+      "related_to": [
+        "等价无穷小",
+        "泰勒公式",
+        "等价无穷小代换"
+      ],
+      "examples": [
+        "$\\sqrt{1+x}-1 = (1+x)^{1/2}-1 \\sim \\frac{1}{2}x$",
+        "$1-\\cos x \\sim \\frac{1}{2}x^2$",
+        "$e^{x^3}-1 \\sim x^3$（广义化）"
+      ],
+      "counter_examples": [
+        "x-sin x ~ x³/6 只当 x→0 成立——若 x→1 则 x-sin x 不趋于0，不能代换",
+        "ln(1+x) ~ x 成立，但 ln x 当 x→0⁺ 趋于 -∞，不是无穷小，不能代换"
+      ],
+      "notes": "所有x可替换为任意趋于0的表达式（如 $1-\\cos(x^2) \\sim \\frac{1}{2}x^4$）。第三、四组较为进阶但常用。$\\cos x - 1 \\sim -\\frac{1}{2}x^2$。$\\ln(1+x)$ 当 $x \\to 1$ 时可换元：$\\ln(1+u-1) \\sim u-1$。"
+    },
+    {
+      "name": "拆极限原则",
+      "type": "method",
+      "definition": "若拆开后两个极限都存在，则可拆（存在+存在=存在）。若拆开后两个极限都不存在，不可拆（可能破坏原极限）。核心技巧：看到极限存在的部分就可以先拆出来。",
+      "related_to": [
+        "极限四则运算法则",
+        "等价无穷小代换"
+      ],
+      "examples": [
+        "lim_{x→0} (sin x/x + x·sin(1/x)) = 1 + 0 = 1（两项极限均存在，可拆）",
+        "lim_{x→0} (x/x² + sin x/x) ——第一项1/x极限不存在，不能拆"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{x-\\sin x}{x^3}$ 拆成 $\\frac{x}{x^3} - \\frac{\\sin x}{x^3}$ 会破坏极限（两项都不存在）"
+      ],
+      "notes": "终极原则：任何情况下看到存在就拆出。若拆出后剩余部分极限存在则得结果，不存在则答不存在——拆的动作本身没错。"
+    },
+    {
+      "name": "提前求极限（非零因子代入）",
+      "type": "method",
+      "definition": "若某个乘除因子的极限存在且非零（不为0），则可先求出该极限值代入，简化后续计算。理论依据：$\\lim (f \\cdot g) = (\\lim f) \\cdot (\\lim g)$ 且 $\\lim f \\neq 0$。",
+      "related_to": [
+        "极限四则运算法则",
+        "等价无穷小代换"
+      ],
+      "examples": [
+        "lim_{x→0} (x/sin x)·cos x = 1·1 = 1（cos x 极限为1非零，可提前求）",
+        "lim_{x→0} e^x·sin x/x = 1·1 = 1"
+      ],
+      "counter_examples": [
+        "$\\lim\\limits_{x \\to 0} \\frac{\\ln(1+x)}{x}$ 不能把 $\\ln(1+x)$ 先代入0（极限为0的因子不能提前代入，需看阶数）"
+      ],
+      "notes": "必须是整个函数的乘除因子。极限为零的因子不能提前代入（会丢失阶数信息）。"
+    },
+    {
+      "name": "洛必达法则",
+      "type": "theorem",
+      "definition": "若 $\\lim \\frac{f(x)}{g(x)}$ 为 $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$ 型未定式，且在去心邻域内 $f'(x)$、$g'(x)$ 存在且 $g'(x) \\neq 0$，则 $\\lim \\frac{f(x)}{g(x)} = \\lim \\frac{f'(x)}{g'(x)}$，前提是后者极限存在或为无穷大。",
+      "related_to": [
+        "未定式",
+        "微分中值定理",
+        "等价无穷小"
+      ],
+      "examples": [
+        "lim_{x→3} (x-3)/(x²-9) = lim_{x→3} 1/(2x) = 1/6",
+        "lim_{x→0} (e^x - 1)/x = lim_{x→0} e^x/1 = 1"
+      ],
+      "counter_examples": [
+        "lim_{x→0} (x² sin(1/x))/sin x 洛必达后分子导数震荡无极限，不满足第三个条件，但原极限存在(=0)——洛必达不是万能"
+      ],
+      "notes": "三个条件缺一不可：1) $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$型；2) 分子分母可导且分母导数不为0；3) 导数之比的极限存在或为无穷大。洛必达是\"垫后\"方法，等价代换通常更高效。"
+    },
+    {
+      "name": "指数差处理技巧（提出后者）",
+      "type": "method",
+      "definition": "遇到 $e^{f(x)} - e^{g(x)}$ 形式，提出后者 $e^{g(x)}$：$e^{f(x)} - e^{g(x)} = e^{g(x)}(e^{f(x)-g(x)}-1)$。当 $f-g \\to 0$ 时，可用 $e^{f-g} - 1 \\sim f-g$。",
+      "related_to": [
+        "等价无穷小",
+        "洛必达法则"
+      ],
+      "examples": [
+        "lim_{x→0} (e^{x²} - e^{2-2cos x})/x⁴ = 1/12（提出e^{2-2cos x}后用等价代换和洛必达）",
+        "lim_{x→0} (e^{sin x} - e^{tan x})/x³ = -1/2（提出后者e^{tan x}后等价于sin x - tan x ~ -x³/2）"
+      ],
+      "counter_examples": [
+        "若f-g不趋于0（如e^{x} - e^{2x}当x→∞），提出后者后括号内不趋于0，不能用等价代换"
+      ],
+      "notes": "口诀：\"提出后者\"。若 $f,g$ 都趋于0，则 $e^{g} \\to 1$ 可进一步简化为 $e^f - e^g \\sim f-g$（小题可用）。"
+    },
+    {
+      "name": "两个重要极限",
+      "type": "theorem",
+      "definition": "第一重要极限：$\\lim\\limits_{x \\to 0} \\frac{\\sin x}{x} = 1$。第二重要极限：$\\lim\\limits_{x \\to \\infty} \\left(1+\\frac{1}{x}\\right)^x = e$ 或 $\\lim\\limits_{x \\to 0} (1+x)^{1/x} = e$。",
+      "related_to": [
+        "$1^\\infty$未定式",
+        "幂指型函数"
+      ],
+      "examples": [
+        "lim_{x→0} sin x/x = 1（第一重要极限）",
+        "lim_{x→∞} (1+1/x)^x = e（第二重要极限）"
+      ],
+      "counter_examples": [
+        "lim_{x→∞} (1+2/x)^x = e² 不是e——底和指数必须互为倒数才等于e",
+        "lim_{x→0} (1+x)^{1/(2x)} = e^{1/2} 不是e——凑重要极限时指数必须精确匹配"
+      ],
+      "notes": "本质特征：底数极限为1，指数极限为无穷大（即 $1^\\infty$型），且底数的\"1+某物\"与指数互为倒数。"
+    },
+    {
+      "name": "幂指型函数",
+      "type": "definition",
+      "definition": "形如 $u(x)^{v(x)}$ 的函数，底数和指数都含有变量。$u(x)$ 称为底函数（$>0$），$v(x)$ 称为指函数。",
+      "related_to": [
+        "$1^\\infty$未定式",
+        "两个重要极限",
+        "吟唱法"
+      ],
+      "examples": [
+        "$(1+x)^{1/x}$",
+        "$\\left(\\frac{1+x}{1-x}\\right)^{1/x}$",
+        "$x^{\\sin x}$"
+      ],
+      "counter_examples": [
+        "aˣ（a>0常数，x变量）是纯指数函数，不是幂指型——底不含变量",
+        "xⁿ（n常数）是纯幂函数，不是幂指型——指数不含变量"
+      ],
+      "notes": "三种常见未定式：$1^\\infty$、$\\infty^0$、$0^0$。除此之外的形式可直接代入求值。"
+    },
+    {
+      "name": "幂指型极限 - 吟唱法",
+      "type": "method",
+      "definition": "处理 $1^\\infty$ 未定式的通用方法：原式 $= e^{\\lim [v(x) \\cdot (u(x)-1)]}$。推导：$u^v = e^{v\\ln u}$，当 $u \\to 1$ 时 $\\ln u \\sim u-1$，故原式 $= e^{\\lim v(x)(u(x)-1)}$。\n口诀：\"E的极限符号往里走，指函数抄一遍，再乘底减1\"。",
+      "related_to": [
+        "$1^\\infty$未定式",
+        "幂指型函数",
+        "两个重要极限"
+      ],
+      "examples": [
+        "$\\lim\\limits_{x \\to 0} \\left(\\frac{\\ln(1+x)}{x}\\right)^{\\frac{1}{e^x-1}} = e^{-\\frac{1}{2}}$",
+        "$\\lim\\limits_{x \\to 0} \\left(\\frac{1+x}{1-x}\\right)^{1/x} = e^2$"
+      ],
+      "counter_examples": [
+        "对∞^0型如 lim_{x→∞} x^{1/x}，吟唱法用 e^{lim v·ln u} 形式，不能用「乘底减1」简写（因为底不趋于1）",
+        "对0^0型如 lim_{x→0+} x^x，同样只能用 e^{lim v·ln u}，不能用「底减1」"
+      ],
+      "notes": "相比凑重要极限法更简洁，书写时全程带着E写（避免漏掉E）。对 $\\infty^0$ 和 $0^0$ 型则用 $e^{\\lim v \\ln u}$（不能简化为 $u-1$）。"
+    },
+    {
+      "name": "换元法求极限",
+      "type": "method",
+      "definition": "当极限变量不趋于0时，通过换元令新变量趋于0，以使用等价无穷小等工具。如令 $t = x - x_0$ 将 $x \\to x_0$ 化为 $t \\to 0$。",
+      "related_to": [
+        "等价无穷小",
+        "$\\ln(1+x)$的推广"
+      ],
+      "examples": [
+        "lim_{x→1} ln x/(x-1)：令 t=x-1→0，则 ln(1+t)/t → 1",
+        "lim_{x→0} sin(2x)/x：令 t=2x→0，则 sin t/(t/2) = 2·sin t/t → 2"
+      ],
+      "counter_examples": [
+        "lim_{x→∞} sin(1/x)/(1/x) 用 t=1/x→0 换元后得 sin t/t → 1——换元方向正确，但变量趋于无穷时需注意换元后的趋于方向"
+      ],
+      "notes": "重要技巧：$\\ln x$ 当 $x \\to 1$ 时，令 $t = x-1$，则 $\\ln(1+t) \\sim t$。"
+    },
+    {
+      "name": "约去零因子法",
+      "type": "method",
+      "definition": "对 $\\frac{0}{0}$ 型极限，若分子分母有公因子（零因子），可通过因式分解约去后代入求值。",
+      "related_to": [
+        "未定式",
+        "极限代入法"
+      ],
+      "examples": [
+        "lim_{x→3} (x-3)/(x²-9) = lim_{x→3} 1/(x+3) = 1/6",
+        "lim_{x→0} (1-cos x)/x = lim_{x→0} (1-cos x)(1+cos x)/(x(1+cos x)) = lim x²/(2x·2) = 0（分子有理化后约去x）"
+      ],
+      "counter_examples": [
+        "lim_{x→0} sin x/x 分子分母没有公共零因子可约（sin x和x是不同函数，不能直接约分）"
+      ],
+      "notes": "$x \\to 3$ 意味着无限接近但取不到3，所以 $x-3$ 可约分（不为0）。"
+    },
+    {
+      "name": "通分法",
+      "type": "method",
+      "definition": "对 $\\infty - \\infty$ 型或某些复杂极限，通过通分化为 $\\frac{0}{0}$ 或 $\\frac{\\infty}{\\infty}$ 型再求解。",
+      "related_to": [
+        "未定式",
+        "等价无穷小",
+        "洛必达法则"
+      ],
+      "examples": [
+        "lim_{x→0} (1/sin²x - 1/x²) 通分后化为0/0型再处理，结果为1/3",
+        "lim_{x→1} (1/(x-1) - 1/ln x) 通分后化为0/0型"
+      ],
+      "counter_examples": [
+        "lim_{x→0} (1/x - 1/sin x) 通分后得 (sin x - x)/(x·sin x)，虽为0/0型但通分后仍较复杂——有时通分不是最优路径"
+      ],
+      "notes": "通分时可将 $\\tan x$ 切化弦（$\\tan x = \\frac{\\sin x}{\\cos x}$）简化计算。"
+    },
+    {
+      "name": "定积分定义求极限",
+      "type": "method",
+      "definition": "将 $\\frac{1}{n}\\sum_{i=1}^{n} f(\\frac{i}{n})$ 形式的极限转化为定积分 $\\int_0^1 f(x) dx$ 求解。",
+      "related_to": [
+        "N项和数列极限",
+        "夹逼定理"
+      ],
+      "examples": [
+        "lim_{n→∞} (1/n)∑_{i=1}^n f(i/n) = ∫₀¹ f(x) dx",
+        "lim_{n→∞} ∑_{i=1}^n 1/(n+i) = lim (1/n)∑ 1/(1+i/n) = ∫₀¹ 1/(1+x) dx = ln 2"
+      ],
+      "counter_examples": [
+        "不适用于夹逼法已可处理的∑ i/(n²+n+i)类型——定积分定义要求每项含因子1/n"
+      ],
+      "notes": "本文提及此方法是处理某些夹逼法失效的N项和极限的替代方案（如 $\\sum_{i=1}^{n} \\frac{1}{n+i}$）。"
+    },
+    {
+      "name": "夹逼定理的ε-N证明",
+      "type": "proof",
+      "definition": "用ε-N语言证明夹逼定理：由 $y_n \\to A$ 知 $\\exists N_1$ 使 $|y_n-A|<\\varepsilon$，由 $z_n \\to A$ 知 $\\exists N_2$ 使 $|z_n-A|<\\varepsilon$，取 $N_0 = \\max\\{N_1, N_2, N_x\\}$，则当 $n>N_0$ 时 $A-\\varepsilon < y_n \\le x_n \\le z_n < A+\\varepsilon$，即 $|x_n-A|<\\varepsilon$，故 $x_n \\to A$。",
+      "related_to": [
+        "夹逼定理",
+        "ε-N语言"
+      ],
+      "examples": [
+        "YN极限为A ⇒ ∃N₁使n>N₁时|YN-A|<ε",
+        "ZN极限为A ⇒ ∃N₂使n>N₂时|ZN-A|<ε"
+      ],
+      "counter_examples": [
+        "该证明不能用于YN和ZN极限不相等的情形——夹逼定理的证明依赖于两端极限均为A"
+      ],
+      "notes": "三个分界点取最大值：YN的分界点N1，ZN的分界点N2，以及XN介于YN和ZN之间的起始点Nx。"
+    },
+    {
+      "name": "幂指函数的极限运算法则（第五种运算法则）",
+      "type": "theorem",
+      "definition": "若当 x → x₀ 时，底函数 u(x) 的极限 lim u(x) = A > 0 且指函数 v(x) 的极限 lim v(x) = B 均存在，则 lim u(x)^{v(x)} = A^B。可视为与四则运算法则并列的第五种极限运算法则。",
+      "related_to": [
+        "极限的四则运算法则",
+        "幂指型函数",
+        "幂指型极限 - 吟唱法"
+      ],
+      "examples": [
+        "lim_{x→0} cos x^{sin x} = 1^0 = 1（底极限1>0且指极限0存在，可直接用）",
+        "lim_{x→1} x^{x²} = 1¹ = 1（非未定式，可直接用该法则代入）"
+      ],
+      "counter_examples": [
+        "lim_{x→∞} (1+1/x)^x 是 1^∞ 未定式，不能直接用法则写 1^∞ = 1"
+      ],
+      "notes": "使用前提：底函数极限存在且严格大于0，指函数极限存在。三种幂指型未定式（1^∞、∞^0、0^0）不能直接使用此法则，需用吟唱法或重要极限处理。"
+    },
+    {
+      "name": "无穷小乘有界函数的性质",
+      "type": "theorem",
+      "definition": "无穷小量与有界函数的乘积仍为无穷小量。即若 lim α(x) = 0 且 |β(x)| ≤ M（有界），则 lim α(x)·β(x) = 0。",
+      "related_to": [
+        "无穷小量",
+        "拆极限原则"
+      ],
+      "examples": [
+        "lim_{x→0} x·sin(1/x) = 0（x 是无穷小，sin(1/x) 有界）",
+        "lim_{x→0} x²·cos(1/x) = 0"
+      ],
+      "counter_examples": [
+        "lim_{x→0} (1/x)·sin x = 1：1/x 不是有界函数，不可用此性质"
+      ],
+      "notes": "这是无穷小量的重要性质。常用于判断 0·有界 形式的极限为0。但必须先确认其中一个因子确实是无穷小量且另一个确实有界。"
+    },
+    {
+      "name": "基本初等函数",
+      "type": "definition",
+      "definition": "六类基本初等函数：反三角函数、对数函数、幂函数、指数函数、三角函数、常数函数（简称「反对幂指三」+ 常数）。初等函数是由基本初等函数经过有限次四则运算和复合所构成的、能用一个式子表达的函数。",
+      "related_to": [
+        "初等函数在有定义点连续",
+        "连续函数",
+        "极限的四则运算法则"
+      ],
+      "examples": [
+        "sin x + x² 是初等函数（三角函数与幂函数的四则运算）",
+        "ln(1+x)/x 是初等函数（对数函数与幂函数的有理运算组合）",
+        "e^{x²} 是初等函数（指数函数与幂函数的复合）"
+      ],
+      "counter_examples": [
+        "分段函数如 |x|/x（x≠0时）不是初等函数",
+        "符号函数 sgn(x) 不是初等函数"
+      ],
+      "notes": "「反对幂指三」是求极限和求导中常用的记忆口诀。初等函数在其定义区间内处处连续——这是「直接代入」求极限的理论依据。"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "数列极限",
+      "to": "ε-N语言（伊普西隆-大恩语言）",
+      "type": "defined_by",
+      "note": "ε-N语言是数列极限的严格数学定义"
+    },
+    {
+      "from": "数列极限",
+      "to": "收敛",
+      "type": "equivalent",
+      "note": "极限存在即数列收敛"
+    },
+    {
+      "from": "数列极限",
+      "to": "发散",
+      "type": "opposite",
+      "note": "极限不存在即数列发散"
+    },
+    {
+      "from": "ε-N语言（伊普西隆-大恩语言）",
+      "to": "数列极限的证明（万能模板）",
+      "type": "method_for",
+      "note": "ε-N语言是证明数列极限的标准工具"
+    },
+    {
+      "from": "数列极限的证明（万能模板）",
+      "to": "取整函数",
+      "type": "uses",
+      "note": "大N通常通过取整函数构造"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "单调有界准则",
+      "type": "parallel",
+      "note": "两者是极限的两大存在准则"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "数列放缩原则 - 全军出击",
+      "type": "uses",
+      "note": "放缩是应用夹逼定理的核心技术"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "数列放缩原则 - 略去局部",
+      "type": "uses",
+      "note": "略去局部是另一种放缩策略"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "N项和数列求极限（夹逼法）",
+      "type": "method_for",
+      "note": "夹逼定理是求N项和极限的核心方法"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "N次根号下极限",
+      "type": "method_for",
+      "note": "夹逼定理是N次根号下极限的重要工具"
+    },
+    {
+      "from": "夹逼定理（夹逼准则）",
+      "to": "有限多项正数N次方开N次方根极限",
+      "type": "proves",
+      "note": "可用夹逼定理证明该极限结论"
+    },
+    {
+      "from": "抓大头",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "抓大头是处理∞/∞型极限的常用方法"
+    },
+    {
+      "from": "N项和数列求极限（夹逼法）",
+      "to": "抓大头",
+      "type": "uses",
+      "note": "判断放缩后两端极限是否相等时用抓大头"
+    },
+    {
+      "from": "有限多项正数N次方开N次方根极限",
+      "to": "抓大头",
+      "type": "related_to",
+      "note": "本质上是抓大头思想在N次根号下的体现"
+    },
+    {
+      "from": "斯特林公式",
+      "to": "N次根号下极限",
+      "type": "related_to",
+      "note": "斯特林公式给出了n!的近似表达式，用于阶乘的N次根号下极限"
+    },
+    {
+      "from": "未定式（7种）",
+      "to": "极限的四则运算法则",
+      "type": "exception_of",
+      "note": "未定式是不能直接使用四则运算法则的情形"
+    },
+    {
+      "from": "无穷小量",
+      "to": "等价无穷小",
+      "type": "basis_of",
+      "note": "等价无穷小是比较无穷小量趋于0的速度"
+    },
+    {
+      "from": "等价无穷小",
+      "to": "等价无穷小代换",
+      "type": "tool_for",
+      "note": "等价无穷小是代换操作的基础"
+    },
+    {
+      "from": "等价无穷小代换",
+      "to": "拆极限原则",
+      "type": "complements",
+      "note": "拆极限可将加减项变为独立的乘除因子，使代换可行"
+    },
+    {
+      "from": "等价无穷小代换",
+      "to": "常用等价无穷小公式（四组）",
+      "type": "derived_from",
+      "note": "等价无穷小本质上是泰勒公式的一阶近似，常用公式即为一阶结果"
+    },
+    {
+      "from": "洛必达法则",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "洛必达法则是处理0/0和∞/∞型未定式的通用方法"
+    },
+    {
+      "from": "洛必达法则",
+      "to": "极限的四则运算法则",
+      "type": "related_to",
+      "note": "洛必达法则可用微分中值定理证明，与四则运算法则共同构成极限计算工具"
+    },
+    {
+      "from": "指数差处理技巧（提出后者）",
+      "to": "等价无穷小",
+      "type": "uses",
+      "note": "提出后者后利用 e^Δ-1 ∼ Δ"
+    },
+    {
+      "from": "两个重要极限",
+      "to": "幂指型极限 - 吟唱法",
+      "type": "alternative_to",
+      "note": "凑重要极限是处理1^∞型的方法之一，与吟唱法等效"
+    },
+    {
+      "from": "幂指型函数",
+      "to": "幂指型极限 - 吟唱法",
+      "type": "method_for",
+      "note": "吟唱法是处理幂指型1^∞未定式的方法"
+    },
+    {
+      "from": "幂指型极限 - 吟唱法",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "吟唱法专用于1^∞型未定式"
+    },
+    {
+      "from": "幂指型极限 - 吟唱法",
+      "to": "幂指型函数",
+      "type": "applies_to",
+      "note": "吟唱法适用于所有幂指型极限，但1^∞可简化为乘底减1"
+    },
+    {
+      "from": "换元法求极限",
+      "to": "等价无穷小",
+      "type": "enables",
+      "note": "换元使变量趋于0，从而可用等价无穷小"
+    },
+    {
+      "from": "约去零因子法",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "约去零因子是处理0/0型的基本方法"
+    },
+    {
+      "from": "通分法",
+      "to": "未定式（7种）",
+      "type": "method_for",
+      "note": "通分将∞-∞型转化为0/0或∞/∞型"
+    },
+    {
+      "from": "连续函数",
+      "to": "初等函数在有定义点连续",
+      "type": "basis_of",
+      "note": "初等函数的连续性建立在连续函数定义之上"
+    },
+    {
+      "from": "初等函数在有定义点连续",
+      "to": "极限的四则运算法则",
+      "type": "justifies",
+      "note": "为直接代入求极限提供理论依据（初等函数在其定义区间连续）"
+    },
+    {
+      "from": "定积分定义求极限",
+      "to": "N项和数列求极限（夹逼法）",
+      "type": "alternative_to",
+      "note": "定积分定义是夹逼法之外的另一种N项和极限方法"
+    },
+    {
+      "from": "夹逼定理的ε-N证明",
+      "to": "夹逼定理（夹逼准则）",
+      "type": "proves",
+      "note": "用ε-N语言严格证明夹逼定理的正确性"
+    },
+    {
+      "from": "数列放缩原则 - 全军出击",
+      "to": "数列放缩原则 - 略去局部",
+      "type": "complements",
+      "note": "两种放缩原则互补，可灵活组合使用"
+    },
+    {
+      "from": "拆极限原则",
+      "to": "极限的四则运算法则",
+      "type": "application_of",
+      "note": "拆极限的理论依据是加法运算法则"
+    },
+    {
+      "from": "提前求极限（非零因子代入）",
+      "to": "极限的四则运算法则",
+      "type": "application_of",
+      "note": "理论依据是乘法的极限运算法则"
+    },
+    {
+      "from": "等价无穷小代换",
+      "to": "洛必达法则",
+      "type": "alternative_to",
+      "note": "等价代换通常比洛必达更高效，洛必达作为垫后方法"
+    },
+    {
+      "from": "幂指函数的极限运算法则（第五种运算法则）",
+      "to": "极限的四则运算法则",
+      "type": "parallel",
+      "note": "幂指函数极限运算法则与四则运算法则并列，合称五大极限运算法则"
+    },
+    {
+      "from": "幂指函数的极限运算法则（第五种运算法则）",
+      "to": "幂指型极限 - 吟唱法",
+      "type": "exception_of",
+      "note": "当幂指型为1^∞/∞^0/0^0未定式时，该法则不适用，需用吟唱法处理"
+    },
+    {
+      "from": "幂指函数的极限运算法则（第五种运算法则）",
+      "to": "幂指型函数",
+      "type": "applies_to",
+      "note": "该法则适用于所有幂指型函数，但三种未定式情形除外"
+    },
+    {
+      "from": "无穷小乘有界函数的性质",
+      "to": "无穷小量",
+      "type": "property_of",
+      "note": "该性质是无穷小量的基本运算性质之一"
+    },
+    {
+      "from": "无穷小乘有界函数的性质",
+      "to": "拆极限原则",
+      "type": "justifies",
+      "note": "用于判断拆开后某一项的极限是否存在（无穷小×有界=0，存在）"
+    },
+    {
+      "from": "基本初等函数",
+      "to": "初等函数在有定义点连续",
+      "type": "basis_of",
+      "note": "初等函数是由基本初等函数构成的，基本初等函数在其定义域内连续是初等函数连续性的基础"
+    },
+    {
+      "from": "基本初等函数",
+      "to": "连续函数",
+      "type": "is-a",
+      "note": "基本初等函数在其定义域内都是连续函数"
+    }
+  ]
+}

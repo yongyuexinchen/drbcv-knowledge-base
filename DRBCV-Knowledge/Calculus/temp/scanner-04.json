@@ -1,0 +1,619 @@
+{
+  "scan_info": {
+    "topic": "不定积分 (Indefinite Integration)",
+    "sources": [
+      "04.不定积分  分部积分 (1)_原文.md",
+      "04.不定积分  分部积分_原文.md",
+      "04.不定积分  换元积分法 (1)_原文.md",
+      "04.不定积分  换元积分法_原文.md",
+      "04.不定积分__分部积分_原文.md",
+      "04.不定积分__分部积分__1__原文.md",
+      "04.不定积分__换元积分法_原文.md",
+      "04.不定积分__换元积分法__1__原文.md",
+      "不定积分一课通！_原文.md",
+      "不定积分一课通__原文.md",
+      "不定积分_必会技巧_思路瞬间清晰_一般人不知道_原文.md",
+      "不定积分，必会技巧，思路瞬间清晰！一般人不知道_原文.md",
+      "有理函数的积分_原文.md"
+    ],
+    "total_concepts_extracted": 45,
+    "duplicate_analysis": "13 files contain ~5 unique content groups. Single-space and double-underscore versions are identical content from different transcription formats. (1) suffixed files are timestamp variants.",
+    "coverage": "full — all topics covered from all 13 articles"
+  },
+  "concepts": [
+    {
+      "name": "不定积分 (Indefinite Integral)",
+      "type": "definition",
+      "definition": "不定积分是微分的逆运算。对于函数 $f(x)$，其全体原函数 $F(x)+C$ 称为 $f(x)$ 的不定积分，记为 $\\\\int f(x)\\\\,dx = F(x) + C$。其中 $\\\\int$ 为积分号，$f(x)$ 为被积函数，$x$ 为积分变量，$dx$ 为微分符号，$C$ 为任意常数。",
+      "related_to": ["原函数", "微分", "积分变量", "被积函数", "任意常数C"],
+      "examples": [
+        "$\\\\int 2x\\\\,dx = x^2 + C$",
+        "$\\\\int e^x\\\\,dx = e^x + C$"
+      ],
+      "counter_examples": [],
+      "notes": "不定积分从英文 anti-derivative 理解更清晰：anti（反）+ derivative（导数）= 反导数/反求导。不定积分和微分才是真正的运算-逆运算对子。"
+    },
+    {
+      "name": "原函数 (Antiderivative / Primitive Function)",
+      "type": "definition",
+      "definition": "设函数 $f(x)$ 定义在某区间 $I$ 上，若存在可导函数 $F(x)$，使得在该区间内每一点都有 $F'(x) = f(x)$，则称 $F(x)$ 是 $f(x)$ 在该区间上的一个原函数。",
+      "related_to": ["不定积分", "导数"],
+      "examples": [
+        "$F(x)=x^2$ 是 $f(x)=2x$ 的一个原函数",
+        "$F(x)=\\\\sin x$ 是 $f(x)=\\\\cos x$ 的一个原函数"
+      ],
+      "counter_examples": [],
+      "notes": "若 $F(x)$ 和 $G(x)$ 都是 $f(x)$ 的原函数，则 $G(x)-F(x)=C$（常数）。即同一个函数的任意两个原函数之间只相差一个常数。"
+    },
+    {
+      "name": "任意常数C (Arbitrary Constant C)",
+      "type": "definition",
+      "definition": "在不定积分结果 $\\\\int f(x)\\\\,dx = F(x) + C$ 中，$C$ 表示任意常数，代表全体原函数之间的差别。因为常数函数的导数为零，所以原函数加上任意常数仍然是原函数。",
+      "related_to": ["不定积分", "原函数"],
+      "examples": [
+        "$\\\\int 2x\\\\,dx = x^2 + C$",
+        "$\\\\int \\\\cos x\\\\,dx = \\\\sin x + C$"
+      ],
+      "counter_examples": [],
+      "notes": "不加 $C$ 的不定积分结果是不完整的（几乎漏掉所有解），在考试中通常会被扣分。加 $C$ 的时机：一旦所有积分符号都去掉就应该加 $C$。"
+    },
+    {
+      "name": "原函数存在定理 (Existence Theorem of Antiderivatives)",
+      "type": "theorem",
+      "definition": "如果函数 $f(x)$ 在区间 $I$ 上处处连续，则 $f(x)$ 在 $I$ 上一定存在原函数。",
+      "related_to": ["原函数", "连续函数", "初等函数"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "初等函数在其定义区间上处处连续，因此初等函数在其有定义的区间上一定有原函数。但有些初等函数的原函数不能用初等函数表示（称为\"积不出\"）。"
+    },
+    {
+      "name": "积分变量 (Integration Variable)",
+      "type": "definition",
+      "definition": "在积分 $\\\\int f(x)\\\\,dx$ 中，记号 $dx$ 中的 $x$ 称为积分变量，表示对哪个变量做积分。",
+      "related_to": ["不定积分", "被积函数"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "积分变量类似于求和指标，在定积分中确定积分方向，在不定积分中确定对哪个变量求原函数。"
+    },
+    {
+      "name": "被积函数 (Integrand)",
+      "type": "definition",
+      "definition": "在积分 $\\\\int f(x)\\\\,dx$ 中，位于积分号 $\\\\int$ 与微分符号 $dx$ 之间的函数 $f(x)$ 称为被积函数。",
+      "related_to": ["不定积分", "积分变量"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": ""
+    },
+    {
+      "name": "微分符号dx的积分意义 (Differential Notation in Integration)",
+      "type": "definition",
+      "definition": "在不定积分中，$\\\\int f(x)\\\\,dx$ 可解释为已知一个函数的微分为 $f(x)\\\\,dx$，求该函数（即求原函数）。$\\\\int$ 和 $d$ 互为逆运算：$\\\\int dF(x) = F(x) + C$，$d\\\\int f(x)\\\\,dx = f(x)\\\\,dx$。",
+      "related_to": ["不定积分", "微分", "凑微分法"],
+      "examples": [
+        "$\\\\int d(\\\\sin x) = \\\\sin x + C$",
+        "$d\\\\int x^2\\\\,dx = x^2\\\\,dx$"
+      ],
+      "counter_examples": [],
+      "notes": "不定积分符号最初规定为微分的逆运算而非求导的逆运算，这个理解能更好地衔接定积分。$\\\\int$ 与 $d$ 具有\"抵消\"关系。"
+    },
+    {
+      "name": "不定积分的线性性 (Linearity of Indefinite Integral)",
+      "type": "theorem",
+      "definition": "若 $f(x)$ 和 $g(x)$ 的原函数都存在，则对于任意常数 $k,l$，有：$\\\\int [k f(x) + l g(x)]\\\\,dx = k\\\\int f(x)\\\\,dx + l\\\\int g(x)\\\\,dx$。",
+      "related_to": ["不定积分"],
+      "examples": [
+        "$\\\\int (2x + 3\\\\cos x)\\\\,dx = x^2 + 3\\\\sin x + C$"
+      ],
+      "counter_examples": [],
+      "notes": "这是不定积分最基本的运算性质，可以将复杂积分拆成若干简单积分之和。系数可以提到积分号外面。"
+    },
+    {
+      "name": "基本积分公式 (Basic Integration Formulas)",
+      "type": "method",
+      "definition": "将求导公式逆向得到的一系列基本不定积分公式，是计算不定积分的基础工具集。",
+      "related_to": ["不定积分", "幂函数积分", "三角函数积分", "指数函数积分"],
+      "examples": [
+        "$\\\\int x^\\\\alpha\\\\,dx = \\\\frac{x^{\\\\alpha+1}}{\\\\alpha+1} + C \\\\ (\\\\alpha \\\\ne -1)$",
+        "$\\\\int \\\\frac{1}{x}\\\\,dx = \\\\ln|x| + C$",
+        "$\\\\int e^x\\\\,dx = e^x + C$",
+        "$\\\\int a^x\\\\,dx = \\\\frac{a^x}{\\\\ln a} + C$",
+        "$\\\\int \\\\cos x\\\\,dx = \\\\sin x + C$",
+        "$\\\\int \\\\sin x\\\\,dx = -\\\\cos x + C$",
+        "$\\\\int \\\\sec^2 x\\\\,dx = \\\\tan x + C$",
+        "$\\\\int \\\\csc^2 x\\\\,dx = -\\\\cot x + C$",
+        "$\\\\int \\\\frac{1}{\\\\sqrt{1-x^2}}\\\\,dx = \\\\arcsin x + C$",
+        "$\\\\int \\\\frac{1}{1+x^2}\\\\,dx = \\\\arctan x + C$",
+        "$\\\\int \\\\sec x\\\\tan x\\\\,dx = \\\\sec x + C$",
+        "$\\\\int \\\\csc x\\\\cot x\\\\,dx = -\\\\csc x + C$",
+        "$\\\\int \\\\sec x\\\\,dx = \\\\ln|\\\\sec x + \\\\tan x| + C$",
+        "$\\\\int \\\\csc x\\\\,dx = \\\\ln|\\\\csc x - \\\\cot x| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "积分公式分为\"滚瓜烂熟组\"（基本初等函数公式，需牢记）和\"考前背一背组\"（高频但可推导的公式）。常用拓展公式包括：$\\\\int \\\\frac{1}{a^2+x^2}\\\\,dx = \\\\frac{1}{a}\\\\arctan\\\\frac{x}{a}+C$，$\\\\int \\\\frac{1}{\\\\sqrt{a^2-x^2}}\\\\,dx = \\\\arcsin\\\\frac{x}{a}+C$ 等。"
+    },
+    {
+      "name": "幂函数积分公式 (Power Function Integration)",
+      "type": "method",
+      "definition": "$\\\\int x^\\\\alpha\\\\,dx = \\\\frac{x^{\\\\alpha+1}}{\\\\alpha+1} + C \\\\ (\\\\alpha \\\\ne -1)$。操作口诀：次数加1，前面取倒数。当 $\\\\alpha = -1$ 时，$\\\\int \\\\frac{1}{x}\\\\,dx = \\\\ln|x| + C$。",
+      "related_to": ["基本积分公式"],
+      "examples": [
+        "$\\\\int x^{\\\\frac{5}{2}}\\\\,dx = \\\\frac{2}{7}x^{\\\\frac{7}{2}} + C$",
+        "$\\\\int \\\\frac{1}{x^4}\\\\,dx = \\\\int x^{-4}\\\\,dx = -\\\\frac{1}{3}x^{-3} + C$"
+      ],
+      "counter_examples": [
+        "$\\\\int x^{-1}\\\\,dx = \\\\ln|x| + C$ （不是幂函数公式，是对数函数）"
+      ],
+      "notes": "当 $\\\\alpha=-1$ 时是例外情况，积分结果为对数函数而非幂函数。$\\\\frac{1}{x}$ 的积分需要加绝对值：$\\\\ln|x|$，因为 $x$ 可能取负值。"
+    },
+    {
+      "name": "$\\\\frac{1}{x}$ 的积分 (Integral of 1/x)",
+      "type": "method",
+      "definition": "$\\\\int \\\\frac{1}{x}\\\\,dx = \\\\ln|x| + C$。当 $x>0$ 时，$\\\\ln x$ 的原函数成立；当 $x<0$ 时，$\\\\ln(-x)$ 求导也等于 $\\\\frac{1}{x}$。合并为 $\\\\ln|x|$。",
+      "related_to": ["基本积分公式", "幂函数积分公式"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "绝对值符号不可省略，因为 $\\\\frac{1}{x}$ 在 $x<0$ 时也有定义，原函数应为 $\\\\ln(-x)$。"
+    },
+    {
+      "name": "分项积分法 (Term-by-Term Integration)",
+      "type": "method",
+      "definition": "将复杂的被积函数通过恒等变形（如代数恒等变形、加一项减一项、有理函数裂项、三角恒等变换等）拆分为多个简单积分之和，再利用线性性逐项积分。",
+      "related_to": ["不定积分的线性性", "有理函数积分", "三角函数积分"],
+      "examples": [
+        "$\\\\int \\\\frac{x^4+1}{x^2+1}\\\\,dx = \\\\int (x^2 - 1 + \\\\frac{2}{x^2+1})\\\\,dx = \\\\frac{x^3}{3} - x + 2\\\\arctan x + C$",
+        "$\\\\int \\\\tan^2 x\\\\,dx = \\\\int (\\\\sec^2 x - 1)\\\\,dx = \\\\tan x - x + C$"
+      ],
+      "counter_examples": [],
+      "notes": "分项是不定积分中最重要的基本思想之一。常通过照分母抄、加一项减一项实现分项。"
+    },
+    {
+      "name": "第一类换元积分法（凑微分法）(First Substitution Rule / Integration by Differential)",
+      "type": "method",
+      "definition": "若 $\\\\int f(u)\\\\,du = F(u) + C$，且 $u = \\\\varphi(x)$ 可导，则 $\\\\int f(\\\\varphi(x))\\\\varphi'(x)\\\\,dx = \\\\int f(\\\\varphi(x))\\\\,d\\\\varphi(x) = F(\\\\varphi(x)) + C$。核心操作：将被积函数中一部分看作 $\\\\varphi'(x)\\\\,dx = d\\\\varphi(x)$，凑成关于 $\\\\varphi(x)$ 的微分形式。",
+      "related_to": ["不定积分", "复合函数求导", "微分", "第二类换元积分法"],
+      "examples": [
+        "$\\\\int \\\\cos(2x+3)\\\\,dx = \\\\frac{1}{2}\\\\int \\\\cos(2x+3)\\\\,d(2x+3) = \\\\frac{1}{2}\\\\sin(2x+3) + C$",
+        "$\\\\int \\\\frac{\\\\ln^2 x}{x}\\\\,dx = \\\\int \\\\ln^2 x\\\\,d(\\\\ln x) = \\\\frac{1}{3}\\\\ln^3 x + C$",
+        "$\\\\int \\\\tan x\\\\,dx = \\\\int \\\\frac{\\\\sin x}{\\\\cos x}\\\\,dx = -\\\\int \\\\frac{1}{\\\\cos x}\\\\,d(\\\\cos x) = -\\\\ln|\\\\cos x| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "第一类换元法是复合函数求导的逆运算。凑微分时，要求被积函数的一部分是另一部分内层的导数（相差常数倍也可）。变量无需显式换掉，熟练后直接凑微分即可。"
+    },
+    {
+      "name": "常用凑微分公式 (Common Differential Compositions)",
+      "type": "method",
+      "definition": "常见凑微分模式：$\\\\frac{1}{x}\\\\,dx = d\\\\ln x$，$e^x\\\\,dx = de^x$，$\\\\sin x\\\\,dx = -d\\\\cos x$，$\\\\cos x\\\\,dx = d\\\\sin x$，$\\\\sec^2 x\\\\,dx = d\\\\tan x$，$\\\\frac{1}{\\\\sqrt{x}}\\\\,dx = 2d\\\\sqrt{x}$，$\\\\frac{1}{1+x^2}\\\\,dx = d\\\\arctan x$，$\\\\frac{1}{\\\\sqrt{1-x^2}}\\\\,dx = d\\\\arcsin x$。常数 $c$ 可自由进出微分号：$d(c\\\\varphi(x)) = c\\\\,d\\\\varphi(x)$。",
+      "related_to": ["第一类换元积分法", "微分"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "凑微分时需要注意系数匹配：$d(ax+b) = a\\\\,dx$，所以 $dx = \\\\frac{1}{a}d(ax+b)$。常数加减不影响微分：$d(x+c) = dx$。"
+    },
+    {
+      "name": "第二类换元积分法 (Second Substitution Rule)",
+      "type": "method",
+      "definition": "设 $x = \\\\varphi(t)$ 单调可导，且 $\\\\varphi'(t) \\\\ne 0$，则 $\\\\int f(x)\\\\,dx \\\\xrightarrow{x=\\\\varphi(t)} \\\\int f(\\\\varphi(t))\\\\varphi'(t)\\\\,dt$。积分完成后，需用反函数 $t = \\\\varphi^{-1}(x)$ 将变量代回。",
+      "related_to": ["不定积分", "第一类换元积分法", "三角代换", "根式代换", "倒代换", "万能代换"],
+      "examples": [
+        "$\\\\int \\\\frac{1}{1+\\\\sqrt{x}}\\\\,dx \\\\xrightarrow{t=\\\\sqrt{x}} \\\\int \\\\frac{2t}{1+t}\\\\,dt$",
+        "$\\\\int \\\\sqrt{a^2-x^2}\\\\,dx \\\\xrightarrow{x=a\\\\sin t} \\\\int a^2\\\\cos^2 t\\\\,dt$"
+      ],
+      "counter_examples": [],
+      "notes": "第二类换元法比第一类更直接——把被积函数中\"不顺眼\"的部分整体换掉。换元函数必须单调以保证可反解。$\\\\varphi'(t) \\\\ne 0$ 保证单调性。"
+    },
+    {
+      "name": "三角代换 (Trigonometric Substitution)",
+      "type": "method",
+      "definition": "含 $\\\\sqrt{a^2 - x^2}$：令 $x = a\\\\sin t$，$t \\\\in [-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}]$。含 $\\\\sqrt{x^2 + a^2}$：令 $x = a\\\\tan t$，$t \\\\in (-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2})$。含 $\\\\sqrt{x^2 - a^2}$：令 $x = a\\\\sec t$，$t \\\\in [0, \\\\pi],\\\\ t\\\\ne \\\\frac{\\\\pi}{2}$。通过恒等变换去掉根号。",
+      "related_to": ["第二类换元积分法", "辅助三角形"],
+      "examples": [
+        "$\\\\int \\\\sqrt{a^2-x^2}\\\\,dx = \\\\frac{a^2}{2}\\\\arcsin\\\\frac{x}{a} + \\\\frac{x}{2}\\\\sqrt{a^2-x^2} + C$",
+        "$\\\\int \\\\frac{dx}{\\\\sqrt{x^2+a^2}} = \\\\ln|x + \\\\sqrt{x^2+a^2}| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "三角代换的核心思想：利用 $\\\\sin^2t+\\\\cos^2t=1$ 或 $\\\\tan^2t+1=\\\\sec^2t$ 将根号下两项合并为一项从而开方。前两种代换在默认主值区间下可以不加绝对值。"
+    },
+    {
+      "name": "辅助三角形 (Reference Triangle)",
+      "type": "method",
+      "definition": "在三角代换完成后，通过构建直角三角形将三角函数关系还原为 $x$ 的函数关系。根据换元关系（如 $\\\\sin t = \\\\frac{x}{a}$）在直角三角形中标记边长，从而直接读出 $\\\\cos t$、$\\\\tan t$ 等关于 $x$ 的表达式。",
+      "related_to": ["三角代换"],
+      "examples": [
+        "若 $x = a\\\\sin t$，则 $\\\\sin t = \\\\frac{x}{a}$，构造直角三角形：对边 $x$，斜边 $a$，邻边 $\\\\sqrt{a^2-x^2}$，故 $\\\\cos t = \\\\frac{\\\\sqrt{a^2-x^2}}{a}$"
+      ],
+      "counter_examples": [],
+      "notes": "辅助三角形可以避免显式反解 $t$，直接将三角函数的 $t$ 表达式写成 $x$ 函数。适用于所有三角代换。"
+    },
+    {
+      "name": "根式代换 (Radical Substitution)",
+      "type": "method",
+      "definition": "令 $t = \\\\sqrt[n]{ax+b}$（或类似的根式形式），将无理式换成 $t$ 的有理式进行积分的方法。",
+      "related_to": ["第二类换元积分法"],
+      "examples": [
+        "$\\\\int \\\\frac{1}{1+\\\\sqrt{x}}\\\\,dx \\\\xrightarrow{t=\\\\sqrt{x}} \\\\int \\\\frac{2t}{1+t}\\\\,dt$"
+      ],
+      "counter_examples": [],
+      "notes": "根式代换是第二类换元法中最直接的形式——把\"不顺眼\"的根式整体换掉。"
+    },
+    {
+      "name": "倒代换 (Reciprocal Substitution)",
+      "type": "method",
+      "definition": "令 $x = \\\\frac{1}{t}$ 的换元方法，常用于被积函数分母次数高于分子次数的有理函数积分。",
+      "related_to": ["第二类换元积分法", "有理函数积分"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "倒代换可以降低分母次数，常用于处理分母次数远高于分子的有理分式。"
+    },
+    {
+      "name": "分部积分法 (Integration by Parts)",
+      "type": "method",
+      "definition": "由乘积求导法则 $[u(x)v(x)]' = u'(x)v(x) + u(x)v'(x)$ 移项并积分得到：$\\\\int u\\\\,dv = uv - \\\\int v\\\\,du$。其中 $du = u'(x)\\\\,dx$，$dv = v'(x)\\\\,dx$。",
+      "related_to": ["乘积求导法则", "不定积分"],
+      "examples": [
+        "$\\\\int xe^x\\\\,dx = xe^x - \\\\int e^x\\\\,dx = xe^x - e^x + C$",
+        "$\\\\int x\\\\ln x\\\\,dx = \\\\frac{1}{2}x^2\\\\ln x - \\\\frac{1}{4}x^2 + C$",
+        "$\\\\int \\\\arctan x\\\\,dx = x\\\\arctan x - \\\\frac{1}{2}\\\\ln(1+x^2) + C$"
+      ],
+      "counter_examples": [],
+      "notes": "分部积分法的核心思想：将不易直接积分的 $\\\\int u\\\\,dv$ 转化为较易积分的 $\\\\int v\\\\,du$。关键在 $u$ 和 $dv$ 的选取。"
+    },
+    {
+      "name": "分部积分中u和dv的选取原则（反对幂指三）(LIATE Rule for Integration by Parts)",
+      "type": "method",
+      "definition": "当被积函数为两类不同函数相乘时，选取 $u$ 的优先级（从难积分到易积分）：反三角函数(A) > 对数函数(L) > 幂函数(P) > 指数函数(E) > 三角函数(T)。幂函数×指数函数/三角函数：指数/三角函数凑入 $dv$；幂函数×对数函数/反三角函数：幂函数凑入 $dv$；指数函数×三角函数：可任意选择，通常需两次分部后还原。",
+      "related_to": ["分部积分法"],
+      "examples": [
+        "$\\\\int x e^x\\\\,dx$：取 $u=x, dv=e^x\\\\,dx$",
+        "$\\\\int x\\\\ln x\\\\,dx$：取 $u=\\\\ln x, dv=x\\\\,dx$",
+        "$\\\\int e^x\\\\sin x\\\\,dx$：取 $u=\\\\sin x, dv=e^x\\\\,dx$，两次分部后移项"
+      ],
+      "counter_examples": [],
+      "notes": "口诀\"反对幂指三\"是选取 $u$ 的优先级顺序。幂函数相对中立，既可做 $u$ 也可做 $dv$；反三角函数和对数函数求导后变简单，故取为 $u$；指数和三角函数积分不改变复杂度，故凑入 $dv$。"
+    },
+    {
+      "name": "分部积分循环法（还原法）(Integration by Parts with Cyclic Reduction)",
+      "type": "method",
+      "definition": "当分部积分一次后，右侧出现与左侧相同形式的积分（系数不同），可通过移项求解。步骤：分部积分两次，得到含原积分的方程，移项求解，除以系数得结果。",
+      "related_to": ["分部积分法"],
+      "examples": [
+        "设 $I = \\\\int e^x\\\\sin x\\\\,dx$，则 $I = e^x\\\\sin x - e^x\\\\cos x - I$，故 $I = \\\\frac{1}{2}e^x(\\\\sin x - \\\\cos x) + C$",
+        "$\\\\int \\\\sec^3 x\\\\,dx = \\\\frac{1}{2}\\\\sec x\\\\tan x + \\\\frac{1}{2}\\\\ln|\\\\sec x + \\\\tan x| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "循环法也称\"分部积分还原\"。注意移项后系数要算准确，不能漏掉 $+C$。"
+    },
+    {
+      "name": "有理函数 (Rational Function)",
+      "type": "definition",
+      "definition": "形如 $R(x) = \\\\frac{P_n(x)}{Q_m(x)}$ 的函数，其中 $P_n(x)$ 和 $Q_m(x)$ 都是多项式，称为有理函数（有理分式）。",
+      "related_to": ["有理函数积分", "真分式", "假分式"],
+      "examples": [
+        "$\\\\frac{x^4+2x^2+4}{x^2+1}$",
+        "$\\\\frac{x^5+x^4-8}{x^3-x}$",
+        "$\\\\frac{x-3}{(x-1)^2(x+1)}$"
+      ],
+      "counter_examples": [],
+      "notes": "有理函数积分是唯一被彻底攻克的积分类型——有一整套系统化方法确保100%可以积分。研究的对象是分母可以因式分解为一次因式和二次因式乘积的有理函数。"
+    },
+    {
+      "name": "真分式与假分式 (Proper vs Improper Rational Functions)",
+      "type": "definition",
+      "definition": "真分式：分子最高次幂严格小于分母最高次幂的有理分式。假分式：分子最高次幂大于等于分母最高次幂的有理分式。假分式可通过多项式除法化为一个多项式与一个真分式的和。",
+      "related_to": ["有理函数", "多项式除法"],
+      "examples": [
+        "真分式：$\\\\frac{x-3}{(x-1)^2(x+1)}$（分子1次 < 分母3次）",
+        "假分式：$\\\\frac{x^4+2x^2+4}{x^2+1}$ 化为 $x^2+1+\\\\frac{3}{x^2+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "有理函数积分四步法第一步：假分式化为多项式 + 真分式。"
+    },
+    {
+      "name": "多项式除法 (Polynomial Long Division)",
+      "type": "method",
+      "definition": "将假分式的分子多项式除以分母多项式，得到商（多项式）和余数（真分式），类似于整数除法列竖式的操作。即 $\\\\frac{P_n(x)}{Q_m(x)} = \\\\text{多项式} + \\\\frac{R(x)}{Q_m(x)}$，其中 $\\\\deg(R) < \\\\deg(Q)$。",
+      "related_to": ["真分式与假分式", "有理函数积分"],
+      "examples": [
+        "$\\\\frac{x^4+2x^2+4}{x^2+1}$：商 $x^2+1$，余 $3$，故 $= x^2+1 + \\\\frac{3}{x^2+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "多项式除法操作：盯住最高次项，逐次商除，类似数字除法竖式。"
+    },
+    {
+      "name": "最简有理分式 (Partial Fractions)",
+      "type": "definition",
+      "definition": "分母为质因式（不可再分解的一次式或二次式）的幂次，分子次数低于分母的简单有理分式。形如 $\\\\frac{A}{(x-a)^k}$（分母为一次式幂），或 $\\\\frac{Bx+C}{(x^2+px+q)^k}$（分母为二次质因式幂，$p^2-4q<0$）。",
+      "related_to": ["有理函数积分", "部分分式分解"],
+      "examples": [
+        "$\\\\frac{A}{x-1}$",
+        "$\\\\frac{B}{(x-1)^2}$",
+        "$\\\\frac{Cx+D}{x^2+x+1}$",
+        "$\\\\frac{Ex+F}{(x^2+x+1)^2}$"
+      ],
+      "counter_examples": [],
+      "notes": "任何有理真分式都可以唯一地分解为最简有理分式之和。这是有理函数积分的核心。"
+    },
+    {
+      "name": "部分分式分解（裂项）(Partial Fraction Decomposition)",
+      "type": "method",
+      "definition": "将有理真分式按分母的质因式分解结果，拆分为若干个最简有理分式之和。规则：每个 $x-a$ 的 $k$ 次方产生 $k$ 项：$\\\\frac{A_1}{x-a} + \\\\frac{A_2}{(x-a)^2} + \\\\cdots + \\\\frac{A_k}{(x-a)^k}$。每个二次质因式 $x^2+px+q$ 的 $l$ 次方产生 $l$ 项：$\\\\frac{B_1x+C_1}{x^2+px+q} + \\\\frac{B_2x+C_2}{(x^2+px+q)^2} + \\\\cdots + \\\\frac{B_lx+C_l}{(x^2+px+q)^l}$。",
+      "related_to": ["最简有理分式", "有理函数积分", "待定系数法", "留数法"],
+      "examples": [
+        "$\\\\frac{x-3}{(x-1)^2(x+1)} = \\\\frac{A}{x-1} + \\\\frac{B}{(x-1)^2} + \\\\frac{D}{x+1}$",
+        "$\\\\frac{3x+6}{(x-1)^2(x^2+x+1)} = \\\\frac{A}{x-1} + \\\\frac{B}{(x-1)^2} + \\\\frac{Cx+D}{x^2+x+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "这是有理函数积分最关键的一步。注意二次质因式的判别式必须小于0，且分子为一次式 $Bx+C$。"
+    },
+    {
+      "name": "待定系数法之左右比对方程组 (Coefficient Comparison Method)",
+      "type": "method",
+      "definition": "将部分分式分解右端通分后，与左端分子比较各次幂的系数，列出线性方程组求解待定系数。",
+      "related_to": ["部分分式分解", "有理函数积分"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "最朴实的方法，优点是通用无争议，缺点是通分展开计算量较大。"
+    },
+    {
+      "name": "待定系数法之代入特值 (Substitution of Special Values)",
+      "type": "method",
+      "definition": "在部分分式分解的通分等式中，代入使某些分母因子为零的 $x$ 值（或其他简单数值），直接解出待定系数。原理：多项式恒等则任意自变量取值均相等。",
+      "related_to": ["部分分式分解", "有理函数积分"],
+      "examples": [
+        "对 $\\\\frac{x-3}{(x-1)^2(x+1)} = \\\\frac{A}{x-1} + \\\\frac{B}{(x-1)^2} + \\\\frac{D}{x+1}$ 通分后，代入 $x=-1$ 得 $D=-1$，代入 $x=0$ 得另一方程..."
+      ],
+      "counter_examples": [],
+      "notes": "优先代入使分母因子为零的值（此时多数项消失），可快速求解对应系数。本质上是极限过程，但操作时直接代入即可。"
+    },
+    {
+      "name": "留数法（求部分分式系数）(Residue Method for Partial Fractions)",
+      "type": "method",
+      "definition": "对于形如 $\\\\frac{A_k}{(x-a)^k}$ 的最高次项系数，在等式两边乘以 $(x-a)^k$，再令 $x \\\\to a$ 求极限（操作上直接代入 $x=a$），即可得到 $A_k$ 的值。口诀：\"求谁删谁代谁\"。",
+      "related_to": ["部分分式分解", "有理函数积分"],
+      "examples": [
+        "对于 $\\\\frac{x-3}{(x-1)^2(x+1)}$，求 $B$（$(x-1)^2$ 的系数）：两边乘以 $(x-1)^2$，代入 $x=1$，得 $B = \\\\frac{1-3}{1+1} = -1$"
+      ],
+      "counter_examples": [],
+      "notes": "留数法源于复变函数中的留数概念，只适用于求最简分式中最高次项的系数。对于低次项系数，可结合极限法（两端乘以 $x$ 后取 $x\\\\to\\\\infty$）或代入具体值求解。"
+    },
+    {
+      "name": "二次质因式积分之组合法 (Combination Method for Quadratic Factors)",
+      "type": "method",
+      "definition": "对于 $\\\\int \\\\frac{Bx+C}{x^2+px+q}\\\\,dx$，将分子凑成分母的导数加常数：$Bx+C = \\\\frac{B}{2}(2x+p) + (C - \\\\frac{Bp}{2})$。第一项凑微分得 $\\\\frac{B}{2}\\\\ln|x^2+px+q|$，第二项配方后套 $\\\\arctan$ 公式。",
+      "related_to": ["最简有理分式", "有理函数积分", "凑微分法", "配方法"],
+      "examples": [
+        "$\\\\int \\\\frac{x-2}{x^2-x+1}\\\\,dx = \\\\frac{1}{2}\\\\int \\\\frac{2x-1}{x^2-x+1}\\\\,dx - \\\\frac{3}{2}\\\\int \\\\frac{dx}{x^2-x+1}$"
+      ],
+      "counter_examples": [],
+      "notes": "组合法是处理二次质因式分母的固定套路，分两步：第一部分凑微分得到对数，第二部分配方后套反正切公式。"
+    },
+    {
+      "name": "有理函数积分四步法 (Four-Step Method for Rational Function Integration)",
+      "type": "method",
+      "definition": "1. 假分式化多项式+真分式（多项式除法）。2. 分母因式分解确定质因式。3. 真分式化最简有理分式之和（留数法/特值法/方程组求系数）。4. 逐项积分（幂函数/对数/反正切/组合法）。",
+      "related_to": ["有理函数积分", "部分分式分解", "多项式除法"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "确保100%可以积分出初等函数的系统性方法，是微积分中少数被彻底攻克的问题类型。"
+    },
+    {
+      "name": "三角函数有理式 (Trigonometric Rational Function)",
+      "type": "definition",
+      "definition": "由 $\\\\sin x$、$\\\\cos x$ 及常数经过有限次加减乘除四则运算所构成的函数，即 $R(\\\\sin x, \\\\cos x)$ 形式，其中 $R$ 是有理函数。",
+      "related_to": ["万能代换", "三角函数积分"],
+      "examples": [
+        "$\\\\frac{\\\\sin^2 x \\\\cos x}{\\\\cos x - \\\\sin x}$",
+        "$\\\\frac{1}{3\\\\sin^2 x + 4\\\\cos^2 x}$",
+        "$\\\\frac{\\\\sin^3 x}{\\\\cos^4 x}$"
+      ],
+      "counter_examples": [],
+      "notes": "所有三角函数有理式都可用万能代换化为有理函数积分，从而确保可积。"
+    },
+    {
+      "name": "万能代换（半角代换）(Universal / Weierstrass Substitution)",
+      "type": "method",
+      "definition": "令 $u = \\\\tan\\\\frac{x}{2}$，则 $\\\\sin x = \\\\frac{2u}{1+u^2}$，$\\\\cos x = \\\\frac{1-u^2}{1+u^2}$，$dx = \\\\frac{2}{1+u^2}\\\\,du$。将任何 $R(\\\\sin x, \\\\cos x)$ 的积分转化为有理函数的积分。",
+      "related_to": ["三角函数有理式", "第二类换元积分法", "有理函数积分"],
+      "examples": [
+        "$\\\\int \\\\frac{dx}{1+\\\\sin x+\\\\cos x} \\\\xrightarrow{u=\\\\tan\\\\frac{x}{2}} \\\\int \\\\frac{du}{u+1} = \\\\ln|u+1| + C$"
+      ],
+      "counter_examples": [],
+      "notes": "万能代换特别适用于 $\\\\sin x$ 和 $\\\\cos x$ 只有一次的情形。虽然不一定是最简方法，但保证可积。三个公式中分母都是 $1+u^2$。"
+    },
+    {
+      "name": "$\\\\sin^m x \\\\cos^n x$ 型积分的分类处理 (Powers of Sine and Cosine Strategy)",
+      "type": "method",
+      "definition": "对于 $\\\\int \\\\sin^m x \\\\cos^n x\\\\,dx$：1. $m$ 奇：凑 $d\\\\cos x$。2. $n$ 奇：凑 $d\\\\sin x$。3. $m,n$ 均偶：凑 $d\\\\tan x$（分子分母同除以 $\\\\cos^{m+n}x$）。",
+      "related_to": ["三角函数积分", "凑微分法"],
+      "examples": [
+        "$\\\\int \\\\cos^3 x\\\\,dx = \\\\int \\\\cos^2 x\\\\,d\\\\sin x = \\\\sin x - \\\\frac{1}{3}\\\\sin^3 x + C$",
+        "$\\\\int \\\\frac{dx}{3\\\\sin^2 x+4\\\\cos^2 x} \\\\xrightarrow{\\\\div\\\\cos^2 x} \\\\int \\\\frac{d\\\\tan x}{3\\\\tan^2 x+4}$"
+      ],
+      "counter_examples": [],
+      "notes": "此分类法给出了三角函数幂次积分的明确方向，避免\"碰运气\"。凑微分时注意 $\\\\sin x\\\\,dx = -d\\\\cos x$ 的符号。"
+    },
+    {
+      "name": "三角函数积分中构造导数化有理式 (Rationalizing Trigonometric Integrals)",
+      "type": "method",
+      "definition": "通过分子分母同乘/除某个三角函数，构造出导数形式（如 $\\\\sec^2 x$ 是 $\\\\tan x$ 的导数），将积分转化为关于 $\\\\tan x$ 或 $\\\\sec x$ 的有理式积分。",
+      "related_to": ["三角函数积分", "凑微分法", "有理函数积分"],
+      "examples": [
+        "$\\\\int \\\\frac{dx}{3\\\\sin^2 x+4\\\\cos^2 x} \\\\xrightarrow{\\\\div\\\\cos^2 x} \\\\int \\\\frac{\\\\sec^2 x}{3\\\\tan^2 x+4}\\\\,dx$"
+      ],
+      "counter_examples": [],
+      "notes": "核心思路：将 $\\\\sec^2 x$ 分离出来作为 $d\\\\tan x$ 的微分因子，其余部分全部写成 $\\\\tan x$ 的函数。"
+    },
+    {
+      "name": "$\\\\frac{1}{a^2+x^2}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\frac{1}{a^2+x^2}\\\\,dx = \\\\frac{1}{a}\\\\arctan\\\\frac{x}{a} + C$。",
+      "related_to": ["基本积分公式", "第一类换元积分法"],
+      "examples": [
+        "$\\\\int \\\\frac{dx}{3+4x^2} = \\\\frac{1}{2\\\\sqrt{3}}\\\\arctan\\\\frac{2x}{\\\\sqrt{3}} + C$"
+      ],
+      "counter_examples": [],
+      "notes": "由 $\\\\int \\\\frac{1}{1+x^2}\\\\,dx = \\\\arctan x + C$ 结合第一类换元推广得到。"
+    },
+    {
+      "name": "$\\\\frac{1}{\\\\sqrt{a^2-x^2}}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\frac{1}{\\\\sqrt{a^2-x^2}}\\\\,dx = \\\\arcsin\\\\frac{x}{a} + C$，其中 $a > 0$。",
+      "related_to": ["基本积分公式", "第一类换元积分法", "三角代换"],
+      "examples": [
+        "$\\\\int \\\\frac{dx}{\\\\sqrt{3-x^2}} = \\\\arcsin\\\\frac{x}{\\\\sqrt{3}} + C$"
+      ],
+      "counter_examples": [],
+      "notes": "注意 $a$ 是平方根号内的常数。"
+    },
+    {
+      "name": "$\\\\frac{1}{x^2-a^2}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\frac{1}{x^2-a^2}\\\\,dx = \\\\frac{1}{2a}\\\\ln\\\\left|\\\\frac{x-a}{x+a}\\\\right| + C$。$\\\\int \\\\frac{1}{a^2-x^2}\\\\,dx = \\\\frac{1}{2a}\\\\ln\\\\left|\\\\frac{a+x}{a-x}\\\\right| + C$。",
+      "related_to": ["基本积分公式", "部分分式分解"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "通过因式分解 $x^2-a^2 = (x-a)(x+a)$ 后进行部分分式得到。两个公式本质互为相反数。"
+    },
+    {
+      "name": "$\\\\frac{1}{\\\\sqrt{x^2 \\\\pm a^2}}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\frac{1}{\\\\sqrt{x^2 + a^2}}\\\\,dx = \\\\ln|x + \\\\sqrt{x^2+a^2}| + C$；$\\\\int \\\\frac{1}{\\\\sqrt{x^2 - a^2}}\\\\,dx = \\\\ln|x + \\\\sqrt{x^2-a^2}| + C$。",
+      "related_to": ["三角代换", "第二类换元积分法"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "通过三角代换（$x=a\\\\tan t$ 或 $x=a\\\\sec t$）推导得到，结果是对数形式。"
+    },
+    {
+      "name": "$\\\\sqrt{a^2-x^2}$ 型积分公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\sqrt{a^2-x^2}\\\\,dx = \\\\frac{a^2}{2}\\\\arcsin\\\\frac{x}{a} + \\\\frac{x}{2}\\\\sqrt{a^2-x^2} + C$。",
+      "related_to": ["三角代换", "辅助三角形"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "通过 $x=a\\\\sin t$ 三角代换并借助辅助三角形推导。"
+    },
+    {
+      "name": "$\\\\int \\\\sec x\\\\,dx$ 和 $\\\\int \\\\csc x\\\\,dx$ 公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\sec x\\\\,dx = \\\\ln|\\\\sec x + \\\\tan x| + C$；$\\\\int \\\\csc x\\\\,dx = \\\\ln|\\\\csc x - \\\\cot x| + C$（或 $-\\\\ln|\\\\csc x + \\\\cot x| + C$）。",
+      "related_to": ["基本积分公式", "凑微分法"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "推导方法：分子分母同乘 $\\\\sec x + \\\\tan x$（对 $\\\\csc x$ 则同乘 $\\\\csc x + \\\\cot x$）。"
+    },
+    {
+      "name": "$\\\\int \\\\tan x\\\\,dx$ 和 $\\\\int \\\\cot x\\\\,dx$ 公式",
+      "type": "formula",
+      "definition": "$\\\\int \\\\tan x\\\\,dx = -\\\\ln|\\\\cos x| + C = \\\\ln|\\\\sec x| + C$；$\\\\int \\\\cot x\\\\,dx = \\\\ln|\\\\sin x| + C$。",
+      "related_to": ["基本积分公式", "凑微分法"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "推导：$\\\\tan x = \\\\frac{\\\\sin x}{\\\\cos x}$，将 $\\\\sin x\\\\,dx$ 凑为 $-d\\\\cos x$。"
+    },
+    {
+      "name": "配方法处理二次三项式 (Completing the Square)",
+      "type": "method",
+      "definition": "将二次三项式 $ax^2+bx+c$ 通过配方法化为 $a[(x+\\\\frac{b}{2a})^2 + \\\\frac{4ac-b^2}{4a^2}]$ 的形式，从而套用标准积分公式。",
+      "related_to": ["有理函数积分", "三角函数积分", "第一类换元积分法"],
+      "examples": [
+        "$\\\\int \\\\frac{dx}{\\\\sqrt{x^2+x+1}} = \\\\int \\\\frac{dx}{\\\\sqrt{(x+\\\\frac{1}{2})^2+\\\\frac{3}{4}}}$",
+        "$\\\\int \\\\frac{dx}{x^2-x-1} = \\\\int \\\\frac{dx}{(x-\\\\frac{1}{2})^2-\\\\frac{5}{4}}$"
+      ],
+      "counter_examples": [],
+      "notes": "配方法是处理分母含二次三项式的积分的标准步骤。之后通过凑微分令 $u = x + \\\\frac{b}{2a}$ 即可套公式。"
+    },
+    {
+      "name": "积不出积分 (Nonelementary Integrals)",
+      "type": "definition",
+      "definition": "某些初等函数的原函数不能用初等函数（有限次四则运算和复合的反常幂指三函数）表示，这类积分称为\"积不出\"或\"非初等积分\"。",
+      "related_to": ["原函数存在定理", "初等函数"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "原函数存在定理保证连续函数必有原函数，但原函数不一定能用初等函数表示。典型例子：$\\\\int e^{-x^2}\\\\,dx$、$\\\\int \\\\frac{\\\\sin x}{x}\\\\,dx$、$\\\\int \\\\sin(x^2)\\\\,dx$。"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "不定积分",
+      "to": "微分",
+      "type": "逆运算",
+      "description": "$\\\\int$ 和 $d$ 是互逆的运算对子：$\\\\int dF = F+C$，$d\\\\int f\\\\,dx = f\\\\,dx$"
+    },
+    {
+      "from": "不定积分",
+      "to": "导数",
+      "type": "逆运算",
+      "description": "不定积分是求导的逆运算（反导数）：$\\\\frac{d}{dx}\\\\int f(x)\\\\,dx = f(x)$"
+    },
+    {
+      "from": "原函数",
+      "to": "不定积分",
+      "type": "组成部分",
+      "description": "不定积分是所有原函数的集合 $\\\\int f(x)\\\\,dx = F(x)+C$"
+    },
+    {
+      "from": "第一类换元积分法",
+      "to": "复合函数求导",
+      "type": "逆运算",
+      "description": "第一类换元法是 $[F(\\\\varphi(x))]' = f(\\\\varphi(x))\\\\varphi'(x)$ 的逆过程"
+    },
+    {
+      "from": "第二类换元积分法",
+      "to": "第一类换元积分法",
+      "type": "并列方法",
+      "description": "两者都是换元积分法的分支。第一类不换变量只凑微分，第二类显式换掉变量"
+    },
+    {
+      "from": "分部积分法",
+      "to": "乘积求导法则",
+      "type": "逆运算",
+      "description": "分部积分法是 $(uv)' = u'v + uv'$ 移项积分得到"
+    },
+    {
+      "from": "万能代换",
+      "to": "第二类换元积分法",
+      "type": "子方法",
+      "description": "万能代换是第二类换元法在三角函数有理式中的具体应用"
+    },
+    {
+      "from": "三角代换",
+      "to": "第二类换元积分法",
+      "type": "子方法",
+      "description": "三角代换是第二类换元法的核心应用，针对含根式的被积函数"
+    },
+    {
+      "from": "有理函数积分四步法",
+      "to": "部分分式分解",
+      "type": "包含",
+      "description": "部分分式分解是四步法的第三步（核心步骤）"
+    },
+    {
+      "from": "部分分式分解",
+      "to": "最简有理分式",
+      "type": "输出结果",
+      "description": "部分分式分解将有理真分式拆分为最简有理分式之和"
+    },
+    {
+      "from": "分部积分法",
+      "to": "凑微分法",
+      "type": "依赖",
+      "description": "分部积分中需要先用凑微分法将 $dv$ 凑出"
+    },
+    {
+      "from": "二次质因式积分之组合法",
+      "to": "凑微分法",
+      "type": "依赖",
+      "description": "组合法第一步将分子凑成分母的导数，使用凑微分法积分"
+    },
+    {
+      "from": "二次质因式积分之组合法",
+      "to": "配方法",
+      "type": "依赖",
+      "description": "组合法第二步需要配方法将分母化为标准形式"
+    },
+    {
+      "from": "$\\\\sin^m x \\\\cos^n x$ 型积分的分类处理",
+      "to": "凑微分法",
+      "type": "依赖",
+      "description": "奇次幂情形下提取一个因子凑微分"
+    }
+  ]
+}

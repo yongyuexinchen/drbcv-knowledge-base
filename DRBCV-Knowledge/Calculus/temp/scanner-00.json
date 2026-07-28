@@ -1,0 +1,727 @@
+{
+  "meta": {
+    "scanner": "DRBCV Scanner Agent",
+    "task": "扫描大学衔接篇原文，提取数学概念、定义、定理、方法",
+    "sources": [
+      "D:/DRBCV-Knowledge/Calculus/Articles/_大学衔接_20min速成_取整函数_x___解密数列极限定义题N__1_ε_的真相_原文.md",
+      "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md",
+      "D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md"
+    ],
+    "generated_at": "2026-07-17T13:30:00Z",
+    "language": "zh-CN",
+    "note": "前两篇文章内容相同（取整函数），第三篇为反三角函数。已补齐所有概念的正例(≥2)和反例(≥1)。"
+  },
+  "concepts": [
+    {
+      "id": "floor-function",
+      "name": "取整函数（向下取整）",
+      "name_en": "Floor Function",
+      "type": "discriminant",
+      "definition": "对于任意实数 $X$，$\\lfloor X \\rfloor$ 表示不超过 $X$ 的最大整数。",
+      "domain": "$\\mathbb{R}$（全体实数）",
+      "range": "$\\mathbb{Z}$（全体整数）",
+      "notation": "$[X]$ 或 $\\lfloor X \\rfloor$",
+      "related_to": ["floor-function-inequality", "integer-part-decomposition", "fractional-part-function", "epsilon-n-definition", "sequence-limit-proof"],
+      "examples": [
+        "$\\lfloor 1.2 \\rfloor = 1$（向左看，第一个整数）",
+        "$\\lfloor \\pi \\rfloor = 3$（3.14...取整为3）",
+        "$\\lfloor 6 \\rfloor = 6$（整数取整等于自身）",
+        "$\\lfloor -0.32 \\rfloor = -1$（负数向左看，不是0）"
+      ],
+      "counter_examples": [
+        "向上取整 $\\lceil 1.2 \\rceil = 2$，不同于 $\\lfloor 1.2 \\rfloor = 1$——取整函数通常默认为向下取整。",
+        "四舍五入取整 round(1.5) = 2，不同于 $\\lfloor 1.5 \\rfloor = 1$"
+      ],
+      "notes": "大学数学中取整函数特指向下取整（floor），而非向上取整或四舍五入。负数取整时要向左看，不是简单地取整数部分。直观理解：向左看到第一个整数。"
+    },
+    {
+      "id": "floor-function-addition",
+      "name": "取整加法性质：$[X + n] = [X] + n$",
+      "type": "procedure",
+      "definition": "任意实数 $X$ 与任意整数 $n$，有 $\\lfloor X + n \\rfloor = \\lfloor X \\rfloor + n$。即取整符号内的整数可直接提出。",
+      "related_to": ["floor-function", "integer-part-decomposition"],
+      "examples": [
+        "$\\lfloor 1.2 + 3 \\rfloor = \\lfloor 4.2 \\rfloor = 4 = \\lfloor 1.2 \\rfloor + 3 = 1 + 3 = 4$",
+        "$\\lfloor \\frac{1}{\\varepsilon} + 1 \\rfloor = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$（数列极限证明常用"
+      ],
+      "counter_examples": [
+        "$\\lfloor X + 0.5 \\rfloor \\neq \\lfloor X \\rfloor + 0.5$，因为 0.5 不是整数。如 $\\lfloor 1.2 + 0.5 \\rfloor = \\lfloor 1.7 \\rfloor = 1$，但 $\\lfloor 1.2 \\rfloor + 0.5 = 1.5$，两者不等。"
+      ],
+      "notes": "非常常用的性质。只对整数 n 成立，非整数加数不能直接提出。"
+    },
+    {
+      "id": "integer-part-decomposition",
+      "name": "整数部分与小数部分分解",
+      "type": "discriminant",
+      "definition": "任意实数 $X$ 可拆分为整数部分与小数部分之和：$X = [X] + \\{X\\}$，其中 $[X]$ 为整数部分（不超过 $X$ 的最大整数），$\\{X\\}$ 为小数部分。",
+      "related_to": ["floor-function", "fractional-part-function"],
+      "examples": [
+        "$1.6 = 1 + 0.6$（正数的直观拆分）",
+        "$-1.6 = -2 + 0.4$（负数按取整定义拆分，注意小数部分非负）"
+      ],
+      "counter_examples": [
+        "$-1.3 \\neq -1 + (-0.3)$——错误的拆分。正确拆分：$[-1.3] = -2$，$\\{-1.3\\} = 0.7$，即 $-1.3 = -2 + 0.7$。"
+      ],
+      "notes": "小数部分 $\\{X\\}$ 的取值范围为 $0 \\leq \\{X\\} < 1$，恒为非负。负数的小数部分按取整定义计算：先取整，再 $X - [X]$。"
+    },
+    {
+      "id": "floor-function-inequality",
+      "name": "取整函数基本不等式",
+      "type": "procedure",
+      "definition": "对于任意实数 $X$，有 $X - 1 < \\lfloor X \\rfloor \\leq X$（以取整为中心）；等价地，$\\lfloor X \\rfloor \\leq X < \\lfloor X \\rfloor + 1$（以 $X$ 为中心）。",
+      "derivation": "由 $\\{X\\} = X - \\lfloor X \\rfloor$ 且 $0 \\leq \\{X\\} < 1$，移项即得。",
+      "related_to": ["floor-function", "integer-part-decomposition", "epsilon-n-definition", "sequence-limit-proof"],
+      "examples": [
+        "$X = 2.3$ 时：$[2.3] = 2$，验证 $1.3 < 2 \\leq 2.3$ ✓",
+        "$X = -1.7$ 时：$[-1.7] = -2$，验证 $-2.7 < -2 \\leq -1.7$ ✓"
+      ],
+      "counter_examples": [
+        "左边严格不等，不能取等号：$X - 1 < [X]$ 恒成立。例如 $X = 3$（整数）时 $2 < 3 = [3]$，不是 $2 \\leq 3$。",
+        "等号仅在 $X$ 为整数时出现在右边：$[3] = 3$，但当 $X = 2.5$ 时 $[2.5] = 2 < 2.5$，不能写等号。"
+      ],
+      "notes": "取整不等式的作用类似于去绝对值符号——在做题时用于去掉取整符号。核心记忆法：先写 $[X] \\leq X$（直观），再左边加 $X - 1$ 且严格小于。以 X 为中心的写法：$[X] \\leq X < [X] + 1$，规律是「左右差1，中间无取整，两边有取整，加1则严格」。"
+    },
+    {
+      "id": "floor-function-graph",
+      "name": "取整函数图像（阶梯函数）",
+      "type": "discriminant",
+      "definition": "取整函数 $Y = [X]$ 的图像为阶梯形。在每个区间 $[n, n+1)$（$n \\in \\mathbb{Z}$）上函数值为常数 $n$。定义域为全体实数。",
+      "related_to": ["floor-function"],
+      "examples": [
+        "$X \\in [0, 1)$ 时 $[X] = 0$，图像为 y=0 的水平线段（左端实心，右端空心）",
+        "$X \\in [1, 2)$ 时 $[X] = 1$，图像为 y=1 的水平线段，与上一段之间有跳跃"
+      ],
+      "counter_examples": [
+        "不是连续折线或平滑曲线——每个整数点处发生跳变。例如 X=1 时值从 0 跳到 1，右端点空心表示 X=1 属于 [1,2) 段而非 [0,1) 段。",
+        "不是所有分段函数都左闭右开——这里的区间写为 $[n, n+1)$（左闭右开）是取整函数特有的，因为 $\\lfloor n \\rfloor = n$。"
+      ],
+      "notes": "每个区间为左闭右开形式：$X \\in [n, n+1) \\Rightarrow [X] = n$。通式：$[X] = n$ 当 $n \\leq X < n+1$（$n \\in \\mathbb{Z}$）。"
+    },
+    {
+      "id": "floor-function-properties",
+      "name": "取整函数的四个基本性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：单调不减（非递减）；\\n（2）奇偶性：非奇非偶；\\n（3）有界性：无界；\\n（4）周期性：无周期。",
+      "related_to": ["floor-function"],
+      "examples": [
+        "单调不减验证：$f(1.3)=1, f(1.8)=1, f(2.1)=2$，值从未减小，要么不变要么增大",
+        "非奇非偶验证：$f(0.5)=0$ 但 $f(-0.5)=-1$。若为奇函数则应有 $f(-0.5) = -0 = 0$，矛盾。若为偶函数则应有 $f(-0.5) = 0$，也矛盾。"
+      ],
+      "counter_examples": [
+        "不是奇函数：$f(-0.5) = -1 \\neq -f(0.5) = 0$",
+        "有界函数的反例：当 $X \\to +\\infty$ 时 $[X] \\to +\\infty$，当 $X \\to -\\infty$ 时 $[X] \\to -\\infty$，无上下界"
+      ],
+      "notes": "单调不减意味着随 $X$ 增大 $Y$ 要么不变要么增大，不会减小。非奇非偶的判断：取对称点验证即可。"
+    },
+    {
+      "id": "fractional-part-function",
+      "name": "小数部分函数 $\\{X\\}$",
+      "type": "discriminant",
+      "definition": "$Y = X - [X] = \\{X\\}$，即 $X$ 的小数部分。输入一个 $X$，输出唯一的小数部分。",
+      "domain": "$\\mathbb{R}$",
+      "range": "$[0, 1)$",
+      "related_to": ["floor-function", "integer-part-decomposition"],
+      "examples": [
+        "$\\{1.6\\} = 0.6$（$1.6 - 1 = 0.6$）",
+        "$\\{-1.6\\} = 0.4$（$-1.6 - (-2) = 0.4$）"
+      ],
+      "counter_examples": [
+        "取值范围不含 1：对任意 X，$\\{X\\} < 1$ 严格成立。例如 $\\{3\\} = 0$，$\\{2.999\\} = 0.999$，永远不会等于 1。",
+        "不能按「去整数留小数」理解：$-1.3$ 的整数部分不是 -1，所以 $-1.3$ 的小数部分不是 0.3，而是 $0.7$。"
+      ],
+      "notes": "性质：（1）定义域上无单调性，但在每个区间 $[n, n+1)$ 上单调增加；（2）非奇非偶；（3）有界（下界 0，上界 1）——区别于取整函数本身的无界性；（4）以 1 为周期——在每个整数端点的区间上循环 $[0, 1)$。周期性的严格证明：$\\{X+1\\} = X+1 - [X+1] = X+1 - ([X]+1) = X - [X] = \\{X\\}$。"
+    },
+    {
+      "id": "epsilon-n-definition",
+      "name": "$\\varepsilon$-$N$ 定义（数列极限的前置逻辑）",
+      "type": "discriminant",
+      "definition": "设 $n, N \\in \\mathbb{Z}^+$，若当 $n > N$ 时恒有 $n > \\frac{1}{\\varepsilon}$（$\\varepsilon > 0$），则 $N$ 需满足 $N \\geq \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$（以保证 $N$ 为正整数且满足条件）。",
+      "related_to": ["floor-function", "floor-function-inequality", "floor-function-addition", "sequence-limit-proof"],
+      "examples": [
+        "$N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$（标准写法，最精确）",
+        "$N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 2$ 也成立（N 不唯一）",
+        "$N = \\lfloor \\sqrt{\\frac{1}{\\varepsilon}} \\rfloor + 1$（对 $n^2 > \\frac{1}{\\varepsilon}$ 问题）"
+      ],
+      "counter_examples": [
+        "$N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor$ 当 $\\varepsilon > 1$ 时，$\\lfloor \\frac{1}{\\varepsilon} \\rfloor = 0$ 不满足 $N$ 为正整数的要求（N 必须 ≥ 1）。注意：如果题目允许 N 为非负整数（如某些教材），则 $\\lfloor \\frac{1}{\\varepsilon} \\rfloor$ 也合法。"
+      ],
+      "notes": "这是数列极限证明的核心前置逻辑。关键套路：对于「$n > N$ 时必有 $n > M$（$M$ 为某个正数）」型问题，取 $N = \\lfloor M \\rfloor + 1$ 即可。本质原因：$N = \\lfloor M \\rfloor + 1$ 确保 $N > M$（因为 $\\lfloor M \\rfloor \\leq M < \\lfloor M \\rfloor + 1$）。"
+    },
+    {
+      "id": "sequence-limit-proof",
+      "name": "用定义证明数列极限的取整方法",
+      "type": "procedure",
+      "definition": "已知 $n, N \\in \\mathbb{Z}^+$，要求当 $n > N$ 时 $n > \\frac{1}{\\varepsilon}$，取 $N = \\left\\lfloor \\frac{1}{\\varepsilon} \\right\\rfloor + 1$ 即可保证。推广：若需 $n > M$（$M$ 为任意正数），取 $N = \\lfloor M \\rfloor + 1$。",
+      "related_to": ["floor-function", "epsilon-n-definition", "floor-function-addition", "floor-function-inequality"],
+      "examples": [
+        "求证 $\\frac{1}{n^2} \\to 0$：解 $n^2 > \\frac{1}{\\varepsilon} \\Rightarrow n > \\sqrt{\\frac{1}{\\varepsilon}}$，取 $N = \\lfloor \\sqrt{\\frac{1}{\\varepsilon}} \\rfloor + 1$",
+        "求证 $\\frac{1}{n} \\to 0$：$|\\frac{1}{n} - 0| = \\frac{1}{n} < \\varepsilon \\Rightarrow n > \\frac{1}{\\varepsilon}$，取 $N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$，则 $n > N$ 时 $\\frac{1}{n} < \\varepsilon$"
+      ],
+      "counter_examples": [
+        "若取 $N = \\lfloor M \\rfloor$（不加1），当 $M < 1$ 时（如 $\\varepsilon > 1$）$N = 0$，不满足 $N$ 为正整数。",
+        "若取 $N = \\lfloor M \\rfloor$ 且 M 恰为整数，如 M = 5，则 N = 5。当 n = 6 > 5 时 n > 5 = M ✓，但若 n = 5.5（非整数）不在讨论范围——因为 n 和 N 都是正整数，所以 n 至少是 N+1=6 > 5=M。这个边界是安全的但不是最规范的。"
+      ],
+      "notes": "核心逻辑：$N = \\lfloor M \\rfloor + 1$ 确保了 $N > M$（因为 $\\lfloor M \\rfloor \\leq M < \\lfloor M \\rfloor + 1$），从而 $n > N \\Rightarrow n > M$。若题目允许 $N$ 为非负整数，则 $N = \\lfloor M \\rfloor$ 也可行。总结为口诀：猪头取整加一。"
+    },
+    {
+      "id": "inverse-function-definition",
+      "name": "反函数定义",
+      "type": "discriminant",
+      "definition": "对于函数 $Y = f(X)$，若值域中每个 $Y$ 都有唯一的 $X$ 与之对应，则 $X$ 成为关于 $Y$ 的函数，记为 $X = f^{-1}(Y)$，称为 $f$ 的反函数。",
+      "condition": "$f$ 必须是单射（$X_1 \\neq X_2 \\Rightarrow f(X_1) \\neq f(X_2)$）。最常见的单射是严格单调函数。",
+      "related_to": ["inverse-function-property", "inverse-function-graph", "arcsin", "arccos", "arctan", "arccot"],
+      "examples": [
+        "$Y = X^3$ 与 $Y = \\sqrt[3]{X}$ 互为反函数（三次方与开三次方互逆）",
+        "$Y = a^x$ 与 $Y = \\log_a X$ 互为反函数（指数与对数互逆，经典反函数对）"
+      ],
+      "counter_examples": [
+        "$Y = X^2$ 在 $\\mathbb{R}$ 上没有反函数——因为 $Y = 1$ 同时对应 $X = 1$ 和 $X = -1$，不满足唯一性。但若限定 $X \\geq 0$，则 $Y = X^2$ 有反函数 $Y = \\sqrt{X}$。",
+        "$Y = \\sin X$ 在 $\\mathbb{R}$ 上没有反函数——因为 $\\sin(0) = \\sin(\\pi) = \\sin(2\\pi) = 0$，一个 Y 值对应无穷多个 X。需限定主值区间 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$。"
+      ],
+      "notes": "习惯上仍以 $X$ 为自变量、$Y$ 为因变量表示反函数。$X = f^{-1}(Y)$ 与 $Y = f^{-1}(X)$ 字母不同但本质相同（定义域和对应法则一致）。不是所有函数都有反函数，必须满足单值性。"
+    },
+    {
+      "id": "inverse-function-property",
+      "name": "反函数复合性质：$f^{-1}(f(X)) = X$",
+      "type": "procedure",
+      "definition": "若 $X$ 在 $f$ 有反函数的定义域上，则 $f^{-1}(f(X)) = X$ 且 $f(f^{-1}(Y)) = Y$。",
+      "condition": "$X$ 必须在 $f$ 的主值区间（有反函数的区间）内。",
+      "related_to": ["inverse-function-definition", "arcsin", "arccos", "arctan"],
+      "examples": [
+        "$\\arcsin(\\sin(\\frac{\\pi}{6})) = \\frac{\\pi}{6}$（$\\frac{\\pi}{6}$ 在主值区间内 ✓）",
+        "$\\sin(\\arcsin(0.5)) = 0.5$（$0.5$ 在 $\\arcsin$ 定义域 $[-1,1]$ 内 ✓）",
+        "$\\arccos(\\cos(0)) = 0$（$0$ 在 $\\arccos$ 主值区间 $[0,\\pi]$ 内 ✓）"
+      ],
+      "counter_examples": [
+        "$\\arcsin(\\sin(\\frac{5\\pi}{6})) \\neq \\frac{5\\pi}{6}$，因为 $\\frac{5\\pi}{6} \\notin [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$。正确：$\\arcsin(\\sin(\\frac{5\\pi}{6})) = \\arcsin(\\frac{1}{2}) = \\frac{\\pi}{6}$。",
+        "$\\arccos(\\cos(\\frac{11\\pi}{6})) \\neq \\frac{11\\pi}{6}$，因为 $\\frac{11\\pi}{6} \\notin [0, \\pi]$。正确：$\\arccos(\\cos(\\frac{11\\pi}{6})) = \\arccos(\\cos(\\frac{\\pi}{6})) = \\frac{\\pi}{6}$。"
+      ],
+      "notes": "这是反三角函数中最关键的易错点——必须在主值区间内才能直接抵消。否则需要用诱导公式把角度搬进主值区间再处理。抵消感是直观的（外面套反函数就脱掉），但前提条件必须满足。"
+    },
+    {
+      "id": "inverse-function-graph",
+      "name": "反函数图像对称性",
+      "type": "discriminant",
+      "definition": "原函数 $Y = f(X)$ 与其反函数 $Y = f^{-1}(X)$（以 $X$ 为自变量表示时）的图像关于直线 $Y = X$ 对称。",
+      "related_to": ["inverse-function-definition", "arcsin", "arccos", "arctan"],
+      "examples": [
+        "$Y = X^3$ 与 $Y = \\sqrt[3]{X}$ 关于 $Y = X$ 对称",
+        "$Y = e^X$ 与 $Y = \\ln X$ 关于 $Y = X$ 对称"
+      ],
+      "counter_examples": [
+        "若反函数写成 $X = f^{-1}(Y)$ 而非 $Y = f^{-1}(X)$，则图像与 $Y = f(X)$ 完全重合（同一坐标系中描点相同）——不是对称关系。例如 $X = \\sqrt[3]{Y}$ 与 $Y = X^3$ 图像完全一样。"
+      ],
+      "notes": "本质原因：原函数过点 (a, b)，反函数过点 (b, a)——当两者都以 X 为自变量、Y 为因变量表示时，相当于交换了横纵坐标，所以关于 Y = X 对称。若一个用 Y 做自变量、另一个用 X 做自变量，则图像重合。"
+    },
+    {
+      "id": "arcsin",
+      "name": "反正弦函数 $\\arcsin X$",
+      "type": "discriminant",
+      "definition": "$Y = \\arcsin X$ 是 $Y = \\sin X$ 在 $X \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$（主值区间）上的反函数。输入正弦值 $X \\in [-1, 1]$，输出对应弧度 $Y \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$。",
+      "domain": "[-1, 1]",
+      "range": "$[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$",
+      "related_to": ["inverse-function-definition", "inverse-function-property", "arcsin-properties", "principal-value-interval", "inverse-function-graph"],
+      "examples": [
+        "$\\arcsin 1 = \\frac{\\pi}{2}$（唯一输出，因为主值区间限制）",
+        "$\\arcsin 0 = 0$",
+        "$\\arcsin \\frac{\\sqrt{3}}{2} = \\frac{\\pi}{3}$（逆向思维：哪个角的正弦是 $\\frac{\\sqrt{3}}{2}$ 且在 $[-\\pi/2, \\pi/2]$ 上？）",
+        "$\\arcsin(-\\frac{1}{2}) = -\\frac{\\pi}{6}$（利用奇函数性质）"
+      ],
+      "counter_examples": [
+        "$\\sin(\\frac{5\\pi}{6}) = \\frac{1}{2}$ 但 $\\arcsin(\\sin(\\frac{5\\pi}{6})) = \\frac{\\pi}{6} \\neq \\frac{5\\pi}{6}$，因为 $\\frac{5\\pi}{6}$ 不在主值区间内。",
+        "$\\arcsin(2)$ 无意义，因为 $2 \\notin [-1, 1]$——反正弦的定义域必须是正弦值。"
+      ],
+      "notes": "「$\\arcsin$」中「arc」是弧（弧度）的词根，表示输出的结果是一个弧度（角度）。$\\arcsin X$ 的值域严格限制在 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$，这是数学上的统一规定，不是某个题的特殊要求。后续求反三角值靠「逆向思维」——想哪个角的正弦值是它且在值域内。"
+    },
+    {
+      "id": "arcsin-properties",
+      "name": "反正弦函数的四大性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：严格单调增加；\\n（2）奇偶性：奇函数，$\\arcsin(-X) = -\\arcsin X$；\\n（3）有界性：有界，上下界为 $\\frac{\\pi}{2}$ 和 $-\\frac{\\pi}{2}$；\\n（4）周期性：无周期性。",
+      "related_to": ["arcsin"],
+      "examples": [
+        "单调增验证：$\\arcsin(-1) = -\\frac{\\pi}{2} < \\arcsin(0) = 0 < \\arcsin(1) = \\frac{\\pi}{2}$",
+        "奇函数验证：$\\arcsin(-0.5) = -\\frac{\\pi}{6} = -\\arcsin(0.5)$"
+      ],
+      "counter_examples": [
+        "无周期性——设周期为 T，则 $\\arcsin(X+T) = \\arcsin X$ 需对所有 $X \\in [-1,1]$ 成立，但 $\\arcsin$ 定义域为 $[-1,1]$，$X+T$ 很容易超出定义域，不成立。",
+        "$\\sin X$ 有周期性（$2\\pi$），但其反函数 $\\arcsin X$ 没有周期性——反函数只取了原函数的一段单调区间来定义。"
+      ],
+      "notes": "特别注意：$\\sin X$ 有周期性，但其反函数 $\\arcsin X$ 没有周期性。这是一个常见的混淆点。"
+    },
+    {
+      "id": "arcsin-evaluation",
+      "name": "反正弦求值方法（逆向思维）",
+      "type": "procedure",
+      "definition": "求 $\\arcsin X$ 的值时，问「哪个角的正弦值是 $X$，且该角在 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ 上？」利用单位圆和特殊角的三角函数值进行逆向思考。",
+      "related_to": ["arcsin", "principal-value-interval"],
+      "examples": [
+        "$\\arcsin \\frac{\\sqrt{3}}{2}$：$\\sin \\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}$ 且 $\\frac{\\pi}{3} \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$，结果为 $\\frac{\\pi}{3}$",
+        "$\\arcsin(-\\frac{1}{2})$：利用奇偶性 $= -\\arcsin \\frac{1}{2} = -\\frac{\\pi}{6}$"
+      ],
+      "counter_examples": [
+        "不能从 $\\sin \\frac{2\\pi}{3} = \\frac{\\sqrt{3}}{2}$ 得出 $\\arcsin \\frac{\\sqrt{3}}{2} = \\frac{2\\pi}{3}$，因为 $\\frac{2\\pi}{3} \\notin [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$。",
+        "不需要背诵反三角函数值表——用高中的特殊三角函数值和逆向思维即可。如 $\\arcsin \\frac{1}{2}$ = 问「正弦为 1/2 且在 $[-\\pi/2,\\pi/2]$ 的角」→ $\\pi/6$。"
+      ],
+      "notes": "不需要背诵反三角函数值表，用逆向思维和熟知的特殊三角函数值即可（30°, 45°, 60° 等）。这是大学阶段实用的求值策略。"
+    },
+    {
+      "id": "arcsin-definition-domain",
+      "name": "反正弦的定义域约束",
+      "type": "discriminant",
+      "definition": "$\\arcsin X$ 的定义域为 $X \\in [-1, 1]$。超出此范围的表达式无意义。",
+      "related_to": ["arcsin"],
+      "examples": [
+        "$\\arcsin \\sqrt{2}$ 无意义（$\\sqrt{2} > 1$）",
+        "$\\arcsin(-\\frac{3}{\\pi})$ 无意义（$-\\frac{3}{\\pi} < -1$）",
+        "$\\arcsin(\\sin 2)$ 有意义——先算 $\\sin 2$（≈ 0.909），再套 $\\arcsin$，$\\sin 2 \\in [-1, 1]$ ✓",
+        "$\\sin(\\arcsin 2)$ 无意义——内层 $\\arcsin 2$ 已经无意义"
+      ],
+      "counter_examples": [
+        "$\\arcsin 2$ 不是 $90°$ 也不是「不存在这样一个角」——从数学上讲这个表达式直接无定义（undefined），不能写值。",
+        "复合表达式 $\\arcsin(\\sin X)$ 中，$X$ 可以取任意实数因为内层 $\\sin X$ 的输出始终在 $[-1,1]$，但最终结果受主值区间限制，未必等于 $X$。"
+      ],
+      "notes": "三角函数可以取任意实数，但反三角函数的输入（三角函数值）必须在对应值域范围内。这是从「角的函数」到「值到角的函数」的本质转变。"
+    },
+    {
+      "id": "principal-value-interval",
+      "name": "主值区间（Principal Value Interval）",
+      "type": "discriminant",
+      "definition": "为了使三角函数在其整个定义域上有反函数，人为限定一个单调区间，称为主值区间。只有在主值区间上，三角函数与反三角函数才满足 $f^{-1}(f(X)) = X$。",
+      "related_to": ["arcsin", "arccos", "arctan", "arccot", "inverse-function-property"],
+      "examples": [
+        "各三角函数主值区间：\\n- $\\sin$：$[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$\\n- $\\cos$：$[0, \\pi]$\\n- $\\tan$：$(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$\\n- $\\cot$：$(0, \\pi)$",
+        "$\\arcsin$ 的主值区间选择逻辑：$\\sin$ 在 $[-\\pi/2, \\pi/2]$ 上严格单增，覆盖全部正弦值 $[-1,1]$，且关于原点对称（方便定义奇函数）"
+      ],
+      "counter_examples": [
+        "主值区间不是唯一的可选单调区间——例如 $\\sin$ 在 $[\\pi/2, 3\\pi/2]$ 上也单调（递减），但数学上统一规定主值区间为 $[-\\pi/2, \\pi/2]$。选这个区间是因为它在原点附近、关于原点对称。",
+        "不能把三角函数在非主值区间上的反解直接写成反三角函数。例如 $\\sin X = Y$，若 $X \\in [\\pi/2, 3\\pi/2]$，不能写 $X = \\arcsin Y$。"
+      ],
+      "notes": "记忆口诀：「反正（arc）取中间，反余（arcc）取半边」。即 $\\arcsin$ 和 $\\arctan$ 的主值区间关于原点对称（取中间），$\\arccos$ 和 $\\operatorname{arccot}$ 的主值区间在正半轴（取半边）。"
+    },
+    {
+      "id": "offset-to-principal-value",
+      "name": "非主值区间下求反函数的操作流程（搬进主值区间法）",
+      "type": "procedure",
+      "definition": "当 $X$ 不在主值区间时，通过 $k\\pi \\pm X$ 的形式将角度搬进主值区间，利用诱导公式重新表达三角函数，然后反解。\\n\\n步骤：\\n1. 用 $k\\pi \\pm X$ 把角度搬进相应主值区间\\n2. 套入原三角函数，用诱导公式化简\\n3. 此时角度已在主值区间，可用反三角函数反解\\n4. 整理得到关于 $X$ 的表达式",
+      "related_to": ["principal-value-interval", "arcsin", "arccos", "arctan", "inverse-function-property"],
+      "examples": [
+        "求 $Y = \\sin X$（$X \\in [\\frac{\\pi}{2}, \\frac{3\\pi}{2}]$）的反函数：\\n1. 令 $\\pi - X \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$（$X$ 减 $\\pi$ 则到主值区间）\\n2. $\\sin X = \\sin(\\pi - X) = Y$（诱导公式：$\\sin(\\pi - \\alpha) = \\sin \\alpha$）\\n3. $\\pi - X = \\arcsin Y$（现在可反解了）\\n4. $X = \\pi - \\arcsin Y$",
+        "求 $Y = \\sin X$（$X \\in [2\\pi, \\frac{5\\pi}{2}]$）的反函数：\\n1. 令 $X - 2\\pi \\in [0, \\frac{\\pi}{2}] \\subset [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$\\n2. $\\sin X = \\sin(X - 2\\pi) = Y$（周期诱导）\\n3. $X - 2\\pi = \\arcsin Y$\\n4. $X = \\arcsin Y + 2\\pi$"
+      ],
+      "counter_examples": [
+        "不要用 $\\frac{k\\pi}{2}$ 搬角度——会导致函数名变更（奇变），增加复杂度。例如 $\\sin(\\frac{\\pi}{2} - X) = \\cos X$，函数变成了余弦，反而更难处理。始终用 $k\\pi$ 的整数倍（偶不变）。",
+        "不能搬进主值区间后直接写原 X 的表达式而不检查——例如 $\\sin X = Y, X \\in [\\frac{\\pi}{2}, \\frac{3\\pi}{2}]$，不能写 $X = \\arcsin Y + \\pi$——要验证变换是否等价。"
+      ],
+      "notes": "核心思想：死守主值区间。使用 $k\\pi$ 而非 $\\frac{k\\pi}{2}$ 是为了「偶不变」——函数名称不变，避免变成其他三角函数增加复杂度。这是反三角函数计算的通用套路。"
+    },
+    {
+      "id": "arccos",
+      "name": "反余弦函数 $\\arccos X$",
+      "type": "discriminant",
+      "definition": "$Y = \\arccos X$ 是 $Y = \\cos X$ 在 $X \\in [0, \\pi]$（主值区间）上的反函数。输入余弦值 $X \\in [-1, 1]$，输出对应弧度 $Y \\in [0, \\pi]$。",
+      "domain": "[-1, 1]",
+      "range": "$[0, \\pi]$",
+      "related_to": ["inverse-function-definition", "principal-value-interval", "arccos-properties", "arccos-identities"],
+      "examples": [
+        "$\\arccos 1 = 0$（cos 0 = 1 且 0 ∈ [0, π]）",
+        "$\\arccos(-1) = \\pi$（cos π = -1 且 π ∈ [0, π]）",
+        "$\\arccos 0 = \\frac{\\pi}{2}$（cos π/2 = 0 且 π/2 ∈ [0, π]）"
+      ],
+      "counter_examples": [
+        "$\\arccos(\\cos(2\\pi)) = \\arccos(1) = 0 \\neq 2\\pi$——$2\\pi$ 不在 $[0, \\pi]$ 主值区间内。",
+        "$\\arccos$ 不是偶函数：$\\arccos(0.5) \\neq \\arccos(-0.5)$。$\\arccos(0.5) = \\pi/3 \\approx 1.047$，$\\arccos(-0.5) = 2\\pi/3 \\approx 2.094$。"
+      ],
+      "notes": "$\\arccos$ 的主值区间为 $[0, \\pi]$，与 $\\arcsin$ 的 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ 不同。不是偶函数（尽管 $\\cos$ 是偶函数）。"
+    },
+    {
+      "id": "arccos-properties",
+      "name": "反余弦函数的四大性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：严格单调减少；\\n（2）奇偶性：非奇非偶；\\n（3）有界性：有界，上下界为 $\\pi$ 和 $0$；\\n（4）周期性：无周期性。",
+      "related_to": ["arccos"],
+      "examples": [
+        "单调减验证：$\\arccos(-1) = \\pi > \\arccos(0) = \\pi/2 > \\arccos(1) = 0$",
+        "非奇非偶验证：$\\arccos(1) = 0$，$\\arccos(-1) = \\pi$。若为奇函数则 $\\arccos(-1) = -0 = 0$（矛盾）；若为偶函数则 $\\arccos(-1) = 0$（也矛盾）。"
+      ],
+      "counter_examples": [
+        "不是偶函数——$\\cos$ 是偶函数，但 $\\arccos$ 不是。$\\arccos(-1) = \\pi \\neq \\arccos(1) = 0$。这是最容易被误判的性质。",
+        "不是奇函数——$\\arccos(-X)$ 不等于 $-\\arccos X$，而是等于 $\\pi - \\arccos X$（互补关系）。"
+      ],
+      "notes": "注意：$\\cos X$ 是偶函数，但 $\\arccos X$ 不是偶函数！例如 $\\arccos 1 = 0$，$\\arccos(-1) = \\pi \\neq 0$。这是反直觉的，因为反函数不一定继承原函数的奇偶性。"
+    },
+    {
+      "id": "arccos-identities",
+      "name": "反余弦的重要恒等式",
+      "type": "procedure",
+      "definition": "（1）互补关系：$\\arccos(-X) = \\pi - \\arccos X$（$X \\in [-1, 1]$）\\n（2）互余关系：$\\arcsin X + \\arccos X = \\frac{\\pi}{2}$（$X \\in [-1, 1]$）\\n（3）$\\cos(\\arccos X) = X$，$\\arccos(\\cos X) = X$ 当 $X \\in [0, \\pi]$",
+      "related_to": ["arccos", "arcsin", "inverse-function-property"],
+      "examples": [
+        "互补：$\\arccos(-\\frac{1}{2}) = \\pi - \\arccos\\frac{1}{2} = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$",
+        "互余：$\\arcsin\\frac{1}{2} + \\arccos\\frac{1}{2} = \\frac{\\pi}{6} + \\frac{\\pi}{3} = \\frac{\\pi}{2}$"
+      ],
+      "counter_examples": [
+        "互补关系不是奇函数关系：$\\arccos(-X) \\neq -\\arccos X$。例如 $\\arccos(-0.5) = 2\\pi/3 \\neq -\\pi/3$。"
+      ],
+      "notes": "互补关系的证明思路：令 $\\theta = \\arccos X$，则 $\\cos \\theta = X$，$\\cos(\\pi - \\theta) = -X$。因 $\\pi - \\theta \\in [0, \\pi]$（在主值区间内），可反解得 $\\arccos(-X) = \\pi - \\theta$。互余关系在后续极限问题中非常实用。几何解释：在直角三角形中，$\\arcsin X$ 和 $\\arccos X$ 分别是两个锐角，和为 $\\frac{\\pi}{2}$。"
+    },
+    {
+      "id": "non-principal-arccos-evaluation",
+      "name": "非主值区间 $\\arccos(\\cos \\theta)$ 的化简方法",
+      "type": "procedure",
+      "definition": "当 $\\theta$ 不在 $[0, \\pi]$ 时，用 $k\\pi$ 将 $\\theta$ 搬进 $[0, \\pi]$：通过 $\\cos(\\theta \\pm 2k\\pi)$ 或 $\\cos(2k\\pi - \\theta)$ 等变换，将角度化到 $[0, \\pi]$ 上。",
+      "related_to": ["arccos", "principal-value-interval", "inverse-function-property", "offset-to-principal-value"],
+      "examples": [
+        "$\\arccos(\\cos\\frac{11\\pi}{6})$：$\\frac{11\\pi}{6} \\notin [0, \\pi]$，$\\cos\\frac{11\\pi}{6} = \\cos(2\\pi - \\frac{11\\pi}{6}) = \\cos\\frac{\\pi}{6}$（偶函数），$\\frac{\\pi}{6} \\in [0, \\pi]$，结果为 $\\frac{\\pi}{6}$",
+        "$\\arccos(\\cos\\frac{5\\pi}{3})$：$\\frac{5\\pi}{3} \\notin [0, \\pi]$，$\\cos\\frac{5\\pi}{3} = \\cos(2\\pi - \\frac{5\\pi}{3}) = \\cos\\frac{\\pi}{3}$，结果为 $\\frac{\\pi}{3}$"
+      ],
+      "counter_examples": [
+        "$\\arccos(\\cos\\frac{11\\pi}{6}) \\neq \\frac{11\\pi}{6}$"
+      ],
+      "notes": "与 $\\arcsin(\\sin X)$ 的处理逻辑完全一致——必须先将内部角度搬进主值区间。可利用 $\\cos$ 的偶函数性质（$\\cos(-\\theta) = \\cos \\theta$）和周期性质（$\\cos(\\theta + 2k\\pi) = \\cos \\theta$）来化简。"
+    },
+    {
+      "id": "arctan",
+      "name": "反正切函数 $\\arctan X$",
+      "type": "discriminant",
+      "definition": "$Y = \\arctan X$ 是 $Y = \\tan X$ 在 $X \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$（主值区间）上的反函数。输入正切值 $X \\in \\mathbb{R}$，输出对应弧度 $Y \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$。",
+      "domain": "$\\mathbb{R}$（全体实数）",
+      "range": "$(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$",
+      "related_to": ["inverse-function-definition", "principal-value-interval", "arctan-properties", "arctan-limits"],
+      "examples": [
+        "$\\arctan 1 = \\frac{\\pi}{4}$（$\\tan \\frac{\\pi}{4} = 1$ 且 $\\frac{\\pi}{4} \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$）",
+        "$\\arctan(-\\sqrt{3}) = -\\frac{\\pi}{3}$（$\\tan(-\\frac{\\pi}{3}) = -\\sqrt{3}$，或用奇函数性质：$-\\arctan\\sqrt{3} = -\\frac{\\pi}{3}$）"
+      ],
+      "counter_examples": [
+        "$\\arctan X$ 的值域是开区间 $(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$，端点永远取不到——无论 $X$ 多大，$\\arctan X < \\frac{\\pi}{2}$ 严格成立。",
+        "$\\arctan$ 的定义域是全体实数（区别于 $\\arcsin$ 和 $\\arccos$ 的 $[-1,1]$），因为 $\\tan$ 的值域是全体实数。"
+      ],
+      "notes": "定义域为全体实数，输出值域在 $(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ 内（开区间，端点取不到）。在后续极限、求导、积分中非常常用，出场率在四个反三角函数中最高。"
+    },
+    {
+      "id": "arctan-properties",
+      "name": "反正切函数的四大性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：严格单调增加；\\n（2）奇偶性：奇函数，$\\arctan(-X) = -\\arctan X$；\\n（3）有界性：有界，上界 $\\frac{\\pi}{2}$，下界 $-\\frac{\\pi}{2}$；\\n（4）周期性：无周期性。",
+      "related_to": ["arctan"],
+      "examples": [
+        "单调增验证：$\\arctan(-\\infty) \\to -\\pi/2 < \\arctan(0) = 0 < \\arctan(+\\infty) \\to \\pi/2$",
+        "奇函数验证：$\\arctan(-1) = -\\pi/4 = -\\arctan(1)$"
+      ],
+      "counter_examples": [
+        "上下界取不到：$\\arctan(10^{100}) < \\pi/2$，$\\arctan(-10^{100}) > -\\pi/2$，永远不会等于 $\\pm\\pi/2$（只有当 $X \\to \\pm\\infty$ 时才趋近）。",
+        "不要和 $\\arcsin$ 的奇函数性质混淆——两者都是奇函数，但 $\\arccos$ 和 $\\operatorname{arccot}$ 不是。"
+      ],
+      "notes": "$\\arctan X$ 是一个非常重要的有界函数，需牢记其上界 $\\frac{\\pi}{2}$ 和下界 $-\\frac{\\pi}{2}$。这个有界性在极限计算中经常用到（如 $\\lim_{x \\to \\infty} \\frac{\\arctan x}{x} = 0$，因为有界/无穷大 → 0）。"
+    },
+    {
+      "id": "arctan-limits",
+      "name": "反正切的极限值",
+      "type": "procedure",
+      "definition": "$\\lim\\limits_{X \\to +\\infty} \\arctan X = \\frac{\\pi}{2}$，$\\lim\\limits_{X \\to -\\infty} \\arctan X = -\\frac{\\pi}{2}$。",
+      "related_to": ["arctan", "arctan-properties"],
+      "examples": [
+        "$\\lim_{X \\to +\\infty} \\arctan X = \\frac{\\pi}{2}$（$X$ 越大，$\\arctan X$ 越接近但永远达不到 $\\pi/2$）",
+        "$\\lim_{X \\to -\\infty} \\arctan X = -\\frac{\\pi}{2}$（对称性，因 $\\arctan$ 是奇函数）"
+      ],
+      "counter_examples": [
+        "$\\lim_{X \\to 0} \\arctan X = 0$（不是 $\\pi/2$ 或 $-\\pi/2$），趋近无穷的极限和趋近 0 的极限不同，不能混淆。",
+        "$\\lim_{X \\to +\\infty} \\arctan(2X) = \\pi/2$ 也成立（常数倍不影响极限），但 $\\lim_{X \\to +\\infty} \\arctan(X^2)$ 同样是 $\\pi/2$。关键：只要内层趋于 $+\\infty$ 或 $-\\infty$，极限就是对应的 $\\pm\\pi/2$。"
+      ],
+      "notes": "这两个极限值在高数中经常用到，需熟记。直观理解：$\\arctan$ 的图像有两条水平渐近线 y = π/2 和 y = -π/2。"
+    },
+    {
+      "id": "arctan-tan-simplification",
+      "name": "$\\arctan(\\tan X)$ 的化简与分段表达式",
+      "type": "procedure",
+      "definition": "当 $X \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ 时，$\\arctan(\\tan X) = X$。\\n一般情形：令 $T = X - k\\pi$ 使 $T \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$，则 $\\arctan(\\tan X) = X - k\\pi$（$X \\in (k\\pi - \\frac{\\pi}{2}, k\\pi + \\frac{\\pi}{2})$，$k \\in \\mathbb{Z}$）。",
+      "derivation": "由诱导公式 $\\tan(X) = \\tan(X - k\\pi)$（周期 π），且 $X - k\\pi \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ 时可在主值区间内反解。",
+      "related_to": ["arctan", "principal-value-interval", "offset-to-principal-value"],
+      "examples": [
+        "$X \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ 即 k=0 时，$\\arctan(\\tan X) = X$",
+        "$X \\in (\\frac{\\pi}{2}, \\frac{3\\pi}{2})$ 即 k=1 时，$\\arctan(\\tan X) = X - \\pi$（$X-\\pi \\in (-\\pi/2, \\pi/2)$）"
+      ],
+      "counter_examples": [
+        "不能直接抵消！$\\arctan(\\tan(\\frac{2\\pi}{3})) \\neq \\frac{2\\pi}{3}$。正确：$\\arctan(\\tan(\\frac{2\\pi}{3})) = \\arctan(\\tan(\\frac{2\\pi}{3} - \\pi)) = \\arctan(\\tan(-\\frac{\\pi}{3})) = -\\frac{\\pi}{3}$。"
+      ],
+      "notes": "最终化简结果是周期函数，以 $\\pi$ 为周期。图像为斜率为 1 但被截断为分段线性的锯齿形（每条线段在 $((-\\pi/2 + k\\pi), (\\pi/2 + k\\pi))$ 区间上）。推导关键：$\\tan$ 以 $\\pi$ 为周期，所以 $\\tan X = \\tan(X - k\\pi)$，其中选 k 使 $X - k\\pi$ 落入主值区间。"
+    },
+    {
+      "id": "arccot",
+      "name": "反余切函数 $\\operatorname{arccot} X$",
+      "type": "discriminant",
+      "definition": "$Y = \\operatorname{arccot} X$ 是 $Y = \\cot X$ 在 $X \\in (0, \\pi)$（主值区间）上的反函数。输入余切值 $X \\in \\mathbb{R}$，输出对应弧度 $Y \\in (0, \\pi)$。",
+      "domain": "$\\mathbb{R}$",
+      "range": "$(0, \\pi)$",
+      "related_to": ["inverse-function-definition", "principal-value-interval", "arccot-identities"],
+      "examples": [
+        "$\\operatorname{arccot} 1 = \\frac{\\pi}{4}$（$\\cot \\frac{\\pi}{4} = 1$ 且 $\\frac{\\pi}{4} \\in (0, \\pi)$）",
+        "$\\operatorname{arccot} 0 = \\frac{\\pi}{2}$（$\\cot \\frac{\\pi}{2} = 0$ 且 $\\frac{\\pi}{2} \\in (0, \\pi)$）"
+      ],
+      "counter_examples": [
+        "反余切的出场率远低于反正切——99% 的题目只会涉及 $\\arctan$，$\\operatorname{arccot}$ 偶尔出现。但如果出现，处理逻辑与 $\\arccos$ 完全同理。",
+        "主值区间与 $\\arccos$ 相同为 $(0, \\pi)$（开区间，端点取不到），不同于 $\\arcsin$ 和 $\\arctan$ 的关于原点对称的区间。"
+      ],
+      "notes": "反余切的出场率远低于反正切。主值区间为 $(0, \\pi)$（开区间）。规律：「反正（arcsin/arctan）取中间（关于原点对称），反余（arccos/arccot）取半边（正半轴）」。"
+    },
+    {
+      "id": "arccot-properties",
+      "name": "反余切函数的四大性质",
+      "type": "discriminant",
+      "definition": "（1）单调性：严格单调减少；\\n（2）奇偶性：非奇非偶；\\n（3）有界性：有界，上下界为 $\\pi$ 和 $0$；\\n（4）周期性：无周期性。",
+      "related_to": ["arccot"],
+      "examples": [
+        "单调减验证：$\\operatorname{arccot}(-\\infty) \\to \\pi > \\operatorname{arccot}(0) = \\pi/2 > \\operatorname{arccot}(+\\infty) \\to 0$",
+        "非奇非偶验证：$\\operatorname{arccot}(1) = \\pi/4$，$\\operatorname{arccot}(-1) = 3\\pi/4 \\neq \\pm \\pi/4$"
+      ],
+      "counter_examples": [
+        "与 $\\arccos$ 一样不是偶函数——$\\cot$ 在 $(0, \\pi)$ 上不是偶函数，反函数自然也不是。不要因为 $\\arctan$ 是奇函数就想当然地认为 $\\operatorname{arccot}$ 也有对称性。",
+        "$\\operatorname{arccot}(-X) \\neq -\\operatorname{arccot} X$（不同于 $\\arctan$ 的奇函数性质），而是 $\\operatorname{arccot}(-X) = \\pi - \\operatorname{arccot} X$（互补关系）。"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "arccot-identities",
+      "name": "反余切的重要恒等式",
+      "type": "procedure",
+      "definition": "（1）互补关系：$\\operatorname{arccot}(-X) = \\pi - \\operatorname{arccot} X$（与 $\\arccos$ 同理）\\n（2）互余关系：$\\arctan X + \\operatorname{arccot} X = \\frac{\\pi}{2}$（$X \\in \\mathbb{R}$）",
+      "related_to": ["arccot", "arctan", "arccos-identities"],
+      "examples": [
+        "互补：$\\operatorname{arccot}(-1) = \\pi - \\operatorname{arccot}(1) = \\pi - \\pi/4 = 3\\pi/4$",
+        "互余：$\\arctan(1) + \\operatorname{arccot}(1) = \\pi/4 + \\pi/4 = \\pi/2$"
+      ],
+      "counter_examples": [
+        "$\\operatorname{arccot}(-X) \\neq -\\operatorname{arccot} X$（不同于 $\\arctan$ 的奇函数性质）。$\\operatorname{arccot}(-1) = 3\\pi/4 \\neq -\\pi/4$。"
+      ],
+      "notes": "互余关系在直角三角形中有几何解释：$\\arctan X$ 和 $\\operatorname{arccot} X$ 分别是两个锐角（$X > 0$ 时），和为 $\\frac{\\pi}{2}$。$X < 0$ 时用互补关系也可推出同样的互余结论。"
+    },
+    {
+      "id": "inverse-trig-summary",
+      "name": "反三角函数总结对照",
+      "type": "discriminant",
+      "definition": "反三角函数主值区间对照：\\n| 函数 | 主值区间 | 定义域 | 单调性 | 奇偶性 |\\n|------|----------|--------|--------|--------|\\n| $\\arcsin X$ | $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ | $[-1, 1]$ | 单增 | 奇 |\\n| $\\arccos X$ | $[0, \\pi]$ | $[-1, 1]$ | 单减 | 非奇非偶 |\\n| $\\arctan X$ | $(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ | $\\mathbb{R}$ | 单增 | 奇 |\\n| $\\operatorname{arccot} X$ | $(0, \\pi)$ | $\\mathbb{R}$ | 单减 | 非奇非偶 |",
+      "related_to": ["arcsin", "arccos", "arctan", "arccot", "principal-value-interval"],
+      "examples": [
+        "各反三角函数的图像特征：\\n- $\\arcsin$：过原点，关于原点对称，两端水平（y=±π/2 是渐近线）\\n- $\\arccos$：从 (1,0) 到 (-1,π)，严格递减\\n- $\\arctan$：过原点，S 形曲线，y=±π/2 是水平渐近线\\n- $\\operatorname{arccot}$：从 (-∞,π) 到 (+∞,0)，递减",
+        "四个函数全部有界且无周期——这是和原三角函数的根本区别"
+      ],
+      "counter_examples": [
+        "不要以为所有反三角函数的定义域都是 $[-1,1]$——$\\arctan$ 和 $\\operatorname{arccot}$ 的定义域是 $\\mathbb{R}$（全体实数），因为 $\\tan$ 和 $\\cot$ 的值域是 $\\mathbb{R}$。",
+        "不要以为所有反三角函数都是奇函数——只有 $\\arcsin$ 和 $\\arctan$ 是奇函数。$\\arccos$ 和 $\\operatorname{arccot}$ 既非奇也非偶。"
+      ],
+      "notes": "记忆口诀：「反正（arc）取中间，反余（arcc）取半边」。即 $\\arcsin$ 和 $\\arctan$ 的主值区间关于原点对称，$\\arccos$ 和 $\\operatorname{arccot}$ 的主值区间在正半轴。反正割（arcsec）和反余割（arccsc）几乎不涉及。"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "floor-function",
+      "to": "integer-part-decomposition",
+      "type": "composition",
+      "note": "取整函数 $[X]$ 即为整数部分分解中的整数部分"
+    },
+    {
+      "from": "integer-part-decomposition",
+      "to": "fractional-part-function",
+      "type": "composition",
+      "note": "小数部分函数 $\\{X\\} = X - [X]$ 是整数部分分解的另一半"
+    },
+    {
+      "from": "integer-part-decomposition",
+      "to": "floor-function-inequality",
+      "type": "derivation",
+      "note": "由 $0 \\leq \\{X\\} < 1$ 移项可得全部取整不等式"
+    },
+    {
+      "from": "floor-function-inequality",
+      "to": "epsilon-n-definition",
+      "type": "application",
+      "note": "取整不等式是 $\\varepsilon$-$N$ 定义中 $N = \\lfloor \\frac{1}{\\varepsilon} \\rfloor + 1$ 的理论依据"
+    },
+    {
+      "from": "floor-function-addition",
+      "to": "epsilon-n-definition",
+      "type": "application",
+      "note": "$[\\frac{1}{\\varepsilon} + 1] = [\\frac{1}{\\varepsilon}] + 1$ 用于化简 $N$ 的表达式"
+    },
+    {
+      "from": "floor-function",
+      "to": "floor-function-graph",
+      "type": "representation",
+      "note": "阶梯函数图像是取整函数的几何表示"
+    },
+    {
+      "from": "floor-function",
+      "to": "epsilon-n-definition",
+      "type": "application",
+      "note": "取整函数是 $\\varepsilon$-$N$ 定义中构造 $N$ 的关键工具"
+    },
+    {
+      "from": "epsilon-n-definition",
+      "to": "sequence-limit-proof",
+      "type": "generalization",
+      "note": "$\\varepsilon$-$N$ 定义的前置逻辑推广为通用的数列极限证明方法"
+    },
+    {
+      "from": "inverse-function-definition",
+      "to": "arcsin",
+      "type": "specialization",
+      "note": "反正弦是反函数定义在三角函数上的具体应用"
+    },
+    {
+      "from": "inverse-function-definition",
+      "to": "arccos",
+      "type": "specialization",
+      "note": "反余弦是反函数定义在三角函数上的具体应用"
+    },
+    {
+      "from": "inverse-function-definition",
+      "to": "arctan",
+      "type": "specialization",
+      "note": "反正切是反函数定义在三角函数上的具体应用"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "arcsin",
+      "type": "constraint",
+      "note": "$\\arcsin$ 的值域 $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ 是其主值区间"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "arccos",
+      "type": "constraint",
+      "note": "$\\arccos$ 的值域 $[0, \\pi]$ 是其主值区间"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "arctan",
+      "type": "constraint",
+      "note": "$\\arctan$ 的值域 $(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ 是其主值区间"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "inverse-function-property",
+      "type": "condition",
+      "note": "$f^{-1}(f(X)) = X$ 成立的前提是 $X$ 在主值区间内"
+    },
+    {
+      "from": "principal-value-interval",
+      "to": "offset-to-principal-value",
+      "type": "motivation",
+      "note": "因为反解须在主值区间内进行，所以需要将角度搬进主值区间"
+    },
+    {
+      "from": "offset-to-principal-value",
+      "to": "non-principal-arccos-evaluation",
+      "type": "specialization",
+      "note": "搬进主值区间法在 $\\arccos(\\cos\\theta)$ 类型题中的具体应用"
+    },
+    {
+      "from": "offset-to-principal-value",
+      "to": "arctan-tan-simplification",
+      "type": "specialization",
+      "note": "搬进主值区间法在 $\\arctan(\\tan X)$ 化简中的具体应用"
+    },
+    {
+      "from": "inverse-function-graph",
+      "to": "inverse-function-definition",
+      "type": "representation",
+      "note": "关于 $Y = X$ 对称是反函数关系的几何特征"
+    },
+    {
+      "from": "arcsin",
+      "to": "arcsin-properties",
+      "type": "description",
+      "note": "四大性质是对 $\\arcsin$ 函数行为的完整描述"
+    },
+    {
+      "from": "arccos",
+      "to": "arccos-properties",
+      "type": "description",
+      "note": "四大性质是对 $\\arccos$ 函数行为的完整描述"
+    },
+    {
+      "from": "arctan",
+      "to": "arctan-properties",
+      "type": "description",
+      "note": "四大性质是对 $\\arctan$ 函数行为的完整描述"
+    },
+    {
+      "from": "arcsin",
+      "to": "arcsin-evaluation",
+      "type": "method",
+      "note": "逆向思维法用于求 $\\arcsin$ 的具体值"
+    },
+    {
+      "from": "arcsin-definition-domain",
+      "to": "arcsin",
+      "type": "constraint",
+      "note": "输入 $X$ 必须在 $[-1, 1]$ 内表达式才有意义"
+    },
+    {
+      "from": "arccos",
+      "to": "arccos-identities",
+      "type": "derivation",
+      "note": "互补关系和互余关系是 $\\arccos$ 的重要恒等式"
+    },
+    {
+      "from": "arctan",
+      "to": "arctan-limits",
+      "type": "property",
+      "note": "反正切在正负无穷远处的极限值"
+    },
+    {
+      "from": "arccot",
+      "to": "arccot-properties",
+      "type": "description",
+      "note": "四大性质是对 $\\operatorname{arccot}$ 函数行为的完整描述"
+    },
+    {
+      "from": "arccot",
+      "to": "arccot-identities",
+      "type": "derivation",
+      "note": "互补关系和互余关系是 $\\operatorname{arccot}$ 的重要恒等式"
+    },
+    {
+      "from": "arctan",
+      "to": "arccot-identities",
+      "type": "relation",
+      "note": "$\\arctan X + \\operatorname{arccot} X = \\frac{\\pi}{2}$"
+    },
+    {
+      "from": "arcsin",
+      "to": "arccos-identities",
+      "type": "relation",
+      "note": "$\\arcsin X + \\arccos X = \\frac{\\pi}{2}$"
+    },
+    {
+      "from": "arccos-identities",
+      "to": "arccot-identities",
+      "type": "analogy",
+      "note": "$\\arccos$ 的互补/互余关系与 $\\operatorname{arccot}$ 完全同理"
+    },
+    {
+      "from": "inverse-trig-summary",
+      "to": "arcsin",
+      "type": "summary",
+      "note": "对照表汇总所有反三角函数的主值区间"
+    },
+    {
+      "from": "inverse-trig-summary",
+      "to": "arccos",
+      "type": "summary",
+      "note": "对照表汇总所有反三角函数的主值区间"
+    },
+    {
+      "from": "inverse-trig-summary",
+      "to": "arctan",
+      "type": "summary",
+      "note": "对照表汇总所有反三角函数的主值区间"
+    },
+    {
+      "from": "inverse-trig-summary",
+      "to": "arccot",
+      "type": "summary",
+      "note": "对照表汇总所有反三角函数的主值区间"
+    }
+  ]
+}

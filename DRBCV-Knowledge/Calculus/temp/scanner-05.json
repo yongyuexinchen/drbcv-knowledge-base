@@ -1,0 +1,536 @@
+{
+  "topic": "定积分 (Definite Integral)",
+  "concepts": [
+    {
+      "id": "definite-integral-definition",
+      "name": "定积分的定义 (黎曼积分定义)",
+      "type": "definition",
+      "definition": "设函数 $f(x)$ 在闭区间 $[a, b]$ 上有界。在 $[a, b]$ 中插入 $n-1$ 个分点 $a = x_0 < x_1 < x_2 < \\cdots < x_n = b$，将区间分成 $n$ 个子区间 $[x_{i-1}, x_i]$，记 $\\Delta x_i = x_i - x_{i-1}$。在每个子区间上任取一点 $\\xi_i \\in [x_{i-1}, x_i]$，作乘积 $f(\\xi_i) \\Delta x_i$ 并求和 $\\sum_{i=1}^n f(\\xi_i) \\Delta x_i$（称为黎曼和）。令 $\\lambda = \\max\\{ \\Delta x_i \\}$，若极限 $\\lim_{\\lambda \\to 0} \\sum_{i=1}^n f(\\xi_i) \\Delta x_i$ 存在且与分割方式和 $\\xi_i$ 的取法无关，则称该极限为 $f(x)$ 在 $[a, b]$ 上的定积分，记为 $\\int_a^b f(x) \\, dx$。",
+      "related_to": ["riemann-sum", "integrability", "newton-leibniz-formula"],
+      "examples": [
+        "$\\int_0^1 x^2 \\, dx = \\frac{1}{3}$（用定义计算，N等分+右端点取点）"
+      ],
+      "counter_examples": [],
+      "notes": "定积分定义可拆解为四个步骤：分割→近似→求和→取极限。实际计算中很少直接用定义，而是用牛顿-莱布尼茨公式。"
+    },
+    {
+      "id": "riemann-sum",
+      "name": "黎曼和 (Riemann Sum)",
+      "type": "concept",
+      "definition": "定积分定义中的和式 $\\sum_{i=1}^n f(\\xi_i) \\Delta x_i$ 称为黎曼和。若每个子区间取最小值，则得到黎曼下和（下合）；若每个子区间取最大值，则得到黎曼上和（上合）。下合 ≤ 任意黎曼和 ≤ 上合。",
+      "related_to": ["definite-integral-definition", "darboux-sum"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "下合与上合是夹逼定积分是否存在的重要工具：若下合极限=上合极限，则定积分存在。"
+    },
+    {
+      "id": "integrability",
+      "name": "可积性 (Integrability)",
+      "type": "theorem",
+      "definition": "函数 $f(x)$ 在 $[a, b]$ 上可积是指 $\\int_a^b f(x) \\, dx$ 存在。两类充分条件：(1) 闭区间上连续函数必可积；(2) 闭区间上有界且只有有限个间断点的函数必可积。可积的必要条件是函数有界。",
+      "related_to": ["definite-integral-definition", "dirichlet-function"],
+      "examples": [
+        "$f(x)=x^2$ 在 $[0,1]$ 上可积（连续）",
+        "$f(x)=\\frac{1}{x}$ 在 $(0,1]$ 上不可积（无界）"
+      ],
+      "counter_examples": [
+        "狄利克雷函数 $D(x)=\\begin{cases}1 & x \\in \\mathbb{Q} \\\\ 0 & x \\notin \\mathbb{Q}\\end{cases}$ 在 $[0,1]$ 上有界但不可积"
+      ],
+      "notes": "可积的充分条件比连续宽松：有界+有限个间断点即可。有界不一定可积，反例是狄利克雷函数。"
+    },
+    {
+      "id": "dirichlet-function",
+      "name": "狄利克雷函数 (Dirichlet Function)",
+      "type": "example",
+      "definition": "$D(x) = \\begin{cases} 1, & x \\in \\mathbb{Q} \\\\ 0, & x \\notin \\mathbb{Q} \\end{cases}$。在任意闭区间上有界但不可积，因为黎曼上合=1，黎曼下合=0，上下极限不相等。",
+      "related_to": ["integrability", "riemann-sum"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "证明不可积：在每小区间取有理数时黎曼和→1，取无理数时黎曼和→0，极限不唯一，故定积分不存在。"
+    },
+    {
+      "id": "definite-integral-notation",
+      "name": "定积分符号与基本规定",
+      "type": "definition",
+      "definition": "$\\int_a^b f(x) \\, dx$：$f$ 为被积函数，$x$ 为积分变量，$a$ 为积分下限，$b$ 为积分上限，$[a, b]$ 为积分区间。定积分的值只与被积函数和积分区间有关，与积分变量的字母无关。\\n\\n两个基本规定：\\n(1) $\\int_a^a f(x) \\, dx = 0$\\n(2) $\\int_a^b f(x) \\, dx = -\\int_b^a f(x) \\, dx$（上下限互换，取相反数）",
+      "related_to": ["definite-integral-definition"],
+      "examples": [
+        "$\\int_0^1 x^2 \\, dx = \\int_0^1 t^2 \\, dt$（与变量字母无关）"
+      ],
+      "counter_examples": [],
+      "notes": "积分符号∫是Sum中S的拉长，表示对无穷小量累加求和。定积分的结果是一个具体的数值，而不定积分是一个函数族。"
+    },
+    {
+      "id": "definite-integral-geometric-meaning",
+      "name": "定积分的几何意义",
+      "type": "definition",
+      "definition": "定积分 $\\int_a^b f(x) \\, dx$ 在几何上表示曲线 $y=f(x)$、直线 $x=a$、$x=b$ 和 $x$ 轴所围成的各部分中，$x$ 轴上方面积之和减去 $x$ 轴下方面积之和（即面积的代数和）。",
+      "related_to": ["element-method"],
+      "examples": [
+        "$\\int_0^{2\\pi} \\sin x \\, dx = 0$（上下面积抵消）",
+        "$\\int_a^b 1 \\, dx = b - a$（区间长度）",
+        "$\\int_{-1}^1 \\sqrt{1-x^2} \\, dx = \\frac{\\pi}{2}$（半圆面积）"
+      ],
+      "counter_examples": [],
+      "notes": "物理意义：在 v-t 图中，定积分表示位移——正速度产生正位移，负速度产生反方向位移。"
+    },
+    {
+      "id": "element-method",
+      "name": "元素法/微元法 (Element Method)",
+      "type": "method",
+      "definition": "将所求总量 $Q$ 看作分布在区间 $[a, b]$ 上，取微小段 $[x, x+dx]$，在该段上近似认为函数值不变，则该段的量值微元为 $dQ = f(x) \\, dx$，总能量为 $Q = \\int_a^b f(x) \\, dx$。",
+      "related_to": ["definite-integral-geometric-meaning"],
+      "examples": [
+        "质量不均匀细杆 $OM$ 长 $1$，距 $O$ 点 $x$ 处密度 $\\rho = 2x$，总质量 $= \\int_0^1 2x \\, dx = 1$"
+      ],
+      "counter_examples": [],
+      "notes": "元素法是用积分解决实际问题的核心方法，核心思想：分割→近似（取微元）→求和（积分）。"
+    },
+    {
+      "id": "linearity-of-integral",
+      "name": "定积分的线性性质（对函数的线性性）",
+      "type": "property",
+      "definition": "设 $f, g$ 在 $[a,b]$ 上可积，则：\\n(1) $\\int_a^b k f(x) \\, dx = k \\int_a^b f(x) \\, dx$（数乘）\\n(2) $\\int_a^b [f(x) \\pm g(x)] \\, dx = \\int_a^b f(x) \\, dx \\pm \\int_a^b g(x) \\, dx$（加减）\\n即被积函数可拆分，积分区间不变。",
+      "related_to": ["additivity-of-interval"],
+      "examples": [
+        "$\\int_1^3 [2f(x)+g(x)] \\, dx = 2\\int_1^3 f(x) \\, dx + \\int_1^3 g(x) \\, dx$"
+      ],
+      "counter_examples": [],
+      "notes": "拆的是被积函数，区间的可加性拆的是积分区间，两者不同。"
+    },
+    {
+      "id": "additivity-of-interval",
+      "name": "定积分对区间的可加性",
+      "type": "property",
+      "definition": "$\\int_a^b f(x) \\, dx = \\int_a^c f(x) \\, dx + \\int_c^b f(x) \\, dx$，其中 $c$ 为任意常数（不必在 $a,b$ 之间）。",
+      "related_to": ["linearity-of-integral"],
+      "examples": [
+        "$\\int_0^2 f(x) \\, dx - \\int_0^1 f(x) \\, dx = \\int_1^2 f(x) \\, dx$"
+      ],
+      "counter_examples": [],
+      "notes": "拆的是积分区间，被积函数不变。$c$ 可以在区间外，只要上下限接上即可。"
+    },
+    {
+      "id": "positivity-preserving",
+      "name": "定积分的保号性",
+      "type": "property",
+      "definition": "若 $a < b$，且 $f(x) \\ge 0$ 在 $[a,b]$ 上恒成立，则 $\\int_a^b f(x) \\, dx \\ge 0$。进一步，若 $f$ 连续且不恒为零，则 $\\int_a^b f(x) \\, dx > 0$。",
+      "related_to": ["order-preserving", "absolute-integrability"],
+      "examples": [],
+      "counter_examples": [
+        "不连续的反例：$f(x)$ 仅在 $x_0$ 处大于0，其余均为0，此时定积分为0"
+      ],
+      "notes": "连续条件非常重要——若不连续，非负且不恒为零仍可能积分为0。"
+    },
+    {
+      "id": "order-preserving",
+      "name": "定积分的保序性",
+      "type": "property",
+      "definition": "若 $a < b$，且 $f(x) \\le g(x)$ 在 $[a,b]$ 上恒成立，则 $\\int_a^b f(x) \\, dx \\le \\int_a^b g(x) \\, dx$。",
+      "related_to": ["positivity-preserving"],
+      "examples": [
+        "比较 $\\int_1^2 \\ln x \\, dx$ 与 $\\int_1^2 (\\ln x)^2 \\, dx$：因 $x\\in(1,2)$ 时 $0 \\le \\ln x < 1$，故 $\\ln x > (\\ln x)^2$，前者更大"
+      ],
+      "counter_examples": [],
+      "notes": "被积函数的大小比较可转化为定积分的大小比较，是常考题型。"
+    },
+    {
+      "id": "absolute-integrability",
+      "name": "绝对可积性 (积分的绝对值不等式)",
+      "type": "property",
+      "definition": "$\\left| \\int_a^b f(x) \\, dx \\right| \\le \\int_a^b |f(x)| \\, dx$。几何意义：左边是正负面积抵消后的结果取绝对值，右边是全部取正后的面积之和。",
+      "related_to": ["positivity-preserving"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "常被用于证明题中的放缩。证法：由 $-|f(x)| \\le f(x) \\le |f(x)|$ 两边积分再取绝对值即可。"
+    },
+    {
+      "id": "estimation-inequality",
+      "name": "估值不等式",
+      "type": "property",
+      "definition": "若 $a < b$，设 $m = \\min_{x \\in [a,b]} f(x)$，$M = \\max_{x \\in [a,b]} f(x)$，则 $$m(b-a) \\le \\int_a^b f(x) \\, dx \\le M(b-a)$$",
+      "related_to": ["mean-value-theorem-for-integrals"],
+      "examples": [
+        "估计 $\\int_{\\pi/4}^{5\\pi/4} (1+\\sin^2 x) \\, dx$：$1 \\le 1+\\sin^2 x \\le 2$，区间长 $\\pi$，故 $\\pi \\le I \\le 2\\pi$"
+      ],
+      "counter_examples": [],
+      "notes": "将估积分问题转化为求被积函数最值问题，是常考题型。"
+    },
+    {
+      "id": "mean-value-theorem-for-integrals",
+      "name": "定积分中值定理",
+      "type": "theorem",
+      "definition": "若 $f(x)$ 在 $[a,b]$ 上连续，则至少存在一点 $\\xi \\in [a,b]$（或开区间 $(a,b)$），使得 $$\\int_a^b f(x) \\, dx = f(\\xi) (b-a)$$ 等价地，$f(\\xi) = \\frac{1}{b-a} \\int_a^b f(x) \\, dx$，即 $f(\\xi)$ 等于 $f$ 在 $[a,b]$ 上的平均值。",
+      "related_to": ["estimation-inequality", "variable-limit-integral", "lagrange-mean-value-theorem"],
+      "examples": [
+        "已知 $f$ 在 $[0,2]$ 连续，$f(0)=-1$，$\\int_0^2 f(x) \\, dx = 1$，则存在 $\\xi \\in (0,2]$ 使 $f(\\xi)=1$（积分中值定理）"
+      ],
+      "counter_examples": [],
+      "notes": "证明方法：估值不等式+介值定理。另一种证明：用牛顿-莱布尼茨公式转成 $F(b)-F(a)=F'(\\xi)(b-a)$（拉格朗日中值定理），此时 $\\xi$ 为开区间。"
+    },
+    {
+      "id": "newton-leibniz-formula",
+      "name": "牛顿-莱布尼茨公式 (微积分基本公式)",
+      "type": "theorem",
+      "definition": "若 $f(x)$ 在 $[a,b]$ 上连续，$F(x)$ 是 $f(x)$ 的一个原函数（即 $F'(x)=f(x)$），则 $$\\int_a^b f(x) \\, dx = F(b) - F(a)$$",
+      "related_to": ["definite-integral-definition", "variable-limit-integral", "indefinite-integral"],
+      "examples": [
+        "$\\int_0^\\pi \\sin x \\, dx = [-\\cos x]_0^\\pi = (-\\cos\\pi) - (-\\cos 0) = 2$",
+        "$\\int_0^1 \\frac{x}{\\sqrt{1+x^2}} \\, dx = [\\sqrt{1+x^2}]_0^1 = \\sqrt{2} - 1$"
+      ],
+      "counter_examples": [],
+      "notes": "将定积分计算归结为找原函数，是微积分中最重要的公式。沟通了微分学与积分学，以及积分中值定理与微分中值定理。"
+    },
+    {
+      "id": "variable-limit-integral",
+      "name": "变上限积分函数 (积分上限函数)",
+      "type": "definition",
+      "definition": "设 $f(x)$ 在 $[a,b]$ 上连续，定义 $$\\Phi(x) = \\int_a^x f(t) \\, dt, \\quad x \\in [a,b]$$ 称为变上限积分函数（积分上限函数）。几何上表示从 $a$ 到 $x$ 的曲边梯形面积。",
+      "related_to": ["variable-limit-integral-derivative", "newton-leibniz-formula"],
+      "examples": [
+        "$\\Phi(x) = \\int_0^x e^{-t^2} \\, dt$"
+      ],
+      "counter_examples": [],
+      "notes": "$\ud835\udecc(x)$ 是以 $x$ 为自变量的新函数，不是定积分（定积分是数）。"
+    },
+    {
+      "id": "variable-limit-integral-derivative",
+      "name": "变上限积分求导定理",
+      "type": "theorem",
+      "definition": "若 $f$ 在 $[a,b]$ 上连续，则变上限积分函数 $\\Phi(x)=\\int_a^x f(t)\\,dt$ 在 $[a,b]$ 上可导，且 $$\\Phi'(x) = \\frac{d}{dx}\\int_a^x f(t)\\,dt = f(x)$$ 即变上限积分是被积函数的一个原函数。",
+      "related_to": ["variable-limit-integral", "newton-leibniz-formula", "composite-variable-limit"],
+      "examples": [
+        "$\\frac{d}{dx}\\int_0^x \\frac{\\sin t}{t} \\, dt = \\frac{\\sin x}{x}$"
+      ],
+      "counter_examples": [],
+      "notes": "证明了连续函数一定有原函数（变上限积分即为一个原函数）。证明用定义+积分中值定理+连续性。"
+    },
+    {
+      "id": "composite-variable-limit",
+      "name": "复合变限积分求导（一般公式）",
+      "type": "theorem",
+      "definition": "若 $f$ 连续，$\\alpha(x), \\beta(x)$ 可导，则 $$\\frac{d}{dx}\\int_{\\alpha(x)}^{\\beta(x)} f(t) \\, dt = f(\\beta(x))\\beta'(x) - f(\\alpha(x))\\alpha'(x)$$",
+      "related_to": ["variable-limit-integral-derivative"],
+      "examples": [
+        "$\\frac{d}{dx}\\int_0^{x^2} e^{-t^2} \\, dt = e^{-x^4} \\cdot 2x$",
+        "$\\frac{d}{dx}\\int_{\\sin x}^{x^2} e^{-t^2} \\, dt = e^{-x^4}\\cdot 2x - e^{-\\sin^2 x} \\cdot \\cos x$"
+      ],
+      "counter_examples": [],
+      "notes": "复合函数求导法则的应用：先对上限求导乘上限导数，再减去对下限求导乘下限导数（下限求导时加负号）。"
+    },
+    {
+      "id": "indefinite-integral-vs-definite",
+      "name": "定积分与不定积分的关系",
+      "type": "concept",
+      "definition": "不定积分求的是原函数的全体（函数族），结果含任意常数 $C$；定积分算出来是一个具体的数值。定积分计算（通过牛顿-莱布尼茨公式）依赖不定积分求原函数的能力。",
+      "related_to": ["newton-leibniz-formula", "indefinite-integral"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "不定积分是定积分计算的基础（找原函数），但定积分有专属的技巧（对称性、区间再现等）。"
+    },
+    {
+      "id": "indefinite-integral",
+      "name": "不定积分",
+      "type": "concept",
+      "definition": "若 $F'(x)=f(x)$，则 $f(x)$ 的不定积分为 $\\int f(x)\\,dx = F(x) + C$，其中 $C$ 为任意常数。",
+      "related_to": ["newton-leibniz-formula", "indefinite-integral-vs-definite"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "定积分的计算以不定积分（求原函数）为基础。"
+    },
+    {
+      "id": "definite-integral-by-substitution",
+      "name": "定积分的换元法",
+      "type": "method",
+      "definition": "设 $x = \\varphi(t)$，$\\varphi'(t)$ 在 $[\\alpha, \\beta]$ 上连续，则 $$\\int_a^b f(x) \\, dx = \\int_\\alpha^\\beta f(\\varphi(t)) \\, \\varphi'(t) \\, dt$$ 其中 $a = \\varphi(\\alpha)$, $b = \\varphi(\\beta)$。\\n\\n关键：换元必须换积分限！新上限对应原上限，新下限对应原下限。若不换字母（凑微分），则不换积分限。",
+      "related_to": ["integration-by-parts", "trigonometric-substitution"],
+      "examples": [
+        "$\\int_0^{\\pi/2} \\cos^5 x \\sin x \\, dx$ 令 $t=\\cos x$，$x:0\\to\\pi/2$ 对应 $t:1\\to0$",
+        "$\\int_0^a \\sqrt{a^2-x^2} \\, dx$ 令 $x=a\\sin t$"
+      ],
+      "counter_examples": [],
+      "notes": "定积分换元不区分第一类/第二类换元。大准则：换字母就换积分限，不换字母（只凑微分）就不换积分限。"
+    },
+    {
+      "id": "integration-by-parts",
+      "name": "定积分的分部积分法",
+      "type": "method",
+      "definition": "$$\\int_a^b u(x) \\, dv(x) = [u(x)v(x)]_a^b - \\int_a^b v(x) \\, du(x)$$ 与不定积分的分部积分法相同，只需每一步带上积分上下限。",
+      "related_to": ["definite-integral-by-substitution"],
+      "examples": [
+        "$\\int_1^e x \\ln x \\, dx = \\left[\\frac{x^2}{2}\\ln x\\right]_1^e - \\int_1^e \\frac{x^2}{2} \\cdot \\frac{1}{x} \\, dx$"
+      ],
+      "counter_examples": [],
+      "notes": "也可先求不定积分（原函数），再代入上下限。反对幂指三的排序规则同样适用。"
+    },
+    {
+      "id": "symmetry-integral-odd-even",
+      "name": "对称区间定积分——偶倍奇零",
+      "type": "theorem",
+      "definition": "若 $f(x)$ 在 $[-a, a]$ 上可积，则：\\n(1) 若 $f$ 为奇函数（$f(-x) = -f(x)$），则 $\\int_{-a}^a f(x) \\, dx = 0$\\n(2) 若 $f$ 为偶函数（$f(-x) = f(x)$），则 $\\int_{-a}^a f(x) \\, dx = 2\\int_0^a f(x) \\, dx$",
+      "related_to": ["symmetry-general-formula"],
+      "examples": [
+        "$\\int_{-1}^1 x e^{-x^2} \\, dx = 0$（奇函数）",
+        "$\\int_{-1}^1 (x^2)^{3/2} \\, dx = 2\\int_0^1 x^3 \\, dx = \\frac{1}{2}$（注意 $\\sqrt{x^2}=|x|$）"
+      ],
+      "counter_examples": [
+        "误判：$(x^2)^{3/2} = |x|^3$ 是偶函数，不是奇函数。$\\sqrt{x^2}=|x|$ 而非 $x$。"
+      ],
+      "notes": "偶倍奇零非常好用，但要注意算术平方根、偶次方根开出来是绝对值。遇到 $\\sqrt{x^2}$、$(x^2)^{1/2}$ 要小心。"
+    },
+    {
+      "id": "symmetry-general-formula",
+      "name": "对称区间定积分一般公式",
+      "type": "theorem",
+      "definition": "对任意函数 $f(x)$（无需奇偶性），在对称区间 $[-a, a]$ 上有：$$\\int_{-a}^a f(x) \\, dx = \\int_0^a [f(x) + f(-x)] \\, dx$$",
+      "related_to": ["symmetry-integral-odd-even"],
+      "examples": [
+        "$\\int_{-\\pi/2}^{\\pi/2} \\frac{\\sin^2 x}{1+e^x} \\, dx = \\int_0^{\\pi/2} \\left(\\frac{\\sin^2 x}{1+e^x} + \\frac{\\sin^2 x}{1+e^{-x}}\\right) dx = \\int_0^{\\pi/2} \\sin^2 x \\, dx = \\frac{\\pi}{4}$"
+      ],
+      "counter_examples": [],
+      "notes": "适用于被积函数非奇非偶但 $f(x)+f(-x)$ 可简化的情形，特别是分母含指数函数时。证明思路：拆区间+换元。"
+    },
+    {
+      "id": "interval-reproduction-formula",
+      "name": "区间再现公式",
+      "type": "theorem",
+      "definition": "对连续函数 $f$，有：$$\\int_a^b f(x) \\, dx = \\int_a^b f(a+b-x) \\, dx$$ 即积分线不动，将 $f$ 中所有 $x$ 替换为 $a+b-x$。",
+      "related_to": ["definite-integral-by-substitution"],
+      "examples": [
+        "$\\int_0^{\\pi/2} \\frac{\\sin^n x}{\\sin^n x + \\cos^n x} \\, dx = \\frac{\\pi}{4}$",
+        "$\\int_0^{\\pi/4} \\ln(1+\\tan x) \\, dx = \\frac{\\pi}{8}\\ln 2$",
+        "$\\int_0^x \\sqrt{x-t} \\, e^t \\, dt = e^x \\int_0^x \\sqrt{t} \\, e^{-t} \\, dt$（含参变限积分）"
+      ],
+      "counter_examples": [],
+      "notes": "核心思想：换元 $x = a+b-t$ 后积分线互换，与负号抵消，只改变被积函数。\\n几何意义：$f(a+b-x)$ 的图像关于 $x=\\frac{a+b}{2}$ 对称。\\n特别适合三角函数在 $[0,\\pi/2]$ 区间上的积分。"
+    },
+    {
+      "id": "wallis-formula",
+      "name": "华里士公式 (点火公式 / Wallis Formula)",
+      "type": "theorem",
+      "definition": "对 $n$ 为正整数，有：$$\\int_0^{\\pi/2} \\sin^n x \\, dx = \\int_0^{\\pi/2} \\cos^n x \\, dx = \\begin{cases} \\dfrac{n-1}{n} \\cdot \\dfrac{n-3}{n-2} \\cdots \\dfrac{1}{2} \\cdot \\dfrac{\\pi}{2} & n \\text{为偶数} \\\\ \\dfrac{n-1}{n} \\cdot \\dfrac{n-3}{n-2} \\cdots \\dfrac{2}{3} & n \\text{为奇数} \\end{cases}$$ 可用双阶乘记法：$\\int_0^{\\pi/2} \\sin^n x \\, dx = \\frac{(n-1)!!}{n!!} \\cdot \\frac{\\pi}{2}$（$n$ 偶）或 $= \\frac{(n-1)!!}{n!!}$（$n$ 奇）。",
+      "related_to": ["trigonometric-integral-transforms"],
+      "examples": [
+        "$\\int_0^{\\pi/2} \\sin^4 x \\, dx = \\frac{3}{4} \\cdot \\frac{1}{2} \\cdot \\frac{\\pi}{2} = \\frac{3\\pi}{16}$",
+        "$\\int_0^{\\pi/2} \\cos^5 x \\, dx = \\frac{4}{5} \\cdot \\frac{2}{3} = \\frac{8}{15}$"
+      ],
+      "counter_examples": [],
+      "notes": "又称\"点火公式\"——偶数次从 $n$ 倒数到 2 \"点火成功\"乘 $\\frac{\\pi}{2}$；奇数次倒数到 3 \"点火失败\"不乘 $\\frac{\\pi}{2}$。是 $[0,\\pi/2]$ 上三角函数积分的最佳工具。"
+    },
+    {
+      "id": "trigonometric-integral-transforms",
+      "name": "三角函数积分变换公式",
+      "type": "method",
+      "definition": "五个重要公式：\\n(1) $\\int_0^{\\pi/2} f(\\sin x) \\, dx = \\int_0^{\\pi/2} f(\\cos x) \\, dx$（区间再现）\\n(2) $\\int_0^{\\pi} f(\\sin x) \\, dx = 2\\int_0^{\\pi/2} f(\\sin x) \\, dx$\\n(3) $\\int_0^{\\pi} x f(\\sin x) \\, dx = \\pi \\int_0^{\\pi/2} f(\\sin x) \\, dx = \\frac{\\pi}{2} \\int_0^{\\pi} f(\\sin x) \\, dx$\\n(4) $\\int_0^{2\\pi} \\sin^n x \\, dx = \\begin{cases} 0 & n \\text{为奇} \\\\ 4\\int_0^{\\pi/2} \\sin^n x \\, dx & n \\text{为偶} \\end{cases}$\\n(5) $\\int_0^{2\\pi} \\cos^n x \\, dx$ 同理。",
+      "related_to": ["wallis-formula", "interval-reproduction-formula"],
+      "examples": [
+        "$\\int_0^{\\pi} x \\sin^4 x \\, dx = \\pi \\int_0^{\\pi/2} \\sin^4 x \\, dx = \\pi \\cdot \\frac{3\\pi}{16} = \\frac{3\\pi^2}{16}$"
+      ],
+      "counter_examples": [],
+      "notes": "公式(3)的证明：区间再现 $x \\to \\pi-x$ 得 $I = \\int_0^\\pi (\\pi-x)f(\\sin x)dx$，与原式相加得 $2I = \\pi\\int_0^\\pi f(\\sin x)dx$。"
+    },
+    {
+      "id": "periodic-function-integral",
+      "name": "周期函数的定积分",
+      "type": "theorem",
+      "definition": "设 $f$ 以 $T$ 为周期连续，则：\\n(1) $\\int_a^{a+T} f(x) \\, dx = \\int_0^T f(x) \\, dx$（任意一个周期上的积分相等）\\n(2) $\\int_a^{a+nT} f(x) \\, dx = n \\int_0^T f(x) \\, dx$（$n$ 个周期上的积分等于 $n$ 倍一个周期上的积分）",
+      "related_to": [],
+      "examples": [
+        "$\\int_0^{n\\pi} \\sqrt{1+\\sin 2x} \\, dx = \\int_0^{n\\pi} |\\sin x + \\cos x| \\, dx = \\sqrt{2}n \\int_0^\\pi |\\sin x| \\, dx = 2\\sqrt{2}n$"
+      ],
+      "counter_examples": [],
+      "notes": "可用图像直观理解：每个周期曲线形状相同，面积代数和也相同。选择最简单的周期区间（如 $[0,T]$ 或对称区间）计算。"
+    },
+    {
+      "id": "piecewise-function-integral",
+      "name": "分段函数的定积分",
+      "type": "method",
+      "definition": "对于分段函数（含绝对值函数），在分段点处将积分区间拆开，分别积分再相加。",
+      "related_to": ["additivity-of-interval"],
+      "examples": [
+        "$\\int_{1/e}^e |\\ln x| \\, dx = \\int_{1/e}^1 (-\\ln x) \\, dx + \\int_1^e \\ln x \\, dx = 2 - \\frac{2}{e}$"
+      ],
+      "counter_examples": [],
+      "notes": "绝对值、取整函数、max/min 函数等本质上都是分段函数。"
+    },
+    {
+      "id": "variable-limit-integral-limit",
+      "name": "变限积分求极限（洛必达法则）",
+      "type": "method",
+      "definition": "含变限积分的 $0/0$ 型或 $\\infty/\\infty$ 型极限，先用等价无穷小化简分母，再使用洛必达法则（分子用变限积分求导公式）。",
+      "related_to": ["variable-limit-integral-derivative", "composite-variable-limit"],
+      "examples": [
+        "$\\lim_{x\\to 0} \\frac{\\int_0^{\\sin^2 x} \\ln(1+t) \\, dt}{x^4/3} = \\frac{3}{2}$（先用等价代换 $\\sqrt[3]{1+x}-1 \\sim x/3$，再用洛必达）"
+      ],
+      "counter_examples": [],
+      "notes": "注意分母先用等价无穷小化简可大幅简化求导过程。分子求导时需使用复合变限积分求导公式。"
+    },
+    {
+      "id": "improper-integral",
+      "name": "反常积分 (广义积分)",
+      "type": "concept",
+      "definition": "反常积分包括两类：(1) 无穷限积分（积分区间无限长）；(2) 无界函数积分（被积函数在区间内某点无界）。两者都需在正常定积分基础上取极限定义。",
+      "related_to": ["definite-integral-definition"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "本文件主要覆盖正常定积分，反常积分为概念提及，未详细展开。"
+    },
+    {
+      "id": "geometric-application",
+      "name": "定积分的几何应用",
+      "type": "concept",
+      "definition": "定积分的几何应用包括：求平面图形面积（直角坐标/极坐标）、求旋转体体积、求曲线弧长、求旋转体侧面积等。",
+      "related_to": ["element-method"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "本文件主要是概念和计算技巧，几何应用的实际公式和题目需结合具体应用篇。"
+    },
+    {
+      "id": "physical-application",
+      "name": "定积分的物理应用",
+      "type": "concept",
+      "definition": "定积分的物理应用包括：变速直线运动的路程/位移、变力做功、液体压力、质心/形心等。",
+      "related_to": ["element-method"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "文中以 v-t 图求路程为物理背景引入定积分概念。"
+    },
+    {
+      "id": "n-term-sum-limit",
+      "name": "用定积分定义求 N 项和数列极限",
+      "type": "method",
+      "definition": "N 项和数列极限 $\\lim_{n\\to\\infty} \\sum_{i=1}^n \\frac{1}{n} f(\\frac{i}{n}) = \\int_0^1 f(x) \\, dx$。若 $f$ 内变量为 $a+\\frac{i}{n}$，则积分区间为 $[a, a+1]$。\\n\\n步骤：(1) 用求和符号整合；(2) 提出 $\\frac{1}{n}$，将剩余部分凑成 $f(\\frac{i}{n})$ 形式；(3) $\\frac{1}{n} \\to dx$，$\\frac{i}{n} \\to x$，求和取极限 $\\to$ 积分 $\\int_0^1 f(x)\\,dx$。",
+      "related_to": ["definite-integral-definition"],
+      "examples": [
+        "$\\lim_{n\\to\\infty} \\frac{1}{n^2}\\sum_{i=1}^n \\sqrt{n^2 - i^2} = \\lim_{n\\to\\infty} \\frac{1}{n}\\sum_{i=1}^n \\sqrt{1 - (\\frac{i}{n})^2} = \\int_0^1 \\sqrt{1-x^2} \\, dx = \\frac{\\pi}{4}$"
+      ],
+      "counter_examples": [],
+      "notes": "若求和项中 $i$ 的变化次数比 $n$ 低一次，往往考虑夹逼准则而非定积分定义。"
+    },
+    {
+      "id": "definite-integral-average-value",
+      "name": "函数在闭区间上的平均值",
+      "type": "definition",
+      "definition": "函数 $f$ 在 $[a,b]$ 上的平均值为 $\\frac{1}{b-a}\\int_a^b f(x) \\, dx$。定积分中值定理表明，连续函数$f$至少存在一点使得函数值等于平均值。",
+      "related_to": ["mean-value-theorem-for-integrals"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "物理意义：v-t 图中位移/时间 = 平均速度。"
+    },
+    {
+      "id": "darboux-sum",
+      "name": "黎曼上合与下合 (达布上和/下和)",
+      "type": "concept",
+      "definition": "对给定分割，在每个子区间上取函数最大值作矩形，求和得黎曼上合（上合）；取函数最小值作矩形，求和得黎曼下合（下合）。任意黎曼和介于下合和上合之间。若下合极限=上合极限，则定积分存在。",
+      "related_to": ["riemann-sum", "integrability"],
+      "examples": [],
+      "counter_examples": [
+        "狄利克雷函数：任意分割下，上合=1，下合=0，极限不相等，故不可积"
+      ],
+      "notes": "达布上和/下和为可积性判定提供了理论工具。"
+    },
+    {
+      "id": "lagrange-mean-value-theorem",
+      "name": "拉格朗日中值定理",
+      "type": "theorem",
+      "definition": "若 $F$ 在 $[a,b]$ 上连续、$(a,b)$ 内可导，则存在 $\\xi \\in (a,b)$ 使得 $F(b)-F(a) = F'(\\xi)(b-a)$。",
+      "related_to": ["mean-value-theorem-for-integrals", "newton-leibniz-formula"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "用于定积分中值定理的另一证明：$\\int_a^b f\\,dx = F(b)-F(a) = F'(\\xi)(b-a) = f(\\xi)(b-a)$。"
+    },
+    {
+      "id": "intermediate-value-theorem",
+      "name": "介值定理",
+      "type": "theorem",
+      "definition": "若 $f$ 在 $[a,b]$ 上连续，$m=\\min f$，$M=\\max f$，则对任意 $\\mu \\in [m, M]$，存在 $\\xi \\in [a,b]$ 使 $f(\\xi)=\\mu$。",
+      "related_to": ["mean-value-theorem-for-integrals"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "定积分中值定理的证明用到介值定理推论。"
+    },
+    {
+      "id": "zero-point-theorem",
+      "name": "零点定理",
+      "type": "theorem",
+      "definition": "若 $f$ 在 $[a,b]$ 上连续且 $f(a)\\cdot f(b) < 0$，则存在 $\\xi \\in (a,b)$ 使 $f(\\xi)=0$。",
+      "related_to": ["mean-value-theorem-for-integrals"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "与积分中值定理结合使用可证函数零点的存在性。"
+    },
+    {
+      "id": "trigonometric-substitution",
+      "name": "三角换元法",
+      "type": "method",
+      "definition": "定积分中处理 $\\sqrt{a^2 - x^2}$、$\\sqrt{a^2 + x^2}$、$\\sqrt{x^2 - a^2}$ 等形式的经典换元：\\n(1) $\\sqrt{a^2 - x^2}$：令 $x = a\\sin t$ 或 $x = a\\cos t$，$t \\in [-\\pi/2, \\pi/2]$\\n(2) $\\sqrt{a^2 + x^2}$：令 $x = a\\tan t$\\n(3) $\\sqrt{x^2 - a^2}$：令 $x = a\\sec t$",
+      "related_to": ["definite-integral-by-substitution"],
+      "examples": [
+        "$\\int_0^1 x^2 \\sqrt{1-x^2} \\, dx$ 令 $x=\\sin t$"
+      ],
+      "counter_examples": [],
+      "notes": "需注意换元后 $t$ 的取值范围，保证反函数单值且三角函数非负（以简化去根号后的符号判断）。"
+    },
+    {
+      "id": "definite-integral-proof-techniques",
+      "name": "定积分证明题常用方法",
+      "type": "method",
+      "definition": "两个关键方法：\\n(1) 拆区间：当等式右边出现新的积分限时，在对应点处拆开原积分。\\n(2) 换元：当积分限不是想要的形式时，通过换元凑出目标积分限。\\n常见模式：对称区间公式、区间再现公式的证明均使用拆区间+换元。",
+      "related_to": ["interval-reproduction-formula", "symmetry-general-formula"],
+      "examples": [],
+      "counter_examples": [],
+      "notes": "证明题通用思路：出现新积分限→拆区间→换元调积分限→合并化简。"
+    }
+  ],
+  "relationships": [
+    {"from": "definite-integral-definition", "to": "riemann-sum", "type": "composes"},
+    {"from": "definite-integral-definition", "to": "integrability", "type": "depends_on"},
+    {"from": "definite-integral-definition", "to": "newton-leibniz-formula", "type": "alternative_method"},
+    {"from": "riemann-sum", "to": "darboux-sum", "type": "related_to"},
+    {"from": "darboux-sum", "to": "dirichlet-function", "type": "used_to_prove"},
+    {"from": "integrability", "to": "dirichlet-function", "type": "counter_example"},
+    {"from": "newton-leibniz-formula", "to": "indefinite-integral", "type": "depends_on"},
+    {"from": "variable-limit-integral-derivative", "to": "newton-leibniz-formula", "type": "used_to_prove"},
+    {"from": "variable-limit-integral", "to": "variable-limit-integral-derivative", "type": "generalizes"},
+    {"from": "variable-limit-integral-derivative", "to": "composite-variable-limit", "type": "generalizes"},
+    {"from": "mean-value-theorem-for-integrals", "to": "variable-limit-integral-derivative", "type": "used_in_proof"},
+    {"from": "mean-value-theorem-for-integrals", "to": "lagrange-mean-value-theorem", "type": "alternative_proof"},
+    {"from": "mean-value-theorem-for-integrals", "to": "intermediate-value-theorem", "type": "alternative_proof"},
+    {"from": "estimation-inequality", "to": "mean-value-theorem-for-integrals", "type": "used_to_prove"},
+    {"from": "symmetry-integral-odd-even", "to": "symmetry-general-formula", "type": "specialization"},
+    {"from": "interval-reproduction-formula", "to": "definite-integral-by-substitution", "type": "is_a"},
+    {"from": "interval-reproduction-formula", "to": "trigonometric-integral-transforms", "type": "used_to_prove"},
+    {"from": "wallis-formula", "to": "trigonometric-integral-transforms", "type": "used_with"},
+    {"from": "piecewise-function-integral", "to": "additivity-of-interval", "type": "applies"},
+    {"from": "variable-limit-integral-limit", "to": "composite-variable-limit", "type": "depends_on"},
+    {"from": "n-term-sum-limit", "to": "definite-integral-definition", "type": "applies"},
+    {"from": "definite-integral-average-value", "to": "mean-value-theorem-for-integrals", "type": "related_to"},
+    {"from": "element-method", "to": "geometric-application", "type": "used_in"},
+    {"from": "element-method", "to": "physical-application", "type": "used_in"},
+    {"from": "symmetry-general-formula", "to": "definite-integral-proof-techniques", "type": "example_of"},
+    {"from": "interval-reproduction-formula", "to": "definite-integral-proof-techniques", "type": "example_of"}
+  ],
+  "source_files": [
+    "05.定积分 (1)_原文.md",
+    "05.定积分__1__原文.md",
+    "05.定积分_原文.md",
+    "_定积分_一课通_概念_性质一站式到位__原文.md",
+    "_定积分_一课通_概念_性质一站式到位__原文__1_.md",
+    "「定积分」一课通！概念+性质一站式到位！_原文 (1).md",
+    "「定积分」一课通！概念+性质一站式到位！_原文.md",
+    "备战期末_定积分_你要学会的方法技巧_都在这__原文.md",
+    "备战期末！定积分，你要学会的方法技巧，都在这！_原文.md"
+  ],
+  "_scan_notes": {
+    "total_articles_assigned": 10,
+    "relevant_articles": 9,
+    "excluded": [
+      {
+        "file": "20260714_195818_原文.md",
+        "reason": "无数学内容 — 全文为AI职业规划直播文字稿，与定积分无关"
+      }
+    ],
+    "concepts_extracted": 42,
+    "relationships": 25
+  }
+}

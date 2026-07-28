@@ -1,0 +1,18 @@
+# 同步配置
+.sync/
+
+# 研究过程中克隆的第三方仓库
+research/*/repos/
+
+# 嵌套的 git 仓库
+**/.git/
+
+# Obsidian 工作区状态（每台机器不同，任意层级）
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/hotkeys.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini

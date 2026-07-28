@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-27",
+  "job_market": {
+    "target_positions_count": 70,
+    "source": "289条Boss直聘深圳AI应用开发岗位中筛选",
+    "salary_median": "22K",
+    "salary_p25_p75": "16K-38K",
+    "salary_target": "20-25K（1-3年经验段）",
+    "top_5_required_skills": [
+      "大模型/LLM（100%）",
+      "Python（71%）",
+      "Agent/LangChain（70%）",
+      "SQL（56%）",
+      "RAG（51%）"
+    ],
+    "top_5_plus_skills": [
+      "多模态（语音/图像+LLM）",
+      "模型微调 LoRA/SFT",
+      "Go/Java（高薪岗需后端多语言）",
+      "K8s（部署/运维能力）",
+      "推理优化/模型量化"
+    ],
+    "best_company_type": "科技/创业公司（41条岗位，Python技术栈，中位22K）",
+    "high_salary_factors": [
+      "系统工程能力（C++/Go/分布式）+50%",
+      "模型工程化（推理优化/部署/量化）+30-50%",
+      "多模态+复杂Agent编排 +20-30%"
+    ],
+    "user_skill_gap": ["RAG", "Agent/LangChain", "Prompt Engineering", "向量数据库", "FastAPI"],
+    "user_skill_advantage": ["SQL", "Python基础"]
+  },
+  "ai_companion_tech": {
+    "recommended_stack": "方案A→C渐进：SillyTavern + Memobase + DeepSeek API（1周原型）→ 从零Python自建（6-12月完整版）",
+    "estimated_monthly_cost": "¥10-30（仅DeepSeek API费，其他全部免费/本地）",
+    "best_memory_solution": "自建四层融合记忆：Persona Block（人格层）+ Profile Store（事实层/Memobase风格）+ Event Timeline（叙事层）+ ChromaDB Vector Archive（搜索层/BGE-M3 embedding）",
+    "not_recommended": "Letta（过度设计，25MB源码，为通用Agent平台而非AI伴侣设计）",
+    "key_dependency": "Open-LLM-VTuber已集成letta-client，是目前唯一集成了语音+Live2D+记忆的方案",
+    "character_format_standard": "SillyTavern角色卡格式（description+personality+scenario+first_message+example_dialogs），其中example_dialogs比personality更影响实际对话风格",
+    "vector_db_choice": "ChromaDB（入门/Python pip install即用）→ Milvus（生产环境）",
+    "embedding_model": "BGE-M3（中英文优化，1024维，本地免费）",
+    "three_plans": {
+      "A_quick_proto": {"stack": "SillyTavern + Memobase + DeepSeek", "time": "1周", "cost": "¥10-30/月", "difficulty": 2},
+      "B_full_stack": {"stack": "Open-LLM-VTuber + Letta + ST角色卡", "time": "1-2月", "cost": "¥0-50/月 + ¥3K-5K硬件", "difficulty": 3},
+      "C_scratch": {"stack": "FastAPI + ChromaDB + 自建四层记忆", "time": "6-12月", "cost": "¥10-50/月", "difficulty": 5}
+    }
+  },
+  "learning_path": {
+    "optimized_12_week_plan": "阶段一(1-4周)Docker+Prompt+RAG项目 → 阶段二(5-8周)Agent+工程化+RAGAS评估 → 阶段三(9-12周)AI伴侣MVP+面试冲刺",
+    "gaps_found": [
+      "Prompt Engineering（100% JD要求，用户路径中缺失）",
+      "RAG系统（100% JD要求，未在计划中）",
+      "向量数据库（RAG的存储层，缺失）",
+      "Agent框架（~90% JD要求，缺失）",
+      "LLM API调用（多模型对比，仅用过DeepSeek）",
+      "API工程化（生产级异常处理/并发/限流，FastAPI基础不够）"
+    ],
+    "java_needed": false,
+    "java_decision_reason": "Python路线薪资25-38k vs Java路线15-24k；3个月学Java达不到'精通JVM/GC/并发'的JD要求；70条JD中仅个位数岗位必须Java",
+    "deleted_from_plan": ["Java基础"],
+    "added_to_plan": ["Prompt Engineering", "RAG全流程项目", "Agent编排项目", "向量数据库", "MCP协议", "RAGAS评估"],
+    "daily_rule": "每天200行手写Python，不依赖AI辅助",
+    "black_horse_v65_role": "课本（提供标准答案）→ 独立项目是习题集（面试官要的是后者）",
+    "key_principle": "产出导向：每学一个模块=一个可展示的GitHub仓库，不是笔记"
+  },
+  "overall_recommendation": "3个月全押Python RAG/Agent路线，目标深圳科技创业公司20-25K。AI伴侣'永月'项目采用A→C渐进路线（1周SillyTavern原型→6-12月Python自建完整版），作为面试作品而非唯一学习路径。立即行动：停Java、启Prompt Engineering、每天200行手写Python。核心优势：你已有的SQL+Python是基础盘，缺少的RAG+Agent+Prompt只需Python+文档+动手，3个月可达到面试水平。"
+}

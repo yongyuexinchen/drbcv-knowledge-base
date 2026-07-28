@@ -1,0 +1,1391 @@
+{
+  "directory": "D:\\DRBCV-Knowledge\\Calculus\\Concepts",
+  "vault_type": "math",
+  "total_cards": 112,
+  "passed": 102,
+  "failed": 10,
+  "total_errors": 12,
+  "results": [
+    {
+      "file": "ε-N语言（伊普西隆-大恩语言）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "ε-N语言（伊普西隆-大恩语言）",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md/用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md]]"
+      }
+    },
+    {
+      "file": "万能代换（半角代换）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "万能代换（半角代换）(Universal / Weierstrass Substitution)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "三角函数有理式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "三角函数有理式 (Trigonometric Rational Function)",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "三角函数的积分.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "三角函数的积分",
+        "status": "core",
+        "type": "procedure"
+      }
+    },
+    {
+      "file": "三角函数积分变换公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "三角函数积分变换公式",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "三角换元法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "三角换元法",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "不定积分.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "不定积分 (Indefinite Integral)",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "不定积分的定义.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "不定积分的定义",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "两个重要极限.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "两个重要极限",
+        "type": "discriminant",
+        "status": "core",
+        "source": "[[极限与连续]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "主值区间（PrincipalValueInterval）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "主值区间（Principal Value Interval）",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "倒代换.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "倒代换 (Reciprocal Substitution)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "元素法·微元法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "元素法/微元法 (Element Method)",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "函数图形的描绘与渐近线.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "type": "concept-card",
+        "title": "函数图形的描绘与渐近线",
+        "chapter": "第三章 微分中值定理与导数应用",
+        "source": "03.微分中值定理与导数应用 函数图形的描绘_原文",
+        "difficulty": "★★★☆☆",
+        "status": "done",
+        "tags": "函数作图, 渐近线, 水平渐近线, 垂直渐近线, 斜渐近线"
+      }
+    },
+    {
+      "file": "函数极限（ε-δ定义）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "函数极限（ε-δ定义）",
+        "type": "connection",
+        "status": "core",
+        "source": "[[极限与连续]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "函数的单调性.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "函数的单调性 (Monotonicity of Functions)",
+        "status": "unexplored",
+        "type": "混合型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "函数的单调性与极值.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "type": "concept-card",
+        "title": "函数的单调性与极值",
+        "chapter": "第三章 微分中值定理与导数应用",
+        "source": "03.微分中值定理与导数应用 函数的单调性与曲线的凹凸性_原文 + 03.微分中值定理与导数应用 函数的极值与最值_原文",
+        "difficulty": "★★★☆☆",
+        "status": "done",
+        "tags": "单调性, 极值, 一阶导数, 最值, 驻点"
+      }
+    },
+    {
+      "file": "分部积分中u和dv的选取原则（反对幂指三）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "分部积分中u和dv的选取原则（反对幂指三）(LIATE Rule for Integration by Parts)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "分部积分循环法（还原法）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "分部积分循环法（还原法）(Integration by Parts with Cyclic Reduction)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "分部积分法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "分部积分法",
+        "type": "connection",
+        "status": "core",
+        "source": "[[不定积分]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "区间再现公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "区间再现公式",
+        "type": "connection",
+        "status": "core",
+        "source": "[[知乎-备战期末定积分方法技巧]]"
+      }
+    },
+    {
+      "file": "华里士公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "华里士公式 (点火公式 / Wallis Formula)",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "单调有界准则.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "单调有界准则",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md/用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md]]"
+      }
+    },
+    {
+      "file": "原函数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "原函数 (Antiderivative / Primitive Function)",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "原函数存在定理.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "原函数存在定理 (Existence Theorem of Antiderivatives)",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "参数方程求导.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "参数方程求导",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "参数方程确定的函数的导数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "参数方程确定的函数的导数",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "反余切函数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "反余切函数 $\\operatorname{arccot} X$",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "反余弦函数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "反余弦函数 $\\arccos X$",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "反函数定义.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "反函数定义",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md/D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md]]"
+      }
+    },
+    {
+      "file": "反函数求导法则.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "反函数求导法则",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "反常积分.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "反常积分",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "反正切函数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "反正切函数 $\\arctan X$",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "反正弦函数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "反正弦函数 $\\arcsin X$",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "取整函数（向下取整）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "取整函数（向下取整）",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】20min速成_取整函数[x]_！解密数列极限定义题N=[1_ε]的真相_原文.md/D:/DRBCV-Knowledge/Calculus/Articles/【大学衔接】高中没咋讲，大学默认会的反三角函数，一个视频学懂！_高数上_原文.md]]"
+      }
+    },
+    {
+      "file": "变上限积分函数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "变上限积分函数 (积分上限函数)",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "变上限积分求导定理.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "变上限积分求导定理",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "变限积分极限.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "变限积分极限",
+        "type": "connection",
+        "status": "exploding",
+        "source": "[[知乎-备战期末定积分方法技巧]]"
+      }
+    },
+    {
+      "file": "可导与连续的关系.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "可导与连续的关系",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "可微与可导的关系.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "可微与可导的关系",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "四则运算法则（求导）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "四则运算法则（求导）",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "基本初等函数导数公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "基本初等函数导数公式",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "基本求导公式.md",
+      "passed": false,
+      "errors": [
+        "only 1 examples found (need >= 2)"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "name": "基本求导公式",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "基本积分公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "基本积分公式",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "复合函数求导法则（链式法则·链导法）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "复合函数求导法则（链式法则/链导法）",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "夹逼定理.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "夹逼定理",
+        "type": "connection",
+        "status": "core",
+        "source": "[[极限与连续]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "定积分中值定理.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分中值定理",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "定积分的几何应用.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分的几何应用",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "定积分的几何意义.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分的几何意义",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "定积分的分部积分法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分的分部积分法",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "定积分的定义.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分定义",
+        "type": "system",
+        "status": "core",
+        "source": "[[定积分]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "定积分的性质.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分的性质",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "定积分的换元法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分的换元法",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "定积分的换元法与分部积分法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分的换元法与分部积分法",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "定积分的物理应用.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "定积分的物理应用",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "对数求导法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "对数求导法",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "对称区间定积分——偶倍奇零.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "对称区间定积分——偶倍奇零",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "对称区间定积分一般公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "对称区间定积分一般公式",
+        "status": "exploding",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "对称区间积分公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "对称区间积分公式",
+        "type": "connection",
+        "status": "unexplored",
+        "source": "[[知乎-备战期末定积分方法技巧]]"
+      }
+    },
+    {
+      "file": "导数定义.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "导数定义",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "导数的几何意义.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "导数的几何意义",
+        "status": "unexplored",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "左导数与右导数（单侧导数）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "左导数与右导数（单侧导数）",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "微分.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "微分",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "微分形式不变性.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "微分形式不变性",
+        "status": "unexplored",
+        "type": "关联型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "微分的概念.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "微分的概念",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "拉格朗日中值定理.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "type": "concept-card",
+        "title": "拉格朗日中值定理",
+        "chapter": "第三章 微分中值定理与导数应用",
+        "source": "03.微分中值定理与导数应用 微分中值定理_原文 + 「微分中值定理」保姆级教程",
+        "difficulty": "★★★★☆",
+        "status": "done",
+        "tags": "中值定理, 拉格朗日, 辅助函数, 不等式, 极限"
+      }
+    },
+    {
+      "file": "拉格朗日余项.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "拉格朗日余项 (Lagrange Remainder)",
+        "status": "unexplored",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "拐点.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "拐点 (Inflection Point)",
+        "status": "unexplored",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "数列极限（ε-N定义）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "数列极限（ε-N定义）",
+        "type": "system",
+        "status": "core",
+        "source": "[[极限与连续]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "无穷小与无穷大.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "无穷小与无穷大",
+        "type": "discriminant",
+        "status": "core",
+        "source": "[[极限与连续]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "无穷小量.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "无穷小量",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md/用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md]]"
+      }
+    },
+    {
+      "file": "曲线的凹凸性.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "曲线的凹凸性 (Concavity and Convexity of Curves)",
+        "status": "unexplored",
+        "type": "混合型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "曲线的凹凸性与拐点.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "type": "concept-card",
+        "title": "曲线的凹凸性与拐点",
+        "chapter": "第三章 微分中值定理与导数应用",
+        "source": "03.微分中值定理与导数应用 函数的单调性与曲线的凹凸性_原文",
+        "difficulty": "★★★☆☆",
+        "status": "done",
+        "tags": "凹凸性, 拐点, 二阶导数, 凸函数, 凹函数"
+      }
+    },
+    {
+      "file": "最值应用题.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "最值应用题 (Applied Optimization Problems)",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "有理函数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "有理函数 (Rational Function)",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "有理函数的积分.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "有理函数的积分",
+        "status": "core",
+        "type": "procedure"
+      }
+    },
+    {
+      "file": "有理函数积分四步法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "有理函数积分四步法 (Four-Step Method for Rational Function Integration)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "未定式（7种）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "未定式（7种）",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md/用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md]]"
+      }
+    },
+    {
+      "file": "极值.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "极值 (Extreme Value / Local Extremum)",
+        "status": "unexplored",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "极值的第一充分条件.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "极值的第一充分条件 (First Derivative Test for Extremum)",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "极值的第二充分条件.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "极值的第二充分条件 (Second Derivative Test for Extremum)",
+        "status": "unexplored",
+        "type": "判别型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "极限四则运算法则.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "极限四则运算法则",
+        "type": "connection",
+        "status": "core",
+        "source": "[[极限与连续]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "柯西中值定理.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "type": "concept-card",
+        "title": "柯西中值定理",
+        "chapter": "第三章 微分中值定理与导数应用",
+        "source": "03.微分中值定理与导数应用 微分中值定理_原文 + 「微分中值定理」保姆级教程",
+        "difficulty": "★★★★☆",
+        "status": "done",
+        "tags": "中值定理, 柯西, 参数方程, 洛必达法则"
+      }
+    },
+    {
+      "file": "根式代换.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "根式代换 (Radical Substitution)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "泰勒公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "泰勒公式",
+        "type": "system",
+        "status": "core",
+        "source": "[[微分中值定理与导数应用]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "泰勒公式求极限.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "泰勒公式求极限 (Limit Calculation Using Taylor Formula)",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "洛必达法则.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "type": "concept-card",
+        "title": "洛必达法则",
+        "chapter": "第三章 微分中值定理与导数应用",
+        "source": "03.微分中值定理与导数应用 洛必达法则_原文",
+        "difficulty": "★★★☆☆",
+        "status": "done",
+        "tags": "极限, 洛必达, 柯西中值定理, 未定式"
+      }
+    },
+    {
+      "file": "渐近线.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "渐近线 (Asymptote)",
+        "status": "unexplored",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "点火公式(Wallis公式).md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "点火公式(Wallis公式)",
+        "type": "connection",
+        "status": "core",
+        "source": "[[知乎-备战期末定积分方法技巧]]"
+      }
+    },
+    {
+      "file": "牛顿-莱布尼茨公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "牛顿-莱布尼茨公式",
+        "type": "system",
+        "status": "core",
+        "source": "[[定积分]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "用定积分定义求N项和数列极限.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "用定积分定义求 N 项和数列极限",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "皮亚诺余项.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "皮亚诺余项 (Peano Remainder)",
+        "status": "unexplored",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "相关变化率.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "相关变化率",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "真分式与假分式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "真分式与假分式 (Proper vs Improper Rational Functions)",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "积不出积分.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "积不出积分 (Nonelementary Integrals)",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "第一类换元法（凑微分法）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "第一类换元法（凑微分法）",
+        "type": "connection",
+        "status": "core",
+        "source": "[[不定积分]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "第一类换元积分法（凑微分法）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "第一类换元积分法（凑微分法）(First Substitution Rule / Integration by Differential)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "第二类换元法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "第二类换元法",
+        "status": "core",
+        "type": "procedure"
+      }
+    },
+    {
+      "file": "第二类换元积分法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "第二类换元积分法 (Second Substitution Rule)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "等价无穷小.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "等价无穷小",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[数列极限学懵了？万能模板来了！30min从入门到精通 _高数上_原文.md/用_夹逼定理_求数列极限，看这一个视频就够！_高数上_原文.md]]"
+      }
+    },
+    {
+      "file": "等价无穷小替换.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "等价无穷小替换",
+        "type": "connection",
+        "status": "core",
+        "source": "[[极限与连续]]",
+        "domain": "calculus"
+      }
+    },
+    {
+      "file": "罗尔定理.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "type": "concept-card",
+        "title": "罗尔定理",
+        "chapter": "第三章 微分中值定理与导数应用",
+        "source": "03.微分中值定理与导数应用 微分中值定理_原文 + 「微分中值定理」保姆级教程",
+        "difficulty": "★★★☆☆",
+        "status": "done",
+        "tags": "中值定理, 罗尔, 费马引理, 辅助函数"
+      }
+    },
+    {
+      "file": "莱布尼茨公式（乘积的高阶导数）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "莱布尼茨公式（乘积的高阶导数）",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "费马引理.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "type": "concept-card",
+        "title": "费马引理",
+        "chapter": "第三章 微分中值定理与导数应用",
+        "source": "03.微分中值定理与导数应用 微分中值定理_原文 + 「微分中值定理」保姆级教程",
+        "difficulty": "★★☆☆☆",
+        "status": "done",
+        "tags": "中值定理, 费马, 极值, 导数"
+      }
+    },
+    {
+      "file": "连续性与间断点.md",
+      "passed": false,
+      "errors": [
+        "missing frontmatter field: name",
+        "missing frontmatter field: type",
+        "missing frontmatter field: status"
+      ],
+      "warnings": [],
+      "frontmatter": {
+        "\\nname": "连续性与间断点\\ntype: discriminant\\nstatus: core\\nsource: \"[[极限与连续]]\"\\ndomain: calculus\\n"
+      }
+    },
+    {
+      "file": "部分分式分解（裂项）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "部分分式分解（裂项）(Partial Fraction Decomposition)",
+        "status": "exploding",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "链式法则（复合函数求导）.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "链式法则（复合函数求导）",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "隐函数求导.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "隐函数求导",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "隐函数求导法.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "隐函数求导法",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "高阶导数.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "高阶导数",
+        "status": "core",
+        "type": "connection"
+      }
+    },
+    {
+      "file": "高阶导数的定义.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "高阶导数的定义",
+        "status": "exploding",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "麦克劳林公式.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "麦克劳林公式 (Maclaurin Formula)",
+        "status": "unexplored",
+        "type": "程序型",
+        "source": "[[Calculus]]"
+      }
+    },
+    {
+      "file": "黎曼和.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "frontmatter": {
+        "name": "黎曼和 (Riemann Sum)",
+        "status": "unexplored",
+        "type": "定义型",
+        "source": "[[Calculus]]"
+      }
+    }
+  ]
+}
