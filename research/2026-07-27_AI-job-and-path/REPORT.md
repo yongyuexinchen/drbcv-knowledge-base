@@ -48,13 +48,13 @@ tools = {
 
 **必备技能 TOP 5**：
 
-| 排名 | 技能 | 覆盖率 | 你的状态 |
-|------|------|--------|----------|
-| 1 | 大模型/LLM | 100% | 学习中 |
-| 2 | Python | 71% | ✅ 已有 |
-| 3 | Agent/LangChain | 70% | ❌ 缺失 |
-| 4 | SQL | 56% | ✅ 已有 |
-| 5 | RAG | 51% | ❌ 缺失 |
+| 排名  | 技能              | 覆盖率  | 你的状态 |
+| --- | --------------- | ---- | ---- |
+| 1   | 大模型/LLM         | 100% | 学习中  |
+| 2   | Python          | 71%  | ✅ 已有 |
+| 3   | Agent/LangChain | 70%  | ❌ 缺失 |
+| 4   | SQL             | 56%  | ✅ 已有 |
+| 5   | RAG             | 51%  | ❌ 缺失 |
 
 **你的技能缺口**：SQL+Python是基础盘，缺的是中间层——RAG+Agent+Prompt工程。好消息：这三个不需要数学，只需要Python+看文档+动手做项目，3个月够。
 
@@ -91,14 +91,14 @@ tools = {
 
 ### 2.1 开源项目全景对比
 
-| 项目 | 语言 | 核心价值 | Python友好 |
-|------|------|----------|------------|
-| Memobase | Python | 用户画像提取+管理（3个依赖，极简） | ⭐⭐⭐⭐⭐ |
-| Letta/MemGPT | Python | 三层记忆架构（25MB源码，极复杂） | ⭐⭐ |
-| SillyTavern | Node.js | 角色卡系统（用户已掌握45张卡片） | ❌ |
-| Open-LLM-VTuber | Python | Live2D+语音+已集成Letta | ⭐⭐⭐ |
-| KoboldAI | Python+Lua | 本地推理（10K行单体） | ⭐ |
-| RisuAI | TypeScript | 现代版ST（兼容角色卡） | ❌ |
+| 项目              | 语言         | 核心价值               | Python友好 |
+| --------------- | ---------- | ------------------ | -------- |
+| Memobase        | Python     | 用户画像提取+管理（3个依赖，极简） | ⭐⭐⭐⭐⭐    |
+| Letta/MemGPT    | Python     | 三层记忆架构（25MB源码，极复杂） | ⭐⭐       |
+| SillyTavern     | Node.js    | 角色卡系统（用户已掌握45张卡片）  | ❌        |
+| Open-LLM-VTuber | Python     | Live2D+语音+已集成Letta | ⭐⭐⭐      |
+| KoboldAI        | Python+Lua | 本地推理（10K行单体）       | ⭐        |
+| RisuAI          | TypeScript | 现代版ST（兼容角色卡）       | ❌        |
 
 > 6项目详细对比见 `B_ai_companion/01_project_scan.md`
 

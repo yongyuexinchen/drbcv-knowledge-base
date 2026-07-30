@@ -1,0 +1,421 @@
+{
+  "stocks": {
+    "603501": {
+      "name": "豪威集团",
+      "price": 88.5,
+      "change_pct": -3.48,
+      "pe": 30.22,
+      "total_market_cap": 1067.98,
+      "market_cap": 1112.89,
+      "turnover": 232029.0,
+      "volume": 262063.0,
+      "high": 91.68,
+      "low": 86.86
+    },
+    "300661": {
+      "name": "圣邦股份",
+      "price": 89.58,
+      "change_pct": -11.08,
+      "pe": 100.5,
+      "total_market_cap": 539.03,
+      "market_cap": 614.05,
+      "turnover": 195161.0,
+      "volume": 212105.0,
+      "high": 99.88,
+      "low": 88.72
+    },
+    "603986": {
+      "name": "兆易创新",
+      "price": 371.1,
+      "change_pct": 1.94,
+      "pe": 90.59,
+      "total_market_cap": 2480.77,
+      "market_cap": 2604.18,
+      "turnover": 3548379.0,
+      "volume": 971239.0,
+      "high": 392.07,
+      "low": 342.0
+    },
+    "002049": {
+      "name": "紫光国微",
+      "price": 64.7,
+      "change_pct": -0.25,
+      "pe": 33.02,
+      "total_market_cap": 545.5,
+      "market_cap": 545.57,
+      "turnover": 154453.0,
+      "volume": 239084.0,
+      "high": 65.8,
+      "low": 63.48
+    },
+    "300782": {
+      "name": "卓胜微",
+      "price": 64.72,
+      "change_pct": -4.84,
+      "pe": -95.28,
+      "total_market_cap": 290.11,
+      "market_cap": 372.13,
+      "turnover": 106188.0,
+      "volume": 161250.0,
+      "high": 67.88,
+      "low": 64.55
+    },
+    "603160": {
+      "name": "汇顶科技",
+      "price": 52.23,
+      "change_pct": -0.68,
+      "pe": 32.07,
+      "total_market_cap": 243.38,
+      "market_cap": 243.38,
+      "turnover": 31706.0,
+      "volume": 60611.0,
+      "high": 52.84,
+      "low": 51.64
+    },
+    "688256": {
+      "name": "寒武纪",
+      "price": 1042.43,
+      "change_pct": -9.11,
+      "pe": 241.06,
+      "total_market_cap": 6549.51,
+      "market_cap": 6549.51,
+      "turnover": 1991793.0,
+      "volume": 18860403.0,
+      "high": 1136.0,
+      "low": 1010.83
+    },
+    "688008": {
+      "name": "澜起科技",
+      "price": 196.78,
+      "change_pct": -5.17,
+      "pe": 93.91,
+      "total_market_cap": 2252.67,
+      "market_cap": 2401.77,
+      "turnover": 1183032.0,
+      "volume": 58750078.0,
+      "high": 210.77,
+      "low": 194.53
+    },
+    "688521": {
+      "name": "芯原股份",
+      "price": 170.21,
+      "change_pct": -11.36,
+      "pe": -138.08,
+      "total_market_cap": 895.16,
+      "market_cap": 895.16,
+      "turnover": 428737.0,
+      "volume": 23934261.0,
+      "high": 195.5,
+      "low": 170.21
+    },
+    "688536": {
+      "name": "思瑞浦",
+      "price": 217.89,
+      "change_pct": -9.21,
+      "pe": 114.47,
+      "total_market_cap": 295.57,
+      "market_cap": 300.85,
+      "turnover": 98040.0,
+      "volume": 4375475.0,
+      "high": 239.8,
+      "low": 214.03
+    },
+    "688981": {
+      "name": "中芯国际",
+      "price": 122.99,
+      "change_pct": -6.04,
+      "pe": 208.68,
+      "total_market_cap": 2459.26,
+      "market_cap": 10528.94,
+      "turnover": 999552.0,
+      "volume": 79984573.0,
+      "high": 130.79,
+      "low": 121.82
+    },
+    "688347": {
+      "name": "华虹宏力",
+      "price": 230.0,
+      "change_pct": -14.88,
+      "pe": 810.03,
+      "total_market_cap": 937.83,
+      "market_cap": 3996.77,
+      "turnover": 822427.0,
+      "volume": 33988472.0,
+      "high": 267.33,
+      "low": 229.5
+    },
+    "688396": {
+      "name": "华润微",
+      "price": 53.79,
+      "change_pct": -4.03,
+      "pe": 78.74,
+      "total_market_cap": 714.44,
+      "market_cap": 714.44,
+      "turnover": 125728.0,
+      "volume": 23191451.0,
+      "high": 56.32,
+      "low": 52.54
+    },
+    "600584": {
+      "name": "长电科技",
+      "price": 64.51,
+      "change_pct": -10.0,
+      "pe": 69.87,
+      "total_market_cap": 1154.35,
+      "market_cap": 1154.35,
+      "turnover": 1064738.0,
+      "volume": 1597939.0,
+      "high": 71.33,
+      "low": 64.51
+    },
+    "002185": {
+      "name": "华天科技",
+      "price": 14.91,
+      "change_pct": -10.02,
+      "pe": 60.74,
+      "total_market_cap": 495.41,
+      "market_cap": 495.52,
+      "turnover": 618745.0,
+      "volume": 3996137.0,
+      "high": 16.51,
+      "low": 14.91
+    },
+    "002156": {
+      "name": "通富微电",
+      "price": 55.89,
+      "change_pct": -10.0,
+      "pe": 58.64,
+      "total_market_cap": 848.1,
+      "market_cap": 848.18,
+      "turnover": 919132.0,
+      "volume": 1610228.0,
+      "high": 61.43,
+      "low": 55.89
+    },
+    "603005": {
+      "name": "晶方科技",
+      "price": 27.81,
+      "change_pct": -6.14,
+      "pe": 49.06,
+      "total_market_cap": 181.37,
+      "market_cap": 181.37,
+      "turnover": 127290.0,
+      "volume": 448634.0,
+      "high": 29.56,
+      "low": 27.55
+    },
+    "002371": {
+      "name": "北方华创",
+      "price": 668.07,
+      "change_pct": -5.42,
+      "pe": 86.95,
+      "total_market_cap": 4844.24,
+      "market_cap": 4848.11,
+      "turnover": 1111429.0,
+      "volume": 163296.0,
+      "high": 711.73,
+      "low": 643.5
+    },
+    "688012": {
+      "name": "中微公司",
+      "price": 346.5,
+      "change_pct": -3.75,
+      "pe": 121.62,
+      "total_market_cap": 3264.71,
+      "market_cap": 3318.92,
+      "turnover": 1190385.0,
+      "volume": 33968727.0,
+      "high": 363.8,
+      "low": 335.0
+    },
+    "688072": {
+      "name": "拓荆科技",
+      "price": 642.0,
+      "change_pct": -8.4,
+      "pe": 113.5,
+      "total_market_cap": 1814.89,
+      "market_cap": 1866.16,
+      "turnover": 556142.0,
+      "volume": 8224294.0,
+      "high": 709.0,
+      "low": 642.0
+    },
+    "300604": {
+      "name": "长川科技",
+      "price": 245.5,
+      "change_pct": -9.41,
+      "pe": 99.02,
+      "total_market_cap": 1201.65,
+      "market_cap": 1557.5,
+      "turnover": 896983.0,
+      "volume": 347426.0,
+      "high": 278.0,
+      "low": 243.95
+    },
+    "688126": {
+      "name": "沪硅产业",
+      "price": 22.65,
+      "change_pct": -6.94,
+      "pe": -42.01,
+      "total_market_cap": 643.74,
+      "market_cap": 748.59,
+      "turnover": 231193.0,
+      "volume": 98699974.0,
+      "high": 24.39,
+      "low": 22.65
+    },
+    "688019": {
+      "name": "安集科技",
+      "price": 229.45,
+      "change_pct": -9.95,
+      "pe": 63.46,
+      "total_market_cap": 521.98,
+      "market_cap": 521.98,
+      "turnover": 238290.0,
+      "volume": 10039923.0,
+      "high": 249.98,
+      "low": 228.12
+    },
+    "300655": {
+      "name": "晶瑞电材",
+      "price": 11.4,
+      "change_pct": -6.25,
+      "pe": 114.12,
+      "total_market_cap": 127.85,
+      "market_cap": 128.44,
+      "turnover": 68065.0,
+      "volume": 582935.0,
+      "high": 12.05,
+      "low": 11.4
+    },
+    "603650": {
+      "name": "彤程新材",
+      "price": 53.73,
+      "change_pct": -9.06,
+      "pe": 56.61,
+      "total_market_cap": 330.22,
+      "market_cap": 331.01,
+      "turnover": 144078.0,
+      "volume": 258958.0,
+      "high": 58.86,
+      "low": 53.44
+    },
+    "688200": {
+      "name": "华峰测控",
+      "price": 336.0,
+      "change_pct": -6.88,
+      "pe": 118.57,
+      "total_market_cap": 673.93,
+      "market_cap": 673.93,
+      "turnover": 256480.0,
+      "volume": 7385026.0,
+      "high": 370.0,
+      "low": 332.0
+    },
+    "688206": {
+      "name": "概伦电子",
+      "price": 30.63,
+      "change_pct": -5.64,
+      "pe": 653.98,
+      "total_market_cap": 133.72,
+      "market_cap": 133.72,
+      "turnover": 19672.0,
+      "volume": 6333202.0,
+      "high": 32.68,
+      "low": 29.9
+    },
+    "603290": {
+      "name": "斯达半导",
+      "price": 79.08,
+      "change_pct": -4.09,
+      "pe": 57.71,
+      "total_market_cap": 189.38,
+      "market_cap": 189.38,
+      "turnover": 55827.0,
+      "volume": 69280.0,
+      "high": 82.96,
+      "low": 78.37
+    },
+    "300623": {
+      "name": "捷捷微电",
+      "price": 22.57,
+      "change_pct": -7.31,
+      "pe": 40.37,
+      "total_market_cap": 173.19,
+      "market_cap": 187.8,
+      "turnover": 74867.0,
+      "volume": 324737.0,
+      "high": 24.26,
+      "low": 22.29
+    },
+    "688187": {
+      "name": "时代电气",
+      "price": 47.21,
+      "change_pct": 0.47,
+      "pe": 15.29,
+      "total_market_cap": 410.21,
+      "market_cap": 628.23,
+      "turnover": 35344.0,
+      "volume": 7533908.0,
+      "high": 47.78,
+      "low": 46.0
+    }
+  },
+  "indices": {
+    "980017": {
+      "name": "国证芯片",
+      "price": 15984.0,
+      "change_pct": -5.42,
+      "pe": 121.91
+    },
+    "159995": {
+      "name": "芯片ETF华夏",
+      "price": 1.08,
+      "change_pct": -6.25,
+      "pe": 0.0
+    },
+    "512480": {
+      "name": "半导体ETF国联安",
+      "price": 0.958,
+      "change_pct": -6.72,
+      "pe": 0.0
+    },
+    "000688": {
+      "name": "科创50",
+      "price": 1588.41,
+      "change_pct": -5.38,
+      "pe": 190.69
+    },
+    "399006": {
+      "name": "创业板指",
+      "price": 3244.62,
+      "change_pct": -3.97,
+      "pe": 55.87
+    },
+    "159813": {
+      "name": "半导体ETF鹏华",
+      "price": 1.382,
+      "change_pct": -6.31,
+      "pe": 0.0
+    },
+    "516640": {
+      "name": "芯片ETF富国",
+      "price": 1.363,
+      "change_pct": -6.58,
+      "pe": 0.0
+    },
+    "588000": {
+      "name": "科创50ETF华夏",
+      "price": 1.669,
+      "change_pct": -6.02,
+      "pe": 0.0
+    }
+  },
+  "sector_valuation": {},
+  "north_flow": [],
+  "semi_index_kline": [],
+  "main_flow": [],
+  "etf_data": {},
+  "lhb": [],
+  "north_stocks": {}
+}
