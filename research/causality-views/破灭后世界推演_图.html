@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>破灭后世界推演</title>
+<style>
+  body { margin: 0; background: #020617; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; color: #e2e8f0; }
+  .wrap { max-width: 1500px; margin: 0 auto; padding: 24px; }
+  h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: 1px; }
+  .sub { color: #64748b; font-size: 12px; margin-bottom: 18px; }
+  .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 10px; padding: 18px 22px; margin-bottom: 14px; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; margin-right: 6px; }
+  .row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .col { flex: 1; min-width: 320px; }
+  table { border-collapse: collapse; width: 100%; font-size: 12px; }
+  th, td { border: 1px solid #1e293b; padding: 6px 10px; text-align: left; }
+  th { background: #1e293b; color: #94a3b8; font-weight: normal; }
+  .up { color: #34d399; } .down { color: #fb7185; } .flat { color: #fbbf24; }
+  .legend { display: flex; gap: 18px; font-size: 12px; color: #94a3b8; margin-top: 10px; flex-wrap: wrap; }
+  .legend span { display: flex; align-items: center; gap: 5px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🌊 破灭后世界推演 <span style="font-size:13px;color:#64748b;">Post-Bubble Scenario Map</span></h1>
+  <div class="sub">14 位思想家共识整合 ｜ 融合研判 v3 ｜ 2026-08-01 ｜ 概率分层：A 45% / B 25% / C 20% / D 10%</div>
+
+  <svg viewBox="0 0 1440 820" style="width:100%;background:#020617;border:1px solid #1e293b;border-radius:10px;">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#111c33" stroke-width="0.5"/>
+      </pattern>
+      <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+      </marker>
+      <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+
+    <rect width="1440" height="820" fill="url(#grid)"/>
+
+    <!-- 中心触发节点 -->
+    <ellipse cx="720" cy="95" rx="210" ry="52" fill="rgba(136,19,55,0.35)" stroke="#fb7185" stroke-width="1.8" filter="url(#glow)"/>
+    <text x="720" y="88" text-anchor="middle" fill="#fda4af" font-size="17" font-weight="bold">AI 泡沫破灭（触发共识）</text>
+    <text x="720" y="110" text-anchor="middle" fill="#94a3b8" font-size="11">FCF转负 · CAPEX见顶 · 庞氏漂移 · 康波B阶段 · 债务周期顶</text>
+
+    <!-- 分岔箭头 -->
+    <path d="M 560 130 C 420 170, 300 220, 240 280" stroke="#475569" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+    <path d="M 655 140 C 640 190, 630 230, 620 285" stroke="#475569" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+    <path d="M 785 140 C 800 190, 810 230, 820 285" stroke="#475569" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+    <path d="M 880 130 C 1020 170, 1140 220, 1200 280" stroke="#475569" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+
+    <!-- ===== 路径 A：颠簸中性 45% ===== -->
+    <g>
+      <rect x="60" y="295" width="300" height="470" rx="10" fill="rgba(8,51,68,0.45)" stroke="#22d3ee" stroke-width="1.5"/>
+      <rect x="60" y="295" width="300" height="38" rx="10" fill="#164e63"/>
+      <text x="78" y="320" fill="#22d3ee" font-size="14" font-weight="bold">A · 颠簸的中性</text>
+      <text x="330" y="320" text-anchor="end" fill="#22d3ee" font-size="16" font-weight="bold">45%</text>
+      <text x="78" y="355" fill="#e2e8f0" font-size="12">政策托底成功的温和出清</text>
+      <text x="78" y="375" fill="#94a3b8" font-size="10.5">科技股 -20~40% → 央行+财政托底 → 低增长高波动</text>
+      <line x1="78" y1="392" x2="342" y2="392" stroke="#1e293b"/>
+      <text x="78" y="414" fill="#fbbf24" font-size="11" font-weight="bold">📈 受益</text>
+      <text x="78" y="432" fill="#94a3b8" font-size="10.5">黄金(回调后涨) · 铜/电网 · 全球南方股市</text>
+      <text x="78" y="452" fill="#fb7185" font-size="11" font-weight="bold">📉 受损</text>
+      <text x="78" y="470" fill="#94a3b8" font-size="10.5">美股科技(先跌) · 长久期债券(高位震荡) · 房地产</text>
+      <line x1="78" y1="487" x2="342" y2="487" stroke="#1e293b"/>
+      <text x="78" y="509" fill="#22d3ee" font-size="11" font-weight="bold">🔍 证真信号</text>
+      <text x="78" y="527" fill="#94a3b8" font-size="10.5">纳指跌20%后企稳 · 美联储转鸽+财政出手 · 信贷利差未崩</text>
+      <text x="78" y="549" fill="#fb7185" font-size="11" font-weight="bold">✕ 证伪信号</text>
+      <text x="78" y="567" fill="#94a3b8" font-size="10.5">托底迟到 → 滑向路径C · 或AI收入爆发 → 转路径B</text>
+      <text x="78" y="600" fill="#64748b" font-size="10">作者：达里奥·明斯基·辜朝明·波兰尼</text>
+      <text x="78" y="618" fill="#64748b" font-size="10">（政策必然托底 = 跨体系最强共识）</text>
+      <text x="78" y="650" fill="#fbbf24" font-size="10.5">操作：维持30%现金 · 分批黄金</text>
+      <text x="78" y="668" fill="#fbbf24" font-size="10.5">· 创新药加仓（PB分位9%）</text>
+    </g>
+
+    <!-- ===== 路径 B：新范式黎明 25% ===== -->
+    <g>
+      <rect x="400" y="295" width="300" height="470" rx="10" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+      <rect x="400" y="295" width="300" height="38" rx="10" fill="#064e3b"/>
+      <text x="418" y="320" fill="#34d399" font-size="14" font-weight="bold">B · 新范式黎明</text>
+      <text x="670" y="320" text-anchor="end" fill="#34d399" font-size="16" font-weight="bold">25%</text>
+      <text x="418" y="355" fill="#e2e8f0" font-size="12">AI 生产力兑现的软着陆</text>
+      <text x="418" y="375" fill="#94a3b8" font-size="10.5">杀手级应用 → 佩蕾丝协同期提前 → g 上升削 r&gt;g</text>
+      <line x1="418" y1="392" x2="682" y2="392" stroke="#1e293b"/>
+      <text x="418" y="414" fill="#fbbf24" font-size="11" font-weight="bold">📈 受益</text>
+      <text x="418" y="432" fill="#94a3b8" font-size="10.5">科技股(先跌后大涨) · 成长股 · AI受益新兴市场</text>
+      <text x="418" y="452" fill="#fb7185" font-size="11" font-weight="bold">📉 受损</text>
+      <text x="418" y="470" fill="#94a3b8" font-size="10.5">黄金(最弱) · 债券(利率上行) · 防御股</text>
+      <line x1="418" y1="487" x2="682" y2="487" stroke="#1e293b"/>
+      <text x="418" y="509" fill="#34d399" font-size="11" font-weight="bold">🔍 证真信号</text>
+      <text x="418" y="527" fill="#94a3b8" font-size="10.5">2027H1 AI应用收入 &gt;100% 增速 · CAPEX增速回落</text>
+      <text x="418" y="549" fill="#fb7185" font-size="11" font-weight="bold">✕ 证伪信号</text>
+      <text x="418" y="567" fill="#94a3b8" font-size="10.5">应用收入不及预期 → 基准路径A</text>
+      <text x="418" y="600" fill="#64748b" font-size="10">作者：佩蕾丝·付鹏·皮凯蒂</text>
+      <text x="418" y="618" fill="#64748b" font-size="10">（FCF转负只是过渡 · r&gt;g 被削弱）</text>
+      <text x="418" y="650" fill="#fbbf24" font-size="10.5">操作：AI应用层就业窗口延长</text>
+      <text x="418" y="668" fill="#fbbf24" font-size="10.5">· 永月窗口期显著延长</text>
+    </g>
+
+    <!-- ===== 路径 C：深冬 20% ===== -->
+    <g>
+      <rect x="740" y="295" width="300" height="470" rx="10" fill="rgba(120,53,15,0.35)" stroke="#fbbf24" stroke-width="1.5"/>
+      <rect x="740" y="295" width="300" height="38" rx="10" fill="#78350f"/>
+      <text x="758" y="320" fill="#fbbf24" font-size="14" font-weight="bold">C · 资产负债表深冬</text>
+      <text x="1010" y="320" text-anchor="end" fill="#fbbf24" font-size="16" font-weight="bold">20%</text>
+      <text x="758" y="355" fill="#e2e8f0" font-size="12">中日合体 · 托底失败的深冬</text>
+      <text x="758" y="375" fill="#94a3b8" font-size="10.5">房价→地方财政→城投→通缩 · 1930s 保护主义循环</text>
+      <line x1="758" y1="392" x2="1022" y2="392" stroke="#1e293b"/>
+      <text x="758" y="414" fill="#fbbf24" font-size="11" font-weight="bold">📈 受益</text>
+      <text x="758" y="432" fill="#94a3b8" font-size="10.5">黄金(3000) · 现金(通缩) · 中国国债 · 核心国国债</text>
+      <text x="758" y="452" fill="#fb7185" font-size="11" font-weight="bold">📉 受损</text>
+      <text x="758" y="470" fill="#94a3b8" font-size="10.5">美股(-50%+) · 中国股市阴跌 · 新兴市场(1998式) · 大宗</text>
+      <line x1="758" y1="487" x2="1022" y2="487" stroke="#1e293b"/>
+      <text x="758" y="509" fill="#fbbf24" font-size="11" font-weight="bold">🔍 证真信号</text>
+      <text x="758" y="527" fill="#94a3b8" font-size="10.5">社融-名义GDP缺口连续6季为负 · 土地出让金再降30% · 青年失业率&gt;20%</text>
+      <text x="758" y="549" fill="#fb7185" font-size="11" font-weight="bold">✕ 证伪信号</text>
+      <text x="758" y="567" fill="#94a3b8" font-size="10.5">财政发力起效 → 回到A · 或美元危机 → 升级D</text>
+      <text x="758" y="600" fill="#64748b" font-size="10">作者：辜朝明·温铁军·波兰尼</text>
+      <text x="758" y="618" fill="#64748b" font-size="10">（财政乘数归零 × 双金字塔瓦解互强化）</text>
+      <text x="758" y="650" fill="#fbbf24" font-size="10.5">操作：现金为王 · AI岗位向国企/政企集中</text>
+      <text x="758" y="668" fill="#fbbf24" font-size="10.5">· 永月需18个月现金跑道</text>
+    </g>
+
+    <!-- ===== 路径 D：体系重置 10% ===== -->
+    <g>
+      <rect x="1080" y="295" width="300" height="470" rx="10" fill="rgba(136,19,55,0.4)" stroke="#fb7185" stroke-width="1.5"/>
+      <rect x="1080" y="295" width="300" height="38" rx="10" fill="#881337"/>
+      <text x="1098" y="320" fill="#fb7185" font-size="14" font-weight="bold">D · 世界秩序重置</text>
+      <text x="1350" y="320" text-anchor="end" fill="#fb7185" font-size="16" font-weight="bold">10%</text>
+      <text x="1098" y="355" fill="#e2e8f0" font-size="12">美元体系危机 · 沃勒斯坦式危机</text>
+      <text x="1098" y="375" fill="#94a3b8" font-size="10.5">美债拍卖失败 → 美元暴跌 → 贸易冻结 · 1931/1914</text>
+      <line x1="1098" y1="392" x2="1362" y2="392" stroke="#1e293b"/>
+      <text x="1098" y="414" fill="#fbbf24" font-size="11" font-weight="bold">📈 受益</text>
+      <text x="1098" y="432" fill="#94a3b8" font-size="10.5">黄金(5000+) · 实物资产(农田/能源) · 去依附国</text>
+      <text x="1098" y="452" fill="#fb7185" font-size="11" font-weight="bold">📉 受损</text>
+      <text x="1098" y="470" fill="#94a3b8" font-size="10.5">美债/美元/美股三杀 · 美元计贸易合约冻结</text>
+      <line x1="1098" y1="487" x2="1362" y2="487" stroke="#1e293b"/>
+      <text x="1098" y="509" fill="#fb7185" font-size="11" font-weight="bold">🔍 证真信号</text>
+      <text x="1098" y="527" fill="#94a3b8" font-size="10.5">外国官方月减持美债+拍卖失败 · 美政治治理崩盘 · 三大冲击共振</text>
+      <text x="1098" y="549" fill="#fb7185" font-size="11" font-weight="bold">✕ 证伪信号</text>
+      <text x="1098" y="567" fill="#94a3b8" font-size="10.5">美元韧性 → 回到A/C · 窗口 2027-2029</text>
+      <text x="1098" y="600" fill="#64748b" font-size="10">作者：沃勒斯坦·翟东升·温铁军·达里奥</text>
+      <text x="1098" y="618" fill="#64748b" font-size="10">（三重门：政治崩盘 × 美债抛售 × 全球冲击）</text>
+      <text x="1098" y="650" fill="#fbbf24" font-size="10.5">操作：黄金唯一避险 · 实物资产</text>
+      <text x="1098" y="668" fill="#fbbf24" font-size="10.5">· BTC高波动(暴涨或归零)</text>
+    </g>
+
+    <!-- 底部共识条 -->
+    <rect x="60" y="790" width="1320" height="28" rx="6" fill="rgba(30,41,59,0.5)" stroke="#475569" stroke-width="1"/>
+    <text x="720" y="809" text-anchor="middle" fill="#94a3b8" font-size="11.5">
+      跨路径共识：政策必然托底（达里奥·明斯基·辜朝明·波兰尼） ｜ 黄金=唯一共识避险 ｜ 破灭后不是回到2019，而是制度重构窗口
+    </text>
+  </svg>
+
+  <div class="legend">
+    <span><span class="dot" style="background:#22d3ee"></span> A 颠簸中性 45%</span>
+    <span><span class="dot" style="background:#34d399"></span> B 新范式黎明 25%</span>
+    <span><span class="dot" style="background:#fbbf24"></span> C 深冬 20%</span>
+    <span><span class="dot" style="background:#fb7185"></span> D 体系重置 10%</span>
+    <span style="margin-left:auto;color:#64748b">本图不构成投资建议 ｜ 融合研判 v3 · 14 位思想家</span>
+  </div>
+
+  <!-- 资产矩阵表 -->
+  <div class="card" style="margin-top:18px">
+    <h3 style="margin:0 0 10px;font-size:15px">📊 资产表现矩阵（× 四路径）</h3>
+    <table>
+      <tr><th>资产</th><th>A 颠簸中性 45%</th><th>B 新范式黎明 25%</th><th>C 深冬 20%</th><th>D 重置 10%</th></tr>
+      <tr><td>美股科技</td><td class="flat">先跌后稳 -25%</td><td class="up">V型反转创新高</td><td class="down">长期阴跌 -50%</td><td class="down">崩盘 -70%</td></tr>
+      <tr><td>黄金</td><td class="up">回调后涨 2500</td><td class="down">最弱 1800-2000</td><td class="up">坚挺 3000</td><td class="up">暴涨 5000+</td></tr>
+      <tr><td>美债长端</td><td class="flat">收益率高位震荡</td><td class="down">利率上行价跌</td><td class="up">牛市(降息)</td><td class="down">违约风险折价</td></tr>
+      <tr><td>现金</td><td class="flat">中性</td><td class="flat">通胀侵蚀</td><td class="up">受益(通缩)</td><td class="flat">汇兑损失</td></tr>
+      <tr><td>创新药/A股内需</td><td class="up">政策受益涨</td><td class="flat">常规配置</td><td class="down">持续承压</td><td class="up">实物动员概念</td></tr>
+      <tr><td>大宗(铜/能源)</td><td class="up">电网/AI耗电</td><td class="up">温和上涨</td><td class="down">需求萎缩</td><td class="flat">能源涨金属跌</td></tr>
+      <tr><td>加密货币</td><td class="flat">震荡反弹</td><td class="up">强势</td><td class="down">流动性枯竭</td><td class="flat">暴涨或归零</td></tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <h3 style="margin:0 0 8px;font-size:14px">👨‍💻 职业映射（AI 应用开发）</h3>
+        <ul style="font-size:12px;color:#94a3b8;line-height:1.8;margin:0;padding-left:18px">
+          <li><b style="color:#34d399">B</b> 需求爆发 · 垂直产业知识为王</li>
+          <li><b style="color:#22d3ee">A</b> 短期阵痛 · 从训练转向落地集成</li>
+          <li><b style="color:#fbbf24">C</b> 岗位向国企/政企集中 · 海外订单消失</li>
+          <li><b style="color:#fb7185">D</b> 去依附自主体系需求 · 先收缩后重建</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <h3 style="margin:0 0 8px;font-size:14px">🌙 永月项目窗口期</h3>
+        <ul style="font-size:12px;color:#94a3b8;line-height:1.8;margin:0;padding-left:18px">
+          <li><b style="color:#fbbf24">分岔点：2026 Q4</b></li>
+          <li>AI应用收入 &gt;100% + FCF缺口收窄 → 窗口延至 2028</li>
+          <li>CAPEX转负未见收入兑现 → 窗口关闭</li>
+          <li>提前准备 <b style="color:#fb7185">18 个月现金跑道</b> + 现金流业务线</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub" style="margin-top:14px">生成：2026-08-01 ｜ 依据：融合研判 v3 + 破灭后世界推演（14 位思想家全量整合）｜ 本图不构成投资建议，投资有风险，入市需谨慎</div>
+</div>
+</body>
+</html>
