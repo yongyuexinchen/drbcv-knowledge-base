@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "-path:Sources -path:Templates -path:Articles -path:temp -path:media",
+  "search": "正常人",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -32,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.09392927902846204,
-  "close": true
+  "scale": 0.09392927902846113,
+  "close": false
 }
