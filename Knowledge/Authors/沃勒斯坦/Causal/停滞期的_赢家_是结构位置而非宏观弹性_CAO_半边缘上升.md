@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[_wall_卷2_02]]
+node_role: core
 domain: 世界体系论/宏观经济学
 schema_version: 2
 ---

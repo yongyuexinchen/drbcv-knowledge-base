@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[case_spain_2005]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[西班牙2005-2017年通缩性去杠杆化周期因果分析]]"

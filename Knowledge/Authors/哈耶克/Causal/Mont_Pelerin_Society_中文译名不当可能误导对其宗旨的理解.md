@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[哈耶克_chapter_11_part_01_p3]]
+node_role: core
 domain: 翻译学、思想史
 schema_version: 2
 ---

@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[fupeng_article]]
+node_role: core
 domain: 宏观经济学、公司金融、科技投资
 schema_version: 2
 ---

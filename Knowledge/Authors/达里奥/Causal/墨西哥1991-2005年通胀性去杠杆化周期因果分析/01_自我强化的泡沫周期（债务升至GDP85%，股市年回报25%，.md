@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_122]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[墨西哥1991-2005年通胀性去杠杆化周期因果分析]]"

@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[case_japan_1990]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[日本1987-2017年通缩性去杠杆化周期因果分析]]"

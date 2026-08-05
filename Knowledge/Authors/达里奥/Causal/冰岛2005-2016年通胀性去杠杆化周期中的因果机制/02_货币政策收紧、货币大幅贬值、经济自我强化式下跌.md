@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_134]]
+node_role: satellite
 domain: 宏观经济学、国际金融
 schema_version: 2
 parent: "[[冰岛2005-2016年通胀性去杠杆化周期中的因果机制]]"

@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_132]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[土耳其1997-2003年通胀性去杠杆化周期因果分析]]"

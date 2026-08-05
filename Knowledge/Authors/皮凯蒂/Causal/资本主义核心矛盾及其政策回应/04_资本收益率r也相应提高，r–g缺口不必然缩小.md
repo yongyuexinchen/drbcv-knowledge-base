@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_31]]
+node_role: satellite
 domain: 政治经济学（财富与收入分配）
 schema_version: 2
 parent: "[[资本主义核心矛盾及其政策回应]]"

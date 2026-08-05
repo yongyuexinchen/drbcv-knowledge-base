@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_93]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[英国1941-1967年战时通缩性去杠杆化周期]]"

@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[case_us_1929]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[美国1926-1936年通缩性去杠杆化周期因果分析]]"

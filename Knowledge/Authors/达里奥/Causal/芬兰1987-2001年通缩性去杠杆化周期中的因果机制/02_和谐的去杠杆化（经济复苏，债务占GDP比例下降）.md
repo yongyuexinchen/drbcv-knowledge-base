@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_96]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[芬兰1987-2001年通缩性去杠杆化周期中的因果机制]]"

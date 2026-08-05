@@ -3,6 +3,7 @@ name: haeccity
 type: concept
 status: core
 source: "德勒兹×瓜塔里《千高原》第10章"
+node_role: core
 domain: 加速主义
 parent: "[[生成]]"
 ---

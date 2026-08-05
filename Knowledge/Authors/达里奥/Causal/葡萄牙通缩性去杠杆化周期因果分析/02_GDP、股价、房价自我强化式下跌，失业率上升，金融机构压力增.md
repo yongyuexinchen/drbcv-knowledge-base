@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_107]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[葡萄牙通缩性去杠杆化周期因果分析]]"

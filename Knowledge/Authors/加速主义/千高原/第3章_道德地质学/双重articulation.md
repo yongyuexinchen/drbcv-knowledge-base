@@ -3,6 +3,7 @@ name: 双重articulation
 type: concept
 status: core
 source: "德勒兹×瓜塔里《千高原》第3章"
+node_role: core
 domain: 加速主义
 parent: "[[地质学与分层]]"
 ---

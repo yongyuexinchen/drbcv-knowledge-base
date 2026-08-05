@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_133]]
+node_role: satellite
 domain: 宏观经济学、国际金融
 schema_version: 2
 parent: "[[阿根廷1998-2012年通胀性去杠杆化周期中的因果机制]]"

@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[_cand2_lin_06]]
+node_role: core
 domain: 产业经济学/发展经济学
 schema_version: 2
 ---

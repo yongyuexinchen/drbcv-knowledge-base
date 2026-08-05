@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[demog_ch09_japan]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[日本人口结构变化与全球劳动力市场的因果分析]]"

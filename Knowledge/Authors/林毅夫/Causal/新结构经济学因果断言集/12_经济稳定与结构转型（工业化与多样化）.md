@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[_cand_lin_01]]
+node_role: satellite
 domain: 发展经济学
 schema_version: 2
 parent: "[[新结构经济学因果断言集]]"

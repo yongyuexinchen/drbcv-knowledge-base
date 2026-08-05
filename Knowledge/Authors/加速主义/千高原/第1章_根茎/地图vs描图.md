@@ -3,6 +3,7 @@ name: 地图vs描图
 type: concept
 status: core
 source: "德勒兹×瓜塔里《千高原》第1章"
+node_role: core
 domain: 加速主义
 parent: "[[根茎]]"
 ---

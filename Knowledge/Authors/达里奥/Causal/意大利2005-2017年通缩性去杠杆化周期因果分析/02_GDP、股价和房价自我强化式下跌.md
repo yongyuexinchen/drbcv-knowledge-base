@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_105]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[意大利2005-2017年通缩性去杠杆化周期因果分析]]"

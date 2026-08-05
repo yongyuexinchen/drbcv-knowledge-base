@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[dalio_2026_aibubble]]
+node_role: core
 domain: 宏观经济学与金融市场
 schema_version: 2
 ---

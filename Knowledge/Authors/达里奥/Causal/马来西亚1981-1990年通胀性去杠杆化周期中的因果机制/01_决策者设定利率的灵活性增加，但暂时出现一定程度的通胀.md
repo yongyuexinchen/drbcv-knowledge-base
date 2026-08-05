@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[case_malaysia_1981]]
+node_role: satellite
 domain: 宏观经济学、国际金融、债务危机
 schema_version: 2
 parent: "[[马来西亚1981-1990年通胀性去杠杆化周期中的因果机制]]"

@@ -3,6 +3,7 @@ name: 皇家科学vs少数科学
 type: concept
 status: core
 source: "德勒兹×瓜塔里《千高原》第12章"
+node_role: core
 domain: 加速主义
 parent: "[[游牧与平滑空间]]"
 ---

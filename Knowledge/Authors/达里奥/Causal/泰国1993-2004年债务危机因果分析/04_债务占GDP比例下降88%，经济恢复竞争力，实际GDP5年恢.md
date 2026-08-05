@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[case_thailand_1993]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[泰国1993-2004年债务危机因果分析]]"

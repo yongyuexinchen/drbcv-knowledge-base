@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_106]]
+node_role: satellite
 domain: 宏观经济学
 schema_version: 2
 parent: "[[荷兰通缩性去杠杆化周期中的因果机制]]"

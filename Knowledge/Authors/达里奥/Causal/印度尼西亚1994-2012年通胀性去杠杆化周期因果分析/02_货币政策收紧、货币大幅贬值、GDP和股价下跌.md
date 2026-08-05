@@ -4,6 +4,7 @@ type: causal
 mode: empirical
 status: candidate
 source: [[chapter_125]]
+node_role: satellite
 domain: 宏观经济学、国际金融
 schema_version: 2
 parent: "[[印度尼西亚1994-2012年通胀性去杠杆化周期因果分析]]"

@@ -3,6 +3,7 @@ name: 对象小a
 type: concept
 status: satellite
 source: "齐泽克《无器官的身体》"
+node_role: core
 domain: 加速主义
 parent: "[[准原因]]"
 ---
