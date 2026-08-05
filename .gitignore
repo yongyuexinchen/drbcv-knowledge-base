@@ -2,7 +2,7 @@
 .sync/
 
 # 研究过程中克隆的第三方仓库
-research/*/repos/
+Research/Projects/*/repos/
 
 # 嵌套的 git 仓库
 **/.git/
@@ -16,4 +16,6 @@ research/*/repos/
 .DS_Store
 Thumbs.db
 desktop.ini
-research/books/
+
+# 书库原文素材（不纳入 git，卡片才是资产）
+Books/
