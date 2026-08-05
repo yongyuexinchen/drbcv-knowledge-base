@@ -1,9 +1,11 @@
 ---
 name: FDI优于组合投资，资源租金应投资于本国结构转型
 type: causal
+mode: empirical
 status: candidate
-source: _cand2_lin_12.txt
+source: [[_cand2_lin_12]]
 domain: 发展经济学
+schema_version: 2
 ---
 
 # FDI优于组合投资，资源租金应投资于本国结构转型

@@ -1,9 +1,11 @@
 ---
 name: 根茎vs树状——多元体如何对抗整体化的六原则
-type: cao
+type: causal
+mode: theoretical
 status: candidate
 source: "德勒兹×瓜塔里《千高原》第1章"
 domain: 加速主义
+schema_version: 2
 ---
 # CAO：根茎vs树状——多元体如何对抗整体化的六原则
 > 类型：哲学论证（论证≈因果断言）｜来源：《千高原》高原1"根茎"——全书方法论宣言

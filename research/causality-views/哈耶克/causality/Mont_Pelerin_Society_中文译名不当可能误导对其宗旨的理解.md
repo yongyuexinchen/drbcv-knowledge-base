@@ -1,9 +1,11 @@
 ---
 name: Mont Pelerin Society 中文译名不当可能误导对其宗旨的理解
 type: causal
+mode: empirical
 status: candidate
-source: 哈耶克_chapter_11_part_01_p3
+source: [[哈耶克_chapter_11_part_01_p3]]
 domain: 翻译学、思想史
+schema_version: 2
 ---
 
 # Mont Pelerin Society 中文译名不当可能误导对其宗旨的理解

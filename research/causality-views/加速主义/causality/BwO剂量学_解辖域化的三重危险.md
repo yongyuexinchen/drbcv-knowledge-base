@@ -1,9 +1,11 @@
 ---
 name: BwO的剂量学——解辖域化的三重危险与谨慎的艺术
-type: cao
+type: causal
+mode: theoretical
 status: candidate
 source: "德勒兹×瓜塔里《千高原》第6章"
 domain: 加速主义
+schema_version: 2
 ---
 # CAO：BwO的剂量学——解辖域化的三重危险与谨慎的艺术
 > 类型：哲学论证（论证≈因果断言）｜来源：《千高原》高原6"1947年11月28日：如何制造无器官身体"

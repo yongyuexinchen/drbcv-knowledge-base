@@ -1,9 +1,11 @@
 ---
 name: 准垄断利润的消解（康德拉基耶夫B阶段）是资产价格周期的基础机制
 type: causal
+mode: empirical
 status: candidate
-source: _wall_卷3_03.txt
+source: [[_wall_卷3_03]]
 domain: 宏观经济学
+schema_version: 2
 ---
 
 # 准垄断利润的消解（康德拉基耶夫B阶段）是资产价格周期的基础机制

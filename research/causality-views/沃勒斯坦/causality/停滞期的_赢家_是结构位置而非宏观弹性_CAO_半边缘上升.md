@@ -1,9 +1,11 @@
 ---
 name: 停滞期的'赢家'是结构位置而非宏观弹性（CAO：半边缘上升）
 type: causal
+mode: empirical
 status: candidate
-source: _wall_卷2_02.txt
+source: [[_wall_卷2_02]]
 domain: 世界体系论/宏观经济学
+schema_version: 2
 ---
 
 # 停滞期的'赢家'是结构位置而非宏观弹性（CAO：半边缘上升）

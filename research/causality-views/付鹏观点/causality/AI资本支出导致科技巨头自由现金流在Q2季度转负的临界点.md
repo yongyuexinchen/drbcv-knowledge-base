@@ -1,9 +1,11 @@
 ---
 name: AI资本支出导致科技巨头自由现金流在Q2季度转负的临界点
 type: causal
+mode: empirical
 status: candidate
-source: fupeng_article.txt
+source: [[fupeng_article]]
 domain: 宏观经济学、公司金融、科技投资
+schema_version: 2
 ---
 
 # AI资本支出导致科技巨头自由现金流在Q2季度转负的临界点

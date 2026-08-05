@@ -1,9 +1,11 @@
 ---
 name: AI泡沫破裂的财富转化机制
 type: causal
+mode: empirical
 status: candidate
-source: dalio_2026_aibubble.txt
+source: [[dalio_2026_aibubble]]
 domain: 宏观经济学与金融市场
+schema_version: 2
 ---
 
 # AI泡沫破裂的财富转化机制
