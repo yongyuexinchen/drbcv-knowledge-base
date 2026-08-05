@@ -2,7 +2,7 @@
 name: 长期债务周期中的债务质量与去杠杆机制
 type: causal-cluster
 domain: 宏观经济学
-source: [[test_opinion]]
+source: "待补"
 schema_version: 2
 ---
 
