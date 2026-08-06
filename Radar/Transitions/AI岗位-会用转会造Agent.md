@@ -2,6 +2,7 @@
 type: transition
 system: "[[AI产业体系]]"
 status: observing
+window: medium_term          # short_term(≤6月) | medium_term(6-24月) | long_term(>24月=scenario)
 trigger: "主流云厂商默认提供 Agent 工作流产品 + 深圳 JD 中 Agent/RAG 关键词出现率 > 70%"
 invalidation: "Agent 商业化证伪（营收兑现率持续低于预期 2 年）或框架碎片化停滞（LangGraph 等停止演进 1 年）"
 created: 2026-08-06
