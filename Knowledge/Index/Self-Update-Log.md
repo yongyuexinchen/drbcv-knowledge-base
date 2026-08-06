@@ -41,6 +41,7 @@ schema_version: 2
 - **图谱视角**：Obsidian 图谱中 对话文件 ↔ Self 卡 双向链接成网
 
 | 2026-08-06 | [[2026-08-06_混沌确定性与Radar理论底座]] | — | [[确定性是压缩模型_混沌是更新机制]]（worldview, critical）<br>[[颠覆_让旧系统的优化目标失去意义]]（insight）<br>[[能动性_自我模型驱动的状态改变]]（worldview, critical, personality_core）<br>[[Radar是哲学模型的工程化]]（insight） | — |
+| 2026-08-06 | [[2026-08-06_泰勒展开历史观]] | [[Radar是哲学模型的工程化]]（expand: 哲学源头1→2） | [[泰勒展开历史观_历史是体系的局部展开]]（worldview, critical） | — |
 ## 反链说明
 
 - 卡的演化史条目是"更新证据"，对话文件是"原始证据"，两者缺一不可
