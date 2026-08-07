@@ -1,0 +1,88 @@
+{
+  "zh": {
+    "type": "standard",
+    "title": "摇滚乐",
+    "displaytitle": "<span lang=\"zh\" dir=\"ltr\"><span class=\"mw-page-title-main\">摇滚乐</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q11399",
+    "titles": {
+      "canonical": "摇滚乐",
+      "normalized": "摇滚乐",
+      "display": "<span lang=\"zh\" dir=\"ltr\"><span class=\"mw-page-title-main\">摇滚乐</span></span>"
+    },
+    "pageid": 604341,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/2015-06-06-SLAA-FOR-WIKI-3025.jpg/330px-2015-06-06-SLAA-FOR-WIKI-3025.jpg?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 330,
+      "height": 220
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/3/35/2015-06-06-SLAA-FOR-WIKI-3025.jpg?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "width": 1200,
+      "height": 800
+    },
+    "lang": "zh",
+    "dir": "ltr",
+    "revision": "88455457",
+    "tid": "939d54d0-92ba-11f1-a543-64d22d7ee880",
+    "timestamp": "2025-07-27T03:04:12Z",
+    "content_urls": {
+      "desktop": {
+        "page": "https://zh.wikipedia.org/wiki/%E6%91%87%E6%BB%9A%E4%B9%90",
+        "revisions": "https://zh.wikipedia.org/wiki/%E6%91%87%E6%BB%9A%E4%B9%90?action=history",
+        "edit": "https://zh.wikipedia.org/wiki/%E6%91%87%E6%BB%9A%E4%B9%90?action=edit",
+        "talk": "https://zh.wikipedia.org/wiki/Talk:%E6%91%87%E6%BB%9A%E4%B9%90"
+      },
+      "mobile": {
+        "page": "https://zh.wikipedia.org/wiki/%E6%91%87%E6%BB%9A%E4%B9%90",
+        "revisions": "https://zh.wikipedia.org/wiki/Special:History/%E6%91%87%E6%BB%9A%E4%B9%90",
+        "edit": "https://zh.wikipedia.org/wiki/%E6%91%87%E6%BB%9A%E4%B9%90?action=edit",
+        "talk": "https://zh.wikipedia.org/wiki/Talk:%E6%91%87%E6%BB%9A%E4%B9%90"
+      }
+    },
+    "extract": "摇滾音樂 是20世紀50年代初起源於“搖滾” 音樂中的一種廣泛音樂類型，並在20世紀60年代後期，特別是在英國和美國發展成為一系列不同的風格。它起源於20世紀40年代和50年代的搖滾，音樂格調吸收了非洲裔美國人的藍調和節奏藍調以及鄉村音樂的音樂風格。搖滾音樂也吸收了一些其他的音樂流派，如電藍調和民間音樂，並吸收了爵士樂和古典音樂的影響和其他音樂風格。在音樂上搖滾已經集中聚焦在電吉他，與電貝斯和鼓組及一個或多個歌手的組合，融合了流行樂和搖滾樂的組成。一般情況下，搖滾樂是以歌曲為主的音樂，通常以4/4拍節奏使用詩歌合唱形式，但音樂流派變得異常多樣化。就像流行樂一樣，歌詞往往強調浪漫的愛情，但也涉及其他各種型態，經常是社交或政治的主題。\n",
+    "extract_html": "<p><b>摇滾音樂</b> 是20世紀50年代初起源於“搖滾” 音樂中的一種廣泛音樂類型，並在20世紀60年代後期，特別是在英國和美國發展成為一系列不同的風格。它起源於20世紀40年代和50年代的搖滾，音樂格調吸收了非洲裔美國人的藍調和節奏藍調以及鄉村音樂的音樂風格。搖滾音樂也吸收了一些其他的音樂流派，如電藍調和民間音樂，並吸收了爵士樂和古典音樂的影響和其他音樂風格。在音樂上搖滾已經集中聚焦在電吉他，與電貝斯和鼓組及一個或多個歌手的組合，融合了流行樂和搖滾樂的組成。一般情況下，搖滾樂是以歌曲為主的音樂，通常以4/4拍節奏使用<span class=\"ilh-all\"><span class=\"ilh-page\">詩歌合唱形式</span></span>，但音樂流派變得異常多樣化。就像流行樂一樣，歌詞往往強調浪漫的愛情，但也涉及其他各種型態，經常是社交或政治的主題。\n</p>"
+  },
+  "en": {
+    "type": "standard",
+    "title": "Rock music",
+    "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Rock music</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q11399",
+    "titles": {
+      "canonical": "Rock_music",
+      "normalized": "Rock music",
+      "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Rock music</span></span>"
+    },
+    "pageid": 25423,
+    "lang": "en",
+    "dir": "ltr",
+    "revision": "1368241552",
+    "tid": "fd3064e1-92ad-11f1-b781-d486481ff262",
+    "timestamp": "2026-08-07T22:19:00Z",
+    "description": "Broad genre of popular music",
+    "description_source": "local",
+    "content_urls": {
+      "desktop": {
+        "page": "https://en.wikipedia.org/wiki/Rock_music",
+        "revisions": "https://en.wikipedia.org/wiki/Rock_music?action=history",
+        "edit": "https://en.wikipedia.org/wiki/Rock_music?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Rock_music"
+      },
+      "mobile": {
+        "page": "https://en.wikipedia.org/wiki/Rock_music",
+        "revisions": "https://en.wikipedia.org/wiki/Special:History/Rock_music",
+        "edit": "https://en.wikipedia.org/wiki/Rock_music?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Rock_music"
+      }
+    },
+    "extract": "Rock music is a genre of popular music that originated in the United States as \"rock and roll\" in the late 1940s and early 1950s, developing into a range of styles from the late 50s to mid-1960s, primarily in the United States and United Kingdom. It has its roots beginning as classic rock and roll, a style that drew from the African-American musical genres of blues and rhythm and blues, as well as from country music. Rock also drew strongly from genres such as electric blues and folk, and incorporated influences from jazz and other styles. Rock is typically centered on the electric guitar, usually as part of a rock group with electric bass guitar, drums, and one or more singers.",
+    "extract_html": "<p><b>Rock music</b> is a genre of popular music that originated in the United States as \"rock and roll\" in the late 1940s and early 1950s, developing into a range of styles from the late 50s to mid-1960s, primarily in the United States and United Kingdom. It has its roots beginning as classic rock and roll, a style that drew from the African-American musical genres of blues and rhythm and blues, as well as from country music. Rock also drew strongly from genres such as electric blues and folk, and incorporated influences from jazz and other styles. Rock is typically centered on the electric guitar, usually as part of a rock group with electric bass guitar, drums, and one or more singers.</p>"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "zh": null,
+  "en": {
+    "type": "standard",
+    "title": "Digital nomad",
+    "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Digital nomad</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q1224980",
+    "titles": {
+      "canonical": "Digital_nomad",
+      "normalized": "Digital nomad",
+      "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Digital nomad</span></span>"
+    },
+    "pageid": 25451895,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Taking_notes_at_a_coffee_table_%28Unsplash%29.jpg/330px-Taking_notes_at_a_coffee_table_%28Unsplash%29.jpg",
+      "width": 330,
+      "height": 220
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Taking_notes_at_a_coffee_table_%28Unsplash%29.jpg/3840px-Taking_notes_at_a_coffee_table_%28Unsplash%29.jpg",
+      "width": 5184,
+      "height": 3456
+    },
+    "lang": "en",
+    "dir": "ltr",
+    "revision": "1366425689",
+    "tid": "06e7d9b8-8a15-11f1-be5f-f76f9dbd829b",
+    "timestamp": "2026-07-27T23:43:54Z",
+    "description": "Wandering remote worker",
+    "description_source": "local",
+    "content_urls": {
+      "desktop": {
+        "page": "https://en.wikipedia.org/wiki/Digital_nomad",
+        "revisions": "https://en.wikipedia.org/wiki/Digital_nomad?action=history",
+        "edit": "https://en.wikipedia.org/wiki/Digital_nomad?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Digital_nomad"
+      },
+      "mobile": {
+        "page": "https://en.wikipedia.org/wiki/Digital_nomad",
+        "revisions": "https://en.wikipedia.org/wiki/Special:History/Digital_nomad",
+        "edit": "https://en.wikipedia.org/wiki/Digital_nomad?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Digital_nomad"
+      }
+    },
+    "extract": "A digital nomad is a person who travels freely while working remotely using information and communications technology such as the Internet. Such people generally have minimal material possessions and work remotely in temporary housing, internet cafés, public libraries, co-working spaces, or recreational vehicles, using Wi-Fi or mobile hotspots to access the Internet.",
+    "extract_html": "<p>A <b>digital nomad</b> is a person who travels freely while working remotely using information and communications technology such as the Internet. Such people generally have minimal material possessions and work remotely in temporary housing, internet cafés, public libraries, co-working spaces, or recreational vehicles, using Wi-Fi or mobile hotspots to access the Internet.</p>"
+  }
+}

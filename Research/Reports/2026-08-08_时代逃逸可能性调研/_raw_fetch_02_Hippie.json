@@ -1,0 +1,52 @@
+{
+  "zh": null,
+  "en": {
+    "type": "standard",
+    "title": "Hippie",
+    "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Hippie</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q339747",
+    "titles": {
+      "canonical": "Hippie",
+      "normalized": "Hippie",
+      "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Hippie</span></span>"
+    },
+    "pageid": 47646,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Woodstock-kids.jpg/330px-Woodstock-kids.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 330,
+      "height": 248
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/6/61/Woodstock-kids.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600
+    },
+    "lang": "en",
+    "dir": "ltr",
+    "revision": "1364924780",
+    "tid": "16e72778-8352-11f1-be24-5a58c6a56f54",
+    "timestamp": "2026-07-19T09:13:22Z",
+    "description": "1960s subculture",
+    "description_source": "local",
+    "content_urls": {
+      "desktop": {
+        "page": "https://en.wikipedia.org/wiki/Hippie",
+        "revisions": "https://en.wikipedia.org/wiki/Hippie?action=history",
+        "edit": "https://en.wikipedia.org/wiki/Hippie?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Hippie"
+      },
+      "mobile": {
+        "page": "https://en.wikipedia.org/wiki/Hippie",
+        "revisions": "https://en.wikipedia.org/wiki/Special:History/Hippie",
+        "edit": "https://en.wikipedia.org/wiki/Hippie?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Hippie"
+      }
+    },
+    "extract": "A hippie is a subculture associated with the counterculture of the mid-1960s to early 1970s. It originated as a youth subculture that began in the United States and spread to different countries around the world. The word hippie came from hipster and was used to describe beatniks who moved into New York City's Greenwich Village, San Francisco's Haight-Ashbury district, Los Angeles' Laurel Canyon, and Chicago's Old Town community. The term hippie was used in print by San Francisco writer Michael Fallon, helping popularize use of the term in the media, although the tag was seen elsewhere earlier.",
+    "extract_html": "<p>A <b>hippie</b> is a subculture associated with the counterculture of the mid-1960s to early 1970s. It originated as a youth subculture that began in the United States and spread to different countries around the world. The word <i>hippie</i> came from <i>hipster</i> and was used to describe beatniks who moved into New York City's Greenwich Village, San Francisco's Haight-Ashbury district, Los Angeles' Laurel Canyon, and Chicago's Old Town community. The term <i>hippie</i> was used in print by San Francisco writer Michael Fallon, helping popularize use of the term in the media, although the tag was seen elsewhere earlier.</p>"
+  }
+}

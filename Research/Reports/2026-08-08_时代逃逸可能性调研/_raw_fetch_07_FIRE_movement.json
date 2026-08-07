@@ -1,0 +1,42 @@
+{
+  "zh": null,
+  "en": {
+    "type": "standard",
+    "title": "FIRE movement",
+    "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">FIRE movement</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q55647788",
+    "titles": {
+      "canonical": "FIRE_movement",
+      "normalized": "FIRE movement",
+      "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">FIRE movement</span></span>"
+    },
+    "pageid": 57851653,
+    "lang": "en",
+    "dir": "ltr",
+    "revision": "1363709537",
+    "tid": "54581cbf-7d72-11f1-bae6-82bdb2a2cce8",
+    "timestamp": "2026-07-11T21:49:02Z",
+    "description": "Movement whose goal is financial independence and retiring early",
+    "description_source": "local",
+    "content_urls": {
+      "desktop": {
+        "page": "https://en.wikipedia.org/wiki/FIRE_movement",
+        "revisions": "https://en.wikipedia.org/wiki/FIRE_movement?action=history",
+        "edit": "https://en.wikipedia.org/wiki/FIRE_movement?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:FIRE_movement"
+      },
+      "mobile": {
+        "page": "https://en.wikipedia.org/wiki/FIRE_movement",
+        "revisions": "https://en.wikipedia.org/wiki/Special:History/FIRE_movement",
+        "edit": "https://en.wikipedia.org/wiki/FIRE_movement?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:FIRE_movement"
+      }
+    },
+    "extract": "The Financial Independence, Retire Early (FIRE) movement is a personal finance phenomenon characterized by high savings rates—often exceeding the 10–15% typically recommended by financial planners—and aggressive investment, with the goal of accumulating sufficient assets to cover living expenses without traditional employment. The movement gained traction among millennials in the 2010s, spreading through blogs, podcasts, and online communities.",
+    "extract_html": "<p>The <b>Financial Independence, Retire Early</b> (<b>FIRE</b>) <b>movement</b> is a personal finance phenomenon characterized by high savings rates—often exceeding the 10–15% typically recommended by financial planners—and aggressive investment, with the goal of accumulating sufficient assets to cover living expenses without traditional employment. The movement gained traction among millennials in the 2010s, spreading through blogs, podcasts, and online communities.</p>"
+  }
+}

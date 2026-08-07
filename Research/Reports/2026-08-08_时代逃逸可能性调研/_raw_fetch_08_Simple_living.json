@@ -1,0 +1,52 @@
+{
+  "zh": null,
+  "en": {
+    "type": "standard",
+    "title": "Simple living",
+    "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Simple living</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q56092",
+    "titles": {
+      "canonical": "Simple_living",
+      "normalized": "Simple living",
+      "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Simple living</span></span>"
+    },
+    "pageid": 206509,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gandhi_spinning_1942.jpg/330px-Gandhi_spinning_1942.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 330,
+      "height": 242
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/1/14/Gandhi_spinning_1942.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "width": 1024,
+      "height": 750
+    },
+    "lang": "en",
+    "dir": "ltr",
+    "revision": "1353428752",
+    "tid": "2ce0ba99-4c38-11f1-83c1-c86bc875f8ee",
+    "timestamp": "2026-05-10T06:19:18Z",
+    "description": "Simplified, minimalistic lifestyle",
+    "description_source": "local",
+    "content_urls": {
+      "desktop": {
+        "page": "https://en.wikipedia.org/wiki/Simple_living",
+        "revisions": "https://en.wikipedia.org/wiki/Simple_living?action=history",
+        "edit": "https://en.wikipedia.org/wiki/Simple_living?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Simple_living"
+      },
+      "mobile": {
+        "page": "https://en.wikipedia.org/wiki/Simple_living",
+        "revisions": "https://en.wikipedia.org/wiki/Special:History/Simple_living",
+        "edit": "https://en.wikipedia.org/wiki/Simple_living?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Simple_living"
+      }
+    },
+    "extract": "Simple living refers to practices that promote simplicity in one's lifestyle. Common practices of simple living include reducing the number of possessions one owns, depending less on technology and services, and spending less money. In addition to such external changes, simple living also reflects a person's mindset and values. Simple living practices can be seen in history, religion, art, and economics.",
+    "extract_html": "<p><b>Simple living</b> refers to practices that promote simplicity in one's lifestyle. Common practices of simple living include reducing the number of possessions one owns, depending less on technology and services, and spending less money. In addition to such external changes, simple living also reflects a person's mindset and values. Simple living practices can be seen in history, religion, art, and economics.</p>"
+  }
+}

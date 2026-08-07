@@ -1,0 +1,100 @@
+{
+  "zh": {
+    "type": "standard",
+    "title": "1960年代反文化运动",
+    "displaytitle": "<span lang=\"zh\" dir=\"ltr\"><span class=\"mw-page-title-main\">1960年代反文化运动</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q2995893",
+    "titles": {
+      "canonical": "1960年代反文化运动",
+      "normalized": "1960年代反文化运动",
+      "display": "<span lang=\"zh\" dir=\"ltr\"><span class=\"mw-page-title-main\">1960年代反文化运动</span></span>"
+    },
+    "pageid": 5595393,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Peace_symbol_%28bold%29.svg/langzh-330px-Peace_symbol_%28bold%29.svg.png?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 330,
+      "height": 330
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Peace_symbol_%28bold%29.svg/langzh-20px-Peace_symbol_%28bold%29.svg.png?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 16,
+      "height": 16
+    },
+    "lang": "zh",
+    "dir": "ltr",
+    "revision": "90554374",
+    "tid": "5d8c1570-92ba-11f1-9c62-4a1a91b26697",
+    "timestamp": "2025-12-07T08:13:02Z",
+    "description": "英美及西方国家历史事件",
+    "description_source": "central",
+    "content_urls": {
+      "desktop": {
+        "page": "https://zh.wikipedia.org/wiki/1960%E5%B9%B4%E4%BB%A3%E5%8F%8D%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8",
+        "revisions": "https://zh.wikipedia.org/wiki/1960%E5%B9%B4%E4%BB%A3%E5%8F%8D%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8?action=history",
+        "edit": "https://zh.wikipedia.org/wiki/1960%E5%B9%B4%E4%BB%A3%E5%8F%8D%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8?action=edit",
+        "talk": "https://zh.wikipedia.org/wiki/Talk:1960%E5%B9%B4%E4%BB%A3%E5%8F%8D%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8"
+      },
+      "mobile": {
+        "page": "https://zh.wikipedia.org/wiki/1960%E5%B9%B4%E4%BB%A3%E5%8F%8D%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8",
+        "revisions": "https://zh.wikipedia.org/wiki/Special:History/1960%E5%B9%B4%E4%BB%A3%E5%8F%8D%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8",
+        "edit": "https://zh.wikipedia.org/wiki/1960%E5%B9%B4%E4%BB%A3%E5%8F%8D%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8?action=edit",
+        "talk": "https://zh.wikipedia.org/wiki/Talk:1960%E5%B9%B4%E4%BB%A3%E5%8F%8D%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8"
+      }
+    },
+    "extract": "1960年代反文化运动 是一种反文化反体制行为，这种现象首先发生在英国和美国，之后在1960年代初至70年代中期在西方世界大规模传播。伦敦、纽约和旧金山是早期反文化活动的温床。随着美国民权运动的演进，反文化运动获得了进一步发展，并随着美国政府对越南军事干预的扩大而演变为一场革命性的运动。自1960年代以降，美国在一些社会议题上也出现了广泛的紧张态势，其中例如体现在人类性行为、妇女权利、精神药物实验、对传统权威的态度以及对美国梦的诠释。与这些争议问题有关的运动在1960年代的反文化潮流中诞生以及发展。\n",
+    "extract_html": "<p><b>1960年代反文化运动</b> 是一种反文化反体制行为，这种现象首先发生在英国和美国，之后在1960年代初至70年代中期在西方世界大规模传播。伦敦、纽约和旧金山是早期反文化活动的温床。随着美国民权运动的演进，反文化运动获得了进一步发展，并随着美国政府对越南军事干预的扩大而演变为一场革命性的运动。自1960年代以降，美国在一些社会议题上也出现了广泛的紧张态势，其中例如体现在人类性行为、妇女权利、精神药物实验、对传统权威的态度以及对美国梦的诠释。与这些争议问题有关的运动在1960年代的反文化潮流中诞生以及发展。\n</p>"
+  },
+  "en": {
+    "type": "standard",
+    "title": "Counterculture of the 1960s",
+    "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Counterculture of the 1960s</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q2995893",
+    "titles": {
+      "canonical": "Counterculture_of_the_1960s",
+      "normalized": "Counterculture of the 1960s",
+      "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Counterculture of the 1960s</span></span>"
+    },
+    "pageid": 8544676,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Peace_symbol.svg/330px-Peace_symbol.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 330,
+      "height": 330
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Peace_symbol.svg/960px-Peace_symbol.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 512,
+      "height": 512
+    },
+    "lang": "en",
+    "dir": "ltr",
+    "revision": "1368035202",
+    "tid": "1d322d7c-91b9-11f1-943d-5bccda50909a",
+    "timestamp": "2026-08-06T17:06:07Z",
+    "description": "Anti-establishment cultural phenomenon",
+    "description_source": "local",
+    "content_urls": {
+      "desktop": {
+        "page": "https://en.wikipedia.org/wiki/Counterculture_of_the_1960s",
+        "revisions": "https://en.wikipedia.org/wiki/Counterculture_of_the_1960s?action=history",
+        "edit": "https://en.wikipedia.org/wiki/Counterculture_of_the_1960s?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Counterculture_of_the_1960s"
+      },
+      "mobile": {
+        "page": "https://en.wikipedia.org/wiki/Counterculture_of_the_1960s",
+        "revisions": "https://en.wikipedia.org/wiki/Special:History/Counterculture_of_the_1960s",
+        "edit": "https://en.wikipedia.org/wiki/Counterculture_of_the_1960s?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Counterculture_of_the_1960s"
+      }
+    },
+    "extract": "The counterculture of the 1960s was an anti-establishment cultural phenomenon and political movement that developed in the Western world during the mid-20th century. It began in the mid-1960s and continued through the early 1970s. It is often synonymous with cultural liberalism and with the various social changes of the decade. The effects of the movement have been ongoing to the present day. The aggregate movement gained momentum as the civil rights movement in the United States had made significant progress, such as the Voting Rights Act of 1965, and with the intensification of the Vietnam War that same year, it became revolutionary to some.",
+    "extract_html": "<p>The <b>counterculture of the 1960s</b> was an anti-establishment cultural phenomenon and political movement that developed in the Western world during the mid-20th century. It began in the mid-1960s and continued through the early 1970s. It is often synonymous with cultural liberalism and with the various social changes of the decade. The effects of the movement have been ongoing to the present day. The aggregate movement gained momentum as the civil rights movement in the United States had made significant progress, such as the Voting Rights Act of 1965, and with the intensification of the Vietnam War that same year, it became revolutionary to some.</p>"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "zh": {
+    "type": "standard",
+    "title": "龐克文化",
+    "displaytitle": "<span lang=\"zh\" dir=\"ltr\"><span class=\"mw-page-title-main\">龐克文化</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q153946",
+    "titles": {
+      "canonical": "龐克文化",
+      "normalized": "龐克文化",
+      "display": "<span lang=\"zh\" dir=\"ltr\"><span class=\"mw-page-title-main\">龐克文化</span></span>"
+    },
+    "pageid": 167820,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Punk_fashion_circa_1986.jpg/330px-Punk_fashion_circa_1986.jpg?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 330,
+      "height": 286
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Punk_fashion_circa_1986.jpg?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "width": 474,
+      "height": 411
+    },
+    "lang": "zh",
+    "dir": "ltr",
+    "revision": "93352980",
+    "tid": "8c8b7c80-92ba-11f1-a3b2-67db3ef845f5",
+    "timestamp": "2026-07-07T09:40:41Z",
+    "description": "反建制青年亚文化",
+    "description_source": "central",
+    "content_urls": {
+      "desktop": {
+        "page": "https://zh.wikipedia.org/wiki/%E9%BE%90%E5%85%8B%E6%96%87%E5%8C%96",
+        "revisions": "https://zh.wikipedia.org/wiki/%E9%BE%90%E5%85%8B%E6%96%87%E5%8C%96?action=history",
+        "edit": "https://zh.wikipedia.org/wiki/%E9%BE%90%E5%85%8B%E6%96%87%E5%8C%96?action=edit",
+        "talk": "https://zh.wikipedia.org/wiki/Talk:%E9%BE%90%E5%85%8B%E6%96%87%E5%8C%96"
+      },
+      "mobile": {
+        "page": "https://zh.wikipedia.org/wiki/%E9%BE%90%E5%85%8B%E6%96%87%E5%8C%96",
+        "revisions": "https://zh.wikipedia.org/wiki/Special:History/%E9%BE%90%E5%85%8B%E6%96%87%E5%8C%96",
+        "edit": "https://zh.wikipedia.org/wiki/%E9%BE%90%E5%85%8B%E6%96%87%E5%8C%96?action=edit",
+        "talk": "https://zh.wikipedia.org/wiki/Talk:%E9%BE%90%E5%85%8B%E6%96%87%E5%8C%96"
+      }
+    },
+    "extract": "龐克（punk），又译“朋克”、“鬅客”。朋克文化是一種起源於1970年代的次文化。最早源起於龐克音樂，但逐漸轉換成一種整合音樂、服裝與個人意識主張的廣義文化風格。\n",
+    "extract_html": "<p><b>龐克</b>（<b>punk</b>），又译“朋克”、“<span class=\"mw-disambig\">鬅客</span>”。朋克文化是一種起源於1970年代的次文化。最早源起於龐克音樂，但逐漸轉換成一種整合音樂、服裝與個人意識主張的廣義文化風格。\n</p>"
+  },
+  "en": {
+    "type": "standard",
+    "title": "Punk subculture",
+    "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Punk subculture</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q153946",
+    "titles": {
+      "canonical": "Punk_subculture",
+      "normalized": "Punk subculture",
+      "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Punk subculture</span></span>"
+    },
+    "pageid": 24589,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Punk_Red_Mohawk_Morecambe_2003.jpeg/330px-Punk_Red_Mohawk_Morecambe_2003.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 330,
+      "height": 220
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Punk_Red_Mohawk_Morecambe_2003.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 533
+    },
+    "lang": "en",
+    "dir": "ltr",
+    "revision": "1368207761",
+    "tid": "694ca0db-9289-11f1-b76b-f0a3addea017",
+    "timestamp": "2026-08-07T17:57:10Z",
+    "description": "Anti-establishment subculture",
+    "description_source": "local",
+    "content_urls": {
+      "desktop": {
+        "page": "https://en.wikipedia.org/wiki/Punk_subculture",
+        "revisions": "https://en.wikipedia.org/wiki/Punk_subculture?action=history",
+        "edit": "https://en.wikipedia.org/wiki/Punk_subculture?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Punk_subculture"
+      },
+      "mobile": {
+        "page": "https://en.wikipedia.org/wiki/Punk_subculture",
+        "revisions": "https://en.wikipedia.org/wiki/Special:History/Punk_subculture",
+        "edit": "https://en.wikipedia.org/wiki/Punk_subculture?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Punk_subculture"
+      }
+    },
+    "extract": "The punk subculture includes a diverse and widely known array of music, ideologies, fashion, and other forms of expression, visual art, dance, literature, and film. Largely characterised by anti-establishment views, the promotion of individual freedom, and DIY ethics, the culture originated from punk rock.",
+    "extract_html": "<p>The <b>punk subculture</b> includes a diverse and widely known array of music, ideologies, fashion, and other forms of expression, visual art, dance, literature, and film. Largely characterised by anti-establishment views, the promotion of individual freedom, and DIY ethics, the culture originated from punk rock.</p>"
+  }
+}

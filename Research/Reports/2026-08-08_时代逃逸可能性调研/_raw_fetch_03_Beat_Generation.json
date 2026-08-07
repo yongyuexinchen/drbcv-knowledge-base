@@ -1,0 +1,52 @@
+{
+  "zh": null,
+  "en": {
+    "type": "standard",
+    "title": "Beat Generation",
+    "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Beat Generation</span></span>",
+    "namespace": {
+      "id": 0,
+      "text": ""
+    },
+    "wikibase_item": "Q213457",
+    "titles": {
+      "canonical": "Beat_Generation",
+      "normalized": "Beat Generation",
+      "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Beat Generation</span></span>"
+    },
+    "pageid": 157208,
+    "thumbnail": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Burroughs1983_crop_b.jpg/330px-Burroughs1983_crop_b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "width": 330,
+      "height": 462
+    },
+    "originalimage": {
+      "source": "https://upload.wikimedia.org/wikipedia/commons/1/15/Burroughs1983_crop_b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "width": 570,
+      "height": 798
+    },
+    "lang": "en",
+    "dir": "ltr",
+    "revision": "1361463674",
+    "tid": "d20d2a28-7294-11f1-bf2b-437dbbef1612",
+    "timestamp": "2026-06-28T01:58:13Z",
+    "description": "Literary movement",
+    "description_source": "local",
+    "content_urls": {
+      "desktop": {
+        "page": "https://en.wikipedia.org/wiki/Beat_Generation",
+        "revisions": "https://en.wikipedia.org/wiki/Beat_Generation?action=history",
+        "edit": "https://en.wikipedia.org/wiki/Beat_Generation?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Beat_Generation"
+      },
+      "mobile": {
+        "page": "https://en.wikipedia.org/wiki/Beat_Generation",
+        "revisions": "https://en.wikipedia.org/wiki/Special:History/Beat_Generation",
+        "edit": "https://en.wikipedia.org/wiki/Beat_Generation?action=edit",
+        "talk": "https://en.wikipedia.org/wiki/Talk:Beat_Generation"
+      }
+    },
+    "extract": "The Beat Generation was a literary subculture movement started by a group of authors whose work explored and influenced American culture and politics in the post–World War II and Cold War eras. The bulk of their work was published and popularized by members of the Silent Generation in the 1950s, better known as Beatniks. The central elements of Beat culture are the rejection of standard narrative values, making a spiritual quest, the exploration of American and Eastern religions, the rejection of economic materialism, explicit portrayals of the human condition, experimentation with psychedelic drugs, and sexual liberation and exploration.",
+    "extract_html": "<p>The <b>Beat Generation</b> was a literary subculture movement started by a group of authors whose work explored and influenced American culture and politics in the post–World War II and Cold War eras. The bulk of their work was published and popularized by members of the Silent Generation in the 1950s, better known as Beatniks. The central elements of Beat culture are the rejection of standard narrative values, making a spiritual quest, the exploration of American and Eastern religions, the rejection of economic materialism, explicit portrayals of the human condition, experimentation with psychedelic drugs, and sexual liberation and exploration.</p>"
+  }
+}
