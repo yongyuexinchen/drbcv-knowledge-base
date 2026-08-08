@@ -72,32 +72,32 @@
 
 | # | 文件名 | 概念 | 英文 | 关键连接 |
 |---|--------|------|------|----------|
-| 1 | `autopoiesis.md` | 自创生 | Autopoiesis | 生存半径 = 自创生域；正常行为 = 自创生操作 |
-| 2 | `selbstreferenz.md` | 自我指涉 | Self-Reference (Selbstreferenz) | 盲点 = 逃逸的不可可能性；锚点 = 去悖论化装置 |
-| 3 | `system-umwelt.md` | 系统与环境 | System/Environment | 环境 = 死亡压力来源；锚点 = 边界维持装置 |
-| 4 | `komplexitaetsreduktion.md` | 复杂度化约 | Complexity Reduction | 正常行为 = 化约例程；认知边界 = 化约能力上限 |
-| 5 | `operationelle-schliessung.md` | 操作封闭 | Operational Closure | 系统的绝对孤独；结构耦合 = 锚点的接口 |
-| 6 | `doppelte-kontingenz.md` | 双重偶然性 | Double Contingency | 社会性死亡恐惧；文明锚点 = 偶然性驯服 |
-| 7 | `soziale-systeme.md` | 社会系统三类型 | Social Systems (Interaction/Organization/Society) | 三重死亡压力；功能分化 = 锚点的分布式结构 |
-| 8 | `kommunikation.md` | 沟通 | Communication | 正常 = 沟通衔接；逃逸 = 沟通拒绝之不可能 |
-| 9 | `sinn.md` | 意义 | Meaning (Sinn) | 意义不可停止 = 死亡的形式基础；锚点 = 语义沉淀 |
-| 10 | `beobachtung.md` | 观察 | Observation | 盲点 = 死亡恐惧的不可见性；锚点 = 集体观察区分 |
+| 1 | `自创生(Autopoiesis).md` | 自创生 | Autopoiesis | 生存半径 = 自创生域；正常行为 = 自创生操作 |
+| 2 | `自我指涉(Selbstreferenz).md` | 自我指涉 | Self-Reference (Selbstreferenz) | 盲点 = 逃逸的不可可能性；锚点 = 去悖论化装置 |
+| 3 | `系统与环境(System und Umwelt).md` | 系统与环境 | System/Environment | 环境 = 死亡压力来源；锚点 = 边界维持装置 |
+| 4 | `复杂度化约(Komplexit tsreduktion).md` | 复杂度化约 | Complexity Reduction | 正常行为 = 化约例程；认知边界 = 化约能力上限 |
+| 5 | `操作封闭(Operationelle Schlie ung).md` | 操作封闭 | Operational Closure | 系统的绝对孤独；结构耦合 = 锚点的接口 |
+| 6 | `双重偶然性(Doppelte Kontingenz).md` | 双重偶然性 | Double Contingency | 社会性死亡恐惧；文明锚点 = 偶然性驯服 |
+| 7 | `社会系统三类型(Soziale Systeme).md` | 社会系统三类型 | Social Systems (Interaction/Organization/Society) | 三重死亡压力；功能分化 = 锚点的分布式结构 |
+| 8 | `沟通(Kommunikation).md` | 沟通 | Communication | 正常 = 沟通衔接；逃逸 = 沟通拒绝之不可能 |
+| 9 | `意义(Sinn).md` | 意义 | Meaning (Sinn) | 意义不可停止 = 死亡的形式基础；锚点 = 语义沉淀 |
+| 10 | `观察(Beobachtung).md` | 观察 | Observation | 盲点 = 死亡恐惧的不可见性；锚点 = 集体观察区分 |
 
 ### 作者卡（1 张）
 
 | 文件名 | 内容 |
 |--------|------|
-| `autor-niklas-luhmann.md` | Luhmann 生平、Zettelkasten、与 Parsons 关系、与 Habermas 争论、著作体系、与用户理论连接 |
+| `作者卡_卢曼.md` | Luhmann 生平、Zettelkasten、与 Parsons 关系、与 Habermas 争论、著作体系、与用户理论连接 |
 
 ---
 
 ## 阅读路径建议
 
-1. **快速入口**：先读 [[kommunikation.md]] 和 [[autopoiesis.md]] — 理解系统的基本操作是什么
-2. **方法论基础**：再读 [[beobachtung.md]] 和 [[selbstreferenz.md]] — 理解 Luhmann 的"区分逻辑"
-3. **存在论维度**：然后读 [[system-umwelt.md]] 和 [[sinn.md]] — 理解系统的存在条件
-4. **社会理论**：最后读 [[doppelte-kontingenz.md]]、[[soziale-systeme.md]]、[[komplexitaetsreduktion.md]]、[[operationelle-schliessung.md]]
-5. **背景**：[[autor-niklas-luhmann.md]] 了解思想史背景
+1. **快速入口**：先读 [[沟通(Kommunikation).md]] 和 [[自创生(Autopoiesis).md]] — 理解系统的基本操作是什么
+2. **方法论基础**：再读 [[观察(Beobachtung).md]] 和 [[自我指涉(Selbstreferenz).md]] — 理解 Luhmann 的"区分逻辑"
+3. **存在论维度**：然后读 [[系统与环境(System und Umwelt).md]] 和 [[意义(Sinn).md]] — 理解系统的存在条件
+4. **社会理论**：最后读 [[双重偶然性(Doppelte Kontingenz).md]]、[[社会系统三类型(Soziale Systeme).md]]、[[复杂度化约(Komplexit tsreduktion).md]]、[[操作封闭(Operationelle Schlie ung).md]]
+5. **背景**：[[作者卡_卢曼.md]] 了解思想史背景
 
 ---
 

@@ -56,14 +56,14 @@ Spengler 识别了人类历史上的八个高级文化：
 |---|---|---|
 | 01 | `01_Culture_vs_Civilization.md` | 文化 vs 文明 |
 | 02 | `02_Organic_Morphology.md` | 有机体形态学 |
-| 03 | `03_Soul_Symbols.md` | 灵魂象征：浮士德 / 阿波罗 / 麻葛 |
-| 04 | `04_Morphological_Method.md` | 形态学方法 / 相面学 |
-| 05 | `05_Historical_Morphology_Homology.md` | 历史形态学 / 同源异时 |
-| 06 | `06_Civilization_as_Destiny.md` | 文明 = 文化的宿命终点 |
-| 07 | `07_Cities_and_Peoples.md` | 城市与人民 / 假体 |
-| 08 | `08_Makrokosmos_Symbolism.md` | 宏观宇宙 / 世界图景的象征学 |
-| 09 | `09_Physiognomic_Turn.md` | 相面学转向 / 历史认识的哥白尼革命 |
-| — | `11_Author_Oswald_Spengler.md` | 作者卡：Oswald Spengler |
+| 03 | `灵魂象征浮士德 阿波罗 麻葛(Soul Symbols).md` | 灵魂象征：浮士德 / 阿波罗 / 麻葛 |
+| 04 | `形态学方法 相面学(Morphological Method).md` | 形态学方法 / 相面学 |
+| 05 | `历史形态学 同源异时(Historical Morphology  Homology).md` | 历史形态学 / 同源异时 |
+| 06 | `文明 文化的宿命终点(Civilization as Cultural Destiny).md` | 文明 = 文化的宿命终点 |
+| 07 | `城市与人民假体(Cities and Peoples The Prosthesis).md` | 城市与人民 / 假体 |
+| 08 | `宏观宇宙世界图景的象征学(Makrokosmos Symbolism of the World-Picture).md` | 宏观宇宙 / 世界图景的象征学 |
+| 09 | `相面学转向历史认识的哥白尼革命(The Physiognomic Turn).md` | 相面学转向 / 历史认识的哥白尼革命 |
+| — | `作者卡_斯宾格勒.md` | 作者卡：Oswald Spengler |
 | — | `README.md` | 本书索引 |
 
 ---

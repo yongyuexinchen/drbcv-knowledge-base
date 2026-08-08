@@ -41,24 +41,24 @@
 
 | # | 文件名 | 中文概念 | 英文概念 | 来源章节 |
 |---|--------|----------|----------|----------|
-| 01 | `01_death_terror.md` | 死亡恐惧 | The Terror of Death | Ch.2 |
-| 02 | `02_hero_project.md` | 英雄工程 | The Hero Project | Ch.1 |
-| 03 | `03_immortality_project.md` | 永生工程 | The Immortality Project | Ch.1, 6, 11 |
-| 04 | `04_symbolic_immortality.md` | 象征永生 | Symbolic Immortality | Ch.1, 8, 11 |
-| 05 | `05_character_armor.md` | 性格盔甲 | Character Armor | Ch.4, 5 |
-| 06 | `06_vital_lie.md` | 生命谎言 | The Vital Lie | Ch.4 |
-| 07 | `07_denial.md` | 否认机制 | Denial | Ch.1-11 |
-| 08 | `08_transference.md` | 移情 | Transference | Ch.7 |
-| 09 | `09_causa_sui.md` | 自因工程 | Causa Sui Project | Ch.3, 6 |
-| 10 | `10_oedipal_project.md` | 俄狄浦斯工程 | The Oedipal Project | Ch.3 |
-| 11 | `11_creatureliness.md` | 被造性 | Creatureliness | Ch.3, 4, 5, 6, 11 |
-| 12 | `12_cosmic_heroism.md` | 宇宙英雄主义 | Cosmic Heroism | Ch.5, 11 |
+| 01 | `死亡恐惧(The Terror of Death).md` | 死亡恐惧 | The Terror of Death | Ch.2 |
+| 02 | `英雄工程(The Hero Project).md` | 英雄工程 | The Hero Project | Ch.1 |
+| 03 | `永生工程(The Immortality Project).md` | 永生工程 | The Immortality Project | Ch.1, 6, 11 |
+| 04 | `象征永生(Symbolic Immortality).md` | 象征永生 | Symbolic Immortality | Ch.1, 8, 11 |
+| 05 | `性格盔甲(Character Armor).md` | 性格盔甲 | Character Armor | Ch.4, 5 |
+| 06 | `生命谎言(The Vital Lie).md` | 生命谎言 | The Vital Lie | Ch.4 |
+| 07 | `否认机制(Denial).md` | 否认机制 | Denial | Ch.1-11 |
+| 08 | `移情(Transference).md` | 移情 | Transference | Ch.7 |
+| 09 | `自因工程(Causa Sui Project).md` | 自因工程 | Causa Sui Project | Ch.3, 6 |
+| 10 | `俄狄浦斯工程(The Oedipal Project).md` | 俄狄浦斯工程 | The Oedipal Project | Ch.3 |
+| 11 | `被造性(Creatureliness).md` | 被造性 | Creatureliness | Ch.3, 4, 5, 6, 11 |
+| 12 | `宇宙英雄主义(Cosmic Heroism).md` | 宇宙英雄主义 | Cosmic Heroism | Ch.5, 11 |
 
 ### 作者卡（1张）
 
 | # | 文件名 | 内容 |
 |---|--------|------|
-| 13 | `13_ernest_becker.md` | Ernest Becker 生平、思想谱系、与 Freud 关系、与用户理论连接 |
+| 13 | `作者卡_贝克尔.md` | Ernest Becker 生平、思想谱系、与 Freud 关系、与用户理论连接 |
 
 ### 书索引（1份）
 
