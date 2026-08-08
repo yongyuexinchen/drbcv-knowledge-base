@@ -40,5 +40,11 @@
 ## 吸收状态
 
 - ✅ 德勒兹 3 本（反俄狄浦斯 29 卡/千高原 30 卡/无器官身体 9 卡）——在 [[加速主义]] 节点
-- 🔴 落盘 7 本（Becker/Luhmann×3/Spengler/Toynbee/怕死）——待拆卡
-- ⚪ 清单 11 本——待补齐
+- ✅ **已拆卡 5 本（2026-08-08）**：
+  - The Denial of Death（Becker）——13 概念卡 + 作者卡（hero project/immortality/symbolic immortality/character armor/vital lie）
+  - 怕死_TMT（Solomon et al.）——13 概念卡 + 作者卡（恐惧管理/死亡显著性/双防御模型/实验证据 13 类）
+  - A Study of History（Toynbee）——11 概念卡 + 作者卡（挑战与回应/创造少数/普世帝国/文明衰落机制）
+  - Luhmann系统论（Reese-Schäfer 导论）——10 概念卡 + 作者卡（自创生/自我指涉/复杂度化约/操作封闭/双重偶然性）
+  - Decline of the West（Spengler）——9 概念卡 + 作者卡（文化vs文明/有机体形态学/浮士德灵魂/文明=宿命终点）
+- 🔴 待拆 2 本轻量（Luhmann 访谈/西语评论——价值低，可合并处理或留待）
+- ⚪ 清单 11 本——待补齐（Kafka minor lit/Escape from Evil/Creation of Meaning/Social Systems/Autopoiesis×2/Baudrillard×2/Heidegger/Camus/Frankl）
