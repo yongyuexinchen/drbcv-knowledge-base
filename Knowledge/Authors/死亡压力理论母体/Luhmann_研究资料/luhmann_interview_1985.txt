@@ -1,0 +1,1054 @@
+
+=== PAGE 1 ===
+Short Cuts 1 Herausgegeben von Peter Gente, Heidi Paris 
+und Martin Weinmann
+NIKLAS LUHMANN, geb. 1927 in Lüneburg, Jurastudium in 
+Freiburg (1946-49), Verwaltungsbeamter am Oberverwaltungs-
+gericht Lüneburg (1954), Landtagsreferent im niedersächsischen 
+Kultusministerium (1955—62), Promotion und Habilitation 
+(i960) bei Helmut Schelsky, Studium bei Talcott Parsons in 
+Harvard (1960—61), Referent an der Hochschule für Verwaltungs-
+wissenschaft in Speyer (1962—65), Professor für Soziologie an der 
+Reformuniversität Bielefeld (1968), Hegel-Preis der Stadt Stutt-
+gart (1988), Emeritus (1993), sein Hauptwerk, Die Gesellschaft 
+der Gesellschaft erscheint (1997); Niklas Luhmann stirbt am 
+6. November 1998.
+Nicht nur wenn er über Fußball schreibt, hat Luhmann mit der 
+leggerezza von brasilianischen Ballartisten Denkgewichte ins Spiel 
+gebracht, mit denen heute ein bißchen überall trainiert wird. 
+In ShortCuts hat er die Wissenschaftsarena verlassen und kickt auf 
+öffentlichen Plätzen. Ob inner- oder außerhalb des Elfenbein-
+turms: »Jede Kommunikation regt dadurch zur Fortsetzung an, 
+daß sie ein bißchen über das hinausgeht, was sich letztlich halten 
+läßt.«
+
+=== PAGE 2 ===
+n ik l a s Lu h ma n n
+Short Cuts
+Zweitausendeins
+
+=== PAGE 3 ===
+Orginalausgabe
+1. Auflage, Oktober 2000.
+2. Auflage, Januar 2001.
+Copyright © by Niklas Luhmann.
+Mit freundlicher Genehmigung des Merve Verlag, Berlin.
+Alle Rechte für die vorliegende Ausgabe Copyright © 2000 by Zweitausendeins, 
+Postfach, D-60381 Frankfurt am Main. www.Zweitausendeins.de
+Alle Rechte Vorbehalten, insbesondere das Recht der mechanischen, elektronischen 
+oder fotografischen Vervielfältigung, der Einspeicherung und Verarbeitung 
+in elektronischen Systemen, des Nachdrucks in Zeitschriften oder Zeitungen, 
+des öffentlichen Vortrags, der Verfilmung oder Dramatisierung, der Übertragung 
+durch Rundfunk, Fernsehen oder Video, auch einzelner Textteile.
+Der gewerbliche Weiterverkauf und der gewerbliche Verleih von Büchern,
+CDs, Videos oder anderen Sachen aus der Zweitausendeins-Produktion bedürfen 
+in jedem Fall der schriftlichen Genehmigung durch die Geschäftsleitung 
+vom Zweitausendeins Versand in Frankfurt am Main.
+Lektorat: Martin Weinmann (Büro W, Wiesbaden).
+Umschlaggestaltung: Sabine Kauf.
+Satz und Herstellung: Dieter Kohler GmbH, Nördlingen.
+Druck: Gutmann + Co GmbH, Talheim.
+Einband: G. Lachenmaier, Reutlingen.
+Printed in Germany.
+Dieses Buch, einschließlich Schutzumschlag, Überzug und Vorsatz, 
+wurde auf Recyclingpapier gedruckt, das zu 100% aus Altpapier besteht.
+Dieses Buch gibt es nur bei Zweitausendeins im Versand,
+Postfach, D-60381 Frankfurt am Main, Telefon 069-420 8000 oder
+01805-23 2001 (24 Pf./Min.), Fax 069-415003 oder 01805-242001 (24Pf./Min.).
+Internet www.Zweitausendeins.de, E-Mail info@Zweitausendeins.de.
+Oder in den Zweitausendeins-Läden in Berlin, Düsseldorf, Essen,
+Frankfurt am Main, Freiburg, 2x in Hamburg, in Hannover, Köln, Mannheim, 
+München, Nürnberg, Saarbrücken, Stuttgart.
+In der Schweiz über buch 2000, Postfach 89, CH-8910 Affoltern a. A.
+ISBN 3-86150-340-9
+
+=== PAGE 4 ===
+Wr überhaupt spricht oder schreibt, sollte sich verständlich aus-
+drücken. Das ist eine auf den ersten Blick einleuchtende Forderung. 
+Denn wozu äußert er sich, wenn er nicht verstanden werden will? 
+Soziologie ist nun aber nicht die Lehre vom ersten Blick, sondern die 
+Lehre vom zweiten Blick. Und auf den zweiten Blick kommen Fragen 
+und Bedenken hoch. Sollte man alles, was gesagt wird, gleichermaßen 
+unter die Knute der Verständlichkeit zwingen? Soll Verständlichkeit 
+bedeuten: Verständlichkeit für jedermann ? Verständlichkeit ohne Mühe? 
+Verständlich ohne jede Vorbereitung, ohne jeden Zeitaufwand des Nach-
+denkens und Entschlüsselns? Gibt es ein lineares Kontinuum, das von 
+Unverständlichkeit zu Verständlichkeit führt, und auf dem man mehr 
+Verständlichkeit fordern kann? Oder gibt es auf diesem Wege vom 
+Unverständlichen zum Verständlichen auch Abwege, etwa ins Miß-
+verständliche? Gilt vielleicht, daß das Unverständliche nur aufgelöst 
+werden kann durch Steigerung von Verständlichkeit und Mißverständ-
+lichkeit zugleich?
+Ich denke manchmal, es fehlt uns nicht an gelehrter Prosa, sondern an 
+gelehrter Poesie. Wissenschaftliche Theorien haben einen eigentümlichen 
+Weltstimmungsgehalt, den sie selbst ... nicht formulieren, vielleicht 
+nicht einmal wahrnehmen können. Die so unzulänglichen Versuche 
+einer politischen Interpretation der »eigentlichen« Aussage von Theo-
+rien zeigen diesen Bedarf nach einer Zweitfassung an, ohne ihn an-
+gemessen befriedigen zu können. Vielleicht sollte es statt dessen für 
+anspruchsvolle Theorieleistungen eine Art Parallelpoesie geben, die 
+alles noch einmal anders sagt und damit die Wissenschaftssprache in 
+die Grenzen ihres Funktionssystems zurückweist.
+
+=== PAGE 5 ===
+Bio g r a ph ie , At t it ü d e n , 
+ZETTELKASTEN 
+Interview
+Herr Luhmann, es gibt zwei außerordentlich populäre Sozial-
+wissenschaftler in der Bundesrepublik, Jürgen Habermas und 
+Sie. Bei Habermas leuchtet uns das ein. Habermas’ normative 
+Orientierung an »unversehrter Subjektivität« hat seinem 
+wissenschaftlichen Werk insofern einen politischen Charak-
+ter gegeben, als sich Gruppen mit gesellschaftsverändernder 
+Programmatik damit produktiv auseinandersetzen konnten. 
+Habermas’ Popularität ist, kurz gesagt, Resultat seiner poli-
+tischen Theoriearbeit. Bei Ihnen kann man das sicherlich nicht 
+behaupten. Woher kommt dann dennoch das große Interesse 
+an Luhmann?
+Eine Erklärung dafür zu finden, ist nicht leicht. Man 
+muß zwei Phasen der »Luhmann-Rezeption« unterschei-
+den. Die erste hat Ende der sechziger Jahre stattgefunden. 
+Es waren zu dieser Zeit überwiegend linke Leser, die sich 
+für meine Theorie interessiert haben, weil die Ideen-
+grundlage der Frankfurter Schule relativ einfach ist, aber 
+7 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 6 ===
+die Realisierung des Programms Schwierigkeiten bereitet. 
+Heute hingegen scheint mir das Problem anders zu liegen. 
+Heute herrscht nicht so sehr die Komplementarität zur 
+Kritischen Theorie vor, sondern ein Interesse an solide 
+gebauten Theorien. Überraschend kam es für mich aber 
+dennoch, daß ein so großes Interesse an meiner Theorie 
+besteht, besonders an meinem letzten Buch »Soziale 
+Systeme«.
+Die Enttäuschung von der Kritischen Theorie weckt also das 
+Interesse an Luhmanns Theorie?
+Ich finde, daß man mit dem Theoriekonzept der »Frank-
+furter Schule«, wenn es ein solches überhaupt gibt, wis-
+senschaftlich nicht arbeiten kann. Das ist eine Position, 
+die nicht kompliziert genug, nicht variantenreich genug 
+ist. Die Kritische Theorie ist nicht kompliziert genug, 
+um etwas anderes als ein protestierendes oder resignatives 
+Verhalten zu provozieren. Der Ausweg, den Habermas 
+geht, verschiedene Theorien zu diskutieren und zu syn-
+thetisieren, hat bisher nicht zu einer eigenen systemati-
+schen Position geführt.
+Wenn Sie der Kritischen Theorie vorhalten, daß sie einen be-
+stimmten Standpunkt zum Ausgangspunkt nehme, ist Ihre 
+Theorie denn neutral?
+Ich würde sagen, meine Theorie ist in ihrer Struktur eher 
+offen für sehr verschiedenartige Gesellschaftsbereiche, 
+eher offen für ein Gegeneinanderausspielen von positiven 
+8 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 7 ===
+und negativen Seiten der modernen Gesellschaft. Das 
+Problem von Habermas besteht darin, daß sein Den-
+ken um eine moralische Verpflichtung von Gesellschafts-
+theorie organisiert ist. Das gibt dieser Theorie zwar eine 
+besondere Attraktivität, zeigt zugleich aber auch ihre 
+Grenzen an. Von einer solchen Position aus kann man 
+beispielsweise die Geldwirtschaft, das Recht oder die 
+politische Maschinerie nicht oder nur negativ, kritisch-
+ablehnend sehen.
+Herr Luhmann, lassen Sie uns noch einmal auf Jürgen Haber-
+mas, Ihren großen wissenschaftlichen Kontrahenten, zurück-
+kommen. Habermas hat einmal gesagt, daß sein wissenschaft-
+liches Denken von einer grundlegenden Idee getragen wird. 
+»Die Intuition stammt aus dem Bereich des Umgangs mit 
+anderen, sie zielt auf Erfahrungen mit einer unversehrten In-
+tersubjektivität.« Das »freundliche Zusammenleben« (Brecht) 
+ist fur Habermas die grundlegende Idee, die sein Denken 
+bestimmt. Was treibt Sie, Herr Luhmann, zur wissenschaft-
+lichen Arbeit an?
+Ich weiß nicht, ob ich es auf eine Formel bringen kann. 
+Aber wenn, dann ist es jedenfalls eine sehr viel begriff-
+lichere oder theoretischere Option. Ich halte es zum 
+Beispiel fur fruchtbarer, Theorien nicht mit Einheit 
+anzufangen, sondern mit Differenz, und auch nicht bei 
+Einheit (im Sinne von Versöhnung) enden zu lassen, son-
+dern bei einer, wie soll ich es sagen, besseren Differenz. 
+Deswegen ist zum Beispiel das Verhältnis von Systemen
+9 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 8 ===
+und Umwelt für mich wichtig, und auch der Funktiona-
+lismus, weil er immer bedeutet, daß man Verschiedenes 
+miteinander vergleichen kann. Wenn ich also eine grund-
+legende Intuition angeben kann, würde ich nicht not-
+wendigerweise gerade auf die eben geschilderte, aber auf 
+etwas dieser Art abstellen. Im einzelnen wechselt das für 
+mich periodisch: Mal ist der Funktionsbegriff wichtig, 
+mal die System-Umwelt-Differenz, mal die Selbstrefe-
+renz-Figur, mal die Differenz von Operation und Be-
+obachtung. Als Einstellung zur Forschung steht dahinter 
+die Idee, daß man alles viel besser machen könnte, als 
+es bisher zu lesen ist. Deshalb muß man ein moralisches 
+Urteil oder eine Kritik zurückhalten, bis man sieht, wie 
+man über die moderne Gesellschaft denken kann.
+Versöhnungsphantasien, wie die von Mensch und Natur oder 
+der Menschen untereinander, sind Ihnen vollständig un-
+bekannt?
+Unbekannt natürlich nicht, aber für mein Denken hat das 
+nie eine Rolle gespielt. Ein experimentelles Verhalten ist 
+grundlegend für mein Denken, sowohl im wissenschaft-
+lichen wie übrigens auch im politischen Sinne.
+An Ihrem Denken überrascht die persönliche Teilnahmslosig-
+keit, mit der Sie Theorien konstruieren. Im Marxismus da-
+gegen und in der ihm folgenden theoretischen Tradition sind 
+es gerade solche politisch persönlichen Erfahrungen gewesen, 
+die wissenschaftliches Arbeiten motiviert haben. Herr Luh- 
+IO BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 9 ===
+mann, erklären Sie uns bitte, warum interessiert man sich für 
+Differenz?
+Denken Sie doch einmal an die Situation 1945, wie man 
+sie als lyjähriger erlebt: Vorher schien alles in Ordnung zu 
+sein und hinterher schien alles in Ordnung zu sein, alles 
+war anders und alles war dasselbe. Man hatte vorher seine 
+Probleme mit dem Regime und hinterher war es nicht so, 
+wie man es sich erwartet hatte. Und deshalb war wahr-
+scheinlich auch das juristische Studium für meine Art des 
+Denkens wichtig geworden.
+Wie meinen Sie das? Vor 1945 und nach 1945 war alles anders 
+und war zugleich alles dasselbe?
+Vor 1945 hatte man das doch gehofft, daß nach dem 
+Wegfall des Zwangsapparates alles von selbst in Ordnung 
+sein würde. Das erste jedoch, was ich in der amerikani-
+schen Gefangenschaft erlebte, war, daß man mir meine 
+Uhr vom Arm nahm und daß ich geprügelt wurde. Es 
+war also überhaupt nicht so, wie ich vorher gedacht hatte. 
+Und man sah dann bald auch, daß der Vergleich von 
+politischen Regimen nicht auf der Achse »gut/böse« 
+verlaufen konnte, sondern daß man die Figuren in ihrer 
+begrenzten Wirklichkeit beurteilen muß. Ich will damit 
+natürlich nicht sagen, daß ich die Nazi-Epoche und die 
+Zeit nach 1945 als gleichwertig betrachte. Aber ich war 
+nach 1945 einfach enttäuscht. Aber ob das wirklich so 
+wichtig ist? Auf jeden Fall ist die Erfahrung mit dem
+II BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 10 ===
+Nazi-Regime für mich keine moralische gewesen, son-
+dern eher eine Erfahrung des Willkürlichen, der Macht, 
+der Ausweichtaktiken des kleinen Mannes. Sie sehen, 
+ich habe keinerlei Bedürfnis, auf Einheit hinaus zu den-
+ken, es sei denn, daß ich genau wüßte, welche Differenz 
+denn gemeint ist, deren Einheit formuliert werden soll.
+Neben der Erfahrung mit der Zeit vor und nach 1945 haben 
+Sie das Jurastudium als Argument dafür angeführt, was Ihr 
+Denken besonders beeinflußt hat. Warum ist das Studium der 
+Jurisprudenz, die doch wenig mit theoretischer Systematisie-
+rung zu tun hat, von Bedeutung für ihr Denken gewesen?
+Ich bin sicher, daß man Jura völlig anders studieren kann, 
+als ich es getan habe. Ich habe vor allem römisches Recht 
+studiert und an die Examensnotwendigkeit eher nebenbei 
+gedacht. Mein Interesse war, von Fällen her zu denken 
+und die Fälle in eine bestimmte Ordnung einzubauen. 
+Außerdem war ich besonders an rechtsvergleichenden 
+Fragen interessiert, was in einem gewissen Sinne die 
+Beschäftigung mit der Soziologie vorbereitet, weil man 
+beim Rechtsvergleich auch die verschiedenen Verhältnisse 
+soziologisch erklären können muß.
+Sie haben Jura also nie studiert, um beispielsweise Anwalt zu 
+werden?
+Doch, ursprünglich wollte ich Anwalt werden. Doch als 
+ich dann als Referendar mein Brot bei einem Kleinstadt- 
+Anwalt verdienen mußte, habe ich gesehen, daß das nichts 
+12 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 11 ===
+für mich ist. Besonders hat mich daran gestört, daß man 
+nicht nur einen, sondern sehr viele Vorgesetzte hat, die 
+immer mit ihren unmöglichen Bedürfnissen in die Praxis 
+kommen, und die man dann nicht abweisen kann. Des-
+halb bin ich in die Verwaltung gegangen, weil mir dies — 
+entgegen dem ersten Anschein — mehr Freiheit zu geben 
+schien. Ich habe dann dort auch sehr rasch eine mehr 
+politische Tätigkeit ausgeübt.
+Aus der heutigen Sicht ist das ein sonderbarer Schritt. Für 
+einen Außenstehenden ist es sehr schwierig, in dem Buch 
+»Soziale Systeme« den ehemaligen Verwaltungsbeamten Luh-
+mann wiederzuentdecken. Warum sind Sie nicht gleich nach 
+Studium und Referendariat Wissenschaftler geworden?
+Es gab nichts, was mich an der Universität interessierte. 
+Ich wollte auf keinen Fall Universitätsjurist werden. 
+Unter Universität habe ich mir nur etwas Kleines vor-
+gestellt, etwas, das sich ständig wiederholt.
+Aber als Verwaltungsbeamter haben Sie doch nicht mehr Frei-
+räume gehabt. Was hat der Verwaltungsbeamte Luhmann ge-
+macht?
+Zunächst war ich ein Jahr am Oberverwaltungsgericht 
+Lüneburg zur Organisation eines Referenzsystems für 
+Verwaltungsgerichtsentscheidungen; das Gericht sollte 
+sehen können, was an obergerichtlichen Entscheidungen 
+jeweils vorlag. Zugleich war ich Assistent des Präsidenten 
+und außerdem an verschiedenen Senaten, um alles einmal
+13 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 12 ===
+kennenzulernen. Nach einem Jahr kam ich nach Han-
+nover, wo gerade ein Regierungswechsel stattgefunden 
+hatte und besonders im Bereich der Nazi-Wiedergut-
+machungsfälle Probleme aufgetaucht waren. So kam ich 
+1955 ins Niedersächsische Kultusministerium, zur juri-
+stischen Überprüfung vergangener Sünden. Die Akten 
+müssen noch manchen ironischen Kommentar enthalten.
+Zum Beispiel?
+Zum Beispiel über die Gründe, weshalb man Wiedergut-
+machungs-Bescheide ablehnte, oder warum es nicht her-
+auszubekommen war, ob der Dienstwagen für den Sohn 
+des Ministers angeschafft worden ist. Nach drei Monaten 
+wurde mir dann ein Referat angeboten, in dem ich die 
+ganzen Wiedergutmachungs-Verfahren zu untersuchen 
+hatte. Obwohl ich so manche Jahre im Kultusministerium 
+verbrachte, hatte ich nie ein Interesse daran, eine richtige 
+Dienstlaufbahn als Beamter einzuschlagen. Ich erinnere 
+mich an ein Gespräch mit einem Referenten aus dem 
+Innenministerium, der mir sagte, daß ich nie ein richtiger 
+Beamter werden würde, wenn ich nicht einmal in einem 
+Landkreis tätig gewesen wäre. Meine Antwort war: »Ich 
+lese Hölderlin.« Auf die Dauer wurde mir diese Tätigkeit 
+aber zu belastend. Zunächst konnte ich abends um fünf 
+Uhr meinen Arbeitsplatz verlassen und meinen anderen 
+Interessen zu Hause nachgehen. Das war bei wachsenden 
+Aufgaben bald nicht mehr möglich.
+14 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 13 ===
+Was haben Sie nach fünf Uhr abends, nach dem Ende Ihrer 
+Arbeit, gemacht?
+Viel gelesen und vor allen Dingen begonnen, mit einem 
+Zettelkasten zu arbeiten, also Zettel vollgeschrieben. In 
+den Zetteln habe ich die Literatur, mit der ich mich 
+vorwiegend beschäftigte, verarbeitet, also Soziologie und 
+Philosophie. Damals habe ich vor allem Descartes und 
+Husserl gelesen. In der soziologischen Theorie hat mich 
+der frühe Funktionalismus beschäftigt, die Theorien von 
+Malinowski und Radcliffe-Brown; dies schloß ein, daß 
+ich mich auch sehr stark mit Kulturanthropologie und 
+Ethnologie befaßte. Die deutsche philosophische Anthro-
+pologie hingegen habe ich nie gemocht. Erwähnen muß 
+ich noch ein Interesse an Kant, während Hegel und Marx 
+mich damals so gut wie gar nicht interessierten.
+Nach Ihrem Besuch der Harvard-Universität verließen Sie die 
+Verwaltung in Hannover. Gab es dort in Harvard ein Schlüs-
+selerlebnis, das Sie zu diesem Entschluß bewog?
+Nein, das kann man nicht sagen. Als ich nach Harvard 
+ging, hatte ich vor, ein Buch über Organisationstheorie 
+zu schreiben, das dann später auch unter dem Titel Funk-
+tionen und Folgen formaler Organisation erschienen ist. Ge-
+lernt habe ich in Harvard, mich in die Architektur der 
+Parsonsschen Theorie einzuarbeiten, von der ich viel 
+gelernt habe. Bevor ich nach Harvard ging, hatte ich eine 
+Konzeption des Funktionsbegriffs, die völlig mit derjeni- 
+15 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 14 ===
+gen Parsons’ kollidierte. Darüber haben wir damals sehr 
+viel diskutiert, jedoch war seine Antwort immer stereo-
+typ: »It fits quite nicely.« So brachte er meine Ideen in 
+seiner Theorie unter, während ich den Eindruck hatte, 
+dadurch entsteht etwas ganz anderes. Ich hatte die Vor-
+stellung, daß eine Funktion nicht von Strukturen ab-
+hängig, sondern nur ein auswechselbarer Gesichtspunkt 
+ist (funktionale Äquivalenz). Nach meiner Vorstellung 
+waren vielfältige Möglichkeiten, die different, aber doch 
+funktionsgleich sind, von Interesse. Sie sehen, daß ich 
+überhaupt keine sensationellen Schlüsselerlebnisse be-
+richten kann. Was mich hauptsächlich interessiert hat, 
+ist, wie so eine große Theorie wie die von Parsons gebaut 
+ist und woran sie scheitert, wenn sie scheitert. Ich hatte 
+damals guten persönlichen Kontakt zu Parsons.
+Einem Biographen machen Sie es mit solchen Antworten nicht 
+gerade leicht.
+Eine Biographie ist eine Sammlung von Zufällen, das 
+Kontinuierliche besteht in der Sensibilität für Zufälle. 
+Insofern kann man auch bezüglich meiner Biographie 
+von einer Kette von Zufällen sprechen: der politische 
+Umbruch 1945, den ich mit offenen Augen erlebte; das 
+Jurastudium, in dem man eine Reihe von Organisations-
+tricks lernte und zugleich eine Art Augenmaß, was mich, 
+nebenbei gesagt, für immer für Selbstverwaltung in Uni-
+versitäten verdorben hat; und dann natürlich die Beschäf- 
+16 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 15 ===
+tigung mit Parsons und Husserl, also die Zusammen-
+schließung von Sinnanalyse und Funktionsbegriff.
+Warum sind Sie für die Selbstverwaltung an den Universitäten 
+untauglich?
+Ich finde, daß man es in diesem Zusammenhang aus-
+schließlich mit Bagatellen zu tun hat, die ihre Bedeutung 
+nur dadurch gewinnen, daß andere sich darüber aufregen. 
+Man kann Entscheidungen nicht delegieren. Eine Aus-
+schußsitzung entsteht aus der anderen, und niemand 
+glaubt einem, wenn man sagt, daß alles viel einfacher zu 
+erledigen wäre.
+Als Sie dann an die Verwaltungshochschule in Speyer gingen, 
+hatten Sie den Wunsch entwickelt, Professor zu werden?
+Eine Verwaltungstätigkeit auch in höheren Positionen 
+wiederholt sich nach einiger Zeit, so daß ich mich nach 
+Möglichkeiten umsah, diesen Tätigkeitsbereich zu verlas-
+sen. Ich wollte mehr Zeit für meine theoretischen Inter-
+essen gewinnen, was aber nicht bedeutet, daß ich Uni-
+versitätsprofessor werden wollte. Was mir vorschwebte, 
+war, Wissenschaftler zu werden. Bei dieser Vorstellung 
+war der Gedanke keineswegs entscheidend gewesen, daß 
+Wissenschaft eine praktische Bedeutung haben könnte. 
+Ich habe nicht die Vorstellung, daß es wissenschaftliche 
+Erkenntnisse gibt, die auf die Praxis angewendet werden 
+könnten. Die Praxis, zum Beispiel ein Ministerium, ist für 
+mich ein nach einer eigenen Logik verlaufendes System, 
+17 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 16 ===
+das sich aneignet, was in der wissenschaftlichen Umwelt 
+für es interessant ist. Sie sehen, daß ich keine anwen-
+dungsorientierte Theorie im Sinne habe. Vielmehr fas-
+ziniert mich die Idee, daß eine Theorie wie eine Praxis 
+komplizierter wird, wenn man ihr die Möglichkeit läßt, 
+ihre eigenen Aussagen nach ihren eigenen Standards zu 
+verbessern.
+Aber Sie sind doch in praktischen Instituten tätig?
+In letzter Zeit ganz wenig. Früher hatte ich eher als heute 
+Gelegenheit, in Kommissionen in Bonn tätig zu sein. Ich 
+habe aber immer darauf insistiert, daß eine Kommission 
+Gelegenheit haben müßte, politische Zwischenentschei-
+dungen zu bekommen. Bevor man also etwas ausarbei-
+tet, hätte man den Minister oder den entscheidenden 
+Beamten fragen müssen, wollt ihr diesen oder jenen Kurs 
+haben. Dieses Denken in Alternativen läuft jedoch allen 
+Gewohnheiten entgegen, so daß ich es zunehmend ab-
+gelehnt habe, in solchen Kommissionen mitzuarbeiten.
+Was Sie erzählen, Herr Luhmann, läßt die an Ihnen häufig 
+geübte Kritik, Ihre Theorie diene zur Rechtfertigung des Be-
+stehenden, als nicht sehr fundiert erscheinen. Wie sehen Sie 
+das?
+Die Kritik ist sicher unberechtigt und auch uninformiert. 
+Ich war zum Beispiel einmal in einer Kommission zur 
+Beamtenreform, in der sowohl die konservative wie die 
+progressive Position undurchsetzbar waren. Ich habe viel 
+18 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 17 ===
+Zeit auf die Mitarbeit an der Ausarbeitung einer ganz 
+neuartigen Konstruktion des öffentlichen Dienstes ver-
+wendet, die dann zwar von der Kommission, nicht aber 
+von der Regierung akzeptiert wurde. Sie sehen, meine 
+politische Tätigkeit war völlig umsonst, ich habe nur 
+versucht, das in die Zusammensetzung der Kommission 
+einprogrammierte politische Patt zu unterlaufen. In die-
+sem Zusammenhang machte ich die Erfahrung, wie wenig 
+die Politik in der Lage ist, strukturelle Alternativen zu 
+sehen und die Konsequenzen für eine politische Position 
+zu durchdenken. Das hat natürlich meine Einschätzung, 
+daß das politische System einer eigenen Logik folgt, 
+bestärkt. Ich hatte dann später noch einmal mit der 
+CDU zu tun, als sie ihr Grundsatzprogramm diskutierte, 
+das war aber eine reine Wertphilosophie, bei der es mir 
+nicht gelang, die Problematik auf eine Realitätsdiagnose 
+zu lenken. Ein Programm muß doch die Gesellschaft 
+beschreiben, wie sie ist, statt nur Werte zu benennen, 
+die jedermann für gut hält. Die CDU merkte natürlich, 
+daß meine Vorschläge nicht als Wahlplattform funktio-
+nierten, weil die SPD die gleichen Werte hatte. Bei mei-
+nen politischen Kontakten ist also nicht viel heraus-
+gekommen.
+Sie sind nicht für eine politische Partei zu vereinnahmen?
+Nein. In den sechziger Jahren habe ich eher mit der SPD, 
+insbesondere der Arbeitsgemeinschaft Sozialdemokrati-
+19 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 18 ===
+scher Juristen, Kontakt gehabt, später dann eher mit der 
+CDU. Prinzipiell bin ich der Meinung, daß man sich 
+politisch stets aufgeschlossen und zur Mitarbeit bereit 
+verhalten sollte. Nur: Die Beschränkungen, die die Poli-
+tik setzt, sind für Wissenschaftler sehr groß, und für 
+die Praxis beginnt die Unmöglichkeit oft dort, wo der 
+Wissenschaftler noch nicht einmal ernsthafte Schwierig-
+keiten sieht.
+Herr Luhmann, wir sehen nicht die Differenz zwischen Pro-
+gramm und Analyse, weil jedem Programm doch die Analyse 
+eines bestimmten gesellschaftlichen Zustands zugrunde liegt. 
+Meinen Sie, daß Sie die Welt objektiv sehen?
+Ich meine, daß in der Politik realitätsbezogene Fragen ge-
+stellt werden müssen. Also, man kann doch zum Beispiel 
+vor einer Wahl Politiker fragen, ob sie die Wirtschafts-
+strukturen als eine keynesianische oder eine monetari-
+stische interpretieren, das sind doch realitätsbezogene 
+Fragen. Ich möchte hingegen nicht wissen, daß die Poli-
+tiker für Gleichheit und Freiheit sind. Mich würde etwa 
+auch interessieren, was Politiker meinen, was sie nicht tun 
+können.
+Wir verstehen eines nicht: Als Privatperson folgen Sie täglich 
+einer Reihe von normativen Orientierungen, zum Beispiel in 
+der Erziehung Ihrer Kinder. Wenn Sie sich jedoch als gesell-
+schaftliches Individuum begreifen, dann wollen Sie sich von 
+normativen Orientierungen, von Wertvorstellungen nicht lei-
+ten lassen. Wie ist dieser Widerspruch zu erklären; sind Ihnen 
+20 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 19 ===
+Gedanken, daß der Wissenschaftler eine Verpflichtung zu mo-
+ralischen Stellungnahmen hat, fremd?
+Ja und nein. Sicherlich schließe ich nicht von meinen 
+Privatvorstellungen auf öffentliche Angelegenheiten, aber 
+andererseits habe ich auch gewisse Empfindlichkeiten, 
+die meine politischen Orientierungen bestimmen. Zum 
+Beispiel bin ich persönlich irritiert, wenn Politiker das 
+Recht nicht vollstrecken, wenn sie zum Beispiel die Haus-
+besetzerszene aus bestimmten politischen Gründen lau-
+fen lassen. Ich hätte nichts dagegen, daß man das Recht so 
+ändert, daß Hausbesetzung legal wird, aber aus politi-
+schen Erwägungen Recht nicht zu vollstrecken, halte ich 
+nicht für richtig. Eine solche politische Einstellung hängt 
+mit meinen persönlichen Interessen zusammen, daß ich 
+wissen möchte, ob ich meine Rechte durchsetzen kann 
+oder nicht. Lassen Sie mich ein anderes Beispiel erzählen. 
+Ich hörte einmal in einem Gespräch mit Wahlkampf-
+planern, daß man Reden nicht so kompliziert machen 
+dürfe, weil die Leute nur wissen wollen, wer die Guten 
+und wer die Bösen sind. Die politische Gegenpartei so zu 
+betrachten, finde ich außerordentlich undemokratisch, 
+weil eine Opposition moralisch immer akzeptabel sein 
+muß. Auch in der Bonner Politik irritiert mich persön-
+lich der Moralismus in der Beschreibung des politischen 
+Gegners. Es stört mich theoretisch, keine Wahlmöglich-
+keiten mehr zu haben. In Amerika zum Beispiel wird diese 
+Grenze immer deutlich respektiert: McCarthy, der in
+21 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 20 ===
+den fünfziger Jahren die Grenze überschritten hatte, war 
+damit erledigt. Sie sehen, daß es bei mir also schon 
+deutlich personalisierbare Attitüden gibt, die jedoch nur 
+einen relativ schmalen Bereich ausmachen. Ich denke aber, 
+daß ich derartige Meinungen, die mich zum Beispiel als 
+politischen Wähler leiten, von Problemen der Theorie-
+konstruktion unterscheiden kann, die mich als Wissen-
+schaftler interessieren.
+Sie haben aber doch sicherlich Vorstellungen, wie eine Gesell-
+schaft am besten aussehen sollte?
+Nein. Ich habe viele Fragen, zum Beispiel die, ob eine 
+starke Verflechtung von Banken und Produktionsunter-
+nehmen günstig ist. Ich finde etwa das amerikanische 
+System besser. Aber eine Vorstellung, wie die Gesellschaft 
+gut oder auch nur besser sein könnte, habe ich gar nicht. 
+Ich finde, daß unsere Gesellschaft mehr positive und mehr 
+negative Eigenschaften hat als jede frühere Gesellschaft 
+zuvor. Es ist heute also zugleich besser und schlechter. 
+Das kann man viel zutreffender als üblich beschreiben, 
+aber nicht zu einem Gesamturteil aufaddieren.
+Daß Sie keine gesellschaftlichen Utopien haben, will uns, wenn 
+auch mit viel Mühe, einleuchten. Sie haben aber doch sicher-
+lich persönliche Wünsche und Tagträume, die auftauchen, 
+wenn Ihnen dort draußen auf dem schönen Balkon einmal 
+nichts einfällt?
+Überhaupt nicht. Ich mag Sonne, zum Beispiel. Ich mag 
+gerne in der Sonne arbeiten. Ich habe Präferenzen für 
+22 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 21 ===
+eine bestimmte Art von Musik und Kunst, aber wenn ich 
+mir etwas wünsche, dann ist es mehr Zeit. Das einzige, 
+was mir wirklich ein Ärgernis ist, das ist dieser Mangel 
+an Zeit. Ich weiß nicht, ob es eine Utopie ist, unbegrenzt 
+Zeit zu haben. Ich könnte mir also vorstellen, daß für 
+mich der Tag 30 Stunden hat, für den anderen dagegen 
+nur 24. Die anderen müßten dann immer schon schlafen, 
+wenn ich noch alles mögliche tue.
+Also weder die Privatperson noch das politische Individuum 
+Luhmann hat eine Utopie?
+Es fällt mir schwer, Wünsche zu haben. Man möchte 
+natürlich so viel Geld haben, daß man nicht über jeden 
+neuen Zahn oder jeden neuen Reifen viel nachdenken 
+muß. Aber abgesehen davon...
+Können Sie sich nicht vorstellen, etwas ganz anderes zu tun, 
+zum Beispiel künstlerisch tätig zu sein?
+Ich würde ganz gerne noch andere Sachen studieren, zum 
+Beispiel Mathematik und Wirtschaftswissenschaften.
+Etwas ganz anderes also nicht.
+Nein.
+Einmal in Ihrem Leben jedoch haben Sie etwas ganz anderes 
+begonnen. Sie sind vom Verwaltungsbeamten zum Professor 
+geworden.
+Ja, das stimmt. Aber im Augenblick stellen sich solche 
+Fragen für mich nicht aktuell. Ich könnte mir jedoch vor-
+23 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 22 ===
+stellen, daß ich in Schwierigkeiten käme, wenn mir je-
+mand ein politisches Amt anbieten würde. Aber mit sol-
+chen Gedanken beschäftige ich mich überhaupt nicht.
+Können wir noch einmal zu Ihrer Tätigkeit an der Verwal-
+tungshochschule in Speyer und dem Beginn als Professor für 
+Soziologie zurückkommen? Herr Luhmann, Sie sind mit 
+39 Jahren promoviert worden, haben sich zur gleichen Zeit 
+habilitiert und sind sofort darauf Professor für Soziologie 
+an der Universität Bielefeld geworden. Ist das nicht eine un-
+gewöhnliche wissenschaftliche Karriere?
+Soziologie studieren mußte ich übrigens auch noch, denn 
+ich hatte ja bisher nur Jurisprudenz gelernt. Die prak-
+tische Schwierigkeit bestand darin, daß ich nie Assi-
+stent gewesen war, sondern Oberregierungsrat, und viele 
+technische Probleme auftauchten, als es darum ging, 
+mich zum Professor zu machen. Persönlich habe ich mich 
+dann aber auf diese berufliche Wandlung eingelassen. An 
+einem Lehrstuhl für Soziologie war ich deshalb beson-
+ders interessiert, weil man als Soziologe alles machen 
+kann, ohne auf einen bestimmten Themenbereich fest-
+gelegt zu sein. Meine Hoffnung bestand darin, daß mit 
+Bielefeld eine forschungsintensive Universität entstehen 
+würde.
+Hat sich diese Hoffnung erfüllt?
+Nein, leider nein. Es ist eine ganz normale Universität 
+geworden.
+24 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 23 ===
+Dennoch ist es Ihnen an dieser Universität gelungen, 150 Auf-
+sätze und 30 Bücher zu schreiben. Wie macht man so etwas in 
+15 Jahren?
+Na, das sind nun bald 20 Jahre. Ich habe bei Büchern und 
+Aufsätzen keine Perfektionsvorstellung, so wie manche, 
+die meinen, bereits bei dem ersten Buch ein endgültiges 
+Werk schreiben zu müssen. Was ich bisher geschrieben 
+habe, ist alles noch Nullserie der Theorieproduktion — 
+mit Ausnahme vielleicht des zuletzt erschienenen Buches 
+Soziale Systeme.
+Das ist Ihre erste richtige Publikation?
+Ja, es ist jedenfalls der Ausgangspunkt für die Publikatio-
+nen aus dem Nachlaß, wenn man so will. Dieses Buch 
+werde ich so rasch nicht verwerfen, obwohl ich auch jetzt 
+schon wieder manches anders machen würde. Als Antwort 
+auf Ihre Frage nach dem Umfang der Publikationstätig-
+keit kommt aber vor allem meine Zettelkastentechnik als 
+Erklärung hinzu. Ich denke ja nicht alles allein, sondern 
+das geschieht weitgehend im Zettelkasten.
+Ihre Bücher schreiben sich von selbst, sagen Sie an einer Stelle 
+Ihres neuen Buches. Können Sie uns dieses Geheimnis ver-
+raten?
+Der Zeitaufwand besteht für mich im wesentlichen darin, 
+ein Manuskript zu tippen. Wenn ich es einmal geschrie-
+ben habe, dann nehme ich in der Regel keine Revision 
+mehr vor, mit Ausnahme übrigens an dem letzten Buch, 
+25 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 24 ===
+an dem ich auch sehr stark stilistisch gearbeitet habe. 
+Meine Produktivität ist im wesentlichen aus dem Zettel-
+kastensystem zu erklären. Es sind übrigens schon viele 
+Leute hierher gekommen, um sich das anzusehen. Mit 
+dem Zettelkasten habe ich bereits während des Studiums, 
+Anfang der fünfziger Jahre, begonnen zu arbeiten. Wenn 
+ich Ihnen das kurz erklären darf: Alle Zettel haben eine 
+feste Nummer, es gibt keine systematische Gliederung, 
+der Zettelkasten ist also nicht systematisch geordnet. 
+Hinter diesen einzelnen Nummern gibt es dann Unter-
+abteilungen, zum Beispiel a, b, c, ai, a2, a3 usw., das geht 
+manchmal bis zu zwölf Stellen. Ich kann dann von jeder 
+Nummer auf jede andere Stelle in dem Zettelkasten ver-
+weisen. Es gibt also keine Linearität, sondern ein spin-
+nenförmiges System, das überall ansetzen kann. In der 
+Entscheidung, was ich an welcher Stelle in den Zettel-
+kasten hineintue, kann damit viel Belieben herrschen, 
+sofern ich nur die anderen Möglichkeiten durch Verwei-
+sung verknüpfe. Wenn man das immer macht, entsteht 
+eine innere Struktur, die auf diese Weise nie hineingege-
+ben worden ist, die man dann aber herausziehen kann. 
+Der Zettelkasten kostet mich mehr Zeit als das Bücher-
+schreiben.
+Was steht auf so einem Zettel drauf ?
+Im wesentlichen eigene Gedanken, manchmal auch Zitate, 
+aber das geschieht ganz selten. Es gibt zwar in dem 
+26 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 25 ===
+Zettelkasten auch Literaturhinweise, aber für Literatur 
+habe ich zwei getrennte Systeme, von denen aus wiederum 
+auf den Zettelkasten verwiesen wird.
+Sie verschwenden, wenn wir das richtig verstanden haben, nie 
+einen Gedanken; alles, was Ihnen durch den Kopf gegangen 
+ist, geht sofort in den Zettelkasten?
+Ja, wenngleich nicht alles, was ich in dem Zettelkasten 
+gesammelt habe, später dann auch verwendet wird.
+Wenn Sie nun einen Aufsatz zu schreiben beginnen, wie setzen 
+Sie dann Ihren Zettelkasten in Funktion?
+Da mache ich mir zunächst einen Plan für das, was ich 
+schreiben will, und hole dann aus dem Zettelkasten das 
+heraus, was ich gebrauchen kann.
+Im Gegensatz zu einem Baumeister, der ausschließlich vor-
+gefertigte Teile zusammenmontiert, muß ein Wissenschaftler 
+doch auch neue Ideen haben, die nicht bereits in den einzelnen 
+Teilen enthalten sind. Solche Ideen kommen ja nicht aus einem 
+Zettelkasten?
+Doch. Ich habe zum Beispiel eine große Menge von 
+Zetteln zum Begriff »funktionale Differenzierung«, ich 
+habe ebenfalls eine Reihe von Notizen über »selbstrefe-
+rentielle Systeme«, und ich habe einen großen Komplex 
+von Notizen über »Binarität«. Im Augenblick sitze ich an 
+einem Vortrag über ökologische Probleme in modernen 
+Gesellschaften, und meine Arbeit besteht darin, Zettel 
+27 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 26 ===
+aus den skizzierten drei begrifflichen Bereichen zu sichten 
+und so zu kombinieren, daß ich etwas Substantielles zu 
+diesem Thema sagen kann. Die neuen Ideen ergeben sich 
+dann aus den verschiedenen Kombinationsmöglichkeiten 
+der Zettel zu den einzelnen Begriffen. Ohne die Zettel, 
+also allein durch Nachdenken, würde ich auf solche Ideen 
+nicht kommen. Natürlich ist mein Kopf erforderlich, um 
+die Einfälle zu notieren, aber er kann nicht allein dafür 
+verantwortlich gemacht werden. Insofern arbeite ich wie 
+ein Computer, der ja auch in dem Sinne kreativ sein kann, 
+daß er durch die Kombination eingegebener Daten neue 
+Ergebnisse produziert, die so nicht voraussehbar waren. 
+Diese Technik, so glaube ich, erklärt auch, warum ich 
+überhaupt nicht linear denke und beim Bücherschreiben 
+Mühe habe, die richtige Kapitelfolge zu finden, weil 
+eigentlich ja jedes Kapitel in jedem anderen Kapitel wie-
+der vorkommen müßte. Mein neues Buch Soziale Systeme 
+habe ich so immer wieder umgebaut und erst ziemlich 
+spät die Entscheidung getroffen, die Systemtheorie ab-
+strakt unter einem besonderen Kapitel nach vorne zu 
+ziehen.
+Wie lange haben Sie an Ihrem letzten Buch geschrieben?
+Konzipiert und geschrieben habe ich es im wesentlichen 
+in einem Jahr. Aber natürlich hat es dann noch mal vor 
+allem stilistische Überarbeitungen gegeben.
+28 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 27 ===
+Wieviele Stunden am Tag schreiben Sie?
+Na ja, das ist unterschiedlich. Wenn ich nichts weiter zu 
+tun habe, dann schreibe ich den ganzen Tag: morgens von 
+830 Uhr bis mittags, dann gehe ich kurz mit meinem 
+Hund spazieren, dann habe ich noch einmal nachmittags 
+von 14.00 Uhr bis 16.00 Uhr Zeit, dann ist wieder der 
+Hund an der Reihe. Manchmal lege ich mich auch eine 
+Viertelstunde hin, ich habe mir angewöhnt, mich ganz 
+konzentriert auszuruhen, so daß ich nach kurzer Zeit 
+wieder arbeiten kann. Ja, und dann schreibe ich in der 
+Regel abends noch bis gegen 23.00 Uhr. Um 23.00 Uhr 
+liege ich meistens im Bett und lese noch ein paar Dinge, 
+die ich zu dieser Zeit noch verdauen kann. — Ich muß 
+Ihnen sagen, daß ich nie etwas erzwinge, ich tue immer 
+nur das, was mir leichtfällt. Ich schreibe nur dann, wenn 
+ich sofort weiß, wie es geht. Wenn ich einen Moment 
+stocke, lege ich die Sache beiseite und mache etwas an-
+deres.
+Was machen Sie dann?
+Na, andere Bücher schreiben. Ich arbeite immer gleich-
+zeitig an mehreren verschiedenen Texten. Mit dieser Me-
+thode, immer an mehreren Dingen zu arbeiten, habe ich 
+nie Blockierungen.
+Sie sitzen also niemals einen Tag da, ohne etwas zu schreiben?
+Wenn ich zu Hause bin, nein.
+29 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 28 ===
+Arbeit ist für Sie also keine Mühsal, an deren Ende eine Be-
+lohnung durch Nichtarbeit steht?
+Nein, das kenne ich überhaupt nicht. Es ist eher so, daß 
+sich meine Gedanken überschlagen und ich am liebsten 
+an mehreren Dingen zugleich arbeiten würde.
+Haben Sie schon einmal das Gefühl gehabt, für Ihre Arbeit 
+Opfer zu erbringen, also das Gefühl, etwas zu versäumen?
+Nein, eher umgekehrt. Ich habe häufig das Gefühl, eine 
+Problematik noch nicht exakt genug begriffen zu haben. 
+Wenn ich schreibe, habe ich nicht das Gefühl, etwas zu 
+versäumen, während es mir bei Auslandsreisen häufig so 
+geht, daß ich nach einer gewissen Zeit denke, ich müsse 
+jetzt zurück, um weiter zu schreiben.
+Sie erwähnen überhaupt nicht Beziehungen zu anderen Men-
+schen, zu Ihrer Frau, zu Ihren Kindern. Woran liegt das?
+Meine Frau ist gestorben, mein bester Freund ist ge-
+storben; meine Kinder sind ein wesentlicher Teil meines 
+Lebens. Mit ihnen und der ganzen Jugendkultur um sie 
+herum lebe ich hier zusammen. Aber die Menschen mei-
+nes Alters, die ich gern hatte, die habe ich verloren, die 
+sind schwer zu ersetzen.
+Sie leben seitdem mit Ihren drei Kindern alleine hier in Oer-
+linghausen?
+Ja, die Kinder sind durch die Bedingungen ihres Auf-
+wachsens von Anfang an sehr selbständig gewesen. Nach 
+30 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 29 ===
+dem Tod meiner Frau bin ich höchstens einmal für zwei 
+bis drei Tage ins Ausland geflogen und dann sofort wie-
+der zurückgekommen, um nach dem Rechten zu sehen. 
+Heute haben wir eine Haushaltshilfe, die viermal die 
+Woche kommt und uns etwas kocht.
+Dürfen wir noch ein Stück weiter in Ihrer Lebensgeschichte 
+zurückgehen? In welchem Elternhaus sind Sie groß geworden, 
+was waren also die emotionalen Bedingungen, die es Ihnen 
+ermöglichten, eine so außerordentliche Intelligenz zu entwik- 
+keln?
+Väterlicher- wie mütterlicherseits haben nie die ersten 
+Söhne studiert, studieren durften nur die, die nicht zu 
+Hause bleiben konnten. Mein Vater, der nie studiert hat, 
+hat die Brauerei und Mälzerei seines Vaters in einem 
+Moment übernommen, in dem es nicht mehr wirtschaft-
+lich war. Wir konnten zwar von diesen Einnahmen leben, 
+aber es war immer eine gewisse finanzielle Problematik 
+da. Mein Vater bekam dann mit den Nationalsozialisten 
+Probleme, so daß im Elternhaus immer eine nicht ganz 
+durchsichtige Distanz zu spüren war. Meine Mutter war 
+Schweizerin, die auch nichts mit Wissenschaft zu tun 
+hatte. Ich hatte aber insofern ein sehr tolerantes Eltern-
+haus, als ich selbst entscheiden konnte, was ich wollte. 
+Es gab keine Vorstellungen über die Angemessenheit der 
+Berufswahl. Von der Familientradition her war Studieren 
+nichts Selbstverständliches; die, die nichts erben konnten, 
+die mußten halt studieren. Meine Mutter stammte aus
+31 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 30 ===
+einer Hotelierfamilie, für die selbstverständlich war, daß 
+man für die zweiten und dritten Söhne auch noch Hotels 
+baute. Auch meine beiden Brüder haben nicht studiert.
+Sie haben also überhaupt keine unmittelbaren Anregungen für 
+Ihre spätere Tätigkeit als Soziologe und Philosoph bekommen. 
+Wie würden Sie dann erklären, daß diese Gebiete für Sie zur 
+lebensgeschichdichen Leidenschaft geworden sind?
+Ich weiß es nicht. Vielleicht lag das an der Freiheit in 
+meinem Elternhaus; was man gut machte, wurde für gut 
+befunden.
+In der Schule waren Sie dann sicherlich der Klassenbeste?
+Nein, ich hatte eine Klasse übersprungen, weil meine 
+Großmutter in der Zeitung gelesen hatte, daß so etwas 
+möglich sei. Auf diese Weise bin ich übrigens mit 15 Jah-
+ren schon Luftwaffenhelfer geworden, während die an-
+deren das erst mit 16 Jahren machen mußten. Aber sonst 
+kann ich nichts furchtbar Interessantes berichten. Ich 
+glaube übrigens nicht an eine Determiniertheit von Le-
+bensgeschichten. Biographien sind mehr eine Kette von 
+Zufällen, die sich zu etwas organisieren, das dann all-
+mählich weniger beweglich wird.
+Sehen Sie von diesen knappen biographischen Daten aus, die 
+Sie uns geschildert haben, einen Zusammenhang zu Ihrer 
+Arbeitsform, der Arbeit mit dem Zettelkasten?
+Nein. Ich habe den Zettelkasten aus der simplen Über-
+legung heraus angefangen, daß ich ein schlechtes Gedächt-
+32 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 31 ===
+nis habe. Zunächst einmal hatte ich Zettel in Bücher 
+gelegt, auf die ich mir Notizen machte, auf diese Weise 
+gingen die Einbände der Bücher kaputt. Dann habe ich 
+mir mit Mappen geholfen, als die jedoch dicker wurden, 
+fand ich nichts mehr in ihnen. Ab 1952 oder 1953 begann 
+ich dann mit meinem Zettelkasten, weil mir klar wurde, 
+daß ich fur ein Leben planen müsse und nicht für ein 
+Buch.
+Mit 25 Jahren war Ihnen klar, daß Sie fiir ein Leben planen 
+müßten?
+Ja, ich wollte Wissen ansammeln und mir Kombinations-
+möglichkeiten erschließen. In gewisser Weise ist so der 
+Zettelkasten eine Reduktion zum Aufbau von Komple-
+xität. Wenn ich etwa ein Buch lese, gehe ich folgender-
+maßen vor: Ich habe immer einen Zettel zur Hand, auf 
+dem ich mir die Ideen bestimmter Seiten notiere. Auf der 
+Rückseite halte ich die bibliographischen Angaben fest. 
+Wenn ich das Buch durchgelesen habe, dann gehe ich 
+diese Notizen durch und überlege, was für welche bereits 
+geschriebenen Zettel wie auswertbar ist. Ich lese also 
+immer mit einem Blick auf die Verzettelungsfähigkeit von 
+Büchern. Vielleicht handelt es sich bei mir da einfach um 
+einen Sammeltrieb. Wenn ich nun mit meinem Zettel-
+kasten Theorien formuliere, dann bin ich dennoch nicht 
+der Überzeugung, daß dies die Vorbereitung für eine rich-
+tige Realitätswahrnehmung ist, sondern höchstens für 
+eine Wahrnehmung, von der dann Folgeentscheidungen
+33 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 32 ===
+abhängen, die, wenn sie falsch sind, wenigstens richtig 
+falsch sind. Insofern konstruiert die Theorie ihre eigene 
+Nichtbeliebigkeit in sich selbst. Die gängigen wissen-
+schaftstheoretischen Vorschriften, die festlegen, wie man 
+denken muß, sind für mich schwer zu akzeptieren.
+Ihre Theorie, Herr Luhmann, ist also mehr am Ausprobieren 
+verschiedener Alternativen orientiert als am Begründen vorher 
+formulierter Standpunkte. Dennoch verstehen wir nicht, wie 
+Sie ohne normative Orientierungen arbeiten können, wenn Sie 
+Vorschläge für politische Reformen, die Sie doch auch hin 
+und wieder machen, vorlegen. Ist für Sie die Stabilität einer 
+Organisation der Wertmaßstab, an dem Sie Ihre Vorschläge 
+ausrichten?
+Lassen Sie mich das an Hand eines Beispiels beantworten, 
+an Hand eines Konzepts für eine Beamtenreform. Aus-
+gangspunkt für diesen Vorschlag waren Defekte in der 
+existierenden Struktur des Beamtenapparates. Während 
+meiner Tätigkeit in dem Ministerium konnte ich beob-
+achten, daß die Beförderungspolitik in einer Verwaltung 
+nicht daran orientiert ist, wie man Menschen in ihrer 
+produktivsten Lebensphase, zwischen 40 und 55 Jahren, 
+am besten beschäftigen, sondern wie man sie am einfach-
+sten in eine günstige Rentenlage befördern kann. So wur-
+den etwa Beamte mit 63 Jahren zum Amtsrat befördert, 
+um kurz darauf in Pension zu gehen und diese Stelle für 
+nachrückende Beamte freizumachen. Eine solche Politik 
+ist nicht an der optimalen Beschäftigung von mensch- 
+34 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 33 ===
+liehen Qualifikationen orientiert, sondern von einem Ver-
+sorgungsgedanken geprägt: Jeder soll das Gefühl haben, 
+einmal Amtsrat zu werden. Ein zweites Beispiel: Es ist 
+bei uns nicht vorstellbar, daß Beamte — wenn es die Um-
+stände erfordern — zurückgestuft werden und bei besseren 
+Bedingungen wieder in ihre ursprünglichen Positionen 
+gelangen. Statt dessen werden sie, wenn man keine Ver-
+wendung mehr für sie hat, auf derselben Ebene in eine 
+Art Quasiruhestand geschickt. In Amerika ist das ganz 
+anders. Dort ist das Auf- und Abstufen eine Normalität, 
+die nicht als moralisch verwerflich gilt. Ein solcher Vor-
+schlag aber, wie die Normalisierung des Auf und Ab, ist 
+jedoch an der Starrheit des Beamtenapparats gescheitert. 
+Mein Denken ist nun nicht darauf gerichtet, das eine 
+oder andere Modell für unbedingt richtig zu erklären, 
+sondern mir geht es darum, verschiedene Alternativen auf 
+ihre Voraussetzungen und Folgen hin zu durchdenken. 
+Diese Form des Denkens bestimmt auch mein gesamtes 
+Wissenschaftsprogramm. Ausgangspunkt meines Den-
+kens ist eine Überlegung wie die folgende: Wenn man 
+eine Gesellschaft einmal in einer bestimmten Weise sähe, 
+dann interessiert mich, welche Konsequenzen das hätte.
+Wie kann man Alternativen diskutieren, ohne Vorstellungen 
+darüber im Kopf zu haben, was man als gut oder richtig emp-
+findet?
+Das kann ich nicht für alle Fragen eindeutig beantworten. 
+Wenn ich etwa an die Beamtenpolitik denke, dann habe
+35 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 34 ===
+ich da völlig andere Vorstellungen, als wenn ich mir ein 
+Konzept für eine Bankenpolitik überlegen müßte. Als all-
+gemeinen Gedanken kann man vielleicht festhalten, daß 
+mir strukturell erzeugte Defekte in der Realität als ver-
+meidbar erscheinen — unter Inkaufnahme freilich von 
+anderen Defekten, die nicht sichtbar sind, weil die Alter-
+native noch nicht existiert. Diese Art des Denkens halte 
+ich für überhaupt nicht konservativ.
+Das leuchtet ein. Wie aber kommt dann die Kritik an Ihnen, 
+Sie würden eine konservative Theorie formulieren, zustande?
+Mein Eindruck ist der, daß die progressive Seite mit be-
+stimmten Theoriefiguren besetzt ist, und was nicht in 
+diese Theoriefiguren paßt, ist dann das Gegenteil von 
+progressiv, also konservativ. Dieses Stereotyp kommt aus 
+einer Selbsteinschätzung derjenigen, die es mir auferlegen. 
+Ich hingegen habe den Eindruck, daß in der Frankfurter 
+Schule ein Moralkonservativismus oder eine alteuro-
+päische Konfiguration noch eine Rolle spielt. Aber im 
+Grunde genommen finde ich diese Figur nicht sehr be-
+deutsam. Wenn man wirklich konservativ ist, dann müßte 
+man heute enorm viel ändern, um angesichts der vielfälti-
+gen Veränderungen etwas zu bewahren. Wie kann man in 
+einer solchen Situation sinnvollerweise von »konservativ« 
+reden?
+Wenn Sie sich einmal den Zeitraum der nächsten zehn Jahre 
+vor Augen halten, was würden Sie als die drängendsten gesell-
+schaftspolitischen Probleme bezeichnen?
+36 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 35 ===
+Auch hier habe ich Schwierigkeiten, einen einzelnen 
+Punkt besonders hervorzuheben. Ich finde eher, daß in 
+der bisherigen Diskussion bestimmte Punkte unterbelich-
+tet sind, weshalb ich immer die Neigung habe, andere zu 
+nennen, als sie augenblicklich in aller Munde sind. Wenn 
+ich also nicht die Friedenspolitik an erster Stelle nenne, 
+dann keineswegs deshalb, weil ich für Krieg bin oder weil 
+mir die Erhaltung des Friedens nicht als wichtig erschiene. 
+Wir brauchen gar nicht darüber zu reden, was für furcht-
+bare Folgen ein Makrokrieg hätte, das ist doch ganz klar.
+Sind Sie in der Friedensbewegung engagiert?
+Nein, die ist mir zu kriegsnah, zu kriegerisch, wenn ich 
+das so sagen darf. Die Friedensbewegung arbeitet mit 
+Prämissen, von denen ich nicht sehe, daß sie friedens-
+fördernd sind. Ich sehe beispielsweise nicht, daß Ab-
+rüstungspolitik friedensfördernd sein könnte. Ich denke 
+eher, man müßte die Denkstruktur des Ostens und des 
+Westens harmonisieren, nicht etwa im Sinne einer Kon-
+vergenztheorie, sondern in der Weise, daß die Ideenwelt 
+des Marxismus, die verbraucht ist, ebenso abgelöst wird 
+wie die Ideenwelt des Liberalismus, die ebenso verbraucht 
+ist. Wir leben heute eigentlich noch aus Kontroversen 
+des 19. Jahrhunderts, und deshalb ist vieles von dem, was 
+der Osten und der Westen sich gegenseitig unterstellen, 
+theoretisch unsinnig. Es wäre natürlich falsch zu glau-
+ben, Theorie wäre ein bedeutsamer politischer Faktor.
+37 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 36 ===
+Dennoch halte ich Kritiken an dem amerikanischen sowie 
+dem sowjetischen Selbstverständnis für sinnvoll, und 
+solche Vorwürfe sind mir ebenso friedensnah wie die Ab-
+rüstungspolitik. Eine andere Option könnte ich mir nur 
+dann vorstellen, wenn es gelänge, bereits die Abschuß-
+möglichkeit von Raketen zu verhindern, was heute tech-
+nisch nicht mehr ausgeschlossen zu sein scheint. Aber 
+dann würden die Menschen wahrscheinlich wieder mit 
+Obstmessern aufeinander losgehen. Es stört mich auch, 
+daß niemand empfindlich ist für die Möglichkeit der 
+Evolution von Seuchen infolge von Entwicklungen in 
+der Medizin. Wir können überhaupt nicht ausschließen, 
+daß irgendwann einmal medizinisch resistente Viren 
+entstehen, die einfach losmarschieren, und die Medizin 
+ratlos dasteht und Jahre braucht, um eine Diagnose für 
+die Krankheit zu entwickeln. Ein solcher Fall ist evolu-
+tionstheoretisch wahrscheinlich, von dem Antibiotika- 
+gebrauch unterstützt. So etwas halte ich für viel wahr-
+scheinlicher, als daß eine Riesenexplosion geschieht, die 
+die Menschheit vernichtet. Oder nehmen Sie ein anderes 
+Beispiel, wie die Entwicklung des Dollars. Der Dollar 
+ist nur deshalb Leitwährung, weil er so verschuldet ist, 
+daß man ihn nicht kollabieren lassen, aber auch nicht 
+ersetzen kann. Man kann doch gar nicht sicher sein, daß 
+der Dollar nicht eines Tages zusammenbricht. Die Mög-
+lichkeit des Zusammenbruchs eines monetär aufgeblähten 
+Wirtschaftssystems, für die es keine Kompensation gibt, 
+38 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 37 ===
+halte ich für ein außerordentlich drängendes Problem, an-
+gesichts dessen ich das Plärren gegen den Kapitalismus 
+als unangemessen betrachte. Für diese Fragen ist das Pro-
+blem doch nicht, wer Eigentümer von Produktionsmitteln 
+ist. Eine elaborierte Theorie müßte mehr Risiken und Ge-
+fahren aufzeigen können als eine eng geführte spätmarxi-
+stische Theorie oder eine bloße Technologieaversion.
+Wird es zu Ihrer zukünftigen Arbeit gehören, solche struk-
+turellen Defekte spätkapitalistischer Gesellschaften zu analy-
+sieren?
+Meine weitere Arbeit wird sich mit der Gesellschafts-
+theorie beschäftigen, die auf einem niedrigeren Abstrak-
+tionsniveau liegt als mein Buch Soziale Systeme. Ich werde 
+aber nicht im üblichen Sinne »Gesellschaftskritik« üben 
+und auch nicht nur eine Liste von strukturellen Effekten 
+aufführen, ganz zu schweigen von der Fehlbezeichnung 
+»Spätkapitalismus«. Solche Probleme erscheinen nur 
+innerhalb der Theorie. Weil mir gar keine andere Gesell-
+schaft vorschwebt als die, die wir haben, will ich auch 
+die vielen positiven Seiten unseres Systems aufzeigen. 
+Es geht also nicht um Ablehnung oder Zustimmung zu 
+dieser Gesellschaft, sondern um ein besseres Verständ-
+nis ihrer strukturellen Risiken, ihrer Selbstgefährdungen, 
+ihrer evolutionären Unwahrscheinlichkeit.
+Kleine politische Schriften wird es also von Niklas Luhmann 
+nicht geben?
+39 BIOGRAPHIE, ATTITÜDEN
+
+=== PAGE 38 ===
+Nein. Das soll aber nicht ausschließen, daß ich im Kon-
+text einer theoretischen Frage auch aktuelle Probleme 
+behandele.
+Das Interview führten Rainer Erd 
+und Andrea Maihofer
