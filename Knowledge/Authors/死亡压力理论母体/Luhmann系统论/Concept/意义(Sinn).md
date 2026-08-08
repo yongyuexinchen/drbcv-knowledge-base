@@ -84,7 +84,7 @@ Reese-Schäfer 在第四章（Liebe als Passion）中区分了两个层次：
 ## 五、双链
 
 - [[沟通(Kommunikation)]] — 沟通：社会系统在意义媒介中的操作
-- [[复杂度化约(Komplexit tsreduktion)]] — 复杂度化约：意义选择的操作功能
+- [[复杂度化约(Komplexitätsreduktion)]] — 复杂度化约：意义选择的操作功能
 - [[系统与环境(System und Umwelt)]] — 系统与环境：意义是系统的内部媒介，环境本身无意义
 - [[观察(Beobachtung)]] — 观察：意义中的区分操作
 - [[正常行为是死亡恐惧的日常化]]

@@ -77,8 +77,8 @@ Luhmann 的框架暗示了（2）是唯一"活着"的路径——但这也是一
 ## 五、双链
 
 - [[自创生(Autopoiesis)]] — 自创生：系统通过操作维持自身的环境边界
-- [[复杂度化约(Komplexit tsreduktion)]] — 复杂度化约：系统处理环境压力的策略
-- [[操作封闭(Operationelle Schlie ung)]] — 操作封闭：系统/环境边界的具体机制
+- [[复杂度化约(Komplexitätsreduktion)]] — 复杂度化约：系统处理环境压力的策略
+- [[操作封闭(Operationelle Schließung)]] — 操作封闭：系统/环境边界的具体机制
 - [[观察(Beobachtung)]] — 观察：系统/环境区分的操作实现
 - [[正常行为是死亡恐惧的日常化]]
 - [[逃逸的可能性]]

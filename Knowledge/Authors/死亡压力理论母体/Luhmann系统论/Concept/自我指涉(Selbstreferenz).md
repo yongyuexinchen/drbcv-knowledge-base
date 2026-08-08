@@ -84,7 +84,7 @@ Luhmann 在《社会系统》中进一步区分了自我指涉在操作中的四
 
 - [[自创生(Autopoiesis)]] — 自创生：自我指涉的操作面向
 - [[观察(Beobachtung)]] — 观察：自我指涉的认知形式
-- [[操作封闭(Operationelle Schlie ung)]] — 操作封闭：自我指涉的边界条件
+- [[操作封闭(Operationelle Schließung)]] — 操作封闭：自我指涉的边界条件
 - [[沟通(Kommunikation)]] — 沟通：社会系统的自我指涉操作
 - [[正常行为是死亡恐惧的日常化]]
 - [[逃逸的可能性]]

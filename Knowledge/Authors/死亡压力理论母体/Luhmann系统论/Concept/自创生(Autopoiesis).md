@@ -84,7 +84,7 @@ Luhmann 为自创生设定了三个严格条件（据 Maturana/Varela 的原始�
 ## 五、双链
 
 - [[自我指涉(Selbstreferenz)]] — 自我指涉：自创生的逻辑前提
-- [[操作封闭(Operationelle Schlie ung)]] — 操作封闭：自创生的条件
+- [[操作封闭(Operationelle Schließung)]] — 操作封闭：自创生的条件
 - [[系统与环境(System und Umwelt)]] — 系统/环境：自创生操作的边界条件
 - [[沟通(Kommunikation)]] — 沟通：社会系统自创生的基本操作
 - [[正常行为是死亡恐惧的日常化]]
